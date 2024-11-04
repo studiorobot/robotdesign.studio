@@ -106,6 +106,11 @@
   video_webm: "research/makerwear/makerwear.webm"
   video_mp4: "research/makerwear/makerwear.mov"
   abstract: "Wearable construction toolkits have shown promise in broadening participation in computing and empowering users to create personally meaningful computational designs. However, these kits present a high barrier of entry for some users, particularly young children (K-6). In this paper, we introduce MakerWear, a new wearable construction kit for children that uses a tangible, modular approach to wearable creation. We describe our participatory design process, the iterative development of MakerWear, and results from single- and multi-session workshops with 32 children (ages 5-12; M=8.3 years). Our findings reveal how children engage in wearable design, what they make (and want to make), and what challenges they face. As a secondary analysis, we also explore age-related differences."
+  awards:
+  - title: "Best Paper Award at CHI'17"
+    year: "CHI'17"
+  - title: "Best LBW Paper Award at CHI'16"
+    year: "CHI'16"
 
 - id: 7
   title: "New Interaction Tools for Preserving an Old Language"
@@ -117,7 +122,10 @@
   video_webm: "research/tangibles/tangibles.webm"
   video_mp4: "research/tangibles/tangibles.mov"
   abstract: "The Penan people of Malaysian Borneo were traditionally nomads of the rainforest. They would leave messages in the jungle for each other by shaping natural objects into language tokens and arranging these symbols in specific ways -- much like words in a sentence. With settlement, the language is being lost as it is not being used by the younger generation. We report here, a tangible system designed to help the Penan preserve their unique object writing language. The key features of the system are that: its tangibles are made of real objects; it works in the wild; and new tangibles can be fabricated and added to the system by the users. Our evaluations show that the system is engaging and encourages intergenerational knowledge transfer and thus has the potential to help preserve this language."
-
+  honorable_mentions:
+  - title: "Honorable Mentions Award at CHI'15"
+    year: "CHI'15"
+    
 - id: 2
   title: "CozyMaps: Real-time Collaboration With Multiple Displays"
   authors: "Kelvin Cheng, Liang He, Xiaojun Meng, David A. Shamma, Dung Nguyen, and Anbarasan T."

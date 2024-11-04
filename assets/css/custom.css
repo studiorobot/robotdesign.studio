@@ -11,8 +11,9 @@
 
 .project-links-container {
   padding-bottom: 0.2em;
-  margin-bottom: 1.8em;
   margin-top: -2em;
+  margin-bottom:0px !important;
+
 }
 
 .project-links-container ul {
@@ -49,4 +50,5 @@ video[poster]{
 }
 .authors_abstract{
   margin-top:0px !important;
+  margin-bottom:0px !important;
 }

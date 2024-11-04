@@ -35,6 +35,23 @@
           {% if project.abstract %}
           <p class="authors_abstract">{{ project.abstract }}</p>
           {% endif %}
+          {% if project.awards.size > 0 %}
+          <span style="color: #d13131; font-size: 1.1rem;">
+            {% for award in project.awards %}
+            <i class="fas fa-trophy"></i>
+            <strong>&nbsp;&nbsp;{{ award.title }}</strong>
+            {% if forloop.last == false %} | {% endif %}
+            {% endfor %}
+          </span>
+          {% endif %}
+          {% if project.honorable_mentions.size > 0 %}
+          {% for mention in project.honorable_mentions %}
+          <span style="color: #d13131; font-size: 1.1rem;">
+            <i class="fas fa-award"></i>
+            <strong>&nbsp;&nbsp;{{ mention.title }}</strong>
+          </span>
+          {% endfor %}
+          {% endif %}
         </div>
       </div>
       {% endfor %}
