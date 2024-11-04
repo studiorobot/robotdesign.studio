@@ -1,34 +1,25 @@
 ---
 layout: default
 ---
-
-{% include side-navigation.html %}
-<div class="wrapper reveal-side-navigation">
-	<div class="wrapper-inner">
-		{% include header.html %}
-		<!-- Content -->
-		<div class="content clearfix">
-			{% include fullscreen-slider-section.html %}
-			<!-- Feature Column Section -->
-			<div class="section-block replicable-content">
-				<div class="row">
-					<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;"
-						data-threshold="1">
-						<h3 class="mb-10 project-title">Projects</h3>
-					</div>
-				</div>
-				{% include project_list.html project_data=site.data.projects %}
-
-				<div class="row">
-					<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;"
-						data-threshold="1">
-						<h3 class="mb-10">Exploratory Projects</h3>
-					</div>
-				</div>
-				{% include project_list.html project_data=site.data.exploratory-projects %}
+<!-- Content -->
+<div class="content clearfix">
+	{% include fullscreen-slider-section.html %}
+	<!-- Feature Column Section -->
+	<div class="section-block replicable-content">
+		<div class="row">
+			<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;"
+				data-threshold="1">
+				<h3 class="mb-10 project-title">Projects</h3>
 			</div>
-
 		</div>
-		<!-- Content End -->
+		{% include project_list.html project_data=site.data.projects %}
+		<div class="row">
+			<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;"
+				data-threshold="1">
+				<h3 class="mb-10">Exploratory Projects</h3>
+			</div>
+		</div>
+		{% include project_list.html project_data=site.data.exploratory-projects %}
 	</div>
 </div>
+<!-- Content End -->

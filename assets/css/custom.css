@@ -52,3 +52,31 @@ video[poster]{
   margin-top:0px !important;
   margin-bottom:0px !important;
 }
+
+.regular-publication{
+ border: 1px solid #3e3e3e; margin-top:-0.2em;
+}
+.awarded-publication{
+  border: 1px solid #ef3a3a; margin-top:-0.2em;
+}
+
+.authors{
+  padding-bottom:0.2em !important;
+}
+
+.publication-links ul{
+  list-style:none; display: inline; margin-left: 0rem;
+}
+.publication-links{
+  padding-bottom:0.2em; margin-bottom: 1.8em; margin-top:-2em;
+}
+.publication-links ul li{
+  display:inline !important; margin-right: 10px;
+}
+.link-color{
+  border: none; color: #3b87c1;
+}
+
+.publication-link{
+  display:inline; margin-right: 10px;
+}

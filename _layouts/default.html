@@ -3,13 +3,19 @@
 {% include head.html %}
 
 <body class="shop home-page">
-  {{ content }}
-  {% include footer.html %}
-  {% include video-scripts.html %}
-  <!-- Js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
-  <script src="assets/js/timber.master.min.js"></script>
+  {% include side-navigation.html %}
+  <div class="wrapper reveal-side-navigation">
+    <div class="wrapper-inner">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+      {% include video-scripts.html %}
+      <!-- Js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
+      <script src="assets/js/timber.master.min.js"></script>
+    </div>
+  </div>
 </body>
 
 </html>
