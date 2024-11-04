@@ -1,0 +1,52 @@
+.project-links-container ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.project-links-container ul li a {
+  border: none;
+  color: #3b87c1;
+}
+
+
+.project-links-container {
+  padding-bottom: 0.2em;
+  margin-bottom: 1.8em;
+  margin-top: -2em;
+}
+
+.project-links-container ul {
+  list-style: none;
+  display: inline;
+  margin-left: 0rem;
+
+}
+
+.project-container {
+  padding: 1rem 0rem;
+}
+
+.project-container div video {
+  max-width: 100%;
+  margin-top: 0.7rem;
+}
+
+.project-description {
+  padding-right: 1em;
+}
+
+.project-description h5 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.project-description p {
+  padding-bottom: 0.2em;
+  margin-bottom: 1.8em;
+}
+video[poster]{
+  width:100% !important;
+}
+.authors_abstract{
+  margin-top:0px !important;
+}

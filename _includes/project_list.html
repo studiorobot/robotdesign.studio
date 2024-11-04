@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="column width-12">
+    <div class="row">
+      {% for project in include.project_data %}
+      <div class="row mt-20" id="project{{ project.id }}" class="project-container">
+        <div class="column width-4" onmouseover="PlayVideo({{ project.id }})"
+          onmouseleave="StopVideoPlay({{ project.id }})">
+          <video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}">
+            <source type="video/webm" src="{{ project.video_webm }}">
+            <source type="video/mp4" src="{{ project.video_mp4 }}">
+          </video>
+        </div>
+        <div class="project-description column width-8">
+          <h5>{{ project.title }}</h5>
+          <p class="authors">{{ project.authors }}</p>
+          <div class="project-links-container">
+            <ul>
+              <li><strong>{{ project.conference }}</strong></li>
+              {% if project.pdf_link %}
+              <li><a href="{{ project.pdf_link }}" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;PDF</a></li>
+              {% endif %}
+              {% if project.acm_link %}
+              <li><a href="{{ project.acm_link }}" target="_blank"><i class="fas fa-external-link-alt"></i>ACM DL</a>
+              </li>
+              {% endif %}
+              {% if project.video_link %}
+              <li><a href="{{ project.video_link }}" target="_blank"><i class="fas fa-play"></i>&nbsp;Video</a></li>
+              {% endif %}
+              {% if project.code_link %}
+              <li><a href="{{ project.code_link }}" target="_blank"><i class="fas fa-code"></i>&nbsp;Code & Hardware
+                  Design</a></li>
+              {% endif %}
+            </ul>
+          </div>
+          {% if project.abstract %}
+          <p class="authors_abstract">{{ project.abstract }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

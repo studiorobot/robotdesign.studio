@@ -1,0 +1,36 @@
+<!-- Header -->
+<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100"
+	style="background-color:black;">
+	<div class="header-inner">
+		<div class="row nav-bar">
+			<div class="column width-12 nav-bar-inner">
+				<div class="logo">
+					<div class="logo-inner">
+						<a href="projects.html"><img src="img/lab-logo-s_dark.png" alt="DE4M Lab Logo" /></a>
+						<a href="projects.html"><img src="img/lab-logo-s.png" alt="DE4M Lab Logo" /></a>
+					</div>
+				</div>
+				<nav class="navigation nav-block secondary-navigation nav-right">
+					<ul>
+						<li class="aux-navigation hide">
+							<!-- Aux Navigation -->
+							<a href="#" class="navigation-show side-nav-show nav-icon">
+								<i class="fa-solid fa-bars"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<nav class="navigation nav-block primary-navigation nav-right no-margin-right">
+					<ul>
+						{% for link in site.data.navigation_links %}
+						<li class="{% if link.title == 'PROJECTS' %}current{% endif %}">
+							<a href="{{ link.url }}">{{ link.title }}</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Header End -->

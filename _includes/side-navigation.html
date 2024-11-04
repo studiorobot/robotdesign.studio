@@ -1,0 +1,36 @@
+<!-- Side Navigation Menu -->
+<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="scale-in">
+	<div class="side-navigation-scroll-pane">
+		<div class="side-navigation-inner">
+			<div class="side-navigation-header">
+				<div class="navigation-hide side-nav-hide">
+					<a href="#">
+						<i class="fa-solid fa-x"></i>
+					</a>
+				</div>
+			</div>
+			<nav class="side-navigation">
+				<ul>
+					{% for link in site.data.navigation_links %}
+					<li class="{% if link.title == 'PROJECTS' %}current{% endif %}">
+						<a href="{{ link.url }}">{{ link.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			<div class="side-navigation-footer">
+				<ul class="social-list list-horizontal">
+					{% for link in site.data.social_links %}
+					<li>
+						<a href="{{ link.url }}" target="_blank">
+							<i class="{{ link.icon }}"></i>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+				<p class="copyright no-margin-bottom">&copy; 2022 DE4M LAB.</p>
+			</div>
+		</div>
+	</div>
+</aside>
+<!-- Side Navigation Menu End -->
