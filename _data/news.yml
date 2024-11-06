@@ -1,0 +1,143 @@
+- date: "October 23, 2024"
+  title: "MobiPrint got press coverage on GeekWire and UW News"
+  image: "img/news/mobiprint_news.png"
+  alt_text: "Receiving the UIST 2024 Jury Best Poster Award"
+  content: |
+    Our recent collaborative work on environment-scale design and fabrication--MobiPrint, published at UIST 2024, is featured on
+    <a href="https://www.geekwire.com/2024/3d-printing-on-the-move-uw-device-can-map-a-room-and-print-custom-items-in-desired-space/">GeekWire</a>
+    and <a href="https://www.washington.edu/news/2024/10/23/mobiprint-mobile-3d-printer-accessibility/">UW News</a>. Congratulations, Team!
+
+- date: "October 16, 2024"
+  title: "Fluxable Won the UIST 2024 Jury Best Poster Award"
+  image: "img/news/uist2024.png"
+  alt_text: "Receiving the UIST 2024 Jury Best Poster Award"
+  content: |
+    The recent work <a href="https://doi.org/10.1145/3672539.368634">Fluxable</a> received the Jury Best Poster Award at UIST 2024 (2%).
+    Hannah presented a tangible, interactive poster of this work at UIST 2024. Congratulations!
+
+- date: "August 1, 2024"
+  title: "DE4M Lab at SIGGRAPH 2024"
+  image: "img/news/siggraph-de4m.png"
+  alt_text: "DE4M Lab had a blast at SIGGRAPH 2024"
+  content: |
+    We had a blast at SIGGRAPH 2024. Hannah was presenting the recent work on the fabrication of SLA 3D printable shape-changing
+    devices with inductive sensing capabilities. More information about the paper is
+    <a href="https://dl.acm.org/doi/abs/10.1145/3641234.3671039">here</a>.
+
+- date: "May 20, 2024"
+  title: "Visit to Shima Seiki in Wakayama, Japan"
+  image: "img/news/shima.png"
+  alt_text: "Visiting Shima Seiki in Wakayama, Japan"
+  content: |
+    Liang and Hannah had a blast at Shima Seiki in Wakayama, Japan. Thank you to Mr. Akira Tsuno for the kind hospitality and
+    tour of the latest knitting machine models, production factories, and demo samples.
+
+- date: "April 29, 2024"
+  title: "Purdue Computes IPAI Research Award for 2024-2026"
+  image: "img/news/IPAI.png"
+  alt_text: "Purdue IPAI postdoctoral research award"
+  content: |
+    Excited to receive the research award from Institute for Physical Artificial Intelligence (IPAI), Purdue Computes, in collaboration
+    with <a href="https://www.sooyeonjeong.com/home">Dr. Sooyeon Jeong</a> from the Department of Computer Science to support a two-year
+    funded research. Read more about this <a href="https://www.purdue.edu/research/features/stories/institute-for-physical-ai-supports-7-postdoctoral-research-fellows-in-projects-in-agriculture-health-care-drug-development-and-manufacturing/">news</a>.
+
+- date: "October 19, 2023"
+  title: "Exploratory SAIL Grant Awarded for Pedagogical Outreach in Tokyo 2024-2025"
+  image: "img/news/sail_exp.png"
+  alt_text: "The Exploratory SAIL Grant"
+  content: |
+    Liang received an exploratory SAIL grant award to support the collaboration with researchers, students, and faculty at the
+    University of Tokyo for a pedagogical program entitled "Hacking, Designing, and Making".
+
+- date: "October 18, 2023"
+  title: "DE4M Lab Featured in the Monthly CGT Newsletter"
+  image: "img/news/cgt_news.png"
+  alt_text: "Group photo of the DE4M Lab"
+  content: |
+    In the monthly CGT Newsletter, Liang shared the recently published work, ongoing research in the DE4M Lab, and the growth of his
+    research group at Purdue. The full story can be found <a href="https://polytechnic.purdue.edu/3d-printing-you-bet">here</a>.
+
+- date: "October 1, 2023"
+  title: "First DE4M Lab Retreat and Making Day"
+  image: "img/news/lab_retreat_2023.png"
+  alt_text: "Group photo of the first DE4M Lab retreat"
+  content: |
+    De4mers had the first lab retreat and making day with mooncakes, rice paper painting, 3D printer assembly, digital modeling,
+    and tinkering.
+
+- date: "August 16, 2023"
+  title: "dFab and A11y Works Published at UIST 2023"
+  image: "img/news/uist_2023.png"
+  alt_text: "Multiple works will be presented at UIST 2023"
+  content: |
+    At UIST 2023, DE4Mers will present two full papers on digital fabrication (3D printing and knitting), one demo, and one poster.
+    See y'all in the cyber-Nov!
+
+- date: "August 6, 2023"
+  title: "Poster Accepted to ASSETS 2023"
+  image: "img/news/assets_2023.png"
+  alt_text: "Poster paper accepted to ASSETS 2023"
+  content: |
+    At ASSETS 2023, DE4Mers will present their qualitative study on the need and challenges dementia caregivers in India have.
+    Liang and Yuhang will organize the exciting demo and poster sessions on the beautiful Roosevelt Island in Manhattan, New York City.
+    See y'all in the last week of October.
+
+- date: "May 25, 2023"
+  title: "Invited Talk at Zhejiang University"
+  image: "img/news/ZJU.png"
+  alt_text: "Liang's answering questions during his talk at Zhejiang University"
+  content: |
+    Liang was invited to share his approaches in doing PhD and his PhD works at Zhejiang University. Thanks for the invite and the lab tour,
+    Guanyuan Wang.
+
+- date: "May 16, 2023"
+  title: "Invited Talk at Duke Kunshan University"
+  image: "img/news/dku.png"
+  alt_text: "The flyer of Liang's talk at Duke Kunshan University"
+  content: |
+    Liang was invited to talk about his PhD work and vision on digital fabrication at Duke Kunshan University. He also enjoyed all the student
+    presentations on tangible games. Thanks for inviting and hosting Liang, Xin Tong.
+
+- date: "April 26, 2023"
+  title: "Holistic Safety and Security (HSS) Research Impact Area (RIA) 2023-2024 Grant Awarded"
+  image: "img/news/hss_grant.png"
+  alt_text: "The HSS RIA grant."
+  content: |
+    Our group received ~$10K grant fund from HSS RIA to support research on robotics for accessibility.
+
+- date: "April 18, 2023"
+  title: "Invited Talk at MIT HCI Seminar"
+  image: "img/news/mit_talk.png"
+  alt_text: "The flyer of Liang's talk in MIT CSAIL building."
+  content: |
+    Liang was invited to talk about his PhD work and vision on the upcoming developments in digital fabrication at MIT CSAIL HCI Seminar series.
+    Thanks for the hosting, Arvind and Cindy. Thanks for the invite, Stefanie.
+
+- date: "April 5, 2023"
+  title: "UIST 2023 Submissions"
+  image: "img/news/uist_2023.png"
+  alt_text: "Our lab submit two papers to UIST 2023."
+  content: |
+    We are proud to submit two full papers to UIST 2023 in collaboration with external collaborators. Way to go, DE4Mers!
+
+- date: "November 14, 2022"
+  title: "Presentation at the Fall Undergraduate Research Expo"
+  image: "img/news/undergraduate_expo.png"
+  alt_text: "Maverick and Emily present recent work at the Fall Undergraduate Research Expo"
+  content: |
+    Maverick and Emily present new work on ubiquitous planting printer at the <a href="https://www.purdue.edu/undergrad-research/conferences/fall/index.php">2022 Fall Undergraduate Research Expo</a>. Congratulations, Maverick and Emily!
+
+- date: "October 25, 2022"
+  title: "Kinergy Presented at UIST 2022"
+  image: "img/news/uist2022_logo.png"
+  alt_text: "UIST 2022 logo"
+  content: |
+    Liang will be presenting Kinergy in "Material Interfaces and Displays" session, November 2nd (Wednesday) at UIST 2022, which is held in Bend, OR.
+    Liang will also be chairing "Accessibility" session on November 1st (Tuesday).
+
+- date: "October 25, 2022"
+  title: "sPrinter Demo Presented at SCF 2022"
+  image: "img/news/scf2022_logo.png"
+  alt_text: "SCF 2022 logo"
+  content: |
+    Maverick and Yuhang present the sPrinter Demo at SCF 2022.

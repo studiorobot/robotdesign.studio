@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<body class="shop home-page">
+  <!-- Content -->
+  <div class="content clearfix">
+    <!-- Feature Column Section -->
+    <div class="section-block replicable-content">
+      <div class="row">
+        <div class="column width-12" style="margin-bottom:2em;">
+          <h3 class="mb-10">News</h3>
+        </div>
+      </div>
+
+      {% for news_item in site.data.news %}
+      <div class="row">
+        <div class="column width-12" style="margin-bottom:2em;">
+          <div class="column width-2">
+            <img style="border: 2px solid #cecece; margin-top:0.5em;" src="{{ news_item.image }}"
+              alt="{{ news_item.alt_text }}" />
+          </div>
+          <div class="column width-10">
+            <h5 style="margin-bottom:0em; text-transform:none;">{{ news_item.title }}</h5>
+            <p class="authors" style="margin-top: -0.3em; margin-bottom: 1.1em;">{{ news_item.date }}</p>
+            <p class="authors_abstract" style="margin-top: -2rem;">
+              {{ news_item.content }}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- Content End -->
+</body>
