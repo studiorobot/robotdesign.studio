@@ -22,7 +22,7 @@ layout: default
           {% for paper in year[1] %}
           <div class="column width-11 offset-1 mt-10">
             <div class="column width-2">
-              <img class="regular-publication" src="{{ paper.img }}" alt="The first page of the paper" />
+              <img class="regular-publication" src="{{ paper.img }}" alt="The first page of the paper" loading="lazy"/>
             </div>
             <div class="column width-10 publication-details">
               <p class="authors">{{ paper.authors }}. {{ year[0] }}. {{ paper.title }}. In <i>{{ paper.event }}</i>. Association for Computing Machinery. <a href="{{ paper.doi }}">DOI</a></p>

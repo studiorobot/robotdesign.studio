@@ -24,7 +24,7 @@ layout: default
       <!-- Liang He (Special Case) -->
       <div class="column width-2">
         <a href="{{ site.data.team.liang.website }}" target="_blank">
-          <img src="{{ site.data.team.liang.profile_img }}" alt="{{ site.data.team.liang.name }}'s profile picture" />
+          <img src="{{ site.data.team.liang.profile_img }}" alt="{{ site.data.team.liang.name }}'s profile picture" loading="lazy"/>
         </a>
       </div>
       <div class="column width-4">
@@ -50,7 +50,7 @@ layout: default
       {% for member in site.data.team.team_members %}
       <div class="column width-2" style="margin-bottom: 0.7em;">
         <a href="{{ member.link }}" target="_blank">
-          <img src="{{ member.img }}" alt="{{ member.name }}'s profile picture" />
+          <img src="{{ member.img }}" alt="{{ member.name }}'s profile picture" loading="lazy"/>
           <h4 class="project-description"
             style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
             member.name }}</h4>
@@ -68,7 +68,7 @@ layout: default
       {% for collaborator in site.data.team.current_collaborators %}
       <div class="column width-2" style="margin-bottom: 1.7em;">
         <a href="{{ collaborator.link }}" target="_blank">
-          <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" />
+          <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy"/>
         </a>
         <h4 class="project-description"
           style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
