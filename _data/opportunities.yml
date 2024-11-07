@@ -9,6 +9,6 @@ grad_undergrad_highschool:
   heading: "Graduate, undergraduate, high school students"
   description: "Thank you for your interest! For research assistant opportunities at the lab, please check out our past <a href='projects.html'>research projects</a> and fill out <a href='https://docs.google.com/forms/d/e/1FAIpQLSc6oS0eOAmP2EajY2hM5za0DYbAQrKi23BmY5mtFEpu9hkJlg/viewform' style='color: #2d6582; border-bottom:1px dashed #2d6582;' target='_blank'>this application form</a>. We will get back to you as early as possible."
 image:
-  src: "img/opportunities/join_us.png"
+  src: "img/opportunities/join_us.jpg"
   alt: "The picture of the Gateway Complex at Purdue"
   width: "100%"
