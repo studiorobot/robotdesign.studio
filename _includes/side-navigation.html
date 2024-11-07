@@ -10,9 +10,9 @@
 				</div>
 			</div>
 			<nav class="side-navigation">
-				<ul>
+				<ul> 
 					{% for link in site.data.navigation_links %}
-					<li class="{% if link.title == 'PROJECTS' %}current{% endif %}">
+					<li class="{% if link.url == page.path %}current{% endif %}">
 						<a href="{{ link.url }}">{{ link.title }}</a>
 					</li>
 					{% endfor %}
