@@ -1,0 +1,123 @@
+# _data/team.yml
+patricia:
+  name: Patrícia Alves-Oliveira
+  title: Ph.D., Assistant Professor in Human-Robot Interaction
+  role: Director of Robot Studio Lab (January, 2024 - Present)
+  department: Robotics Department
+  university: University of Michigan - Ann Arbor
+  address: FMCRB 2252
+  email: robopati@umich.edu
+  website: "https://patricialvesoliveira.com/"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate"
+  twitter: "https://twitter.com/p_alvesoliveira"
+  profile_img: "patricia/Patricia_Alves-Oliveira.jpg"
+
+members:
+  - name: Atharva S. Kashyap
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/phd/Atharva_S.Kashyap.jpg"
+    university: uni
+    link: ""
+    standing: Ph.D.
+
+  - name: Connor Williams
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/phd/Connor_Williams.jpg"
+    university: uni
+    link: ""
+    standing: Ph.D.
+
+  - name: Grace Pan
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/phd/Grace_Pan.jpg"
+    university: uni
+    link: ""
+    standing: Ph.D.
+
+  - name: Emily Wu
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/masters/Emily_Wu.jpg"
+    university: uni
+    link: "link"
+    standing: Master
+
+  - name: Ilkyaz Sarimehmetoglu
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/masters/Ilkyaz_Sarimehmetoglu.jpg"
+    university: uni
+    link: "link"
+    standing: Master
+
+  - name: Jeffrey Qiu
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/masters/Jeffrey_Qiu.jpg"
+    university: uni
+    link: ""
+    standing: Master
+
+  - name: Angshu Adhya
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/undergrad/Angshu_Adhya.JPG"
+    university: uni
+    link: ""
+    standing: Undergrad
+
+  - name: Cindy Yang
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/undergrad/Cindy_Yang.jpg"
+    university: uni
+    link: "link"
+    standing: Undergrad
+
+  - name: Jeffrey Qiu
+    role: role
+    area: area
+    start_year: 2024
+    img: "people/masters/Jeffrey_Qiu.jpg"
+    university: uni
+    link: ""
+    standing: Undergrad
+
+collab:
+  - name: 
+    role: Visiting Student
+    university: uni
+    department: department
+    img: people/collaborators/Anastasia_Ostrowski.jpg
+    link: link
+
+  - name: name
+    role: Visiting Student
+    university: uni
+    department: department
+    img: people/collaborators/Peter_Kahn.jpg
+    link: link
+
+  - name: name
+    role: Visiting Student
+    university: uni
+    department: department
+    img: people/collaborators/Sidd_Srinivasa.jpg
+    link: link
+
+previous_members:
+  - name: name
+    role: role
+    university: uni
+    year: year term

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <body class="shop home-page">
   <!-- Content -->
   <div class="section-block left-on-mobile de4mers-nav right" id="director" style="margin-top:3em;">
@@ -10,7 +11,7 @@ layout: default
       </div>
       <div class="column width-8">
         <ul>
-          <li><a href="#members">Active Members</a></li>
+          <li><a href="#members">Members</a></li>
           <li><a href="#collaborators">Collaborators</a></li>
           <li><a href="#alumni">Previous Members</a></li>
         </ul>
@@ -21,54 +22,67 @@ layout: default
     data-layout-mode="masonry" data-grid-ratio="1.5" data-animate-filter-duration="700" data-set-dimensions
     data-animate-resize data-animate-resize-duration="0" data-as-bkg-image>
     <div class="row">
-      <!-- Liang He (Special Case) -->
+      <!-- patricia He (Special Case) -->
       <div class="column width-2">
-        <a href="{{ site.data.team.liang.website }}" target="_blank">
-          <img src="{{ site.data.team.liang.profile_img }}" alt="{{ site.data.team.liang.name }}'s profile picture" loading="lazy"/>
+        <a href="{{ site.data.people.patricia.website }}" target="_blank">
+          <img src="{{ site.data.people.patricia.profile_img }}"
+            alt="{{ site.data.people.patricia.name }}'s profile picture" loading="lazy" />
         </a>
       </div>
       <div class="column width-4">
         <h1 class="project-description"
           style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2rem;">{{
-          site.data.team.liang.name }}</h1>
+          site.data.people.patricia.name }}</h1>
         <p class="project-description" style="color:black;margin-top: -1.5em;line-height: 12pt;">
-          {{ site.data.team.liang.title }}<br />
-          {{ site.data.team.liang.role }}<br /><br />
-          {{ site.data.team.liang.department }}<br />
-          {{ site.data.team.liang.university }}<br />
-          {{ site.data.team.liang.address }}<br /><br />
-          <a href="mailto:{{ site.data.team.liang.email }}" target="_blank" style="color:#333;border-bottom: none;">
-            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;{{ site.data.team.liang.email }}</a><br />
-          <a href="{{ site.data.team.liang.website }}" target="_blank" style="color:#333;border-bottom: none;">
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;{{ site.data.team.liang.website }}</a><br />
-          <a href="{{ site.data.team.liang.google_scholar }}" target="_blank" style="color:#333;border-bottom: none;">
+          {{ site.data.people.patricia.title }}<br />
+          {{ site.data.people.patricia.role }}<br /><br />
+          {{ site.data.people.patricia.department }}<br />
+          {{ site.data.people.patricia.university }}<br />
+          {{ site.data.people.patricia.address }}<br /><br />
+          <a href="mailto:{{ site.data.people.patricia.email }}" target="_blank"
+            style="color:#333;border-bottom: none;">
+            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;{{ site.data.people.patricia.email }}</a><br />
+          <a href="{{ site.data.people.patricia.website }}" target="_blank" style="color:#333;border-bottom: none;">
+            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;{{ site.data.people.patricia.website }}</a><br />
+          <a href="{{ site.data.people.patricia.google_scholar }}" target="_blank"
+            style="color:#333;border-bottom: none;">
             <i class="fas fa-graduation-cap fa-1x"></i>&nbsp;&nbsp;&nbsp;Google Scholar</a><br />
-          <a href="{{ site.data.team.liang.twitter }}" target="_blank" style="color:#333;border-bottom: none;">
+          <a href="{{ site.data.people.patricia.twitter }}" target="_blank" style="color:#333;border-bottom: none;">
             <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Twitter</a><br />
         </p>
       </div>
-      {% for member in site.data.team.team_members %}
+    </div>
+    <!-- Members Section -->
+    <div class="row" id="members">
+      <div class="column width-12"
+        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
+        Members
+      </div>
+      {% for student in site.data.people.members %}
       <div class="column width-2" style="margin-bottom: 0.7em;">
-        <a href="{{ member.link }}" target="_blank">
-          <img src="{{ member.img }}" alt="{{ member.name }}'s profile picture" loading="lazy"/>
+        <a href="{{ student.link }}" target="_blank">
+          <img src="{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
           <h4 class="project-description"
             style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
-            member.name }}</h4>
-          <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ member.role }}
-            <br />{{ member.university }}<br />{{ member.area }} <br /> Started: {{ member.start_year }}
+            student.name }}</h4>
+          <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ student.role }}
+            <br />{{student.standing}}, {{ student.university }}<br />{{ student.area }} <br /> Started: {{
+            student.start_year }}
           </p>
         </a>
       </div>
       {% endfor %}
-      <!-- Collaborators Section -->
+    </div>
+    <!-- Collaborators Section -->
+    <div class="row" id="collaborators">
       <div class="column width-12"
         style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
-        CURRENT COLLABORATORS (FACULTY)
+        Collaborators
       </div>
-      {% for collaborator in site.data.team.current_collaborators %}
+      {% for collaborator in site.data.people.collab %}
       <div class="column width-2" style="margin-bottom: 1.7em;">
         <a href="{{ collaborator.link }}" target="_blank">
-          <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy"/>
+          <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
         </a>
         <h4 class="project-description"
           style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
@@ -78,11 +92,13 @@ layout: default
           }} <br />{{ collaborator.department }}, {{ collaborator.university }}</p>
       </div>
       {% endfor %}
+    </div>
+    <div class="row" id="alumni">
       <!-- Previous Members Section -->
       <div class="column width-12"
         style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
         Previous Members</div>
-      {% for alumni in site.data.team.previous_members %}
+      {% for alumni in site.data.people.previous_members %}
       <div class="column width-6" style="margin-bottom: 0.3em;">
         <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
             }}</strong> - {{ alumni.year }} ({{ alumni.role }})
@@ -90,5 +106,6 @@ layout: default
       </div>
       {% endfor %}
     </div>
+  </div>
   </div>
 </body>
