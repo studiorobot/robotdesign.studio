@@ -7,7 +7,7 @@ layout: default
   <div class="section-block left-on-mobile de4mers-nav right" id="director" style="margin-top:3em;">
     <div class="row no-padding">
       <div class="column width-4 left">
-        <h3 class="mb-mobile-10">DE4MERS</h3>
+        <h1 class="mb-mobile-10">People</h1>
       </div>
       <div class="column width-8">
         <ul>
@@ -22,7 +22,7 @@ layout: default
     data-layout-mode="masonry" data-grid-ratio="1.5" data-animate-filter-duration="700" data-set-dimensions
     data-animate-resize data-animate-resize-duration="0" data-as-bkg-image>
     <div class="row">
-      <!-- patricia He (Special Case) -->
+
       <div class="column width-2">
         <a href="{{ site.data.people.patricia.website }}" target="_blank">
           <img src="{{ site.data.people.patricia.profile_img }}"
@@ -31,7 +31,7 @@ layout: default
       </div>
       <div class="column width-4">
         <h1 class="project-description"
-          style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2rem;">{{
+          style="text-transform: capitalize; font-size: 2rem;">{{
           site.data.people.patricia.name }}</h1>
         <p class="project-description" style="color:black;margin-top: -1.5em;line-height: 12pt;">
           {{ site.data.people.patricia.title }}<br />
@@ -55,15 +55,15 @@ layout: default
     <!-- Members Section -->
     <div class="row" id="members">
       <div class="column width-12"
-        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
-        Members
-      </div>
+        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
+        <h2>Members</h2>
+    </div>
       {% for student in site.data.people.members %}
       <div class="column width-2" style="margin-bottom: 0.7em;">
         <a href="{{ student.link }}" target="_blank">
           <img src="{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
           <h4 class="project-description"
-            style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
+            style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
             student.name }}</h4>
           <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ student.role }}
             <br />{{student.standing}}, {{ student.university }}<br />{{ student.area }} <br /> Started: {{
@@ -76,8 +76,8 @@ layout: default
     <!-- Collaborators Section -->
     <div class="row" id="collaborators">
       <div class="column width-12"
-        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
-        Collaborators
+        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
+        <h2>Collaborators</h2>
       </div>
       {% for collaborator in site.data.people.collab %}
       <div class="column width-2" style="margin-bottom: 1.7em;">
@@ -85,7 +85,7 @@ layout: default
           <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
         </a>
         <h4 class="project-description"
-          style="text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 1.5rem; margin-top: 0.5em;">{{
+          style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
           collaborator.name }}
         </h4>
         <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ collaborator.role
@@ -96,8 +96,8 @@ layout: default
     <div class="row" id="alumni">
       <!-- Previous Members Section -->
       <div class="column width-12"
-        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-family:'SourceSans3-Bold';font-size: 2.7rem;">
-        Previous Members</div>
+        style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
+      <h2> Previous Members</h2></div>
       {% for alumni in site.data.people.previous_members %}
       <div class="column width-6" style="margin-bottom: 0.3em;">
         <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name

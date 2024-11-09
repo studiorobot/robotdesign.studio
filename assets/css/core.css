@@ -46,7 +46,6 @@ body {
   margin: 0;
   background: #fff;
   color: #666;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.4rem;
@@ -967,7 +966,6 @@ pre code {
 .navigation .sub-menu li.contains-sub-menu>a:after,
 .navigation.sub-menu-indicator>ul>li.contains-mega-sub-menu>a:after,
 .navigation.sub-menu-indicator>ul>li.contains-sub-menu>a:after {
-  font-family: icomoon;
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
@@ -2260,7 +2258,6 @@ select {
 }
 
 .form-select:after {
-  font-family: icomoon;
   font-size: 1.5rem;
   content: "\e63e";
   pointer-events: none;
@@ -2315,7 +2312,6 @@ input[type=checkbox] {
   background: #f9f9f9;
   border: 1px solid #eee;
   content: '';
-  font-family: icomoon;
   text-align: center
 }
 
@@ -2585,7 +2581,6 @@ div[contenteditable=true].xlarge {
 button {
   padding: 1.3rem 2.5rem;
   margin: 0 1rem 1rem 0;
-  font-family: inherit;
   font-size: 1.3rem;
   color: #666;
   background-color: #eee;
@@ -4111,7 +4106,6 @@ ul li>[class*=icon-]:first-child {
 
 .pricing-table-options.with-icon li:before {
   margin-right: 1rem;
-  font-family: icomoon;
   content: "\e63a";
   float: left
 }
@@ -4544,12 +4538,11 @@ iframe {
   border: 1px solid #eee;
   background: #eee;
   position: relative;
-  -webkit-mask-image: url(data:image/png;
- base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)
+  -webkit-mask-image: url(data:image/png; base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)
 }
 
 .aux-navigation-active .range-slider {
-  -webkit-mask-image: none
+  -webkit-mask-image: none;
 }
 
 .range-active-segment {
@@ -4815,9 +4808,7 @@ p[class*=bkg-] {
   margin-left: auto
 }
 
-.font-alt-1 {
-  font-family: "Times New Roman", Arial, sans-serif
-}
+
 
 em {
   font-style: italic
@@ -5095,7 +5086,6 @@ blockquote.border.center {
 .breadcrumb li:before {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  font-family: icomoon
 }
 
 .breadcrumb li:after {
@@ -5125,7 +5115,6 @@ blockquote.border.center {
 code,
 kbd,
 samp {
-  font-family: "Courier New", Courier, monospace, sans-serif;
   text-align: left
 }
 
@@ -5135,7 +5124,6 @@ samp {
 [class^=icon-],
 [class^=tms-arrow-nav]:before,
 [class^=tml-nav]:before {
-  font-family: icomoon;
   speak: none;
   font-variant: normal;
   -webkit-font-smoothing: antialiased;
@@ -5168,13 +5156,7 @@ pre code {
   color: #999
 }
 
-@font-face {
-  font-family: icomoon;
-  src: url(../fonts/entypo.eot);
-  src: url(../fonts/entypo.eot) format('embedded-opentype'), url(../fonts/entypo.woff) format('woff'), url(../fonts/entypo.ttf) format('truetype'), url(../fonts/entypo.svg) format('svg');
-  font-weight: 400;
-  font-style: normal
-}
+
 
 [class*=" icon-"],
 [class^=icon-] {
@@ -9098,13 +9080,7 @@ textarea {
   transition-duration: .3s
 }
 
-@font-face {
-  font-family: icomoon;
-  src: url(../fonts/entypo.eot);
-  src: url(../fonts/entypo.eot) format('embedded-opentype'), url(../fonts/entypo.woff) format('woff'), url(../fonts/entypo.ttf) format('truetype'), url(../fonts/entypo.svg) format('svg');
-  font-weight: 400;
-  font-style: normal
-}
+
 
 [class*=tms-arrow-nav]:before,
 [class^=tms-arrow-nav]:before {
@@ -9416,13 +9392,7 @@ textarea {
   transition-duration: .3s
 }
 
-@font-face {
-  font-family: icomoon;
-  src: url(../fonts/entypo.eot);
-  src: url(../fonts/entypo.eot) format('embedded-opentype'), url(../fonts/entypo.woff) format('woff'), url(../fonts/entypo.ttf) format('truetype'), url(../fonts/entypo.svg) format('svg');
-  font-weight: 400;
-  font-style: normal
-}
+
 
 [class*=tml-nav]:before,
 [class^=tml-nav]:before {
@@ -13231,7 +13201,6 @@ body.boxed .social-2 {
   margin: 0;
   font-size: 2rem;
   line-height: 2rem;
-  font-family: "Times New Roman", serif;
   font-style: italic;
   display: table
 }
@@ -14006,7 +13975,7 @@ only screen and (min-resolution:2dppx) {
 .pagination-2 .column:hover {
   background-size: cover;
   background-position: center;
-  -webkit-transform: translate(0, 0)
+  -webkit-transform: translate(0, 0);
 }
 
 body.boxed .pagination-2 {
@@ -14643,7 +14612,7 @@ body.boxed .footer .footer-top {
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transition-duration: .2s;
-  transform-transition-duration: .2s
+  transform-transition-duration: .2s;
 }
 
 .post-comment a:hover [class*=icon-],
@@ -15684,7 +15653,7 @@ body.boxed .blog-masonry.full-width [class*=content-grid] {
 .nav-block .cart-overview .checkout,
 .nav-block .cart-overview .view-cart {
   display: inline-block;
-  float: left
+  float: left;
 }
 
 .nav-block .cart-overview .checkout:not(.button),

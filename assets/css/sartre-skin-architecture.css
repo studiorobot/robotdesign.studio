@@ -38,65 +38,26 @@ Copyright: ThemeMountain
 
 -------------------------------------------------------------------*/
 
-@font-face {font-family: 'Proxima Nova Condensed Bold'; src: url('../font/Proxima Nova Condensed Bold.otf');font-weight: bold;font-style: bold;}
-@font-face {font-family: 'Proxima Nova Condensed Thin'; src: url('../font/Proxima Nova Condensed Thin.otf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Proxima Nova Condensed Light'; src: url('../font/Proxima Nova Condensed Light.otf');font-weight: lighter;font-style: lighter;}
-@font-face {font-family: 'Atlas Grotesk Medium'; src: url('../font/AtlasGrotesk-Medium-Reduced.woff.ttf');font-weight: medium;font-style: medium;}
-@font-face {font-family: 'Atlas Typewriter Medium'; src: url('../font/atlas-typewriter-medium.woff.ttf');font-weight: medium;font-style: medium;}
-@font-face {font-family: 'Roboto-Light'; src: url('../font/Roboto-Light.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Roboto-Regular'; src: url('../font/Roboto-Regular.ttf');font-weight: normal;font-style: normal;}
-
-@font-face {font-family: 'Futura'; src: url('../font/futura/futur.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Bold'; src: url('../font/futura/Futura Bold font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Bold-Italic'; src: url('../font/futura/Futura Bold Italic font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Book'; src: url('../font/futura/Futura Book font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura=Book-Italic'; src: url('../font/futura/Futura Book Italic font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Extra-Black'; src: url('../font/futura/Futura Extra Black font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Heavy'; src: url('../font/futura/Futura Heavy font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Heavy-Italic'; src: url('../font/futura/Futura Heavy Italic font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Light'; src: url('../font/futura/Futura Light font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Light-Itatic'; src: url('../font/futura/Futura Light Italic font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Light-bt'; src: url('../font/futura/futura light bt.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Medium-bt'; src: url('../font/futura/futura medium bt.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Medium-Con-bt'; src: url('../font/futura/futura medium condensed bt.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Medium-Italic'; src: url('../font/futura/Futura Medium Italic font.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-XBLK-BT'; src: url('../font/futura/Futura XBlk BT.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'Futura-Light-Con'; src: url('../font/futura/Futura-CondensedLight.ttf');font-weight: normal;font-style: normal;}
-
-@font-face {font-family: 'CoFo Sans 1'; src: url('../font/CoFo Sans 1.otf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Black'; src: url('../font/SourceSans3-Black.ttf');font-weight: normal;font-style: normal;}
-
-@font-face {font-family: 'SourceSans3-Black'; src: url('../font/SourceSans3-Black.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-BlackItalic'; src: url('../font/SourceSans3-BlackItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Bold'; src: url('../font/SourceSans3-Bold.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-BoldItalic'; src: url('../font/SourceSans3-BoldItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-ExtraBold'; src: url('../font/SourceSans3-ExtraBold.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-ExtraBoldItalic'; src: url('../font/SourceSans3-ExtraBoldItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-ExtraLight'; src: url('../font/SourceSans3-ExtraLight.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-ExtraLightItalic'; src: url('../font/SourceSans3-ExtraLightItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Italic-VariableFont_wght'; src: url('../font/SourceSans3-Italic-VariableFont_wght.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Light'; src: url('../font/SourceSans3-Light.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-LightItalic'; src: url('../font/SourceSans3-LightItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Medium'; src: url('../font/SourceSans3-Medium.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-MediumItalic'; src: url('../font/SourceSans3-MediumItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-Regular'; src: url('../font/SourceSans3-Regular.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-SemiBold'; src: url('../font/SourceSans3-SemiBold.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-SemiBoldItalic'; src: url('../font/SourceSans3-SemiBoldItalic.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'SourceSans3-VariableFont_wght.ttf'; src: url('../font/SourceSans3-VariableFont_wght.ttf.ttf');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Futura'; src: url('../../branding/_Fonts/Futura.ttc');font-weight: normal;font-style: normal;}
+@font-face {
+  font-family: 'ABC';
+  src: url('../fonts/ABCMaxiPlusVariable-Trial.woff2') format('woff2'),
+       url('../fonts/ABCMaxiPlusVariable-Trial.woff') format('woff');
+			}
 /*------------------------------------------------------------------
 [1. Typography]
 */
 
 body{
-	font-family: 'SourceSans3-Medium', 'SourceSans3-Regular', 'Open Sans', 'Helvetica Neue', sans-serif;
-	letter-spacing: 0;
-	font-weight: 400;
-	font-size: 1.7rem;
-	line-height: 1.5;
+	font-family: 'Futura';
 	color: black;
 }
 h1, 
-h2, 
+h2 {
+	font-family: 'ABC';
+	font-weight:bold !important;
+}
+
 h3, 
 h4, 
 h5, 
@@ -143,17 +104,14 @@ h1{
 }
 h2{
 	font-size: 3.0rem;
-	font-family: 'SourceSans3-SemiBold', 'SourceSans3-Regular', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h3{
 	font-size: 4.000rem;
-	font-family: 'SourceSans3-Black', 'SourceSans3-Regular', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h4{
 	font-size: 2.862rem;
 }
 h5{
-	font-family: 'SourceSans3-SemiBold', 'SourceSans3-Regular', 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 2.4rem;
 }
 h6{
@@ -630,9 +588,7 @@ body,
 	border-bottom: none;
 	border-bottom: 1px solid transparent;
 }
-.header .header-inner > .nav-bar{
-	/*border-bottom: 1px solid #eee;*/
-}
+
 
 /* Transparent Header Initial & Active Nav Colors */
 .header-transparent .header-inner{
@@ -2988,9 +2944,7 @@ textarea.required-field{
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
-.footer-top{
-	/*background-color: #333;*/
-}
+
 .footer-top .footer-logo{
 	width: 9rem;
 	margin-bottom: 3rem !important;
@@ -3342,7 +3296,6 @@ blockquote.border{
 }
 
 .authors{
-	font-family: 'SourceSans3-Medium', 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.5rem;
 	margin-top: -1.5rem;
 	color: black;
@@ -3351,7 +3304,6 @@ blockquote.border{
 	margin-bottom: -0.1rem;
 }
 .authors_abstract{
-	font-family: 'SourceSans3-Regular', 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-size: 1.2rem;
 	margin-top: -3rem;
 	color: black;
