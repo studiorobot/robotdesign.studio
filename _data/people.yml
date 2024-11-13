@@ -106,15 +106,6 @@ members:
     link: "link"
     standing: Undergrad
 
-  - name: Jeffrey Qiu
-    role: role
-    area: area
-    start_year: 2024
-    img: "people/masters/Jeffrey_Qiu.jpg"
-    university: uni
-    link: ""
-    standing: Undergrad
-
 collab:
   - name: Anastasia Kouvaras Ostrowski 
     role: Assistant Professor 
