@@ -1,3 +1,24 @@
+#this is the data file for lab member information
+
+#here is an example including all supported variables
+#make sure you start your section with a - and indent properly, also include it under the members section
+#if you have another relevant link, leave a comment by starting the line with # and include the link and I will try to support it.
+
+# - name: John Doe
+#   standing: Ph.D / Master / Undergrad
+#   major: Robotics, Psych, CS, etc
+#   university: UMich College of Engineering, LSA, etc
+#   joined: Winter 2024
+#   personal_website: https://example.com
+#   google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ
+#   linkedin: profile link
+#   github: profile link
+#   twitter: profile link
+#   youtube: profile link
+#   instagram: profile link
+#   facebook: profile linkk
+#   img: do not worry about this for now
+
 # _data/team.yml
 patricia:
   name: Patrícia Alves-Oliveira
@@ -95,26 +116,26 @@ members:
     standing: Undergrad
 
 collab:
-  - name: 
-    role: Visiting Student
-    university: uni
-    department: department
+  - name: Anastasia Kouvaras Ostrowski 
+    role: Assistant Professor 
+    university: Purdue University
+    department: Computer Graphics Technology
     img: people/collaborators/Anastasia_Ostrowski.jpg
-    link: link
+    link: https://www.akostrowski.com/
 
-  - name: name
-    role: Visiting Student
-    university: uni
-    department: department
+  - name: Peter Kahn
+    role: Professor
+    university: University of Washington
+    department: Psychology
     img: people/collaborators/Peter_Kahn.jpg
-    link: link
+    link: https://sites.uw.edu/hints/
 
-  - name: name
-    role: Visiting Student
-    university: uni
-    department: department
+  - name: Siddhartha Srinivasa
+    role: Professor
+    university: University of Washington
+    department: Computer Science & Engineering
     img: people/collaborators/Sidd_Srinivasa.jpg
-    link: link
+    link: https://goodrobot.ai/
 
 previous_members:
   - name: name
