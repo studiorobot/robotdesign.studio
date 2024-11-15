@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<!-- Content -->
+<div class="content clearfix">
+  <!-- Feature Column Section -->
+  <div class="section-block replicable-content">
+    <div class="row">
+      <div class="column width-12" style="padding-left:0px;">
+        <h1 class="mb-10">Papers</h1>
+        <p>We publish our research outcomes at conferences and journals such as CHI, UIST, ASSETS, TEI, IMWUT.</p>
+      </div>
+    </div>
+    {% assign publications = site.data.publications %}
+    {% for year in publications %}
+    <div class="row">
+      <h2>{{ year[0] }}</h2>
+    </div>
+    {% for paper in year[1] %}
+    <div class="row mb-10">
+      <div class="column width-11" style="padding-left:0px;">
+        <div class="column width-2" style="padding-left:0px; width:130px;">
+          <img class="regular-publication" src="{{ paper.img }}" alt="The first page of the paper" loading="lazy"
+            style="height:150px;" />
+        </div>
+        <div class="column width-10 publication-details">
+          <h5 style="font-size:1.25em; margin:0px;">{{ paper.title }}</h5>
+          <span class="authors">{{ paper.authors }} </span><br>
+          {{ paper.event }}
+          <br>
+          <a href="{{ paper.pdf }}" target="_blank" class="link-color"><i
+              class="far fa-file-pdf"></i>&nbsp;PDF</a>&nbsp;
+          <a href="{{ paper.doi }}" target="_blank" class="link-color"><i class="fas fa-external-link-alt"></i>DOI</a>
+          <br>Project: Aura (todo: redirect to project description)
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+  <!-- Content End -->

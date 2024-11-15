@@ -6,8 +6,63 @@ layout: default
 	{% include fullscreen-slider-section.html %}
 	<!-- Feature Column Section -->
 	<div class="section-block replicable-content">
-		{% include project_list.html project_data=site.data.projects title="Projects" %}
-		{% include project_list.html project_data=site.data.exploratory-projects title="Exploratory Projects" %}
+		<!-- Research Vision Section -->
+		<div class="row">
+			<!-- Sidebar: Research Vision Text -->
+			<h2 class="h4">Research Vision</h2>
+			<div class="column width-8" style="padding-left:0px;">
+				Our aim is to develop biologically inspired, general-purpose reasoning, planning, and control algorithms for
+				physical, compliant, and safe human-robot collaboration in real, dynamic environments. This research
+				direction is coined as Collaborative Planning and Control, where human biomechanical and cognitive behavior
+				models are taken explicitly into account for decision-making and control. It encompasses several short- and
+				long-term challenges, such as: (i) Learning multimodal representations from imperfect/noisy sensory
+				information. (ii) Modeling human behaviors, their cognitive skills, and interactive roles in the loop from a
+				handful of available data. (iii) Real-time, scalable decision-making using multimodal sensory information
+				and human behavior models in the loop under computational and safety constraints.
+			</div>
+			<!-- Content: Research Vision Image -->
+			<div class="column width-4">
+				<img class="img-fluid" src="img/research_vision.svg" alt="Research Vision" style="height:200px;">
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<h2>News</h2>
+		</div>
+		
+		{% for item in site.data.newnews %}
+			<div class="row">
+				<p><strong>{{ item.date }}:</strong>
+				{% assign description = item.description %}
+				
+				<!-- Initialize an index counter to track the links -->
+				{% assign link_index = 0 %}
+				
+				<!-- Loop through the links and replace each {{link}} with the corresponding link -->
+				{% for link in item.links %}
+					{% assign link_html = '<a href="' | append: link.url | append: '" style="color:blue;">' | append: link.text | append: '</a>' %}
+					
+					<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
+					{% assign description = description | replace_first: '{{link}}', link_html %}
+					
+					<!-- Increment the link index after each replacement -->
+					{% assign link_index = link_index | plus: 1 %}
+				{% endfor %}
+				
+				<!-- Output the final description with all {{link}} replaced -->
+				{{ description }}
+				</p>
+			</div>
+		{% endfor %}
+		<!-- join us-->
+		<br>
+		<div class="row">
+			<h2>JOIN US</h2>
+			<p style="color:#000;">{{ site.data.opportunities.intro.description }}
+				Check out our <a href="/projects.html" style="color:blue; text-decoration: underline;">projects</a> to learn
+				more.
+			</p>
+		</div>
 	</div>
 </div>
 <!-- Content End -->

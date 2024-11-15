@@ -38,7 +38,7 @@ Copyright: ThemeMountain
 
 -------------------------------------------------------------------*/
 
-@font-face {font-family: 'Futura'; src: url('../../branding/_Fonts/Futura.ttc');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Futura'; src: url('../../branding/_Fonts/Futura.ttc');font-weight:100;}
 @font-face {
   font-family: 'ABC';
   src: url('../fonts/ABCMaxiPlusVariable-Trial.woff2') format('woff2'),
@@ -53,15 +53,16 @@ body{
 	color: black;
 }
 h1, 
-h2 {
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
 	font-family: 'ABC';
 	font-weight:bold !important;
 }
 
-h3, 
-h4, 
-h5, 
-h6,
+
 input,
 button,
 .button,
@@ -76,7 +77,8 @@ textarea,
 .overlay-navigation > ul > li > a,
 .grid-filter-menu a, .de4mers-nav a,
 .counter{
-	font-family: 'SourceSans3-Medium','SourceSans3-Regular','Futura-Medium-bt', 'Lato', 'Helvetica Neue', sans-serif;
+	font-family: 'Futura';
+
 }
 
 /* Titles */

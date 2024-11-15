@@ -1,6 +1,4 @@
-- platform: Twitter
-  url: "https://twitter.com/de4mlab"
-  icon: "fa-brands fa-twitter"
-- platform: Instagram
-  url: "https://instagram.com/de4m.lab"
-  icon: "fa-brands fa-instagram"
+- platform: GitHub
+  url: https://github.com/studiorobot
+  icon: fab fa-github
+
