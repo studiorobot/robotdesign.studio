@@ -29,30 +29,25 @@ layout: default
 		<div class="row">
 			<h2>News</h2>
 		</div>
-		
 		{% for item in site.data.newnews %}
-			<div class="row">
-				<p><strong>{{ item.date }}:</strong>
+		<div class="row">
+			<strong>{{ item.date }}:</strong>
 				{% assign description = item.description %}
-				
 				<!-- Initialize an index counter to track the links -->
 				{% assign link_index = 0 %}
-				
 				<!-- Loop through the links and replace each {{link}} with the corresponding link -->
 				{% for link in item.links %}
-					{% assign link_html = '<a href="' | append: link.url | append: '" style="color:blue;">' | append: link.text | append: '</a>' %}
-					
-					<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
-					{% assign description = description | replace_first: '{{link}}', link_html %}
-					
-					<!-- Increment the link index after each replacement -->
-					{% assign link_index = link_index | plus: 1 %}
+				{% assign link_html = '<a href="' | append: link.url | append: '" style="color:blue;">' | append: link.text |
+					append: '</a>' %}
+				<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
+				{% assign description = description | replace_first: '{{link}}', link_html %}
+				<!-- Increment the link index after each replacement -->
+				{% assign link_index = link_index | plus: 1 %}
 				{% endfor %}
-				
 				<!-- Output the final description with all {{link}} replaced -->
 				{{ description }}
-				</p>
-			</div>
+		
+		</div>
 		{% endfor %}
 		<!-- join us-->
 		<br>
