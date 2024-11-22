@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!-- Content -->
+{% assign publications = site.data.publications %}
+<div class="content clearfix">
+  <!-- Feature Column Section -->
+  <div class="section-block replicable-content">
+    <div class="row">
+      <div class="column width-12">
+        <h1>Papers</h1>
+      <p> Lorem ipsum odor amet, consectetuer adipiscing elit. Arcu mi hac sed imperdiet netus. Vitae a sollicitudin sagittis commodo phasellus vel mattis.</p>  
+      </div>
+    </div>
+    {% for year in publications %}
+    <div class="row">
+      <div class="column width-12">
+        <div class="column width-1" style="padding-left:0px;">
+          <h2 style="font-size:3em;">{{ year[0] }}</h2>
+        </div>
+        <div class="column width-11"  style="padding:0px;">
+          {% for paper in year[1] %}
+          <div class="column width-11" style="margin-bottom: 10px;">
+            <div class="column width-2">
+              <img class="regular-publication" src="{{ paper.img }}" alt="The first page of the paper" loading="lazy"/>
+            </div>
+            <div class="column width-10 publication-details"  style="padding:0px;">
+              <h3 style="font-size:1.5em">{{ paper.title }}</h3>
+              <p class="authors" style="margin-bottom:0px;">{{ paper.authors }}<br><span style="font-size:0.9em;">{{ paper.event }}</span></p>
+              <ul style="margin:0px;">
+                <li class="publication-link"><a href="{{ paper.pdf }}" target="_blank" class="link-color"><i class="far fa-file-pdf"></i>&nbsp;PDF</a></li>
+                <li class="publication-link"><a href="{{ paper.doi }}" target="_blank" class="link-color"><i class="fas fa-external-link-alt"></i>DOI</a></li>
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- Content End -->

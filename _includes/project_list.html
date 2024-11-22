@@ -17,14 +17,34 @@
         </div>
         <div class="project-description column width-8">
          
-          <h5 style="margin:0px;">{{ project.title }}</h5>
+          <h5 style="margin:0px;">{{ project.name }}</h5>
           {% if project.area %}
           {{ project.area }}<br>
           {% endif %}
-         <span style="font-weight:bold" >{{ project.members }}</span>
+         <span style="font-weight:bold" >{{ project.members }}</span><br>
+         <div class="project-links-container" style="margin-top:5px;">
+          <span style="font-weight:bold" >{{ project.data }}</span>
 
-          {% if project.abstract %}
-          <p class="authors_abstract">{{ project.abstract }}</p>
+          <ul>
+            <li><strong>{{ project.conference }}</strong></li>
+            {% if project.pdf_link %}
+            <li><a href="{{ project.pdf_link }}" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;PDF</a></li>
+            {% endif %}
+            {% if project.acm_link %}
+            <li><a href="{{ project.acm_link }}" target="_blank"><i class="fas fa-external-link-alt"></i>ACM DL</a>
+            </li>
+            {% endif %}
+            {% if project.video_link %}
+            <li><a href="{{ project.video_link }}" target="_blank"><i class="fas fa-play"></i>&nbsp;Video</a></li>
+            {% endif %}
+            {% if project.code_link %}
+            <li><a href="{{ project.code_link }}" target="_blank"><i class="fas fa-code"></i>&nbsp;Code & Hardware
+                Design</a></li>
+            {% endif %}
+          </ul>
+        </div>
+          {% if project.description %}
+          <p class="authors_abstract">{{ project.description }}</p>
           {% endif %}
           {% if project.awards.size > 0 %}
           <span style="color: #d13131; font-size: 1.1rem;">
@@ -43,29 +63,7 @@
           </span>
           {% endfor %}
           {% endif %}
-          <div class="project-links-container" style="margin-top:5px;">
-            <ul>
-              <li><strong>{{ project.conference }}</strong></li>
-              {% if project.pdf_link %}
-              <li><a href="{{ project.pdf_link }}" target="_blank"><i class="far fa-file-pdf"></i>&nbsp;PDF</a></li>
-              {% endif %}
-              {% if project.acm_link %}
-              <li><a href="{{ project.acm_link }}" target="_blank"><i class="fas fa-external-link-alt"></i>ACM DL</a>
-              </li>
-              {% endif %}
-              {% if project.video_link %}
-              <li><a href="{{ project.video_link }}" target="_blank"><i class="fas fa-play"></i>&nbsp;Video</a></li>
-              {% endif %}
-              {% if project.code_link %}
-              <li><a href="{{ project.code_link }}" target="_blank"><i class="fas fa-code"></i>&nbsp;Code & Hardware
-                  Design</a></li>
-              {% endif %}
-            </ul>
-          </div>
-          Funding<br>
-          Collaborated with...<br>
-
-          (todo match video height to content height)
+       
         </div>
 
       </div>

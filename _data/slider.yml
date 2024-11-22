@@ -1,13 +1,13 @@
 slides:
   - title: "Design."
     description: "We look around and draw inspirations from nature, everyday objects, machinery, and artwork to create functional designs, enabling people to achieve impossible."
-    image: "img/design_collage.jpg"
+    image: "img/carrousel/sketch.jpg"
     overlay_opacity: 0.7
   - title: "Engineer."
     description: "We build interactive tools and devices that mediate people with digital information, virtual space, and physical environment through sensing, computation, and digital fabrication."
-    image: "img/engineer_collage.jpg"
+    image: "img/carrousel/fabrication.jpg"
     overlay_opacity: 0.3
   - title: "Make."
     description: "We make end-to-end pipelines intelligent and accessible to contextualize the needs from creators and users in applications."
-    image: "img/make_collage.jpg"
+    image: "img/carrousel/emar.png"
     overlay_opacity: 0.3
