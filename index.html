@@ -5,11 +5,11 @@ layout: default
 <div class="content clearfix">
 	{% include fullscreen-slider-section.html %}
 	<!-- Feature Column Section -->
-	<div class="section-block replicable-content">
+	<div class="section-block" style="padding-top: 20px;">
 		<!-- Research Vision Section -->
 		<div class="row">
 			<!-- Sidebar: Research Vision Text -->
-			<h2 class="h4">Research Vision</h2>
+			<h2  style="margin-bottom:10px;">Research Vision</h2>
 			<div class="column width-8" style="padding-left:0px;">
 				Our aim is to develop biologically inspired, general-purpose reasoning, planning, and control algorithms for
 				physical, compliant, and safe human-robot collaboration in real, dynamic environments. This research
@@ -27,7 +27,7 @@ layout: default
 		</div>
 		<br>
 		<div class="row">
-			<h2>News</h2>
+			<h2  style="margin-bottom:10px;">News</h2>
 		</div>
 		{% for item in site.data.news %}
 		<div class="row">
@@ -52,7 +52,7 @@ layout: default
 		<!-- join us-->
 		<br>
 		<div class="row">
-			<h2>JOIN US</h2>
+			<h2  style="margin-bottom:10px;">JOIN US</h2>
 			<p style="color:#000;">{{ site.data.opportunities.intro.description }}
 				Check out our <a href="/projects.html" style="color:blue; text-decoration: underline;">projects</a> to learn
 				more.
