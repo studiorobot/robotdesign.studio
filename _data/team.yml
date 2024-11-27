@@ -2,7 +2,7 @@ patricia:
   name: Patrícia Alves-Oliveira
   role: Director of Robot Studio
   title: Ph.D., Assistant Professor of Robotics
-  affiliated: Affiliated Faculty at MIDAS and UM ESC
+  affiliated: "Affiliated Faculty at <a href='https://midas.umich.edu/'>MIDAS</a> and <a href='https://esc.umich.edu/'>ESC</a>"
   advisor: Research Advisor at Open Style Lab
   email: robopati@umich.edu
   website: https://patricialvesoliveira.com/
@@ -88,7 +88,7 @@ members:
    linkedin: https://www.linkedin.com/in/guanling-chen/
    img: team/masters/GuanLing_Chen_Masters.jpeg
 
- - name: Ilkyaz Sarimehmetoglu
+ - name: "<span style='font-size:14px !important'>Ilkyaz Sarimehmetoglu</span>"
    standing: Masters
    major: <br>Digital and Material Technologies
    university: Taubman College
@@ -192,35 +192,30 @@ collab:
     university: University of Michigan
     department: Robotics
     img: team/collab/Abhishek_Narula_External_Collaborator.jpg
-    link: https://www.akostrowski.com/
 
   - name: Anastasia Kouvaras Ostrowski 
     role: Assistant Professor 
     university: Purdue University
     department: Computer Graphics Technology
     img: team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
-    link: https://www.akostrowski.com/
 
   - name: Leia Stirling
     role: Associate Professor
     university: University of Michigan
     department: Industrial and Operations Engineering
     img: team/collab/Leia_Stirling_External_Collaborator.jpg
-    link: https://www.akostrowski.com/
 
   - name: Peter Kahn
     role: Full Professor
     university: University of Washington
     department: Psychology
     img: team/collab/Peter_Kahn_External_collaborator.jpeg
-    link: https://sites.uw.edu/hints/
 
   - name: Siddhartha Srinivasa
     role: Full Professor
     university: University of Washington
     department: Computer Science and Engineering
     img: team/collab/Sidd_Srinivasa_External_Collaborator.jpg
-    link: https://goodrobot.ai/
 
 
 #alumni:

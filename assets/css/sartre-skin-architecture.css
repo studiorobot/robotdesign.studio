@@ -53,13 +53,16 @@ body{
 	color: black;
 }
 h1, 
-h2,
+h2 {
+	font-family: 'ABC';
+	font-weight:bold !important;
+}
 h3, 
 h4, 
 h5, 
 h6 {
-	font-family: 'ABC';
-	font-weight:bold !important;
+font-family:'Futura';
+font-weight: bold !important;
 }
 
 
