@@ -38,7 +38,7 @@
   data: 2024 - ongoing
   description: In Physical Human-Robot Interaction (pHRI), robotic touch and how to improve such physical interactions between people and robots has become an emerging field of study. The role of touch in humans has proven to be an important part of our development and many studies have indicated that human touch offers many benefits including improving mental and physical health, reducing stress and alleviating depression, and communicating cooperation and trust between people. These positive effects from touch may also be elicited from non-human agents like robots. In this project, we aim to design a comfortable, safe, and intuitive touch interaction from the robot to the human during medical emergency scenario. We aim to study what types of communication styles, embodiment factors, and touch parameters are best suited for an assistive robot that delivers care during a medical emergency.
   keywords: assistive, physical health
-  poster: projects/placeholder.jpeg
+  poster: projects/temp.png
 
 - id: 6
   name: "RELATE: Key-Moments in Long-Term Relationship with Social Robots"
