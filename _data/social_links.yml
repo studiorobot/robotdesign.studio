@@ -1,4 +1,5 @@
 - platform: GitHub
   url: https://github.com/studiorobot
+  name: GitHub
   icon: fab fa-github
 
