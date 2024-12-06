@@ -20,7 +20,7 @@ layout: default
             <img style="border: 2px solid #cecece; margin-top:0px;" src="{{ news_item.image }}"
               alt="{{ news_item.alt_text }}" loading="lazy" />
           </div>
-          <div class="column width-10" style="padding:10px; padding-left:0px;">
+          <div class="column width-10 text" style="padding:10px; padding-left:0px;">
             <h5 style="font-size:16px; margin-bottom: 0px;"> {{ news_item.content }}</h5>
             {{ news_item.title }}, {{ news_item.date }}<br>
 
@@ -40,5 +40,13 @@ layout: default
     position: absolute;
     bottom: 10px;
     width: 100vw;
+  }
+</style>
+
+<style>
+  @media (max-width: 767px) {
+    .text {
+      margin-left: 15px;
+    }
   }
 </style>
