@@ -68,7 +68,7 @@ members:
 
  - name: Erfun Ackley
    standing: Masters
-   major: Performing Arts Technology
+   major: Performing Arts Tech
    university: University of Michigan
    project: Droodles
    joined: Spring 2024
@@ -81,7 +81,7 @@ members:
 
  - name: Guan-Ling Chen
    standing: Masters
-   major: <br>Computer Graphics Technology
+   major: Computer Graphics Tech
    university: Purdue University
    project: Future
    joined: Fall 2024
@@ -90,7 +90,7 @@ members:
 
  - name: "<span style='font-size:14px !important'>Ilkyaz Sarimehmetoglu</span>"
    standing: Masters
-   major: <br>Digital and Material Technologies
+   major: Digital and Material Tech
    university: Taubman College
    project: Vista
    joined: Fall 2024
@@ -196,7 +196,7 @@ collab:
   - name: Anastasia Kouvaras Ostrowski 
     role: Assistant Professor 
     university: Purdue University
-    department: Computer Graphics Technology
+    department: Computer Graphics Tech
     img: team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
 
   - name: Leia Stirling

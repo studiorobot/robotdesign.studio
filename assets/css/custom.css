@@ -80,3 +80,14 @@ video[poster]{
 .publication-link{
   display:inline; margin-right: 10px;
 }
+
+
+.news-item {
+  display: block;
+  background-color: rgb(255, 255, 255) !important; /* Initial background color */
+  transition: background-color 0.7s ease !important;  /* Smooth background color transition */
+}
+
+.news-item:hover {
+  background-color: #f0f0f0 !important; /* Change to the desired hover color */
+}

@@ -9,26 +9,26 @@ layout: default
     <div class="section-block replicable-content">
       <div class="row">
         <div class="column width-12" style="margin-bottom:10px;">
-          <h1 style="margin-bottom:0px;">Press</h1>
+          <h1 style="margin-bottom:0px;font-size:3em;">Press</h1>
         </div>
       </div>
 
       {% for news_item in site.data.press %}
-      <div class="row">
-        <a href={{ news_item.link }} target="_blank">
-          <div class="column width-12" style="margin-bottom:10px; padding-left:0px;">
-            <div class="column width-2">
-              <img style="border: 2px solid #cecece; margin-top:0px;" src="{{ news_item.image }}"
-                alt="{{ news_item.alt_text }}" loading="lazy" />
-            </div>
-            <div class="column width-10" style="padding-left:0px;">
-              <h5 style="text-transform:none; margin-bottom: 0px;">{{ news_item.title }}</h5>
-              {{ news_item.date }}<br> {{ news_item.content }}
-
-            </div>
+      <a href={{ news_item.link }} target="_blank">
+        <div class="row news-item">
+        <div class="column width-12" style="margin-bottom:10px; padding-left:0px;">
+          <div class="column width-2">
+            <img style="border: 2px solid #cecece; margin-top:0px;" src="{{ news_item.image }}"
+              alt="{{ news_item.alt_text }}" loading="lazy" />
           </div>
-        </a>
+          <div class="column width-10" style="padding:10px; padding-left:0px;">
+            <h5 style="font-size:16px; margin-bottom: 0px;"> {{ news_item.content }}</h5>
+            {{ news_item.title }}, {{ news_item.date }}<br>
+
+          </div>
+        </div>
       </div>
+      </a>
       {% endfor %}
     </div>
   </div>

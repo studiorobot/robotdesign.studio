@@ -1,6 +1,6 @@
 <div class="row">
   <div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;" data-threshold="1">
-    <h2 class="mb-10">{{ include.title }}</h2>
+    <h2 class="mb-10" style="font-size:3em;">{{ include.title }}</h2>
   </div>
 </div>
 <div class="row">
@@ -15,15 +15,15 @@
             <source type="video/mp4" src="{{ project.video_mp4 }}">
           </video>
         </div>
-        <div class="project-description column width-8">
+        <div class="project-description column width-8" style="padding:10px;">
          
-          <h5 style="margin:0px;">{{ project.name }}</h5>
+          <h5 style="margin:0px; margin-bottom:5px; font-size:16px;">{{ project.name }}</h5>
           {% if project.area %}
           {{ project.area }}<br>
           {% endif %}
-         <span style="font-weight:bold" >{{ project.members }}</span><br>
+         <span style="font-size:15px;">{{ project.members }}</span><br>
          <div class="project-links-container" style="margin-top:-4px;">
-          <span style="font-weight:bold; margin-bottom:-1px;" >{{ project.data }}</span>
+          <span style=" margin-bottom:-1px; font-size:14px;" >{{ project.data }}</span>
 
           <ul>
             <li><strong>{{ project.conference }}</strong></li>
@@ -44,7 +44,7 @@
           </ul>
         </div>
           {% if project.description %}
-          <p class="authors_abstract">{{ project.description }}</p>
+          <p class="authors_abstract" style="font-size: 14px;">{{ project.description }}</p>
           {% endif %}
           {% if project.awards.size > 0 %}
           <span style="color: #d13131; font-size: 1.1rem;">
