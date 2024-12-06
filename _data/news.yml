@@ -1,37 +1,67 @@
-- date: "October 29th, 2024"
-  description: "{{link}} on the complexity of social navigation scenarios accepted to RLC!"
+- date: March 7, 2022
+  description: Organized HRI 2022 workshop on {{link}}.
   links:
-    - text: "Paper"
-      url: "https://arxiv.org/abs/2405.11410"
+    - text: theory-grounded HRI
+      url: https://theoriahri.wixsite.com/theoria
 
-- date: "October 7th, 2024"
-  description: "New {{link}} on multi-object rearrangement via nonholonomic pushing."
+- date: March 7, 2022
+  description: Paper accepted to {{link}} on robot-induced emotions and creativity.
   links:
-    - text: "preprint"
-      url: "https://arxiv.org/abs/2409.18231"
+    - text: HRI 2022
+      url: https://humanrobotinteraction.org/2022/
 
-- date: "July 19th, 2024"
-  description: "Best paper {{link}} at the RSS social navigation {{link}}."
+- date: November 9th, 2021
+  description: Paper accepted to {{link}} on robot programs.
   links:
-    - text: "award"
-      url: "https://arxiv.org/abs/2405.11410"
-    - text: "workshop"
-      url: "https://unsolvedsocialnav.org"
+    - text: PLATEAU 2021
+      url: https://2021.plateau-workshop.org
 
-- date: "May 14th, 2024"
-  description: "{{link}} accepted to RSS."
-  links:
-    - text: "Paper"
-      url: "https://arxiv.org/abs/2311.11199"
+- date: October 26th, 2021
+  description: Paper accepted to Frontiers on {{link}}.
+  links: 
+    - text: VR as a collaborative robot design tool
+      url: https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2021.746521/full
 
-- date: "October 1st, 2023"
-  description: "Paper presentations [{{link}},{{link}}] and workshop talks [{{link}},{{link}}] at IROS."
-  links:
-    - text: "1"
-      url: "/pdfs/poddar2023pred2nav.pdf"
-    - text: "2"
-      url: "/pdfs/taliathareja2023pushr.pdf"
-    - text: "1"
-      url: "https://www.lastmilerobotics.dfl.ae/"
-    - text: "2"
-      url: "https://seanavbench23.pages.dev/"
+- date: October 1st, 2021
+  description: Paper accepted to {{link}} on {{link}}.
+  links: 
+    - text: CoRL 2021
+      url: https://2021.corl.org/
+    - text: robot nodding behavior
+      url: https://openreview.net/forum?id=0WDtVJVwBcf
+
+- date: June 6th, 2021
+  description: "{{link}} accepted at the Journal of Creative Behavior"
+  links: 
+    - text: Systematic review paper
+      url: https://onlinelibrary.wiley.com/doi/10.1002/jocb.514
+
+- date: April 9th, 2021
+  description: Paper accepted to {{link}} on {{link}} - {{link}}.
+  links: 
+    - text: DIS 2021
+      url: https://dis.acm.org/2021/
+    - text: robot metaphors
+      url: "https://dl.acm.org/doi/10.1145/3461778.3462060"
+    - text: video
+      url: https://www.youtube.com/watch?v=JpDV9FF3Sf0
+
+- date: April 9th, 2021
+  description: Paper accepted to {{link}} on {{link}} - {{link}}
+  links: 
+    - text: C&C 2021
+      url: https://dis.acm.org/2021/
+    - text: robotics-based interventions
+      url: https://dl.acm.org/doi/fullHtml/10.1145/3450741.3465267
+    - text: video
+      url: https://www.youtube.com/watch?v=6T-QjgF1AEo
+  
+- date: March 9th, 2021
+  description: Best Paper Award to {{link}} on {{link}} - {{link}}
+  links: 
+    - text: HRI 2021
+      url: https://humanrobotinteraction.org/2021/awards/
+    - text: children as robot designers
+      url: https://dl.acm.org/doi/abs/10.1145/3434073.3444650
+    - text: video
+      url: https://www.youtube.com/watch?v=E2trLGclTc8&feature=youtu.be

@@ -16,7 +16,7 @@ layout: default
 			</div>
 			<!-- Content: Research Vision Image -->
 			<div class="column width-4">
-				<img class="img-fluid" src="img/research_vision.svg" alt="Research Vision" style="height:200px;">
+				<!--<img class="img-fluid" src="img/research_vision.svg" alt="Research Vision" style="height:200px;">-->
 			</div>
 		</div>
 		
@@ -31,7 +31,7 @@ layout: default
 				{% assign link_index = 0 %}
 				<!-- Loop through the links and replace each {{link}} with the corresponding link -->
 				{% for link in item.links %}
-				{% assign link_html = '<a href="' | append: link.url | append: '" style="color:blue;">' | append: link.text |
+				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '" style="color:blue;">' | append: link.text |
 					append: '</a>' %}
 				<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
 				{% assign description = description | replace_first: '{{link}}', link_html %}
@@ -48,7 +48,7 @@ layout: default
 		<div class="row">
 			<h2  style="margin-bottom:10px;">JOIN US</h2>
 			<p style="color:#000;">{{ site.data.opportunities.intro.description }}
-				Check out our <a href="/projects.html" style="color:blue; text-decoration: underline;">projects</a> to learn
+				Check out our <a href="projects.html" style="color:blue; text-decoration: underline;">projects</a> to learn
 				more.
 			</p>
 		</div>
