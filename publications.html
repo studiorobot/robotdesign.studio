@@ -9,27 +9,54 @@ layout: default
     <div class="row">
       <div class="column width-12">
         <h1 style="font-size: 3em;">Publications</h1>
-      <p style="font-size:15.5px;"> We publish our research outcomes at conferences and journals in the field of Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.</p>  
+        <p style="font-size:15.5px;">We publish our research outcomes at conferences and journals in the field of Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.</p>
       </div>
     </div>
-    {% for year in publications %}
+    
+    {% for year in publications reversed %}
     <div class="row">
       <div class="column width-12">
         <div class="column width-1" style="padding-left:0px;">
           <h2 style="font-size:3em;">{{ year[0] }}</h2>
         </div>
-        <div class="column width-11"  style="padding:0px;">
-          {% for paper in year[1] %}
-          <div class="column width-12" style="margin-bottom: 10px; ">
+        <div class="column width-11" style="padding:0px;">
+          {% for paper in year[1] reversed %}
+          <div class="column width-12" style="margin-bottom: 10px;">
             <div class="column width-2">
-              <img class="regular-publication" src="{{ paper.img }}" alt="The first page of the paper" loading="lazy"/>
+              {% if paper.img %}
+                <img class="regular-publication" src="{{ site.baseurl }}/{{ paper.img }}" alt="The first page of the paper" loading="lazy"/>
+              {% endif %}
             </div>
-            <div class="column width-10 publication-details"  style="padding:0px;">
-              <h3 style="font-size: 16px;">{{ paper.title }}</h3>
-              <p class="authors" style="margin-bottom:0px; font-size:15px;">{{ paper.authors }}<br><span style="font-size:14px;">{{ paper.event }}</span></p>
+            <div class="column width-10 publication-details" style="padding:0px;">
+              {% if paper.title %}
+                <h3 style="font-size: 16px;">{{ paper.title }}</h3>
+              {% endif %}
+              
+              {% if paper.authors %}
+                <p class="authors" style="margin-bottom:0px; font-size:15px;">
+                  {{ paper.authors }}
+                  {% if paper.event %}
+                    <br><span style="font-size:14px;">{{ paper.event }}</span>
+                  {% endif %}
+                </p>
+              {% endif %}
+              
               <ul style="margin:0px;">
-                <li class="publication-link"><a href="{{ paper.pdf }}" target="_blank" class="link-color"><i class="far fa-file-pdf"></i>&nbsp;PDF</a></li>
-                <li class="publication-link"><a href="{{ paper.doi }}" target="_blank" class="link-color"><i class="fas fa-external-link-alt"></i>DOI</a></li>
+                {% if paper.pdf %}
+                  <li class="publication-link">
+                    <a href="{{ site.baseurl }}/archive/{{ paper.pdf }}" target="_blank" class="link-color">
+                      <i class="far fa-file-pdf"></i>&nbsp;PDF
+                    </a>
+                  </li>
+                {% endif %}
+                
+                {% if paper.doi %}
+                  <li class="publication-link">
+                    <a href="{{ paper.doi }}" target="_blank" class="link-color">
+                      <i class="fas fa-external-link-alt"></i>DOI
+                    </a>
+                  </li>
+                {% endif %}
               </ul>
             </div>
           </div>

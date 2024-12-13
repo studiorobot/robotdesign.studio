@@ -1,3 +1,12 @@
-<div  id="footer" style="margin:0 auto; text-align: center; margin-bottom:10px;">
-    © 2024 Robot Studio. Design inspired by <a href="https://de4m.xyz/" target="_blank">DE4M Lab</a>.
+<div id="footer" style="margin:0 auto; text-align: center; margin-bottom:10px;">
+
+        
+        © 2024 Robot Studio. Website design adapted from DE4M Lab.
+        {% for link in site.data.social_links %}
+        <a href="{{ link.url }}" target="_blank">
+            <i class="{{ link.icon }}"></i> {{ link.name }}
+        </a>
+        {% endfor %}
+
+
 </div>

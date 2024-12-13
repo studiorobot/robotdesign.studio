@@ -1,3 +1,7 @@
+- platform: LinkedIn
+  url: https://www.linkedin.com/company/robot-studio-design/
+  name: LinkedIn
+  icon: fab fa-linkedin
 - platform: GitHub
   url: https://github.com/studiorobot
   name: GitHub
