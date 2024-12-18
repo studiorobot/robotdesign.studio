@@ -1,13 +1,13 @@
 slides:
   - title: human&#8209;robot&nbsp;interaction
-    description: "We create robots that enable meaningful and magical connections with humans"
+    description: "We create robots that enable meaningful<br>and magical connections with humans"
     image: "img/carrousel/sketch.jpg"
     overlay_opacity: 0.7
   - title: "multidisciplinarity"
-    description: "Our work happens at the intersection of robotics, design, and psychology"
+    description: "Our work happens at the intersection<br>of robotics, design, and psychology"
     image: "img/carrousel/fabrication.jpg"
     overlay_opacity: 0.3
   - title: "health and arts"
-    description: We apply robots to empower human health and propel the study of arts
+    description: We apply robots to empower human<br>health and propel the study of arts
     image: "img/carrousel/emar.png"
     overlay_opacity: 0.3
