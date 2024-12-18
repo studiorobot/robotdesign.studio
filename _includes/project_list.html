@@ -8,9 +8,9 @@
     <div class="row" id="projects">
       {% for project in include.project_data %}
       <div class="row mt-20 aproject" id="project{{ project.id }}" class="project-container">
-        <div class="column width-4" onmouseover="PlayVideo({{ project.id }})" style="height:100% !important;"
+        <div class="column width-4" onmouseover="PlayVideo({{ project.id }})"  style="margin-top:15px; margin-bottom:10px; "
           onmouseleave="StopVideoPlay({{ project.id }})">
-          <video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}" style="height:100%;">
+          <video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}" >
             <source type="video/webm" src="{{ project.video_webm }}">
             <source type="video/mp4" src="{{ project.video_mp4 }}">
           </video>
