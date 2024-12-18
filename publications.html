@@ -24,7 +24,9 @@ layout: default
           <div class="column width-12" style="margin-bottom: 10px;">
             <div class="column width-2">
               {% if paper.img %}
-                <img class="regular-publication" src="{{ site.baseurl }}/{{ paper.img }}" alt="The first page of the paper" loading="lazy"/>
+                <img class="regular-publication" src="pdf-covers/{{paper.img}}" alt="The first page of the paper" loading="lazy"/>
+              {% else %}
+              <span style=" width: 100%;">&nbsp;</span>
               {% endif %}
             </div>
             <div class="column width-10 publication-details" style="padding:0px;">
@@ -44,7 +46,7 @@ layout: default
               <ul style="margin:0px;">
                 {% if paper.pdf %}
                   <li class="publication-link">
-                    <a href="{{ site.baseurl }}/archive/{{ paper.pdf }}" target="_blank" class="link-color">
+                    <a href="archive/{{ paper.pdf }}" target="_blank" class="link-color">
                       <i class="far fa-file-pdf"></i>&nbsp;PDF
                     </a>
                   </li>

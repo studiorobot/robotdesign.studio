@@ -2,8 +2,9 @@
   url: "projects.html"
 - title: "team"
   url: "team.html"
-#- title: "publications"
-#  url: "publications.html"
+- title: "publications"
+  url: "publications.html"
 - title: "press"
   url: "press.html"
-
+- title: "join us"
+  url: "join-us.html"
