@@ -47,7 +47,7 @@ etc.:
   - title: 'From Thalamus to Skene: High-level behaviour planning and managing for mixed-reality characters'
     authors: Tiago Ribeiro, André Pereira, Eugenio Di Tullio, Patricia Alves-Oliveira, Ana Paiva
     event: Workshop on Architectures and Standards for IVAs, held at the 14th International Conference on Intelligent Virtual Agents (IVA 2014)
-    doi: 
+    doi: https://doi.org/10.2390/biecoll-wasiva2014-04
     pdf: 9.pdf
     img: 9.png
 2015:
@@ -199,7 +199,7 @@ etc.:
   - title: 'Psychological Science in HRI: Striving for a More Integrated Field of Research'
     authors: Patrícia Alves-Oliveira, Dennis Küster, Arvid Kappas, Ana Paiva
     event: AAAI Fall Symposia
-    doi: 
+    doi: http://dx.doi.org/10.13140/RG.2.2.21549.49129
     pdf: 34.pdf
     img: 34.png
 2017:
@@ -213,8 +213,8 @@ etc.:
     authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
     event: Proc. 26th IEEE Int. Symp. Robot and Human Interactive Communication (RO-MAN 2017)
     doi: 
-    pdf: 
-    img: 
+    pdf: 36.pdf
+    img: 36.png
   - title: 'Cubus: Autonomous embodied characters to stimulate creative idea generation in groups of children'
     authors: André Pires, Patrícia Alves-Oliveira, Patrícia Arriaga, Carlos Martinho
     event: 'Intelligent Virtual Agents: 17th International Conference, IVA 2017, Stockholm, Sweden, August 27-30, 2017, Proceedings 17'
