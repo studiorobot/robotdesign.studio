@@ -229,7 +229,7 @@ a.animated-link{
 a, 
 p a,
 .box a:not(.button){
-	color: #232323;
+	color: #007DED;
 }
 .sidebar .widget a,
 .shop .product-summary a,
@@ -260,7 +260,8 @@ p a:hover,
 .footer .navigation a:hover,
 .footer .social-list a:hover,
 .footer .footer-bottom a:hover{
-	color: #a0c9cc;
+	text-decoration: underline;
+	color: #007DED;
 }
 a[class*="icon-"]:hover{
 	text-decoration: none;

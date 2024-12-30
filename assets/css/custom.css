@@ -3,10 +3,7 @@
   margin-right: 10px;
 }
 
-.project-links-container ul li a {
-  border: none;
-  color: #3b87c1;
-}
+
 
 
 .project-links-container {
@@ -73,9 +70,7 @@ video[poster]{
 .publication-links ul li{
   display:inline !important; margin-right: 10px;
 }
-.link-color{
-  border: none; color: #3b87c1;
-}
+
 
 .publication-link{
   display:inline; margin-right: 10px;

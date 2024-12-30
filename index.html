@@ -31,7 +31,7 @@ layout: default
 				{% assign link_index = 0 %}
 				<!-- Loop through the links and replace each {{link}} with the corresponding link -->
 				{% for link in item.links %}
-				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '" style="color:blue;">' | append: link.text |
+				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text |
 					append: '</a>' %}
 				<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
 				{% assign description = description | replace_first: '{{link}}', link_html %}

@@ -24,7 +24,7 @@
   poster: projects/active/guardian/thumbnail.jpg
 
 - id: 12 
-  name: "DELICIOUS: Assistive Robotics for People with Physical Disabilities during Social Dining"
+  name: "DELICIOUS: Assistive Robotics for People with Disabilities during Social Dining"
   members: Atharva Kashyap
   data: 2024 - ongoing
   description: Social Dining, or eating within a group, is a universal meaningful experience that brings people together. This project leverages foundational models to develop an assistive feeding system that can more efficiently understand the user and address their individual needs. By promoting independent eating, people with physical disabilities can take a seat in professional dinners that can advance their career, and feel comfortable accepting invitations to eat with a group of friends to strengthen social connections.

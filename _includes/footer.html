@@ -3,9 +3,7 @@
         
         © 2024 Robot Studio. Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M Lab</a>.
         {% for link in site.data.social_links %}
-        <a href="{{ link.url }}" target="_blank">
-            <i class="{{ link.icon }}"></i> {{ link.name }}
-        </a>
+        <i class="{{ link.icon }}"></i>  <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
         {% endfor %}
 
 
