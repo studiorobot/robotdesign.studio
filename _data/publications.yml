@@ -1,35 +1,7 @@
-etc.:
-  - title: The Empathic Robotic Tutor
-    authors: Tiago Ribeiro, Patrícia Alves-Oliveira, Eugenio di Tullio, Sofia Petisca, Pedro Sequeira, Amol Deshmukh, Srinivasan Janarthanam, Mary Ellen Foster, Aidan Jones, Lee J Corrigan, Fotios Papadopoulos, Helen Hastie, Ruth Aylett, Ginevra Castellano, Ana Paiva
-    doi: https://doi.org/10.1145/2701973.2702100
-    pdf: 1.pdf
-    img: 1.png
-  - title: "A big applause for Cubus: A virtual sandbox to stimulate ideas in children"
-    authors: André Pires, Patrícia Alves-Oliveira, Carlos Martinho
-    doi:
-    pdf: 2.pdf
-    img: 2.png
-  - title: Social robots for creativity stimulation in children
-    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
-    doi:
-    pdf: 3.pdf
-    img: 3.png
-  - title: 'YOLO: A Robot Designed to Boost Creativity in Children'
-    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
-    doi: 
-    pdf: 4.pdf
-    img: 4.png
-  - title: "Session details: Paper Session: Creative Kids"
-    authors: Patrícia Alves-Oliveira
-    event: "C&C '21: Proceedings of the 13th Conference on Creativity and Cognition"
-    doi: https://doi.org/10.1145/3471511
-    pdf: 
-    img: 
 2014:
   - title: How do you imagine robots? Children’s expectations about robots
     authors: Patrícia Alves-Oliveira, Sofia Petisca, Srinivasan Janarthanam, Helen Hastie, Ana Paiva
     event: 'Interaction Design and Children Workshop on Child-Robot Interaction: Social Bonding, Learning and Ethics'
-    doi:
     pdf: 6.pdf
     img: 6.png  
   - title: Towards dialogue dimensions for a robotic tutor in collaborative learning scenarios
@@ -41,7 +13,6 @@ etc.:
   - title: "Meet me halfway: Eye behaviour as an expression of robot's language"
     authors: Patrícia Alves-Oliveira, Eugenio Di Tullio, Tiago Ribeiro, Ana Paiva
     event: 2014 AAAI fall symposium series
-    doi:
     pdf: 8.pdf
     img: 8.png
   - title: 'From Thalamus to Skene: High-level behaviour planning and managing for mixed-reality characters'
@@ -78,15 +49,8 @@ etc.:
   - title: 'Challenges in child-robot interaction: The cases of two research projects'
     authors: Patrícia Alves-Oliveira, Ana Paiva
     event: Evaluating Child Robot Interaction at ICSR 2015
-    doi: 
     pdf: 14.pdf
     img: 14.png
-  - title: “It’s amazing, we are all feeling it!”
-    authors: Patrícia Alves-Oliveira, Pedro Sequeira, ED Tullio, Sofia Petisca, Carla Guerra, Francisco S Melo, Ana Paiva
-    event: Emotional Climate as a Group-Level Emotional Expression in HRI, AAAI Fall Symposium Series
-    doi: 
-    pdf: 15.pdf
-    img: 15.png
   - title: 'The Empathic Robotic Tutor: Featuring the NAO Robot'
     authors: Tiago Ribeiro, Patrícia Alves-Oliveira, Eugenio Di Tullio, Sofia Petisca, Pedro Sequeira, Amol Deshmukh, Srinivasan Janarthanam, Mary Ellen Foster, Aidan Jones, Lee J Corrigan, Fotios Papadopoulos, Helen Hastie, Ruth Aylett, Ginevra Castellano, Ana Paiva
     event: Proceedings of the Tenth Annual ACM/IEEE International Conference on Human-Robot Interaction Extended Abstracts
@@ -102,7 +66,6 @@ etc.:
   - title: "It's Amazing, We Are All Feeling It!—Emotional Climate as a Group-Level Emotional Expression in HRI"
     authors: Patrícia Alves-Oliveira, Pedro Sequeira, Eugenio Di Tullio, Sofia Petisca, Carla Guerra, Francisco S Melo, Ana Paiva
     event: 2015 AAAI Fall Symposium Series
-    doi: 
     pdf: 18.pdf
     img: 18.png
 2016:
@@ -115,7 +78,6 @@ etc.:
   - title: Synthesizing robotic handwriting motion by learning from human demonstrations
     authors: Hang Yin, Patrícia Alves-Oliveira, Francisco S Melo, Aude Billard, Ana Paiva
     event: Proceedings of the 25th International Joint Conference on Artificial Intelligence
-    doi: 
     pdf: 20.pdf
     img: 20.png
   - title: A study on trust in a robotic suitcase
@@ -212,7 +174,6 @@ etc.:
   - title: 'Representation of movement for robots with personality: A co-design study with small groups of children'
     authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
     event: Proc. 26th IEEE Int. Symp. Robot and Human Interactive Communication (RO-MAN 2017)
-    doi: 
     pdf: 36.pdf
     img: 36.png
   - title: 'Cubus: Autonomous embodied characters to stimulate creative idea generation in groups of children'
@@ -224,13 +185,11 @@ etc.:
   - title: Social and entertainment robots for older adults
     authors: Filipa Correia, Patrícia Alves-Oliveira, Sofia Petisca, Ana Paiva
     event: 'Workshop on Human-Centered Robotics: Interaction, Physiological Integration and Autonomy in Conjunction with the Robotics: Science and Systems Conference'
-    doi: 
     pdf: 38.pdf
     img: 38.png
   - title: 'Groups of Humans and Robots: the AMIGOS Project'
     authors: Filipa Correia, Patrícia Arriaga, Sofia Petisca, Patrícia Alves-Oliveira, Raquel Oliveira, Samuel Mascarenhas, Iolanda Leite, Francisco S Melo, Ana Paiva
     event: Workshop on Groups in Human-Robot Interaction, The 26th IEEE International Symposium on Robot and Human Interactive Communication
-    doi: 
     pdf: 39.pdf
     img: 39.png
   - title: A social robot as a card game player
@@ -239,24 +198,10 @@ etc.:
     doi: https://doi.org/10.1609/aiide.v13i1.12936
     pdf: 40.pdf
     img: 40.png
-  - title: Measuring Creativity Stimulation with Cubus
-    authors: André Pires, Patrícia Alves-Oliveira, Patrícia Arriaga, Carlos Martinho
-    event: 
-    doi: 
-    pdf: 
-    img: 
-  - title: Designing and Programming Robots to Unlock Creativity
-    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Sara Ibérico-Nogueira, Ana Paiva, Guy Hoffman, Ana Bispo
-    event: 
-    doi: 
-    pdf: 
-    img: 
-  - title: Landscapes of Creativity
-    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Sara Ibérico-Nogueira, Guy Hoffman, Ana Paiva
-    event: 
-    doi: 
-    pdf: 
-    img: 
+  - title: "A big applause for Cubus: A virtual sandbox to stimulate ideas in children"
+    authors: André Pires, Patrícia Alves-Oliveira, Carlos Martinho
+    pdf: 2.pdf
+    img: 2.png
   - title: 'Yolo, a robot for creativity: A co-design study with children'
     authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Ana Paiva, Guy Hoffman
     event: Proceedings of the 2017 Conference on Interaction Design and Children
@@ -292,7 +237,6 @@ etc.:
     authors: Patrícia Alves-Oliveira, Ankita Chandak, Ian Cloutier, Priyanka Kompella, Peter Moegenburg, André Elias Bastos Pires
     event: Companion of the 2018 ACM/IEEE International Conference on Human-Robot Interaction, 335-336
     doi: https://doi.org/10.1145/3173386.3177822
-
     pdf: 49.pdf
     img: 49.png
   - title: 'Towards More Humane Machines: Creating Emotional Social Robots'
@@ -308,18 +252,15 @@ etc.:
     pdf: 51.pdf
     img: 51.png
 2019:
+  - title: 'YOLO: A Robot Designed to Boost Creativity in Children'
+    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
+    pdf: 4.pdf
+    img: 4.png
   - title: 'Sparking Creativity with Robots: A Design Perspective'
     authors: Patrícia Alves-Oliveira, Silvia Tulli, Philipp Wilken, Ramona Merhej, João Gandum, Ana Paiva
     event: 14th Annual ACM/IEEE International Conference on Human-Robot Interaction (HRI)
-    doi: 
     pdf: 54.pdf
     img: 54.png
-  - title: ACM/IEEE International Conference on Human-Robot Interaction
-    authors: C McGinn, I Torre, C Mavrogiannis, AM Hutchinson, RA Knepper, J MacDonald, P Alves-Oliveira, P Vogt, M De Haas, B Willemsen, J De Wit, E Krahmer, R Van Den Berghe, O Oudgenoeg-Paz, J Verhagen, P Leseman, L Hoffman, T Schodde, S Kopp, J Kanero, E Mamus, C Oranç, T Göksun, AC Küntay, JM Montanier, AK Pandey, DH García
-    event: 
-    doi: 
-    pdf: 
-    img: 
   - title: '"I Choose... YOU!” Membership Preferences in Human–Robot Teams'
     authors: Filipa Correia, Sofia Petisca, Patrícia Alves-Oliveira, Tiago Ribeiro, Francisco S Melo, Ana Paiva
     event: Autonomous Robots, 43, 359-373
@@ -348,20 +289,14 @@ etc.:
     authors: Jean‐Christophe Giger, Nuno Piçarra, Patrícia Alves‐Oliveira, Raquel Oliveira, Patrícia Arriaga
     event: Human Behavior and Emerging Technologies, 1(2), 111-123
     doi: https://doi.org/10.1002/hbe2.147
-    pdf: 
-    img: 
+    pdf: 60.pdf
+    img: 60.png
   - title: Guide to Build YOLO, a Creativity-Stimulating Robot for Children
     authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Ana Paiva, Guy Hoffman
     event: HardwareX, 6, e00074
     doi: https://doi.org/10.1016/j.ohx.2019.e00074
     pdf: 61.pdf
     img: 61.png
-  - title: Robotics Reading Group
-    authors: Silvia Tulli, Miguel Vasco, Patrícia Alves-Oliveira
-    event: 
-    doi: 
-    pdf: 
-    img: 
   - title: An Extended Framework for Characterizing Social Robots
     authors: Kim Baraka, Patrícia Alves-Oliveira, Tiago Ribeiro
     event: 'Human-Robot Interaction: Evaluation Methods and Their Standardization, 21-64'
@@ -381,12 +316,6 @@ etc.:
     doi: https://doi.org/10.1109/HRI.2016.7451871
     pdf: 65.pdf
     img: 65.png
-  - title: 'Social Momentum: Design and Evaluation of a Framework for Socially Competent Robot Navigation'
-    authors: PATRÍCIA ALVES-OLIVEIRA, WIL THOMASON, ROSS A KNEPPER
-    event: 
-    doi: https://doi.org/10.1145/3495244
-    pdf: 66.pdf
-    img: 66.png
   - title: Creativity encounters between children and robots
     authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Matthew A Cronin, Ana Paiva
     event: Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction, 379-388
@@ -421,13 +350,11 @@ etc.:
   - title: Inspiring Social Creativity in Children with CUBUS
     authors: Patrícia Alves-Oliveira, Raquel Oliveira, Patrícia Arriaga, Ana Paiva, Carlos Martinho
     event: ICCC, 149-157
-    doi: 
     pdf: 72.pdf
     img: 72.png
   - title: Collecting Insights about How Novice Programmers Naturally Express Programs for Robots
     authors: Rajeswari Hita Kambhamettu, Michael Jae-Yoon Chung, Vinitha Ranganeni, Patrícia Alves-Oliveira
     event: Plateau Workshop
-    doi:
     pdf: 73.pdf
     img: 73.png
   - title: Children as robot designers
@@ -448,11 +375,14 @@ etc.:
     doi: https://doi.org/10.1145/3461778.3462060
     pdf: 76.pdf
     img: 76.png
+  - title: Social robots for creativity stimulation in children
+    authors: Patrícia Alves-Oliveira, Patrícia Arriaga, Guy Hoffman, Ana Paiva
+    pdf: 3.pdf
+    img: 3.png
 2022:
   - title: Learning backchanneling behaviors for a social robot via data augmentation from human-human conversations
     authors: Michael Murray, Nick Walker, Amal Nanavati, Patricia Alves-Oliveira, Nikita Filippov, Allison Sauppe, Bilge Mutlu, Maya Cakmak
     event: Conference on Robot Learning, 513-525, PMLR
-    doi: 
     pdf: 77.pdf
     img: 77.png
   - title: 'I Am the Robot: Teen Collaboration in an Asymmetric, Virtual Reality Game'

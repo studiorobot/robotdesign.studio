@@ -47,15 +47,14 @@ layout: default
                 {% if paper.pdf %}
                   <li class="publication-link">
                     <a href="archive/{{ paper.pdf }}" target="_blank" class="link-color">
-                      <i class="far fa-file-pdf"></i>&nbsp;PDF
+                      <i class="fa-regular fa-file"></i> PDF
                     </a>
                   </li>
                 {% endif %}
-                
                 {% if paper.doi %}
                   <li class="publication-link">
                     <a href="{{ paper.doi }}" target="_blank" class="link-color">
-                      <i class="fas fa-external-link-alt"></i>DOI
+                      <i class="fas fa-external-link-alt"></i> DOI
                     </a>
                   </li>
                 {% endif %}
