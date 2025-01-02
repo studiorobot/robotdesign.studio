@@ -12,7 +12,6 @@ patricia:
   profile_img: patricia/Patricia_Alves-Oliveira.jpg
   description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
 
-#affiliate
 members:
  - name: Atharva S. Kashyap
    standing: Ph.D.
@@ -205,6 +204,18 @@ collab:
     department: Industrial and Operations Engineering
     img: team/collab/Leia_Stirling_External_Collaborator.jpg
 
+  - name: Mark Draelos
+    role: Assistant Professor
+    university: University of Michigan
+    department: Robotics
+    img: team/collab/Mak_Draelos-External_Collaborator.jpg
+  
+  - name: Nita Valikodath
+    role: Clinical Assistant Professor
+    department: Robotics
+    university: Ophthalmology and Visual Sciences
+    img: team/collab/Nita_Valikodath-External_Collaborator.jpeg
+
   - name: Peter Kahn
     role: Full Professor
     university: University of Washington
@@ -216,7 +227,6 @@ collab:
     university: University of Washington
     department: Computer Science and Engineering
     img: team/collab/Sidd_Srinivasa_External_Collaborator.jpg
-
 
 #alumni:
 #  - name: name

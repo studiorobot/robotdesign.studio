@@ -1,49 +1,110 @@
 ---
 layout: default
 ---
-<!-- Content -->
 <div class="content clearfix">
 	{% include fullscreen-slider-section.html %}
-	<!-- Feature Column Section -->
 	<div class="section-block" style="padding-top: 20px;">
-		<!-- Research Vision Section -->
 		<div class="row">
-			<!-- Sidebar: Research Vision Text -->
-			<h2  style="margin-bottom:10px;">Research Vision</h2>
+			<h2 style="margin-bottom:10px;">Research Vision</h2>
 			<div class="column width-8" style="padding-left:0px;">
 				Robot Studio is a multi-disciplinary research lab that designs current and future relationships between robots and us that are inspiring, refined, and magical. We achieve this by building robots that are intentional in their function and aesthetically beautiful, to uncover the many connections we can have with robots in the contexts of health and the arts. We use theories and methods from Computer Engineering, Psychology, and Design Research to study how we can be build robots that empower us and to search how robots can be a tool to support better understanding of who we are. In Robot Studio, we experience what it is to be a full-stack roboticist.
-			<p style="margin-top:10px;">Robot Studio was created and is directed by Patricia Alves-Oliveira.</p>
+				<p style="margin-top:10px;">Robot Studio was created and is directed by Patricia Alves-Oliveira.</p>
 			</div>
-			<!-- Content: Research Vision Image -->
 			<div class="column width-4">
 				<!--<img class="img-fluid" src="img/research_vision.svg" alt="Research Vision" style="height:200px;">-->
 			</div>
 		</div>
 		
 		<div class="row">
-			<h2  style="margin-bottom:10px;">News</h2>
+			<h2 style="margin-bottom:10px;">News</h2>
 		</div>
-		{% for item in site.data.news %}
-		<div class="row">
-			<strong>{{ item.date }}:</strong>
-				{% assign description = item.description %}
-				<!-- Initialize an index counter to track the links -->
-				{% assign link_index = 0 %}
-				<!-- Loop through the links and replace each {{link}} with the corresponding link -->
-				{% for link in item.links %}
-				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text |
-					append: '</a>' %}
-				<!-- Replace the {{link}} with the current link_html (use link_index to replace one by one) -->
-				{% assign description = description | replace_first: '{{link}}', link_html %}
-				<!-- Increment the link index after each replacement -->
-				{% assign link_index = link_index | plus: 1 %}
-				{% endfor %}
-				<!-- Output the final description with all {{link}} replaced -->
-				{{ description }}
-		
-		</div>
-		{% endfor %}
 
+		<!-- Show the first 10 news items -->
+		<div class="news-items">
+			{% assign limited_news = site.data.news | slice: 0, 10 %}
+			{% for item in limited_news %}
+				<div class="row news-item">
+					<strong>{{ item.date }}:</strong>
+					{% assign description = item.description %}
+					{% assign link_index = 0 %}
+					{% for link in item.links %}
+						{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text |
+						append: '</a>' %}
+						{% assign description = description | replace_first: '{{link}}', link_html %}
+						{% assign link_index = link_index | plus: 1 %}
+					{% endfor %}
+					{{ description }}
+				</div>
+			{% endfor %}
+		</div>
+
+		<!-- Hidden additional news items (after 10) -->
+		<div class="news-items hidden-news">
+			{% assign remaining_news = site.data.news | slice: 10, site.data.news.size %}
+			{% for item in remaining_news %}
+				<div class="row news-item">
+					<strong>{{ item.date }}:</strong>
+					{% assign description = item.description %}
+					{% assign link_index = 0 %}
+					{% for link in item.links %}
+						{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text |
+						append: '</a>' %}
+						{% assign description = description | replace_first: '{{link}}', link_html %}
+						{% assign link_index = link_index | plus: 1 %}
+					{% endfor %}
+					{{ description }}
+				</div>
+			{% endfor %}
+		</div>
+
+		<!-- Show More button -->
+		<div class="row">
+			<button id="show-more-button" class="show-more-btn" onclick="toggleNews()">
+				<span id="more-less-text">More</span> <!-- Initial "More" text -->
+			</button>
+		</div>
 	</div>
 </div>
-<!-- Content End -->
+
+<script>
+	function toggleNews() {
+		var hiddenNews = document.querySelector('.hidden-news');
+		var button = document.getElementById('show-more-button');
+		var buttonText = document.getElementById('more-less-text');
+
+		if (hiddenNews.style.maxHeight === "0px" || hiddenNews.style.maxHeight === "") {
+			hiddenNews.style.maxHeight = hiddenNews.scrollHeight + "px"; 
+			buttonText.textContent = "Less"; 
+
+			hiddenNews.addEventListener('transitionend', function onTransitionEnd() {
+				setTimeout(function() {
+					hiddenNews.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}, 100); 
+				hiddenNews.removeEventListener('transitionend', onTransitionEnd);
+			}, { once: true });
+
+		} else {
+			hiddenNews.style.maxHeight = "0px"; 
+			buttonText.textContent = "More"; 
+		}
+	}
+</script>
+
+<style>
+	.show-more-btn {
+		background-color: transparent;
+		border: none;
+		padding: 0px 0px;
+		cursor: pointer;
+		font-size: 16px;
+	}
+
+
+	.hidden-news {
+		overflow: hidden;
+		max-height: 0; 
+		transition: max-height 0.5s ease-out; 
+	}
+
+
+</style>

@@ -1,3 +1,39 @@
+- date: January 9th, 2025
+  description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
+
+- date: December 31st, 2024
+  description: Congratulations Ilkyaz Sarimehmetoglu for your Master's degree in Digital and Material Tech!
+
+- date: December 17th, 2024
+  description: Congratulations to Connor Williams for qualifying exam and becoming a Ph.D. Candidate!
+
+- date: November 19th, 2024
+  description: Prof. Patricia gave a keynote and participated in a panel at the {{link}} in Brussels.
+  links:
+  - text: FARI Conference
+    url: https://www.conference.fari.brussels/
+
+- date: September 1st, 2024
+  description: Welcome to the new Ph.D. students Atharva Kashyap and Grace Pan!
+
+- date: July 19th, 2024
+  description: Prof. Patricia was awarded an NSF EAGER Award.
+
+- date: June 24th, 2024
+  description: Prof. Patricia was awarded the DARPA Faculty Award.
+
+- date: March 22nd, 2024
+  description: Prof. Patricia was a keynote speaker at the Disability Visibility Symposium.
+
+- date: January 3rd, 2024
+  description: Prof. Patricia launched a new class at the Robotics Department called "{{link}}."
+  links:
+  - text: Design for Human-Robot Interaction
+    url: https://studiorobot.github.io/designforhri.github.io/
+
+- date: January 1st, 2024
+  description: Robot Studio started at the University of Michigan!
+
 - date: March 7, 2022
   description: Organized HRI 2022 workshop on {{link}}.
   links:
