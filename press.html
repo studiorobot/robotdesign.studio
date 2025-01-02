@@ -15,8 +15,8 @@ layout: default
     {% for news_item in site.data.press %}
     <a href={{ news_item.link }} target="_blank">
       <div class="row news-item">
-        <div class="column width-12" style="margin-bottom:10px; padding-left:0px;">
-          <div class="column width-2">
+        <div class="column width-12" style="margin-bottom:0px; padding-left:0px;">
+          <div class="column width-2" style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
             <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ news_item.image }}"
               alt="{{ news_item.alt_text }}" loading="lazy" />
           </div>
