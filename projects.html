@@ -2,9 +2,7 @@
 layout: default
 ---
 <!-- Content -->
-
-
-<div class="section-block left-on-mobile de4mers-nav right" id="director" style="margin-top:3em;">
+<div class="section-block left-on-mobile de4mers-nav right" id="director" style="margin-top:3em; padding-bottom: 0px;">
 	<div class="row no-padding">
 		<div class="column width-4 left">
 			<h1 class="mb-mobile-10" style="font-size:3em;">Projects</h1>
@@ -16,19 +14,23 @@ layout: default
 			</ul>
 		</div>
 	</div>
+	<div class="row">
+		<div class="column width-12">
+			<p style="font-size:15.5px; text-align: left;">Our projects explore the intersection of robotics,
+				creativity, and human connection across diverse domains, from health to the arts.</p>
+		</div>
+	</div>
 </div>
 {% assign project_sections = site.data.projects %}
 {% for section in project_sections %}
 {% assign section_title = section[0] %}
 {% assign projects = section[1] %}
-
 <div class="row">
 	<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;" data-threshold="1">
 		<h2 class="mb-10" style="font-size:2.5em;" id="{{ section_title }}">{{ section_title | replace: '_', ' ' |
 			capitalize }}</h2>
 	</div>
 </div>
-
 <div class="row">
 	<div class="column width-12">
 		<div class="row" id="projects">
@@ -102,10 +104,7 @@ layout: default
 	</div>
 </div>
 {% endfor %}
-
-
 <!-- Content End -->
-
 <style>
 	@media (max-width: 767px) {
 		#projects {

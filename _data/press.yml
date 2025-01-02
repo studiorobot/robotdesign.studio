@@ -1,8 +1,16 @@
-# alt_text
-# content: |
-#    Our recent collaborative work on environment-scale design and fabrication--MobiPrint, published at UIST 2024, is featured on
-#    <a href=https://www.geekwire.com/2024/3d-printing-on-the-move-uw-device-can-map-a-room-and-print-custom-items-in-desired-space/>GeekWire</a>
-#    and <a href=https://www.washington.edu/news/2024/10/23/mobiprint-mobile-3d-printer-accessibility/>UW News</a>. Congratulations, Team!
+
+#- date: November 29th, 2022
+ # title: IEEE Spectrum
+# content: Children as Social Robot Designers
+#  image: press/IEEESpectrum.jpeg
+# link: https://spectrum.ieee.org/social-robots-children
+
+#- date: January 5th, 2022
+##  title: IEEE Spectrum
+#  content: Children as Social Robot Designers
+##  image: press/IEEESpectrum.jpeg
+#  link: https://spectrum.ieee.org/social-robots-children
+
 
 - date: December 14th, 2021
   title: IEEE Spectrum
