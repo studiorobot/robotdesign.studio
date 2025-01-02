@@ -38,7 +38,7 @@ Copyright: ThemeMountain
 
 -------------------------------------------------------------------*/
 
-@font-face {font-family: 'Futura'; src: url('../../branding/_Fonts/Futura.ttc');font-weight:100;}
+@font-face {font-family: 'Futura'; src: url('../fonts/Futura.ttc');font-weight:100;}
 @font-face {
   font-family: 'ABC';
   src: url('../fonts/ABCMaxiPlusVariable-Trial.woff2') format('woff2'),
