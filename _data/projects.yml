@@ -1,4 +1,4 @@
-active_projects:
+active:
   - id: 15
     name: "AURA: Authenticity Markets in Artist Robot Interaction"
     members: Abhishek Narula, Angshu Adhya, Cindy Yang, Emily Wu, Rishad Hasan
@@ -58,7 +58,7 @@ active_projects:
     keywords: creativity, generative artificial intelligence
     poster: "projects/active/droodles/droodles2.png"
 
-completed_projects:
+completed:
   - id: 8
     name: "EMAR: Ecological Momentary Assessment Robot"
     members: Elin Björling, Maya Cakmak

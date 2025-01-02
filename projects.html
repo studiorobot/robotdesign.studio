@@ -3,103 +3,113 @@ layout: default
 ---
 <!-- Content -->
 
-<div class="content clearfix">
-  <!-- Feature Column Section -->
-  <div class="section-block replicable-content">
-    
-    {% assign project_sections = site.data.projects %}
-    
-    {% for section in project_sections %}
-      {% assign section_title = section[0] %}
-      {% assign projects = section[1] %}
-      
-      <div class="row">
-        <div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;" data-threshold="1">
-          <h2 class="mb-10" style="font-size:3em;">{{ section_title | replace: '_', ' ' | capitalize }}</h2>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="column width-12">
-          <div class="row" id="projects">
-            {% for project in projects %}
-              <div class="row mt-20 aproject" id="project{{ project.id }}" class="project-container">
-                <div class="column width-4" onmouseover="PlayVideo({{ project.id }})"  style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay({{ project.id }})">
-                  <video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}">
-                    <source type="video/webm" src="{{ project.video_webm }}">
-                    <source type="video/mp4" src="{{ project.video_mp4 }}">
-                  </video>
-                </div>
-                <div class="project-description column width-8" style="padding:10px;">
-                  <h5 style="margin:0px; margin-bottom:5px; font-size:16px;">{{ project.name }}</h5>
-                  {% if project.area %}
-                    {{ project.area }}<br>
-                  {% endif %}
-                  <span style="font-size:15px;">{{ project.members }}</span><br>
-                  <div class="project-links-container" style="margin-top:-4px;">
-                    <ul style="list-style: none; padding: 0;">
-                      <li style="display: inline; margin-right: 10px;">{{ project.data }}</li>
-                      {% for link in project.links %}
-                        {% if link.doi %}
-                          <li style="display: inline; margin-right: 10px;">
-                            <a href="{{ link.doi }}" target="_blank" title="DOI">
-                              <i class="fas fa-external-link-alt"></i>&nbsp;DOI
-                            </a>
-                          </li>
-                        {% endif %}
-                        {% if link.yt %}
-                          <li style="display: inline; margin-right: 10px;">
-                            <a href="{{ link.yt }}" target="_blank" title="YouTube">
-                              <i class="fa-solid fa-play"></i>&nbsp;Video
-                            </a>
-                          </li>
-                        {% endif %}
-                        {% if link.code %}
-                          <li style="display: inline; margin-right: 10px;">
-                            <a href="{{ link.code }}" target="_blank" title="Code">
-                              <i class="fas fa-code"></i>&nbsp;Code
-                            </a>
-                          </li>
-                        {% endif %}
-                      {% endfor %}
-                    </ul>
-                  </div>
-                  {% if project.description %}
-                    <p class="authors_abstract" style="font-size: 14px;">{{ project.description }}</p>
-                  {% endif %}
-                  {% if project.awards.size > 0 %}
-                    <span style="color: #d13131; font-size: 1.1rem;">
-                      {% for award in project.awards %}
-                        <i class="fas fa-trophy"></i>
-                        <strong>&nbsp;&nbsp;{{ award.title }}</strong>
-                        {% if forloop.last == false %} | {% endif %}
-                      {% endfor %}
-                    </span>
-                  {% endif %}
-                  {% if project.honorable_mentions.size > 0 %}
-                    {% for mention in project.honorable_mentions %}
-                      <span style="color: #d13131; font-size: 1.1rem;">
-                        <i class="fas fa-award"></i>
-                        <strong>&nbsp;&nbsp;{{ mention.title }}</strong>
-                      </span>
-                    {% endfor %}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
+
+<div class="section-block left-on-mobile de4mers-nav right" id="director" style="margin-top:3em;">
+	<div class="row no-padding">
+		<div class="column width-4 left">
+			<h1 class="mb-mobile-10" style="font-size:3em;">Projects</h1>
+		</div>
+		<div class="column width-8">
+			<ul>
+				<li><a href="#active">Active</a></li>
+				<li><a href="#completed">Completed</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
+{% assign project_sections = site.data.projects %}
+{% for section in project_sections %}
+{% assign section_title = section[0] %}
+{% assign projects = section[1] %}
+
+<div class="row">
+	<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;" data-threshold="1">
+		<h2 class="mb-10" style="font-size:2.5em;" id="{{ section_title }}">{{ section_title | replace: '_', ' ' |
+			capitalize }}</h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="column width-12">
+		<div class="row" id="projects">
+			{% for project in projects %}
+			<div class="row mt-20 aproject" id="project{{ project.id }}" class="project-container">
+				<div class="column width-4" onmouseover="PlayVideo({{ project.id }})"
+					style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay({{ project.id }})">
+					<video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}">
+						<source type="video/webm" src="{{ project.video_webm }}">
+						<source type="video/mp4" src="{{ project.video_mp4 }}">
+					</video>
+				</div>
+				<div class="project-description column width-8" style="padding:10px;">
+					<h5 style="margin:0px; margin-bottom:5px; font-size:16px;">{{ project.name }}</h5>
+					{% if project.area %}
+					{{ project.area }}<br>
+					{% endif %}
+					<span style="font-size:15px;">{{ project.members }}</span><br>
+					<div class="project-links-container" style="margin-top:-4px;">
+						<ul style="list-style: none; padding: 0;">
+							<li style="display: inline; margin-right: 10px;">{{ project.data }}</li>
+							{% for link in project.links %}
+							{% if link.doi %}
+							<li style="display: inline; margin-right: 10px;">
+								<a href="{{ link.doi }}" target="_blank" title="DOI">
+									<i class="fas fa-external-link-alt"></i>&nbsp;DOI
+								</a>
+							</li>
+							{% endif %}
+							{% if link.yt %}
+							<li style="display: inline; margin-right: 10px;">
+								<a href="{{ link.yt }}" target="_blank" title="YouTube">
+									<i class="fa-solid fa-play"></i>&nbsp;Video
+								</a>
+							</li>
+							{% endif %}
+							{% if link.code %}
+							<li style="display: inline; margin-right: 10px;">
+								<a href="{{ link.code }}" target="_blank" title="Code">
+									<i class="fas fa-code"></i>&nbsp;Code
+								</a>
+							</li>
+							{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+					{% if project.description %}
+					<p class="authors_abstract" style="font-size: 14px;">{{ project.description }}</p>
+					{% endif %}
+					{% if project.awards.size > 0 %}
+					<span style="color: #d13131; font-size: 1.1rem;">
+						{% for award in project.awards %}
+						<i class="fas fa-trophy"></i>
+						<strong>&nbsp;&nbsp;{{ award.title }}</strong>
+						{% if forloop.last == false %} | {% endif %}
+						{% endfor %}
+					</span>
+					{% endif %}
+					{% if project.honorable_mentions.size > 0 %}
+					{% for mention in project.honorable_mentions %}
+					<span style="color: #d13131; font-size: 1.1rem;">
+						<i class="fas fa-award"></i>
+						<strong>&nbsp;&nbsp;{{ mention.title }}</strong>
+					</span>
+					{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endfor %}
+
 
 <!-- Content End -->
 
 <style>
-  @media (max-width: 767px) {
-    #projects {
-      margin-left: 2.5px;
-    }
-  }
+	@media (max-width: 767px) {
+		#projects {
+			margin-left: 2.5px;
+		}
+	}
 </style>
