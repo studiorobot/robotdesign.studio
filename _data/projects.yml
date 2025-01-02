@@ -58,6 +58,19 @@ active:
     keywords: creativity, generative artificial intelligence
     poster: "projects/active/droodles/droodles2.png"
 
+  - id: 16
+    name: 'VISTA: Robot Character for Fun Medical Eye Exams'
+    members: Jeffrey Qiu, Ilkyaz Sarimehmetoglu, Mark Draelos, Nita Valikodath
+    data: 2024 - ongoing
+    description: This project aims to contribute to new design directions towards robots that can socially engage
+      with children while imaging their eyes reliably. Eye imaging in pediatric patients is essential to diagnose and
+      manage ocular diseases, but it is practically impossible to conduct due to their fear and aversion during the exam.
+      In this project, we explore the design space of character design for a robot OCT system to make eye exams more
+      fun for children.
+    keywords: medical robotics, pediatric patients, robot character design
+    poster: projects/active/vista/thumbnail.jpeg
+    video_mp4: projects/active/vista/vista.mp4
+
 completed:
   - id: 8
     name: "EMAR: Ecological Momentary Assessment Robot"
