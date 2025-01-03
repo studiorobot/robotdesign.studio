@@ -9,10 +9,10 @@ layout: default
     <div class="row">
       <div class="column width-12">
         <h1 style="font-size: 3em;">Publications</h1>
-        <p style="font-size:15.5px;">We publish our research outcomes at conferences and journals in the field of Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.</p>
+        <p style="font-size:15.5px;">We publish our research outcomes at conferences and journals in the field of
+          Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.</p>
       </div>
     </div>
-    
     {% for year in publications reversed %}
     <div class="row">
       <div class="column width-12">
@@ -24,45 +24,49 @@ layout: default
           <div class="column width-12" style="margin-bottom: 10px;">
             <div class="column width-2">
               {% if paper.img %}
-                <img class="regular-publication" src="pdf-covers/{{paper.img}}" alt="The first page of the paper" loading="lazy"/>
+              <img class="regular-publication" src="pdf-covers/{{paper.img}}" alt="The first page of the paper"
+                loading="lazy" />
               {% else %}
               <span style=" width: 100%;">&nbsp;</span>
               {% endif %}
             </div>
             <div class="column width-10 publication-details" style="padding:0px;">
               {% if paper.title %}
-                <h3 style="font-size: 16px;">{{ paper.title }}</h3>
+              <h3 style="font-size: 16px;">{{ paper.title }}</h3>
               {% endif %}
-              
               {% if paper.authors %}
-                <p class="authors" style="margin-bottom:0px; font-size:15px;">
-                  {{ paper.authors }}
-                  {% if paper.event %}
-                    <br><span style="font-size:14px;">{{ paper.event }}</span>
-                  {% endif %}
-                </p>
+              <p class="authors" style="margin-bottom:0px; font-size:15px;">
+                {{ paper.authors }}
+                {% if paper.event %}
+                <br><span style="font-size:14px;">{{ paper.event }}</span>
+                {% endif %}
+              </p>
               {% endif %}
-              
               <ul style="margin:0px;">
                 {% if paper.pdf %}
-                  <li class="publication-link">
-                    <a href="archive/{{ paper.pdf }}" target="_blank" class="link-color">
-                      <i class="fa-regular fa-file"></i> PDF
-                    </a>
-                  </li>
+                <li class="publication-link">
+                  <a href="archive/{{ paper.pdf }}" target="_blank" class="link-color">
+                    <i class="fa-regular fa-file"></i> PDF
+                  </a>
+                </li>
                 {% endif %}
                 {% if paper.doi %}
-                  <li class="publication-link">
-                    <a href="{{ paper.doi }}" target="_blank" class="link-color">
-                      <i class="fas fa-external-link-alt"></i> DOI
-                    </a>
-                  </li>
+                <li class="publication-link">
+                  <a href="{{ paper.doi }}" target="_blank" class="link-color">
+                    <i class="fas fa-external-link-alt"></i> DOI
+                  </a>
+                </li>
                 {% endif %}
                 {% if paper.video %}
                 <li class="publication-link">
                   <a href="{{ paper.video }}" target="_blank" class="link-color">
                     <i class="fa-solid fa-play"></i> Video
                   </a>
+                </li>
+                {% endif %}
+                {% if paper.project %}
+                <li class="publication-link">
+                  Project: {{ paper.project }}
                 </li>
                 {% endif %}
               </ul>
