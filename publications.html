@@ -58,6 +58,13 @@ layout: default
                     </a>
                   </li>
                 {% endif %}
+                {% if paper.video %}
+                <li class="publication-link">
+                  <a href="{{ paper.video }}" target="_blank" class="link-color">
+                    <i class="fa-solid fa-play"></i> Video
+                  </a>
+                </li>
+                {% endif %}
               </ul>
             </div>
           </div>
