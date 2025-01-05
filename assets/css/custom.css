@@ -79,10 +79,27 @@ video[poster]{
 
 .news-item {
   display: block;
-  background-color: rgb(255, 255, 255) !important; /* Initial background color */
-  transition: background-color 0.7s ease !important;  /* Smooth background color transition */
+  background-color: rgb(255, 255, 255) !important; 
+  transition: background-color 0.7s ease !important; 
 }
 
 .news-item:hover {
-  background-color: #f0f0f0 !important; /* Change to the desired hover color */
+  background-color: #f0f0f0 !important; 
+}
+
+.wrapper-inner {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.content {
+  flex-grow: 1; 
+}
+
+#footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  margin-bottom: 10px;
 }
