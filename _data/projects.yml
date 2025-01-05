@@ -57,6 +57,7 @@ active:
     description: This project aims to investigate if interacting with a creative collaborative assistant powered by foundational models can lead to the generation of creative droodle captions. Towards this, we will compare the droodle captions generated during the interaction with the creative collaborative assistant to the generated captions created as a result of a conversation with a human creative mentor. We will also explore the role of embodiment (computer and robot) in this setting to propel human creativity. 
     keywords: creativity, generative artificial intelligence
     poster: "projects/active/droodles/droodles2.png"
+    video_mp4: projects/active/droodles/droodles.mp4
 
   - id: 16
     name: 'VISTA: Robot Character for Fun Medical Eye Exams'
