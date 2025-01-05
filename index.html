@@ -65,23 +65,14 @@ layout: default
 		</div>
 	</div>
 </div>
-
 <script>
 	function toggleNews() {
 		var hiddenNews = document.querySelector('.hidden-news');
-		var button = document.getElementById('show-more-button');
 		var buttonText = document.getElementById('more-less-text');
 
 		if (hiddenNews.style.maxHeight === "0px" || hiddenNews.style.maxHeight === "") {
 			hiddenNews.style.maxHeight = hiddenNews.scrollHeight + "px"; 
 			buttonText.textContent = "Less"; 
-
-			hiddenNews.addEventListener('transitionend', function onTransitionEnd() {
-				setTimeout(function() {
-					hiddenNews.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				}, 100); 
-				hiddenNews.removeEventListener('transitionend', onTransitionEnd);
-			}, { once: true });
 
 		} else {
 			hiddenNews.style.maxHeight = "0px"; 
