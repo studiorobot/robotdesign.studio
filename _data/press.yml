@@ -1,17 +1,21 @@
 
-#- date: November 29th, 2022
- # title: IEEE Spectrum
-# content: Children as Social Robot Designers
-#  image: press/IEEESpectrum.jpeg
-# link: https://spectrum.ieee.org/social-robots-children
+- date: November 29th, 2022
+  title: PodBean
+  content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
+  image: press/fueling-creativity.png
+  description: "Fueling Creativity in Education Podcast with two episodes: {{link}} and on {{link}}."
+  links:
+    - text: "Fueling Creativity in Education Podcast with two episodes:"
+      url: https://www.podbean.com/media/share/pb-vdwv6-1327784
+    - text: Evaluating the Impact of Creativity Interventions on Children
+      url: https://www.podbean.com/media/share/pb-9ku6h-13276c3
 
-#- date: January 5th, 2022
-##  title: IEEE Spectrum
-#  content: Children as Social Robot Designers
-##  image: press/IEEESpectrum.jpeg
-#  link: https://spectrum.ieee.org/social-robots-children
-
-
+- date: January 5th, 2022
+  title: For UW, By UW
+  content: Interview about how to design robots to help teens recognize mental health needs.
+  image: press/w.png
+  link: https://open.spotify.com/episode/5dS6uYedbwNj7Hpe5n8kBL
+  
 - date: December 14th, 2021
   title: IEEE Spectrum
   content: Children as Social Robot Designers
