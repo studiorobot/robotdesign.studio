@@ -43,6 +43,11 @@ layout: default
               </p>
               {% endif %}
               <ul style="margin:0px;">
+                {% if paper.project %}
+                <li class="publication-link">
+                  Project: {{ paper.project }}
+                </li>
+                {% endif %}
                 {% if paper.pdf %}
                 <li class="publication-link">
                   <a href="archive/{{ paper.pdf }}" target="_blank" class="link-color">
@@ -62,11 +67,6 @@ layout: default
                   <a href="{{ paper.video }}" target="_blank" class="link-color">
                     <i class="fa-solid fa-play"></i> Video
                   </a>
-                </li>
-                {% endif %}
-                {% if paper.project %}
-                <li class="publication-link">
-                  Project: {{ paper.project }}
                 </li>
                 {% endif %}
               </ul>

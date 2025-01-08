@@ -7,6 +7,24 @@ active:
     keywords: art, biometrics, interaction language
     poster: "projects/active/aura/thumbnail.png"
 
+  - id: 12 
+    name: "DELICIOUS: Assistive Robotics for People with Disabilities during Social Dining"
+    members: Atharva Kashyap
+    data: 2024 - ongoing
+    description: Social Dining, or eating within a group, is a universal meaningful experience that brings people together. This project leverages foundational models to develop an assistive feeding system that can more efficiently understand the user and address their individual needs. By promoting independent eating, people with physical disabilities can take a seat in professional dinners that can advance their career, and feel comfortable accepting invitations to eat with a group of friends to strengthen social connections.
+    keywords: assistive, community, disabilities
+    poster: projects/active/delicious/thumbnail.png
+    video_webm: projects/active/delicious/accessibility.webm
+
+  - id: 9
+    name: "DROODLES: Design and Developmental of GenAI to Propel Human Creativity"
+    members: "Trey Davis, Erfun Ackley, Peter H. Kahn Jr.,"
+    data: 2024 - ongoing 
+    description: This project aims to investigate if interacting with a creative collaborative assistant powered by foundational models can lead to the generation of creative droodle captions. Towards this, we will compare the droodle captions generated during the interaction with the creative collaborative assistant to the generated captions created as a result of a conversation with a human creative mentor. We will also explore the role of embodiment (computer and robot) in this setting to propel human creativity. 
+    keywords: creativity, generative artificial intelligence
+    poster: "projects/active/droodles/droodles2.png"
+    video_mp4: projects/active/droodles/droodles.mp4
+
   - id: 14
     name: "FUTURES: Visioning Design Evolution for Human-Robot Interaction"
     members: Aleena Qaiser, Guan-Ling Chen, Anastasia Ostrowski
@@ -24,23 +42,6 @@ active:
     keywords: mental health, decarceration, accesibility
     poster: projects/active/guardian/thumbnail.jpg
 
-  - id: 12 
-    name: "DELICIOUS: Assistive Robotics for People with Disabilities during Social Dining"
-    members: Atharva Kashyap
-    data: 2024 - ongoing
-    description: Social Dining, or eating within a group, is a universal meaningful experience that brings people together. This project leverages foundational models to develop an assistive feeding system that can more efficiently understand the user and address their individual needs. By promoting independent eating, people with physical disabilities can take a seat in professional dinners that can advance their career, and feel comfortable accepting invitations to eat with a group of friends to strengthen social connections.
-    keywords: assistive, community, disabilities
-    poster: projects/active/delicious/thumbnail.png
-    video_webm: projects/active/delicious/accessibility.webm
-
-  - id: 11
-    name: "TOUCH: Assistive Robot Touch during Medical Emergencies"
-    members: Grace Pan
-    data: 2024 - ongoing
-    description: The role of touch in humans has proven to be an important part of our development. In this project, we aim to design a comfortable, safe, and intuitive touch interaction from the robot to the human during assistive scenarios. We aim to study what types of communication styles, embodiment factors, and touch parameters are best suited for an assistive robot that delivers care during medical and assistive needs.
-    keywords: assistive, physical health
-    poster: projects/temp.png
-
   - id: 10
     name: "RELATE: Key-Moments in Long-Term Relationship with Social Robots"
     members: Jiali Zhen, Zhixuan Chen
@@ -50,14 +51,13 @@ active:
     poster: projects/active/relate/thumbnail.png
     video_mp4: projects/active/relate/longitudinal.mp4
 
-  - id: 9
-    name: "DROODLES: Design and Developmental of GenAI to Propel Human Creativity"
-    members: "Trey Davis, Erfun Ackley, Peter H. Kahn Jr.,"
-    data: 2024 - ongoing 
-    description: This project aims to investigate if interacting with a creative collaborative assistant powered by foundational models can lead to the generation of creative droodle captions. Towards this, we will compare the droodle captions generated during the interaction with the creative collaborative assistant to the generated captions created as a result of a conversation with a human creative mentor. We will also explore the role of embodiment (computer and robot) in this setting to propel human creativity. 
-    keywords: creativity, generative artificial intelligence
-    poster: "projects/active/droodles/droodles2.png"
-    video_mp4: projects/active/droodles/droodles.mp4
+  - id: 11
+    name: "TOUCH: Assistive Robot Touch during Medical Emergencies"
+    members: Grace Pan
+    data: 2024 - ongoing
+    description: The role of touch in humans has proven to be an important part of our development. In this project, we aim to design a comfortable, safe, and intuitive touch interaction from the robot to the human during assistive scenarios. We aim to study what types of communication styles, embodiment factors, and touch parameters are best suited for an assistive robot that delivers care during medical and assistive needs.
+    keywords: assistive, physical health
+    poster: projects/temp.png
 
   - id: 16
     name: 'VISTA: Robot Character for Fun Medical Eye Exams'
