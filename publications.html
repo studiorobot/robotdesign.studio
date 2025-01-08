@@ -21,8 +21,8 @@ layout: default
         </div>
         <div class="column width-11" style="padding:0px;">
           {% for paper in year[1] reversed %}
-          <div class="column width-12" style="margin-bottom: 10px;">
-            <div class="column width-2">
+          <div class="column width-12 paper-stuff" style="margin-bottom: 10px;">
+            <div class="column width-2 more-paper-stuff">
               {% if paper.img %}
               <img class="regular-publication" src="pdf-covers/{{paper.img}}" alt="The first page of the paper"
                 loading="lazy" />
@@ -30,9 +30,9 @@ layout: default
               <span style=" width: 100%;">&nbsp;</span>
               {% endif %}
             </div>
-            <div class="column width-10 publication-details" style="padding:0px;">
+            <div class="column width-10 publication-details">
               {% if paper.title %}
-              <h3 style="font-size: 16px;">{{ paper.title }}</h3>
+              <h3 style="font-size: 16px;" class="title">{{ paper.title }}</h3>
               {% endif %}
               {% if paper.authors %}
               <p class="authors" style="margin-bottom:0px; font-size:15px;">
@@ -80,3 +80,21 @@ layout: default
   </div>
 </div>
 <!-- Content End -->
+
+<style>
+  @media (max-width: 768px) {
+    .paper-stuff{
+      padding-left:0px;
+      padding-right:0px;
+      width:100%;
+    }
+    .more-paper-stuff, .publication-details{
+      padding-left:0px;
+      padding-right:0px;
+      width:100%;
+    }
+    .publication-details{
+      margin-top:10px;
+    }
+  }
+</style>

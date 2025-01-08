@@ -18,7 +18,7 @@ layout: default
             <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
               alt="{{ press_item.alt_text }}" loading="lazy" />
           </div>
-          <div class="column width-10 text" style="padding:10px; padding-left:0px;">
+          <div class="column width-10 text" style="padding:10px;">
             <h5 style="font-size:16px; margin-bottom: 0px;"> {{ press_item.content }}</h5>
             {{ press_item.title }}, {{ press_item.date }}<br>
           </div>
@@ -32,7 +32,7 @@ layout: default
           <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
             alt="{{ press_item.alt_text }}" loading="lazy" />
         </div>
-        <div class="column width-10 text" style="padding:10px; padding-left:0px;">
+        <div class="column width-10 text" style="padding:10px;">
           <h5 style="font-size:16px; margin-bottom: 0px;">{{ press_item.content }}</h5>
           {{ press_item.title }}, {{ press_item.date }}<br>
               {% assign description = press_item.description %}
@@ -50,3 +50,4 @@ layout: default
   </div>
 </div>
 <!-- Content End -->
+
