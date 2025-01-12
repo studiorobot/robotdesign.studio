@@ -198,6 +198,12 @@ collab:
     department: Computer Graphics Tech
     img: team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
 
+  - name: Jim Cogswell
+    role: Full Professor 
+    department: STAMPS School of Art & Design
+    university: University of Michigan
+    img: team/collab/Jim-Cogswell-External-Collaborator.jpg
+
   - name: Leia Stirling
     role: Associate Professor
     university: University of Michigan
@@ -212,8 +218,8 @@ collab:
   
   - name: Nita Valikodath
     role: Clinical Assistant Professor
-    department: Robotics
-    university: Ophthalmology and Visual Sciences
+    university: University of Michigan
+    department: Ophthalmology and Visual Sciences
     img: team/collab/Nita_Valikodath-External_Collaborator.jpeg
 
   - name: Peter Kahn
@@ -227,6 +233,7 @@ collab:
     university: University of Washington
     department: Computer Science and Engineering
     img: team/collab/Sidd_Srinivasa_External_Collaborator.jpg
+
 
 #alumni:
 #  - name: name
