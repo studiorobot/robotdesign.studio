@@ -7,8 +7,8 @@ layout: default
 		<div class="column width-4 left">
 			<h1 class="mb-mobile-10" style="font-size:3em;">Projects</h1>
 		</div>
-		<div class="column width-8">
-			<ul>
+		<div class="column width-8" id="header-container">
+			<ul id="headers">
 				<li><a href="#active">Active</a></li>
 				<li><a href="#completed">Completed</a></li>
 			</ul>
@@ -26,7 +26,7 @@ layout: default
 {% assign section_title = section[0] %}
 {% assign projects = section[1] %}
 <div class="row">
-	<div class="column width-12 horizon" data-animate-in="preset:slideInRightShort;duration:500ms;" data-threshold="1">
+	<div class="column width-12" data-threshold="1">
 		<h2 class="mb-10" style="font-size:2.5em;" id="{{ section_title }}">{{ section_title | replace: '_', ' ' |
 			capitalize }}</h2>
 	</div>
@@ -44,12 +44,12 @@ layout: default
 					</video>
 				</div>
 				<div class="project-description column width-8" style="padding:10px;">
-					<h5 style="margin:0px; margin-bottom:5px; font-size:16px;">{{ project.name }}</h5>
+					<h5 style="margin:0px; font-size:16px;">{{ project.name }}</h5>
 					{% if project.area %}
 					{{ project.area }}<br>
 					{% endif %}
 					<span style="font-size:15px;">{{ project.members }}</span><br>
-					<div class="project-links-container" style="margin-top:-4px;">
+					<div class="project-links-container" style="margin-top:-4px; padding:0px;">
 						<ul style="list-style: none; padding: 0;">
 							<li style="display: inline; margin-right: 10px;">{{ project.data }}</li>
 							{% for link in project.links %}
@@ -109,6 +109,14 @@ layout: default
 	@media (max-width: 767px) {
 		#projects {
 			margin-left: 2.5px;
+		}
+		#headers{
+			margin:0px;
+			padding:0px;
+			margin-bottom:10px;
+		}
+		#header-container{
+			padding:0px;
 		}
 	}
 	#completed{

@@ -9,8 +9,8 @@ layout: default
     <div class="column width-4 left">
       <h1 class="mb-mobile-10" style="font-size:3em;">TEAM</h1>
     </div>
-    <div class="column width-8">
-      <ul>
+    <div class="column width-8" id="header-container">
+      <ul id="headers">
         <li><a href="#members">Active Members</a></li>
         <li><a href="#collaborators">Collaborators</a></li>
         {% if site.data.team.alumni %}
@@ -286,6 +286,18 @@ layout: default
       padding-left: 5%;
       padding-right: 5%;
     }
+
+    #headers{
+			margin:0px;
+			padding:0px;
+			margin-bottom:10px;
+		}
+		#header-container{
+      padding:0;
+      padding-left:20px;
+      margin-bottom:10px;
+		}
+
   }
 
   .member-column:nth-child(4n+1) {
