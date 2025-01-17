@@ -7,11 +7,11 @@ layout: default
 		<div class="row">
 			<h2 style="margin-bottom:10px;">Research Vision</h2>
 			<div class="column width-8" style="padding-left:0px;">
-				{{ site.data.index.research_vision_text }}
+				{{ site.data.intros.index_research_vision_text }}
 				<p style="margin-top:10px;">Robot Studio was created and is directed by Patricia Alves-Oliveira.</p>
 			</div>
-			<div class="column width-4">
-				<img class="img-fluid" src="img/research-vision.png" alt="Research Vision" style="height:200px;">
+			<div class="column width-4" id="image-container">
+				<img id="centered-image" class="img-fluid" src="img/research-vision.png" alt="Research Vision" style="height:200px;">
 			</div>
 		</div>
 		
@@ -90,12 +90,24 @@ layout: default
 		font-size: 16px;
 	}
 
-
 	.hidden-news {
 		overflow: hidden;
 		max-height: 0; 
 		transition: max-height 0.5s ease-out; 
 	}
 
+
+
+  @media (max-width: 768px) {
+    #image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #centered-image {
+      height: 200px; /* You can remove this if you want to control it only via CSS */
+    }
+  }
 
 </style>
