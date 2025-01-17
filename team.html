@@ -173,7 +173,6 @@ layout: default
 </div>
 
 <style>
-  /* General styling for columns */
   #row {
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +186,6 @@ layout: default
 
   #description {
     flex: 1 1 50%;
-    /* Ensure it occupies the same space as the two previous columns (each 50% of the row width) */
   }
 
   .column {
@@ -200,7 +198,6 @@ layout: default
 
   .member-column {
     flex: 1 1 100%;
-    /* Default to 100% width */
   }
 
   @media only screen and (max-width: 1140px) {
@@ -212,7 +209,6 @@ layout: default
   @media (min-width: 768px) {
     .member-column {
       flex: 1 1 30%;
-      /* 3 columns per row on tablet */
     }
 
     #pat-links {
@@ -221,19 +217,16 @@ layout: default
 
     #description {
       flex: 1 1 30%;
-      /* On desktop, adjust to take 33% of the row width */
     }
   }
 
   @media (min-width: 1280px) {
     .member-column {
       flex: 1 1 18%;
-      /* 5 columns per row on desktop */
     }
 
     #description {
       flex: 1 1 40%;
-      /* On desktop, adjust to take 33% of the row width */
     }
 
     #pat-links {
@@ -251,7 +244,6 @@ layout: default
 
   .member-column img {
     width: 100%;
-    /* Ensure images are responsive */
     height: auto;
   }
 
@@ -259,8 +251,6 @@ layout: default
     #row {
       max-width: 76rem;
     }
-
-
   }
 
   p {
@@ -287,37 +277,34 @@ layout: default
       padding-right: 5%;
     }
 
-    #headers{
-			margin:0px;
-			padding:0px;
-			margin-bottom:10px;
-		}
-		#header-container{
-      padding:0;
-      padding-left:20px;
-      margin-bottom:10px;
-		}
+    #headers {
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+
+    #header-container {
+      padding: 0;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
 
   }
 
   .member-column:nth-child(4n+1) {
     border-top-right-radius: 25%;
-    /* Curved top-right corner */
   }
 
   .member-column:nth-child(4n+2) {
     border-bottom-right-radius: 25%;
-    /* Curved bottom-right corner */
   }
 
   .member-column:nth-child(4n+3) {
     border-bottom-left-radius: 25%;
-    /* Curved bottom-left corner */
   }
 
   .member-column:nth-child(4n+4),
   #patricia-header {
     border-top-left-radius: 25%;
-    /* Curved top-left corner */
   }
 </style>
