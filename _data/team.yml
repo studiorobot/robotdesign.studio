@@ -2,8 +2,8 @@ patricia:
   name: Patrícia Alves-Oliveira
   role: Director of Robot Studio
   title: Ph.D., Assistant Professor of Robotics
-  affiliated: "Affiliated Faculty at <a href='https://midas.umich.edu/'>MIDAS</a> and <a href='https://esc.umich.edu/'>ESC</a>"
-  advisor: Research Advisor at Open Style Lab #https://www.openstylelab.org/
+  affiliated: "Affiliated Faculty at <a href='https://midas.umich.edu/' target='_blank'>MIDAS</a> and <a href='https://esc.umich.edu/' target='_blank'>ESC</a>"
+  advisor: Research Advisor at <a href='https://www.openstylelab.org/' target='_blank'>Open Style Lab</a> 
   email: robopati@umich.edu
   website: https://patricialvesoliveira.com/
   google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate
@@ -192,6 +192,12 @@ collab:
     department: Computer Graphics Tech
     img: team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
 
+  - name: Jim Cogswell
+    role: Full Professor 
+    department: STAMPS School of Art & Design
+    university: University of Michigan
+    img: team/collab/Jim-Cogswell-External-Collaborator.jpg
+
   - name: Leia Stirling
     role: Associate Professor
     university: University of Michigan
@@ -206,8 +212,8 @@ collab:
   
   - name: Nita Valikodath
     role: Clinical Assistant Professor
-    department: Robotics
-    university: Ophthalmology and Visual Sciences
+    university: University of Michigan
+    department: Ophthalmology and Visual Sciences
     img: team/collab/Nita_Valikodath-External_Collaborator.jpeg
 
   - name: Peter Kahn
@@ -221,6 +227,7 @@ collab:
     university: University of Washington
     department: Computer Science and Engineering
     img: team/collab/Sidd_Srinivasa_External_Collaborator.jpg
+
 
 #alumni:
 #  - name: name

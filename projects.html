@@ -5,14 +5,13 @@ layout: default
 	<!-- Feature Column Section -->
 	<div class="section-block replicable-content">
 		<!-- Content -->
-		<div class="section-block left-on-mobile de4mers-nav right" id="director"
-			style="padding: 0px;">
+		<div class="section-block left-on-mobile de4mers-nav right" id="director" style="padding: 0px;">
 			<div class="row no-padding">
 				<div class="column width-4 left">
 					<h1 class="mb-mobile-10" style="font-size:3em;">Projects</h1>
 				</div>
-				<div class="column width-8">
-					<ul>
+				<div class="column width-8" id="header-container">
+					<ul id="headers">
 						<li><a href="#active">Active</a></li>
 						<li><a href="#completed">Completed</a></li>
 					</ul>
@@ -20,8 +19,7 @@ layout: default
 			</div>
 			<div class="row">
 				<div class="column width-12">
-					<p style="font-size:15.5px; text-align: left;">Our projects explore the intersection of robotics,
-						creativity, and human connection across diverse domains, from health to the arts.</p>
+					<p style="font-size:15.5px; text-align: left;">{{ site.data.intros.projects }}</p>
 				</div>
 			</div>
 		</div>
@@ -166,5 +164,19 @@ layout: default
 		#projects {
 			margin-left: 2.5px;
 		}
+
+		#headers {
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 10px;
+		}
+
+		#header-container {
+			padding: 0px;
+		}
+	}
+
+	#completed {
+		margin-top: 30px;
 	}
 </style>
