@@ -9,8 +9,8 @@ layout: default
         <div class="column width-4 left">
           <h1 class="mb-mobile-10" style="font-size:3em;">TEAM</h1>
         </div>
-        <div class="column width-8">
-          <ul>
+        <div class="column width-8"  id="header-container">
+          <ul id="headers">
             <li><a href="#members">Active Members</a></li>
             <li><a href="#collaborators">Collaborators</a></li>
             {% if site.data.team.alumni %}
@@ -207,6 +207,7 @@ layout: default
   }
 
   @media (min-width: 768px) {
+
     .member-column {
       flex: 1 1 30%;
       /* 3 columns per row on tablet */
@@ -220,6 +221,19 @@ layout: default
       flex: 1 1 30%;
       /* On desktop, adjust to take 33% of the row width */
     }
+  }
+  @media (max-width: 768px)
+  {
+    #headers {
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 10px;
+		}
+
+		#header-container {
+			padding: 0px;
+      padding-left:11px;
+		}
   }
 
   @media (min-width: 1280px) {
@@ -252,6 +266,7 @@ layout: default
     height: auto;
   }
 
+  
   @media only screen and (max-width: 960px) {
     #row {
       max-width: 76rem;
