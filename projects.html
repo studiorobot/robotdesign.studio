@@ -19,12 +19,16 @@ layout: default
 			</div>
 			<div class="row">
 				<div class="column width-12">
-					<p style="font-size:15.5px; text-align: left;">{{ site.data.intros.projects }}</p>
+					<p style="font-size:15.5px; text-align: left;">{{ site.data.projects.intro }}</p>
 				</div>
 			</div>
 		</div>
 		{% assign project_sections = site.data.projects %}
 		{% for section in project_sections %}
+		{% if section[0] == "intro" %}
+		{% continue %} <!-- Skip this iteration if it's the intro -->
+		{% endif %}
+
 		{% assign section_title = section[0] %}
 		{% assign projects = section[1] %}
 		<div class="row">

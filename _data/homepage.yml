@@ -1,0 +1,121 @@
+carousel:
+  - title: human&#8209;robot interaction
+    description: "We create robots that enable meaningful<br>and magical connections with humans"
+    image: "img/carrousel/sketch.jpg"
+    overlay_opacity: 0.3
+  - title: "multidisciplinarity"
+    description: "Our work happens at the intersection<br>of robotics, design, and psychology"
+    image: "img/carrousel/fabrication.jpg"
+    overlay_opacity: 0.3
+  - title: "health and arts"
+    description: We apply robots to empower human<br>health and propel the study of arts
+    image: "img/carrousel/emar.png"
+    overlay_opacity: 0.3
+
+research_vision: |
+  Robot Studio is a multi-disciplinary research lab that designs current and future relationships between robots and us that are inspiring, refined, and magical. We achieve this by building robots that are intentional in their function and aesthetically beautiful, to uncover the many connections we can have with robots in the contexts of health and the arts. We use theories and methods from Computer Engineering, Psychology, and Design Research to study how we can be build robots that empower us and to search how robots can be a tool to support better understanding of who we are. In Robot Studio, we experience what it is to be a full-stack roboticist.
+
+news: 
+  - date: January 9th, 2025
+    description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
+
+  - date: December 31st, 2024
+    description: Congratulations Ilkyaz Sarimehmetoglu for your Master's degree in Digital and Material Tech!
+
+  - date: December 17th, 2024
+    description: Congratulations to Connor Williams for qualifying exam and becoming a Ph.D. Candidate!
+
+  - date: November 19th, 2024
+    description: Prof. Patricia gave a keynote and participated in a panel at the {{link}} in Brussels.
+    links:
+    - text: FARI Conference
+      url: https://www.conference.fari.brussels/
+
+  - date: September 1st, 2024
+    description: Welcome to the new Ph.D. students Atharva Kashyap and Grace Pan!
+
+  - date: July 19th, 2024
+    description: Prof. Patricia was awarded an NSF EAGER Award.
+
+  - date: June 24th, 2024
+    description: Prof. Patricia was awarded the DARPA Faculty Award.
+
+  - date: March 22nd, 2024
+    description: Prof. Patricia was a keynote speaker at the Disability Visibility Symposium.
+
+  - date: January 3rd, 2024
+    description: Prof. Patricia launched a new class at the Robotics Department called "{{link}}."
+    links:
+    - text: Design for Human-Robot Interaction
+      url: https://studiorobot.github.io/designforhri.github.io/
+
+  - date: January 1st, 2024
+    description: Robot Studio started at the University of Michigan!
+
+  - date: March 7, 2022
+    description: Organized HRI 2022 workshop on {{link}}.
+    links:
+      - text: theory-grounded HRI
+        url: https://theoriahri.wixsite.com/theoria
+
+  - date: March 7, 2022
+    description: Paper accepted to {{link}} on robot-induced emotions and creativity.
+    links:
+      - text: HRI 2022
+        url: https://humanrobotinteraction.org/2022/
+
+  - date: November 9th, 2021
+    description: Paper accepted to {{link}} on robot programs.
+    links:
+      - text: PLATEAU 2021
+        url: https://2021.plateau-workshop.org
+
+  - date: October 26th, 2021
+    description: Paper accepted to Frontiers on {{link}}.
+    links: 
+      - text: VR as a collaborative robot design tool
+        url: https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2021.746521/full
+
+  - date: October 1st, 2021
+    description: Paper accepted to {{link}} on {{link}}.
+    links: 
+      - text: CoRL 2021
+        url: https://2021.corl.org/
+      - text: robot nodding behavior
+        url: https://openreview.net/forum?id=0WDtVJVwBcf
+
+  - date: June 6th, 2021
+    description: "{{link}} accepted at the Journal of Creative Behavior"
+    links: 
+      - text: Systematic review paper
+        url: https://onlinelibrary.wiley.com/doi/10.1002/jocb.514
+
+  - date: April 9th, 2021
+    description: Paper accepted to {{link}} on {{link}} - {{link}}.
+    links: 
+      - text: DIS 2021
+        url: https://dis.acm.org/2021/
+      - text: robot metaphors
+        url: "https://dl.acm.org/doi/10.1145/3461778.3462060"
+      - text: video
+        url: https://www.youtube.com/watch?v=JpDV9FF3Sf0
+
+  - date: April 9th, 2021
+    description: Paper accepted to {{link}} on {{link}} - {{link}}
+    links: 
+      - text: C&C 2021
+        url: https://dis.acm.org/2021/
+      - text: robotics-based interventions
+        url: https://dl.acm.org/doi/fullHtml/10.1145/3450741.3465267
+      - text: video
+        url: https://www.youtube.com/watch?v=6T-QjgF1AEo
+    
+  - date: March 9th, 2021
+    description: Best Paper Award to {{link}} on {{link}} - {{link}}
+    links: 
+      - text: HRI 2021
+        url: https://humanrobotinteraction.org/2021/awards/
+      - text: children as robot designers
+        url: https://dl.acm.org/doi/abs/10.1145/3434073.3444650
+      - text: video
+        url: https://www.youtube.com/watch?v=E2trLGclTc8&feature=youtu.be

@@ -1,14 +1,14 @@
 internal:
   - title: "projects"
-    url: "projects.html"
+    url: "projects"
   - title: "team"
-    url: "team.html"
+    url: "team"
   - title: "publications"
-    url: "publications.html"
+    url: "publications"
   - title: "press"
-    url: "press.html"
+    url: "press"
   - title: "join us"
-    url: "join-us.html"
+    url: "join-us"
 
 external:
   - platform: LinkedIn

@@ -2,14 +2,14 @@
 layout: default
 ---
 <!-- Content -->
-{% assign publications = site.data.publications %}
+{% assign publications = site.data.publications.publications %}
 <div class="content clearfix">
   <!-- Feature Column Section -->
   <div class="section-block replicable-content">
     <div class="row">
       <div class="column width-12">
         <h1 style="font-size: 3em;">Publications</h1>
-        <p style="font-size:15.5px;"> {{ site.data.intros.publications }} </p>
+        <p style="font-size:15.5px;"> {{ site.data.publications.intro }} </p>
       </div>
     </div>
     {% for year in publications reversed %}
