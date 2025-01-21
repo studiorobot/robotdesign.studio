@@ -44,8 +44,6 @@ members:
    linkedin: www.linkedin.com/in/grace-p-5a33961 
    img: team/phd/Grace_Pan_PhD.jpg
 
-
-
  - name: Aleena Qaiser
    standing: Master
    major: Information
@@ -119,8 +117,6 @@ members:
    github: https://github.com/shczx
    img: team/masters/Zhixuan_Chen_Masters.jpg
 
-
-
  - name: Angshu Adhya
    standing: Undergrad
    major: Computer Science
@@ -183,8 +179,6 @@ members:
    youtube: https://www.youtube.com/@yert16571 
    img: team/undergrad/Trey_Davis_Undergraduate.JPG
 
-
-#university below department
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer

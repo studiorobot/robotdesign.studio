@@ -1,0 +1,21 @@
+internal:
+  - title: "projects"
+    url: "projects.html"
+  - title: "team"
+    url: "team.html"
+  - title: "publications"
+    url: "publications.html"
+  - title: "press"
+    url: "press.html"
+  - title: "join us"
+    url: "join-us.html"
+
+external:
+  - platform: LinkedIn
+    url: https://www.linkedin.com/company/robot-studio-design/
+    name: LinkedIn
+    icon: fab fa-linkedin
+  - platform: GitHub
+    url: https://github.com/studiorobot
+    name: GitHub
+    icon: fab fa-github
