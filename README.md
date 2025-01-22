@@ -69,7 +69,7 @@ When the website is built, `{{link}}` in the description will be replaced with t
 4. Save the changes. Jekyll will regenerate the site to include your updates.
 
 By following this structure, you can easily keep the lab website up to date with the latest information and ensure a consistent presentation of content.
-```
+
 
 
 ## Structure of the Projects Data File
