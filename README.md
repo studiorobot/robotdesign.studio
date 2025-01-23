@@ -44,7 +44,7 @@ To view the website locally with live reload and automatic browser opening, star
 bundle exec jekyll serve --livereload -o
 ```
 
-By default, this will serve the site at http://localhost:4000 and automatically open it in your browser. Any saved changes you make will be reflected in the browser immediately.
+By default, this will serve the site at http://localhost:4000/robotdesign.studio/ and automatically open it in your browser. Any saved changes you make will be reflected in the browser immediately.
 
 ---
 
