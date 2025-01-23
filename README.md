@@ -1,6 +1,50 @@
-# How to Update the Lab Website Content Using Jekyll Data Files
+# How to Update the Lab Website Content
 
-This README explains how to use Jekyll data files to update different sections of the lab website, including the homepage, news, and other pages.
+This README explains how to use Jekyll to update the lab website content.
+
+---
+
+## Local Setup
+Before updating the lab website, you'll need to set up Jekyll locally.
+
+### Install Jekyll
+Follow the installation guide for your operating system from the official Jekyll website:
+[Jekyll Installation Guide](https://jekyllrb.com/docs/installation/)
+
+### Clone the Repository
+Clone the lab website repository to your local machine using the following SSH or PAT commands:
+
+SSH:
+``` bash
+git clone https://github.com/studiorobot/robotdesign.studio.git
+```
+PAT:
+``` bash
+git clone git@github.com:studiorobot/robotdesign.studio.git
+```
+
+### Navigate to the Project Directory: 
+Move to the directory where the repository was cloned.
+
+``` bash
+cd robotdesign.studio
+```
+
+### Install Dependencies: 
+Ensure you have all required dependencies installed by running:
+
+``` bash
+bundle install
+```
+
+### Run the Local Server: 
+To view the website locally with live reload and automatic browser opening, start the Jekyll server:
+
+``` bash
+bundle exec jekyll serve --livereload -o
+```
+
+By default, this will serve the site at http://localhost:4000 and automatically open it in your browser. Any saved changes you make will be reflected in the browser immediately.
 
 ---
 
