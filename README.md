@@ -16,11 +16,11 @@ Clone the lab website repository to your local machine using the following SSH o
 
 SSH:
 ``` bash
-git clone https://github.com/studiorobot/robotdesign.studio.git
+git clone git@github.com:studiorobot/robotdesign.studio.git
 ```
 PAT:
 ``` bash
-git clone git@github.com:studiorobot/robotdesign.studio.git
+git clone https://github.com/studiorobot/robotdesign.studio.git
 ```
 
 ### Navigate to the Project Directory: 
