@@ -1,14 +1,8 @@
-
 - date: November 29th, 2022
   title: PodBean
   content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
   image: press/fueling-creativity.png
-  description: "Fueling Creativity in Education Podcast with two episodes: {{link}} and on {{link}}."
-  links:
-    - text: "Building Robots to Support Childhood Creativity"
-      url: https://www.podbean.com/media/share/pb-vdwv6-1327784
-    - text: Evaluating the Impact of Creativity Interventions on Children
-      url: https://www.podbean.com/media/share/pb-9ku6h-13276c3
+  description: "Fueling Creativity in Education Podcast with two episodes: [Building Robots to Support Childhood Creativity](https://www.podbean.com/media/share/pb-vdwv6-1327784) and on [Evaluating the Impact of Creativity Interventions on Children](https://www.podbean.com/media/share/pb-9ku6h-13276c3)."
 
 - date: January 5th, 2022
   title: For UW, By UW

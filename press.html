@@ -14,7 +14,8 @@ layout: default
     <a href={{ press_item.link }} target="_blank">
       <div class="row news-item">
         <div class="column width-12" style="margin-bottom:0px; padding:0px;">
-          <div class="column width-2" style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
+          <div class="column width-2"
+            style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
             <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
               alt="{{ press_item.alt_text }}" loading="lazy" />
           </div>
@@ -28,20 +29,15 @@ layout: default
     {% else if press_item.links %}
     <div class="row news-item">
       <div class="column width-12" style="margin-bottom:0px; padding:0px;">
-        <div class="column width-2" style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
+        <div class="column width-2"
+          style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
           <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
             alt="{{ press_item.alt_text }}" loading="lazy" />
         </div>
         <div class="column width-10 text" style="padding:10px;">
           <h5 style="font-size:16px; margin-bottom: 0px;">{{ press_item.content }}</h5>
           {{ press_item.title }}, {{ press_item.date }}<br>
-              {% assign description = press_item.description %}
-              {% assign link_index = 0 %}
-              {% for link in press_item.links %}
-                {% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text | append: '</a>' %}
-                {% assign description = description | replace_first: '{{link}}', link_html %}
-              {% endfor %}
-              {{ description }}
+          {{ press_item.description | markdownify | replace: '<a ', '<a target="_blank" ' }}
         </div>
       </div>
     </div>
@@ -50,4 +46,3 @@ layout: default
   </div>
 </div>
 <!-- Content End -->
-
