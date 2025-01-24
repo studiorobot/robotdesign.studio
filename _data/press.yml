@@ -5,7 +5,7 @@
   image: press/fueling-creativity.png
   description: "Fueling Creativity in Education Podcast with two episodes: {{link}} and on {{link}}."
   links:
-    - text: "Fueling Creativity in Education Podcast with two episodes:"
+    - text: "Building Robots to Support Childhood Creativity"
       url: https://www.podbean.com/media/share/pb-vdwv6-1327784
     - text: Evaluating the Impact of Creativity Interventions on Children
       url: https://www.podbean.com/media/share/pb-9ku6h-13276c3
