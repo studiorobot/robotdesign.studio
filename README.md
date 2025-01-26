@@ -50,19 +50,19 @@ By default, this will serve the site at http://localhost:4000/robotdesign.studio
 
 ## Homepage
 
+The homepage data file includes the following sections:
+
 ### Carousel
 The `carousel` section displays images and text on the homepage slider. Each entry includes:
 - `title`: The heading for the slide.
 - `description`: A short description (supports HTML for line breaks).
 - `image`: The image file path.
-- `overlay_opacity`: Sets the opacity level of the overlay.
 
 ```yaml
 carousel:
-  - title: human&#8209;robot interaction
-    description: "We create robots that enable meaningful<br>and magical connections with humans"
-    image: "img/carrousel/sketch.jpg"
-    overlay_opacity: 0.3
+  - title: multidisciplinarity
+    description: Our work happens at the intersection<br>of robotics, design, and psychology
+    image: carousel/fabrication.jpg
 ```
 
 ### Research Vision
@@ -79,10 +79,10 @@ research_vision: |
 
 The `news` section contains updates about lab activities. Each entry includes:
 - `date`: The date of the event.
-- `description`: A description of the event. It supports replacing words with links.
+- `description`: A description of the event. It supports Markdown links.
 
 ### Adding Links in News
-To add a link, use the `links` key. Replace the text in the description with `{{link}}`, and specify the `text` and `url` in the `links` array.
+To add a link, put the text you want to display in square brackets [], followed immediately by the link in parentheses (), with no space between them.
 
 #### Example:
 ```yaml
@@ -90,33 +90,23 @@ news:
   - date: January 9th, 2025
     description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
 
-  - date: April 9th, 2021
-    description: Paper accepted to {{link}} on {{link}} - {{link}}.
-    links: 
-      - text: DIS 2021
-        url: https://dis.acm.org/2021/
-      - text: robot metaphors
-        url: "https://dl.acm.org/doi/10.1145/3461778.3462060"
-      - text: video
-        url: https://www.youtube.com/watch?v=JpDV9FF3Sf0
+  - date: March 7, 2022
+    description: Organized HRI 2022 workshop on [theory-grounded HRI](https://theoriahri.wixsite.com/theoria).
 ```
 
-When the website is built, `{{link}}` in the description will be replaced with the corresponding text and URL from the `links` array.
+When the website is built, the Markdown links in the description will be rendered with the corresponding text and URL.
 
----
 
 ## Updating Content
 
 1. Locate the appropriate data file (e.g., `homepage.yml` for the homepage).
 2. Add or edit entries using the provided structure.
-3. Use `{{link}}` placeholders and define `links` for clickable text in descriptions.
+3. Use Markdown links for clickable text in the News section.
 4. Save the changes. Jekyll will regenerate the site to include your updates.
 
-By following this structure, you can easily keep the lab website up to date with the latest information and ensure a consistent presentation of content.
+---
 
-
-
-## Structure of the Projects Data File
+## Projects
 
 The projects data file includes the following sections:
 
@@ -148,7 +138,7 @@ active:
     data: 2024 - ongoing | DARPA Young Faculty Award
     description: "..."
     keywords: art, biometrics, interaction language
-    poster: "projects/active/aura/thumbnail.png"
+    poster: active/aura/thumbnail.png
 ```
 
 ---
@@ -184,8 +174,8 @@ completed:
       - code: https://github.com/mayacakmak/emarsoftware/wiki
     description: ...
     keywords: social robot, youth, mental health.
-    poster: projects/past/emar/thumbnail.png
-    video_webm: projects/past/emar/emar.mp4
+    poster: past/emar/thumbnail.png
+    video_webm: past/emar/emar.mp4
 ```
 
 ---
@@ -193,7 +183,7 @@ completed:
 ## Steps to Update the Projects Page
 
 1. **Locate the Data File**:
-   Open the Jekyll data file for projects, usually named `projects.yml` or similar.
+   Open the Jekyll data file for projects called `projects.yml` in the '_data' folder.
 
 2. **Add or Update Content**:
    - Add a new project entry to the `active` or `completed` section.
@@ -208,13 +198,10 @@ completed:
    - Save the updated data file.
    - Rebuild the Jekyll site to apply the changes.
 
----
-
-By following this guide, you can easily keep the projects page up to date with accurate and engaging content.
 
 ---
 
-## Structure of the Team Data File
+## Team
 
 The team data file includes three main sections: `members`, `collab`, and `alumni`.
 
@@ -247,7 +234,7 @@ members:
    google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
    linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
    github: https://github.com/atharva-kashyap 
-   img: team/phd/Atharva_S._Kashyap_PhD.jpg
+   img: phd/Atharva_S._Kashyap_PhD.jpg
 ```
 
 ---
@@ -267,7 +254,7 @@ collab:
     role: Full Stack Engineer
     university: University of Michigan
     department: Robotics
-    img: team/collab/Abhishek_Narula_External_Collaborator.jpg
+    img: collab/Abhishek_Narula_External_Collaborator.jpg
 ```
 
 ---
@@ -293,7 +280,7 @@ alumni:
 ## Steps to Update the Team Page
 
 1. **Locate the Data File**:
-   Open the Jekyll data file for the team, usually named `team.yml` or similar.
+   Open the Jekyll data file for the team named `team.yml`  in the '_data' folder.
 
 2. **Add or Edit Entries**:
    - For current members, update the `members` section.
@@ -301,7 +288,7 @@ alumni:
    - For alumni, update the `alumni` section.
 
 3. **Check Image Paths**:
-   Ensure all `img` paths point to the correct location in the website's assets.
+   Ensure all `img` paths point to the correct location in the team folder.
 
 4. **Save and Rebuild**:
    Save the updated data file and rebuild the Jekyll site to reflect the changes.
@@ -310,7 +297,7 @@ alumni:
 
 By following this structure, you can maintain an up-to-date and organized team page, showcasing the members, collaborators, and alumni effectively.
 
-## Structure of the Publications Data File
+## Publications
 
 The data file for publications includes:
 - `intro`: A brief introductory statement about the page.
@@ -356,7 +343,7 @@ publications:
 ## Steps to Update the Publications Page
 
 1. **Locate the Data File**:
-   Open the Jekyll data file for publications, usually named `publications.yml` or similar.
+   Open the Jekyll data file for publications called `publications.yml` in the '_data' folder.
 
 2. **Add a New Year Section**:
    If a new year needs to be added, create a new section with the year as the key under `publications`.
@@ -391,10 +378,10 @@ publications:
 
 By following this structure, you can efficiently maintain an up-to-date and well-organized publications page.
 
-## Structure of the Press Data File
+## Press
 
 Each entry in the press page can follow one of two formats:
-1. **With Multiple Links**: Use this format if there are multiple links within the `description` field, replacing text with `{{link}}`.
+1. **With Multiple Links**: Use this format if there are multiple links within the `description` field, using Markdown links.
 2. **With a Single Link**: Use this format if there is only one link for the press item.
 
 ### Fields in a Press Entry
@@ -403,10 +390,7 @@ Each entry in the press page can follow one of two formats:
 - `content`: A brief description of the press item.
 - `image`: Path to the thumbnail image for the press item.
 - **For Multiple Links**:
-  - `description`: Text where `{{link}}` placeholders are replaced with actual links.
-  - `links`: A list of links with:
-    - `text`: The replacement text for each `{{link}}`.
-    - `url`: The URL to replace the `{{link}}`.
+  - `description`: Text where Markdown links are rendered
 - **For a Single Link**:
   - `link`: URL for the press item.
 
@@ -416,22 +400,17 @@ Each entry in the press page can follow one of two formats:
 
 ```yaml
 press:
-  - date: November 29th, 2022
-    title: PodBean
-    content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
-    image: press/fueling-creativity.png
-    description: "Fueling Creativity in Education Podcast with two episodes: {{link}} and on {{link}}."
-    links:
-      - text: "Fueling Creativity in Education Podcast with two episodes:"
-        url: https://www.podbean.com/media/share/pb-vdwv6-1327784
-      - text: Evaluating the Impact of Creativity Interventions on Children
-        url: https://www.podbean.com/media/share/pb-9ku6h-13276c3
+- date: November 29th, 2022 # Multiple Links
+  title: PodBean
+  content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
+  image: fueling-creativity.png
+  description: "Fueling Creativity in Education Podcast with two episodes: [Building Robots to Support Childhood Creativity](https://www.podbean.com/media/share/pb-vdwv6-1327784) and on [Evaluating the Impact of Creativity Interventions on Children](https://www.podbean.com/media/share/pb-9ku6h-13276c3)."
 
-  - date: January 5th, 2022
-    title: For UW, By UW
-    content: Interview about how to design robots to help teens recognize mental health needs.
-    image: press/w.png
-    link: https://open.spotify.com/episode/5dS6uYedbwNj7Hpe5n8kBL
+- date: January 5th, 2022 # Single Link
+  title: For UW, By UW
+  content: Interview about how to design robots to help teens recognize mental health needs.
+  image: w.png
+  link: https://open.spotify.com/episode/5dS6uYedbwNj7Hpe5n8kBL
 ```
 
 ---
@@ -439,33 +418,13 @@ press:
 ## Steps to Update the Press Page
 
 1. **Locate the Data File**:
-   Open the Jekyll data file for the press page, usually named `press.yml` or similar.
+   Open the Jekyll data file for the press page called `press.yml` in the '_data' folder.
 
 2. **Add a New Press Entry**:
-   - For multiple links, use the `description` and `links` fields to include the links:
-     ```yaml
-     - date: February 15th, 2025
-       title: Example Title
-       content: Description about the press item.
-       image: press/example.png
-       description: "Read more about the lab's work on {{link}} and {{link}}."
-       links:
-         - text: Example Link 1
-           url: https://example.com/link1
-         - text: Example Link 2
-           url: https://example.com/link2
-     ```
+   - For multiple links, use Markdown link syntax `[text](link)` in the `description` field to include the links.
    - For a single link, use the `link` field:
-     ```yaml
-     - date: February 15th, 2025
-       title: Example Title
-       content: Description about the press item.
-       image: press/example.png
-       link: https://example.com/article
-     ```
-
 3. **Verify Image and Links**:
-   - Ensure the `image` field points to the correct thumbnail image in the repository.
+   - Ensure the `image` field points to the correct thumbnail image in the press folder.
    - Confirm all links (`link` or `links`) are valid and lead to the intended pages.
 
 4. **Save and Rebuild**:
@@ -477,9 +436,7 @@ press:
 - Ensure proper formatting and consistency in the description text for multiple links.
 - For single-link entries, the entire press item will be clickable.
 
-By following this structure, you can maintain an up-to-date press page showcasing the lab's media highlights.
-
-## Structure of the Join Us Data File
+## Join Us
 
 The data file includes sections for introductory text and specific opportunities for different types of applicants. Text fields can contain HTML for links or formatting.
 
@@ -520,7 +477,7 @@ postdocs_text: "We have no openings at this time for postdocs."
 ## Steps to Update the Join Us Page
 
 1. **Locate the Data File**:
-   Open the Jekyll data file for the "Join Us" page, usually named `join_us.yml` or similar.
+   Open the Jekyll data file for the "Join Us" page called `join.yml` in the '_data' folder.
 
 2. **Edit the Relevant Section**:
    - To update the introductory text, modify the `intro_text` field:
