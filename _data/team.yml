@@ -2,8 +2,8 @@ patricia:
   name: Patrícia Alves-Oliveira
   role: Director of Robot Studio
   title: Ph.D., Assistant Professor of Robotics
-  affiliated: "Affiliated Faculty at <a href='https://midas.umich.edu/' target='_blank'>MIDAS</a> and <a href='https://esc.umich.edu/' target='_blank'>ESC</a>"
-  advisor: Research Advisor at <a href='https://www.openstylelab.org/' target='_blank'>Open Style Lab</a> 
+  affiliated: Affiliated Faculty at [MIDAS](https://midas.umich.edu/) and [ESC](https://esc.umich.edu/)
+  advisor: Research Advisor at [Open Style Lab](https://www.openstylelab.org/)
   email: robopati@umich.edu
   website: https://patricialvesoliveira.com/
   google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate
@@ -23,7 +23,7 @@ members:
    google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
    linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
    github: https://github.com/atharva-kashyap 
-   img: team/phd/Atharva_S._Kashyap_PhD.jpg
+   img: phd/Atharva_S._Kashyap_PhD.jpg
 
  - name: Connor Williams
    standing: Ph.D.
@@ -32,7 +32,7 @@ members:
    project: Guardian
    joined: January 2024
    google_scholar: https://scholar.google.com/citations?user=JF5Jl6EAAAAJ&hl=en 
-   img: team/phd/Connor_Williams_PhD.jpg
+   img: phd/Connor_Williams_PhD.jpg
 
  - name: Grace Pan
    standing: Ph.D.
@@ -42,7 +42,7 @@ members:
    joined: Fall 2024
    google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ&view_op=list_works&gmla=AL3_zihzNO90Td1GOD_xDrCi45TZlnvj4yPpj0GfWJfW1ETmQEP2p_IqWzJ4eTjlk0CeCcsA5gr4MgxMDzBL_HKK 
    linkedin: www.linkedin.com/in/grace-p-5a33961 
-   img: team/phd/Grace_Pan_PhD.jpg
+   img: phd/Grace_Pan_PhD.jpg
 
  - name: Aleena Qaiser
    standing: Master
@@ -52,7 +52,7 @@ members:
    joined: Fall 2024
    personal_website: https://aleena.framer.website/ 
    linkedin: https://www.linkedin.com/in/aleenaqaiser/ 
-   img: team/masters/Aleena_Qaiser_Masters.jpeg
+   img: masters/Aleena_Qaiser_Masters.jpeg
 
  - name: Emily Wu
    standing: Master
@@ -61,7 +61,7 @@ members:
    project: AURA
    joined: January 2024
    linkedin: https://www.linkedin.com/in/wuemilyy/ 
-   img: team/masters/Emily_Wu_Masters.jpg
+   img: masters/Emily_Wu_Masters.jpg
 
  - name: Erfun Ackley
    standing: Masters
@@ -73,8 +73,7 @@ members:
    google_scholar: N/A
    linkedin: https://www.linkedin.com/in/erfun-ackley/
    github: https://github.com/funckley
-   img: team/masters/Erfun_Ackley_Masters.JPG
-
+   img: masters/Erfun_Ackley_Masters.JPG
 
  - name: Guan-Ling Chen
    standing: Masters
@@ -83,9 +82,9 @@ members:
    project: Future
    joined: Fall 2024
    linkedin: https://www.linkedin.com/in/guanling-chen/
-   img: team/masters/GuanLing_Chen_Masters.jpeg
+   img: masters/GuanLing_Chen_Masters.jpeg
 
- - name: "<span style='font-size:14px !important'>Ilkyaz Sarimehmetoglu</span>"
+ - name: Ilkyaz Sarimehmetoglu
    standing: Masters
    major: Digital and Material Tech
    university: Taubman College
@@ -93,7 +92,7 @@ members:
    joined: Fall 2024
    personal_website: https://ilkyazsarimehmetoglu.com
    linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
-   img: team/masters/Ilkyaz_Sarimehmetoglu_Masters.jpeg
+   img: masters/Ilkyaz_Sarimehmetoglu_Masters.jpeg
 
  - name: Jeffrey Qiu
    standing: Masters
@@ -104,7 +103,7 @@ members:
    personal_website: https://jeffreyq.com/
    linkedin: https://www.linkedin.com/in/jeffrey-q/
    github: https://github.com/jeffreyqqiu/
-   img: team/masters/Jeffrey_Qiu_Masters.jpg
+   img: masters/Jeffrey_Qiu_Masters.jpg
 
  - name: Zhixuan Chen	
    standing: Masters
@@ -115,7 +114,7 @@ members:
    personal_website: https://shczx.github.io/
    linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/
    github: https://github.com/shczx
-   img: team/masters/Zhixuan_Chen_Masters.jpg
+   img: masters/Zhixuan_Chen_Masters.jpg
 
  - name: Angshu Adhya
    standing: Undergrad
@@ -126,7 +125,7 @@ members:
    personal_website: https://www.aadhya.me
    linkedin: https://www.linkedin.com/in/aadhya22
    github: https://www.github.com/a-adhya
-   img: team/undergrad/Angshu_Adhya_Undergraduate.JPG
+   img: undergrad/Angshu_Adhya_Undergraduate.JPG
 
  - name: Cindy Yang
    standing: Undergrad
@@ -135,7 +134,7 @@ members:
    project: AURA
    joined: Fall 2024
    linkedin: https://www.linkedin.com/in/cindy-yang-274662250 
-   img: team/undergrad/Cindy_Yang_Undergraduate.jpg
+   img: undergrad/Cindy_Yang_Undergraduate.jpg
 
  - name: Elijah Cantu
    standing: Undergrad
@@ -147,7 +146,7 @@ members:
    linkedin: https://www.linkedin.com/in/elijahcantu 
    github: https://github.com/elijahcantu
 
-   img: team/undergrad/elijah_cantu.jpeg
+   img: undergrad/elijah_cantu.jpeg
 
  - name: Jiali Zheng
    standing: Undergrad
@@ -156,7 +155,7 @@ members:
    project: Relate
    joined: Spring 2024
    linkedin: (26) Jiali Zheng | LinkedIn
-   img: team/undergrad/Jiali_Undergrad.jpeg
+   img: undergrad/Jiali_Undergrad.jpeg
 
  - name: Rishad Hasan
    standing: Undergrad
@@ -165,7 +164,7 @@ members:
    project: AURA
    joined: Fall 2024
    linkedin: https://www.linkedin.com/in/rishadhasan/
-   img: team/undergrad/Rishad_Hasan_Undergraduate.jpg
+   img: undergrad/Rishad_Hasan_Undergraduate.jpg
 
  - name: Trey Davis
    standing: Undergrad
@@ -177,56 +176,56 @@ members:
    linkedin: https://www.linkedin.com/in/trey-davis-916163221/ 
    github: https://github.com/dtrey-umich 
    youtube: https://www.youtube.com/@yert16571 
-   img: team/undergrad/Trey_Davis_Undergraduate.JPG
+   img: undergrad/Trey_Davis_Undergraduate.JPG
 
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
     university: University of Michigan
     department: Robotics
-    img: team/collab/Abhishek_Narula_External_Collaborator.jpg
+    img: collab/Abhishek_Narula_External_Collaborator.jpg
 
   - name: Anastasia Kouvaras Ostrowski 
     role: Assistant Professor 
     university: Purdue University
     department: Computer Graphics Tech
-    img: team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
+    img: collab/Anastasia_Ostrowski_External_Collaborator.jpg
 
   - name: Jim Cogswell
     role: Full Professor 
     department: STAMPS School of Art & Design
     university: University of Michigan
-    img: team/collab/Jim-Cogswell-External-Collaborator.jpg
+    img: collab/Jim-Cogswell-External-Collaborator.jpg
 
   - name: Leia Stirling
     role: Associate Professor
     university: University of Michigan
     department: Industrial and Operations Engineering
-    img: team/collab/Leia_Stirling_External_Collaborator.jpg
+    img: collab/Leia_Stirling_External_Collaborator.jpg
 
   - name: Mark Draelos
     role: Assistant Professor
     university: University of Michigan
     department: Robotics
-    img: team/collab/Mak_Draelos-External_Collaborator.jpg
+    img: collab/Mak_Draelos-External_Collaborator.jpg
   
   - name: Nita Valikodath
     role: Clinical Assistant Professor
     university: University of Michigan
     department: Ophthalmology and Visual Sciences
-    img: team/collab/Nita_Valikodath-External_Collaborator.jpeg
+    img: collab/Nita_Valikodath-External_Collaborator.jpeg
 
   - name: Peter Kahn
     role: Full Professor
     university: University of Washington
     department: Psychology
-    img: team/collab/Peter_Kahn_External_collaborator.jpeg
+    img: collab/Peter_Kahn_External_collaborator.jpeg
 
   - name: Siddhartha Srinivasa
     role: Full Professor
     university: University of Washington
     department: Computer Science and Engineering
-    img: team/collab/Sidd_Srinivasa_External_Collaborator.jpg
+    img: collab/Sidd_Srinivasa_External_Collaborator.jpg
 
 
 #alumni:

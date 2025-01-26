@@ -16,7 +16,7 @@ layout: default
         <div class="column width-12" style="margin-bottom:0px; padding:0px;">
           <div class="column width-2"
             style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
-            <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
+            <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
               alt="{{ press_item.alt_text }}" loading="lazy" />
           </div>
           <div class="column width-10 text" style="padding:10px;">
@@ -31,13 +31,13 @@ layout: default
       <div class="column width-12" style="margin-bottom:0px; padding:0px;">
         <div class="column width-2"
           style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
-          <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="{{ press_item.image }}"
+          <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
             alt="{{ press_item.alt_text }}" loading="lazy" />
         </div>
         <div class="column width-10 text" style="padding:10px;">
           <h5 style="font-size:16px; margin-bottom: 0px;">{{ press_item.content }}</h5>
           {{ press_item.title }}, {{ press_item.date }}<br>
-          {{ press_item.description | markdownify | replace: '<a ', '<a target="_blank" ' }}
+          {{ press_item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
         </div>
       </div>
     </div>

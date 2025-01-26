@@ -8,7 +8,7 @@ internal:
   - title: "press"
     url: "press.html"
   - title: "join us"
-    url: "opportunities.html"
+    url: "join.html"
 
 external:
   - platform: LinkedIn

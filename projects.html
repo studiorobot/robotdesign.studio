@@ -45,9 +45,9 @@ layout: default
 					<div class="row mt-20 aproject" id="project{{ project.id }}" class="project-container">
 						<div class="column width-4" onmouseover="PlayVideo({{ project.id }})"
 							style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay({{ project.id }})">
-							<video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}">
-								<source type="video/webm" src="{{ project.video_webm }}">
-								<source type="video/mp4" src="{{ project.video_mp4 }}">
+							<video loop muted playsinline id="video{{ project.id }}" poster="projects/{{ project.poster }}">
+								<source type="video/webm" src="projects/{{ project.video_webm }}">
+								<source type="video/mp4" src="projects/{{ project.video_mp4 }}">
 							</video>
 						</div>
 						<div class="project-description column width-8" style="padding:10px;">

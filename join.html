@@ -1,14 +1,12 @@
 ---
 layout: default
 ---
-<!-- Content -->
 <div class="content clearfix">
-	<!-- Feature Column Section -->
 	<div class="section-block replicable-content" style="padding-bottom:0px;">
 		<div class="row">
 			<div class="column width-12">
 				<h1 class="mb-10" style="font-size:3em;">Opportunities at Robot Studio</h1>
-				<p style="color:#000;">{{ site.data.opportunities.intro_text }}
+				<p style="color:#000;">{{ site.data.join.intro_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 				</p>
 			</div>
 		</div>
@@ -16,28 +14,27 @@ layout: default
 			<div class="column width-12">
 				<h4 style="font-size:16px;">Ph.D. Students</h4>
 				<p class="authors">
-					{{ site.data.opportunities.phd_students_text  }}
+					{{ site.data.join.phd_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 				</p>
 			</div>
 			<div class="column width-12">
 				<h4 style="font-size:16px;">Undergraduate and Master Students</h4>
 				<p class="authors">
-					{{ site.data.opportunities.undergraduate_master_students_text }}
+					{{ site.data.join.undergraduate_master_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 				</p>
 			</div>
 			<div class="column width-12">
 				<h4 style="font-size:16px;">Visiting Students</h4>
 				<p class="authors">
-					{{ site.data.opportunities.visiting_students_text }}
+					{{ site.data.join.visiting_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 				</p>
 			</div>
 			<div class="column width-12">
 				<h4 style="font-size:16px;">Postdocs </h4>
 				<p class="authors">
-					{{ site.data.opportunities.postdocs_text }}
+					{{ site.data.join.postdocs_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
 				</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Content End -->

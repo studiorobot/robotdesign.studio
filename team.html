@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="content clearfix">
-  <!-- Feature Column Section -->
   <div class="section-block replicable-content">
     <div class="section-block left-on-mobile de4mers-nav right" id="director" style="padding:0px;">
       <div class="row no-padding">
@@ -36,8 +35,8 @@ layout: default
           <p class="project-description" style="font-size:1.3rem;">
             {{ site.data.team.patricia.role }}<br />
             {{ site.data.team.patricia.title }}<br />
-            {{ site.data.team.patricia.affiliated }}<br />
-            {{ site.data.team.patricia.advisor }}<br />
+            {{ site.data.team.patricia.affiliated | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}<br />
+            {{ site.data.team.patricia.advisor | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}<br />
             <a href="{{ site.data.team.patricia.website }}" target="_blank" style="border-bottom: none;">
               <i class="fas fa-globe"></i>
             </a>
@@ -67,7 +66,7 @@ layout: default
       <div id="row">
         {% for student in site.data.team.members %}
         <div class="column member-column {{ 'member-' | append: forloop.index }}">
-          <img src="{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
+          <img src="team/{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
           <h3 style="font-size: 1.5rem; margin-top:10px; margin-bottom: 0em;">{{ student.name }}</h3>
           <p style=" color:black;font-size: 12px; line-height:18px;">
             {{ student.standing }}, {{ student.major }}<br />
@@ -123,17 +122,12 @@ layout: default
       <div id="row">
         {% for collaborator in site.data.team.collab %}
         <div class="column member-column">
-          <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
+          <img src="team/{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
           <h4 class="project-description" style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
             collaborator.name }}
           </h4>
           <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ collaborator.role
             }} <br />{{ collaborator.department }}<br>{{ collaborator.university }}<br>
-            {% if collaborator.link %}
-            <a href="{{ collaborator.link }}" target="_blank" style="color:#333;border-bottom: none;"> <i
-                class="fas fa-globe"></i>
-            </a>
-            {% endif %}
           </p>
         </div>
         {% endfor %}

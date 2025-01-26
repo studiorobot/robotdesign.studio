@@ -8,7 +8,7 @@ layout: default
 			<ul class="tms-slides">
 				{% for slide in site.data.homepage.carousel %}
 				<li class="tms-slide" data-image data-as-bkg-image data-force-fit data-overlay-bkg-color="#000000"
-					data-overlay-bkg-opacity="{{ slide.overlay_opacity }}" data-animation="slideLeftRight"
+					 data-animation="slideLeftRight"
 					data-auto-advance data-auto-advance-interval="6000">
 					<div class="tms-content">
 						<div class="tms-content-inner left v-align-middle">
@@ -27,7 +27,7 @@ layout: default
 							</div>
 						</div>
 					</div>
-					<img data-src="{{ slide.image }}" src="" alt="A collage related to {{ slide.title }}"
+					<img data-src="homepage/{{ slide.image }}" src="" alt="A collage related to {{ slide.title }}"
 						loading="lazy">
 				</li>
 				{% endfor %}
@@ -42,7 +42,7 @@ layout: default
 				<p style="margin-top:10px;">Robot Studio was created and is directed by Patricia Alves-Oliveira.</p>
 			</div>
 			<div class="column width-4" id="image-container">
-				<img id="centered-image" class="img-fluid" src="img/research-vision.png" alt="Research Vision" style="height:200px;">
+				<img id="centered-image" class="img-fluid" src="homepage/research-vision.png" alt="Research Vision" style="height:200px;">
 			</div>
 		</div>
 		<div class="row">
@@ -54,16 +54,7 @@ layout: default
 			{% for item in limited_news %}
 			<div class="row news-item">
 				<strong>{{ item.date }}:</strong>
-				{% assign description = item.description %}
-				{% assign link_index = 0 %}
-				{% for link in item.links %}
-				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text
-					|
-					append: '</a>' %}
-				{% assign description = description | replace_first: '{{link}}', link_html %}
-				{% assign link_index = link_index | plus: 1 %}
-				{% endfor %}
-				{{ description }}
+				{{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
 			</div>
 			{% endfor %}
 		</div>
@@ -73,16 +64,7 @@ layout: default
 			{% for item in remaining_news %}
 			<div class="row news-item">
 				<strong>{{ item.date }}:</strong>
-				{% assign description = item.description %}
-				{% assign link_index = 0 %}
-				{% for link in item.links %}
-				{% assign link_html = '<a target="_blank" href="' | append: link.url | append: '">' | append: link.text
-					|
-					append: '</a>' %}
-				{% assign description = description | replace_first: '{{link}}', link_html %}
-				{% assign link_index = link_index | plus: 1 %}
-				{% endfor %}
-				{{ description }}
+				{{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
 			</div>
 			{% endfor %}
 		</div>
