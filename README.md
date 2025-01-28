@@ -264,15 +264,15 @@ The `alumni` section lists former team members. Each entry contains:
 - `name`: Full name of the alumnus/alumna.
 - `role`: Role during their time with the lab.
 - `university`: Institution the alumnus/alumna attended.
-- `year`: Year and term they left.
+- `year`: Year and terms they were here (e.g., "Winter 2024 - Fall 2024").
 
 #### Example:
 ```yaml
 alumni:
-  - name: name
-    role: role
-    university: uni
-    year: year term
+  - name: 
+    role: 
+    university: 
+    year: 
 ```
 
 ---
