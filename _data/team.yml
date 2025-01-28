@@ -45,7 +45,7 @@ members:
    img: phd/Grace_Pan_PhD.jpg
 
  - name: Aleena Qaiser
-   standing: Master
+   standing: Masters
    major: Information
    university: University of Michigan
    project: Future
@@ -54,8 +54,17 @@ members:
    linkedin: https://www.linkedin.com/in/aleenaqaiser/ 
    img: masters/Aleena_Qaiser_Masters.jpeg
 
+ - name: David Ho
+   standing: Masters
+   major: Robotics
+   university: University of Michigan
+   project: AURA
+   joined: January 2025
+   linkedin: https://www.linkedin.com/in/wuemilyy/ 
+   img: masters/Emily_Wu_Masters.jpg
+
  - name: Emily Wu
-   standing: Master
+   standing: Masters
    major: Robotics
    university: University of Michigan
    project: AURA
