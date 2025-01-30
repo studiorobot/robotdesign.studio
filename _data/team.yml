@@ -94,6 +94,16 @@ members:
    linkedin: https://www.linkedin.com/in/guanling-chen/
    img: masters/GuanLing_Chen_Masters.jpeg
 
+ - name: Gurnoor Kaur
+   standing: Masters
+   major: Robotics
+   university: University of Michigan
+   project: Touch
+   joined: January 2025
+   linkedin: https://www.linkedin.com/in/gkaur07
+   personal_website: https://gurnoork07.github.io/
+   img: masters/Gurnoor_Kaur_MS.jpg
+
  - name: Ilkyaz Sarimehmetoglu
    standing: Masters
    major: Digital and Material Tech
@@ -103,6 +113,15 @@ members:
    personal_website: https://ilkyazsarimehmetoglu.com
    linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
    img: masters/Ilkyaz_Sarimehmetoglu_Masters.jpeg
+
+ - name: Longzhen Yuan
+   standing: Masters
+   major: Electrical and Computer Engineering
+   university: University of Michigan
+   project: AURA
+   joined: January 2025
+   linkedin: www.linkedin.com/in/longzhen-yuan-1b1a04268
+   img: masters/Longzhen_Yuan_Masters.jpg
 
  - name: Jeffrey Qiu
    standing: Masters
@@ -114,17 +133,6 @@ members:
    linkedin: https://www.linkedin.com/in/jeffrey-q/
    github: https://github.com/jeffreyqqiu/
    img: masters/Jeffrey_Qiu_Masters.jpg
-
- - name: Zhixuan Chen	
-   standing: Masters
-   major: Computer Science
-   university: University of Michigan
-   project: Relate
-   joined: Spring 2024
-   personal_website: https://shczx.github.io/
-   linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/
-   github: https://github.com/shczx
-   img: masters/Zhixuan_Chen_Masters.jpg
 
  - name: Angshu Adhya
    standing: Undergrad
@@ -155,8 +163,17 @@ members:
    personal_website: https://elijahcantu.com
    linkedin: https://www.linkedin.com/in/elijahcantu 
    github: https://github.com/elijahcantu
-
    img: undergrad/elijah_cantu.jpeg
+
+ - name: Hana Ichikawa
+   standing: Undergrad
+   major: Art & Design
+   university: University of Michigan
+   project: AURA
+   joined: December 2024
+   personal_website: https://ichikaha.myportfolio.com/
+   linkedin: https://www.linkedin.com/in/hana-ichikawa-59661b24a/
+   img: undergrad/Hana_Ichikawa_undergrad.jpg
 
  - name: Jiali Zheng
    standing: Undergrad
@@ -164,8 +181,18 @@ members:
    university: University of Michigan
    project: Relate
    joined: Spring 2024
-   linkedin: (26) Jiali Zheng | LinkedIn
+   linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
    img: undergrad/Jiali_Undergrad.jpeg
+
+ - name: Mrunmayee “MJ” Jere
+   standing: Undergrad
+   major: Computer Science
+   university: University of Michigan
+   project: AURA
+   joined: January 2025
+   linkedin: https://www.linkedin.com/in/mjere/
+   github: https://github.com/m-jere
+   img: undergrad/Mrunmayee_Jere_Undergraduate.jpg
 
  - name: Rishad Hasan
    standing: Undergrad
@@ -175,6 +202,16 @@ members:
    joined: Fall 2024
    linkedin: https://www.linkedin.com/in/rishadhasan/
    img: undergrad/Rishad_Hasan_Undergraduate.jpg
+
+ - name: Tianxin (Jessica) Li
+   standing: Undergrad
+   major: Computer Science
+   university: University of Michigan
+   project: AURA
+   joined: January 2024
+   linkedin: https://www.linkedin.com/in/jessica-li-a2abb528a
+   github: https://github.com/Jessica-IX
+   img: undergrad/Tianxin(Jessica)_Li_undergrad.jpg
 
  - name: Trey Davis
    standing: Undergrad
@@ -238,8 +275,8 @@ collab:
     img: collab/Sidd_Srinivasa_External_Collaborator.jpg
 
 
-#alumni:
-#  - name: name
-#    role: role
-#    university: uni
-#    year: year term
+alumni:
+ - name: Zhixuan Chen	
+   role: Relate
+   university: University of Michigan
+   year: Spring 2024 - Fall 2024
