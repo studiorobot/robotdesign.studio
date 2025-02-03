@@ -4,6 +4,9 @@ This README explains how to use Jekyll to update the lab website content.
 
 ---
 
+## Content
+Content can be found on the [Google Drive](https://drive.google.com/drive/folders/1YS7ioFVL623bIPBt7R1lxnIaZr9TWC4w).
+
 ## Local Setup
 Before updating the lab website, you'll need to set up Jekyll locally.
 
@@ -119,64 +122,40 @@ intro: Our projects explore the intersection of robotics, creativity, and human 
 
 ---
 
-### Active Projects
-The `active` section lists ongoing projects. Each project entry contains:
+### Active/Completed Projects
+Each project entry contains:
 - `id`: A unique identifier for the project.
 - `name`: The project title.
 - `members`: Names of team members involved.
 - `data`: Timeframe and funding source.
 - `description`: A brief overview of the project.
-- `keywords`: Tags describing the project.
-- `poster`: Path to the thumbnail image.
-
-#### Example:
-```yaml
-active:
-  - id: 15
-    name: "AURA: Authenticity Markets in Artist Robot Interaction"
-    members: Abhishek Narula, Angshu Adhya, Cindy Yang, Emily Wu, Rishad Hasan
-    data: 2024 - ongoing | DARPA Young Faculty Award
-    description: "..."
-    keywords: art, biometrics, interaction language
-    poster: active/aura/thumbnail.png
-```
-
----
-
-### Completed Projects
-The `completed` section lists finished projects. Each project entry includes:
-- `id`: A unique identifier for the project.
-- `name`: The project title.
-- `members`: Names of team members involved.
-- `data`: Timeframe and funding source.
-- `links`: Relevant links such as DOI references, videos, or code repositories. These links should specify:
-  - `doi`: Link to a publication.
-  - `yt`: Link to a video (e.g., YouTube).
-  - `code`: Link to a code repository.
-- `description`: A brief summary of the project.
-- `keywords`: Tags describing the project.
 - `poster`: Path to the thumbnail image.
 - `video_webm`: Path to the project video.
 
 #### Example:
 ```yaml
 completed:
-  - id: 8
-    name: "EMAR: Ecological Momentary Assessment Robot"
-    members: Elin Björling, Maya Cakmak
-    data: 2017-2022 | NSF
+  - id: 1
+    name: "EMOTE: Embodied-Perceptive Tutors for Empathy-Based Learning"
+    members: INESC-ID (Portugal), Herriot-Watt University (UK), Goetebordgs University (Sweden), University of Bremen (Germany), University of Sunderland (UK)
+    data: 2012 - 2016 
     links: 
-      - doi: https://openreview.net/forum?id=0WDtVJVwBcf 
-      - doi: https://dl.acm.org/doi/abs/10.1145/3532106.3533541
-      - doi: https://dl.acm.org/doi/abs/10.1145/3526113.3545707
-      - yt: https://www.youtube.com/watch?v=rD5b_UfjV7A
-      - code: https://github.com/mayacakmak/emarsoftware
-      - code: https://github.com/mayacakmak/emarsoftware/wiki
-    description: ...
-    keywords: social robot, youth, mental health.
-    poster: past/emar/thumbnail.png
-    video_webm: past/emar/emar.mp4
+      site: 
+        - https://cordis.europa.eu/project/id/317923
+      yt: 
+        - https://www.youtube.com/watch?v=tzaxfyUUrCU
+      doi: 
+        - https://dl.acm.org/doi/abs/10.1145/3300188
+        - https://link.springer.com/article/10.1007/s00146-016-0667-2
+        - https://ieeexplore.ieee.org/abstract/document/7451752
+    description: This European FP7 project set the challenge to create empathic robotic tutors by researching how robots can respond to learners. An empathic robot can adapt to the learning pace of children, supporting their process and at the same time challenging new curricula. Can an autonomous robot designed with empathic competencies foster collaborative learning in a group context? Can an empathic robot sustain positive educational outcomes in long-term collaborative learning interactions with groups of students? 
+    keywords: educational robotics, sustainable curriculum, school deployment 
+    poster: past/emote/thumbnail.jpg
+    video_webm: past/emote/emote.mp4
 ```
+
+---
+
 
 ---
 
@@ -188,7 +167,8 @@ completed:
 2. **Add or Update Content**:
    - Add a new project entry to the `active` or `completed` section.
    - Ensure that all fields (`id`, `name`, `members`, `data`, etc.) are correctly filled.
-   - For `links`, specify the appropriate type (`doi`, `yt`, or `code`) and URL.
+   - For `links`, specify the appropriate type under(`doi`, `yt`, or `code`) by adding a URL.
+   - For poster and video, make sure the paths point to the correct files in projects folder.
 
 3. **Verify Content**:
    - Ensure each project has a unique `id`.
@@ -260,23 +240,28 @@ collab:
 ---
 
 ### Alumni
-The `alumni` section lists former team members. Each entry contains:
-- `name`: Full name of the alumnus/alumna.
-- `role`: Role during their time with the lab.
-- `university`: Institution the alumnus/alumna attended.
-- `year`: Year they were here (e.g., 2024, 2024 - 2025).
 
-#### Example:
-```yaml
-alumni:
-  - name: 
-    role: 
-    university: 
-    year: 
-```
+The **alumni** section lists former team members. Each entry contains:
+
+- **name**: name.
+- **future**: Where they went after graduating/left. 
+  - **project**: The project they worked on.
+- **year**: Year(s) on the team (e.g., 2024, 2024 - 2025).
+- **linkedin**: A link to their LinkedIn profile.
 
 ---
 
+For example:
+
+```yaml
+alumni:
+  - name: Zhixuan Chen
+    future: 
+      project: Relate
+    year: 2024
+    linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/
+```
+---
 ## Steps to Update the Team Page
 
 1. **Locate the Data File**:
@@ -288,7 +273,7 @@ alumni:
    - For alumni, update the `alumni` section.
 
 3. **Check Image Paths**:
-   Ensure all `img` paths point to the correct location in the team folder.
+   Ensure all `img` paths point to the correct location in the team folder. 
 
 4. **Save and Rebuild**:
    Save the updated data file and rebuild the Jekyll site to reflect the changes.
@@ -311,7 +296,7 @@ Each publication entry contains:
 - `img`: Path to the thumbnail image for the publication.
 - `project`: The project associated with the publication (if applicable).
 - `doi` (optional): DOI link to the publication (if available).
-
+- `video` (optional): Video link(if available).
 ---
 
 ## Example Data File Structure
@@ -361,13 +346,61 @@ publications:
 3. **Add a New Publication Entry**:
    Add the details for the publication under the relevant year. Ensure all fields (`title`, `authors`, `event`, etc.) are filled out correctly.
 
-4. **Check Paths and Links**:
-   - Verify the `pdf` field points to the correct file path in the repository.
-   - Ensure the `img` field links to the correct thumbnail image.
+4. **Add the PDF to the `publications` Folder**:
+   Place the PDF for the publication in the `publications` folder. This is the folder that will be referenced for all publication PDFs. For example, you would add `example.pdf` to the `publications/` folder.
+
+5. **Generate the Thumbnail**:
+   To generate the thumbnail for the publication's PDF, you need to run a Python script (`thumbnail.py`). Follow the steps below to set up the environment and generate the thumbnail.
+
+   ### Steps to Generate the Thumbnail
+
+   - **Set Up a Virtual Environment**:
+   
+     1. **Create the Virtual Environment**:
+        Run the following command to create a virtual environment named `venv` in the project directory:
+
+        ```bash
+        python -m venv venv
+        ```
+
+     2. **Activate the Virtual Environment**:
+        
+        - **On macOS/Linux**:
+          ```bash
+          source venv/bin/activate
+          ```
+
+        - **On Windows**:
+          ```bash
+          .\venv\Scripts\activate
+          ```
+
+     3. **Install Dependencies**:
+        Install the required dependencies from the `requirements.txt` file:
+
+        ```bash
+        pip install -r requirements.txt
+        ```
+
+   - **Run the Script**:
+     After installing the dependencies, run the `thumbnail.py` script to generate a thumbnail for the publication. Pass the path to the PDF and the page number from which to generate the thumbnail.
+
+     For example, if you have `example.pdf` in the `publications/` folder and you want to generate the thumbnail for the third page:
+
+     ```bash
+     python thumbnail.py publications/example.pdf 3
+     ```
+
+     This will generate a thumbnail image of the third page of `example.pdf` and delete the previous pages from the pdf. The thumbnail will be generated as a png in the publications/thumbnails folder with the same name as the pdf.
+
+6. **Check Paths and Links**:
+   - Verify that the `pdf` field in `publications.yml` points to the correct file path in the repository.
+   - Ensure the `img` field links to the correct thumbnail image (generated by the script).
    - If available, add a `doi` field with the DOI link.
 
-5. **Save and Rebuild**:
+7. **Save and Rebuild**:
    Save the updated data file and rebuild the Jekyll site to reflect the changes.
+
 
 ---
 
@@ -399,7 +432,7 @@ Each entry in the press page can follow one of two formats:
 ## Example Data File Structure
 
 ```yaml
-press:
+press: 
 - date: November 29th, 2022 # Multiple Links
   title: PodBean
   content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
