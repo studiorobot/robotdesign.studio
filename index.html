@@ -74,8 +74,17 @@ layout: index
 				<span id="more-less-text">More</span> <!-- Initial "More" text -->
 			</button>
 		</div>
+		
+	</div>
+	<div id="footer">
+		© 2024 Robot Studio. Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M
+			Lab</a>.
+		{% for link in site.data.navigation.external %}
+		<i class="{{ link.icon }}"></i> <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+		{% endfor %}
 	</div>
 </div>
+
 <script>
 	function toggleNews() {
 		var hiddenNews = document.querySelector('.hidden-news');
