@@ -1,40 +1,49 @@
 ---
 layout: default
 ---
-<div class="content clearfix">
-	<div class="section-block replicable-content" style="padding-bottom:0px;">
-		<div class="row">
-			<div class="column width-12">
-				<h1 class="mb-10" style="font-size:3em;">Opportunities at Robot Studio</h1>
-				<p style="color:#000;">{{ site.data.join.intro_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column width-12">
-				<h4 style="font-size:16px;">Ph.D. Students</h4>
-				<p class="authors">
-					{{ site.data.join.phd_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</p>
-			</div>
-			<div class="column width-12">
-				<h4 style="font-size:16px;">Undergraduate and Master Students</h4>
-				<p class="authors">
-					{{ site.data.join.undergraduate_master_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</p>
-			</div>
-			<div class="column width-12">
-				<h4 style="font-size:16px;">Visiting Students</h4>
-				<p class="authors">
-					{{ site.data.join.visiting_students_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</p>
-			</div>
-			<div class="column width-12">
-				<h4 style="font-size:16px;">Postdocs </h4>
-				<p class="authors">
-					{{ site.data.join.postdocs_text | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-				</p>
-			</div>
-		</div>
+
+<div class="row">
+	<div class="column width-12">
+		<h1 class="mb-10" style="font-size:3em;">Opportunities at Robot Studio</h1>
+		<p style="color:#000;">{{ site.data.join.intro_text | markdownify | replace: '<a ', ' <a
+				target="_blank" ' | remove: ' <p>' | remove: '</p>' }}
+		</p>
 	</div>
 </div>
+<div class="row">
+	<div class="column width-12">
+		<h4 style="font-size:16px;">Ph.D. Students</h4>
+		<p class="authors">
+			{{ site.data.join.phd_students_text | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: ' <p>'
+				| remove: '</p>' }}
+		</p>
+	</div>
+	<div class="column width-12">
+		<h4 style="font-size:16px;">Undergraduate and Master Students</h4>
+		<p class="authors">
+			{{ site.data.join.undergraduate_master_students_text | markdownify | replace: '<a ', ' <a
+				target="_blank" ' | remove: ' <p>' | remove: '</p>' }}
+		</p>
+	</div>
+	<div class="column width-12">
+		<h4 style="font-size:16px;">Visiting Students</h4>
+		<p class="authors">
+			{{ site.data.join.visiting_students_text | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: '
+				<p>' | remove: '</p>' }}
+		</p>
+	</div>
+	<div class="column width-12">
+		<h4 style="font-size:16px;">Postdocs </h4>
+		<p class="authors">
+			{{ site.data.join.postdocs_text | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: ' <p>' |
+				remove: '</p>' }}
+		</p>
+	</div>
+</div>
+
+
+<style>
+	.section-block.replicable-content {
+		padding-bottom: 0px;
+	}
+</style>

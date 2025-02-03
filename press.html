@@ -1,48 +1,42 @@
 ---
 layout: default
 ---
-<!-- Content -->
-<div class="content clearfix">
-  <div class="section-block replicable-content">
-    <div class="row">
-      <div class="column width-12" style="margin-bottom:20px;">
-        <h1 style="margin-bottom:0px;font-size:3em;">Press</h1>
-      </div>
-    </div>
-    {% for press_item in site.data.press %}
-    {% if press_item.link %}
-    <a href={{ press_item.link }} target="_blank">
-      <div class="row news-item">
-        <div class="column width-12" style="margin-bottom:0px; padding:0px;">
-          <div class="column width-2"
-            style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
-            <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
-              alt="{{ press_item.alt_text }}" loading="lazy" />
-          </div>
-          <div class="column width-10 text" style="padding:10px;">
-            <h5 style="font-size:16px; margin-bottom: 0px;"> {{ press_item.content }}</h5>
-            {{ press_item.title }}, {{ press_item.date }}<br>
-          </div>
-        </div>
-      </div>
-    </a>
-    {% else if press_item.links %}
-    <div class="row news-item">
-      <div class="column width-12" style="margin-bottom:0px; padding:0px;">
-        <div class="column width-2"
-          style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
-          <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
-            alt="{{ press_item.alt_text }}" loading="lazy" />
-        </div>
-        <div class="column width-10 text" style="padding:10px;">
-          <h5 style="font-size:16px; margin-bottom: 0px;">{{ press_item.content }}</h5>
-          {{ press_item.title }}, {{ press_item.date }}<br>
-          {{ press_item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}
-        </div>
-      </div>
-    </div>
-    {% endif %}
-    {% endfor %}
+
+<div class="row">
+  <div class="column width-12" style="margin-bottom:20px;">
+    <h1 style="margin-bottom:0px;font-size:3em;">Press</h1>
   </div>
 </div>
-<!-- Content End -->
+{% for press_item in site.data.press %}
+{% if press_item.link %}
+<a href={{ press_item.link }} target="_blank">
+  <div class="row news-item">
+    <div class="column width-12" style="margin-bottom:0px; padding:0px;">
+      <div class="column width-2" style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
+        <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
+          alt="{{ press_item.alt_text }}" loading="lazy" />
+      </div>
+      <div class="column width-10 text" style="padding:10px;">
+        <h5 style="font-size:16px; margin-bottom: 0px;"> {{ press_item.content }}</h5>
+        {{ press_item.title }}, {{ press_item.date }}<br>
+      </div>
+    </div>
+  </div>
+</a>
+{% else if press_item.links %}
+<div class="row news-item">
+  <div class="column width-12" style="margin-bottom:0px; padding:0px;">
+    <div class="column width-2" style="padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:10px;">
+      <img style="border: 2px solid #cecece; margin-top:0px; width:100%" src="press/{{ press_item.image }}"
+        alt="{{ press_item.alt_text }}" loading="lazy" />
+    </div>
+    <div class="column width-10 text" style="padding:10px;">
+      <h5 style="font-size:16px; margin-bottom: 0px;">{{ press_item.content }}</h5>
+      {{ press_item.title }}, {{ press_item.date }}<br>
+      {{ press_item.description | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: ' <p>' | remove: '</p>'
+        }}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endfor %}

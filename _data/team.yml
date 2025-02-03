@@ -9,7 +9,7 @@ patricia:
   google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate
   twitter: https://x.com/p_alvesoliveira
   linkedin: https://www.linkedin.com/in/patricia-alves-oliveira
-  profile_img: patricia/Patricia_Alves-Oliveira.jpg
+  profile_img: team/patricia.jpg
   description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
 
 members:
@@ -283,9 +283,9 @@ collab:
     department: Computer Science and Engineering
     img: collab/Sidd_Srinivasa_External_Collaborator.jpg
 
-
 alumni:
  - name: Zhixuan Chen	
-   role: Relate
-   university: University of Michigan
-   year: Spring 2024 - Fall 2024
+   future:
+   project: Relate
+   year: 2024
+   linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/

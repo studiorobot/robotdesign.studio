@@ -104,12 +104,16 @@
         </div>
       </header>
       <!-- Header End -->
-      {{ content }}
-      <div id="footer">
-        © 2024 Robot Studio. Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M Lab</a>.
-        {% for link in site.data.navigation.external %}
-        <i class="{{ link.icon }}"></i> <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-        {% endfor %}
+      <div class="content clearfix">
+        <div class="section-block replicable-content">
+          {{ content }}
+          <div id="footer">
+            © 2024 Robot Studio. Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M Lab</a>.
+            {% for link in site.data.navigation.external %}
+            <i class="{{ link.icon }}"></i> <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
       <!-- Js -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

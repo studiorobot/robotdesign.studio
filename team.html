@@ -1,314 +1,317 @@
 ---
 layout: default
 ---
-<div class="content clearfix">
-  <div class="section-block replicable-content">
-    <div class="section-block left-on-mobile de4mers-nav right" id="director" style="padding:0px;">
-      <div class="row no-padding">
-        <div class="column width-4 left">
-          <h1 class="mb-mobile-10" style="font-size:3em;">TEAM</h1>
-        </div>
-        <div class="column width-8"  id="header-container">
-          <ul id="headers">
-            <li><a href="#members">Active Members</a></li>
-            <li><a href="#collaborators">Collaborators</a></li>
-            {% if site.data.team.alumni %}
-            <li><a href="#alumni">Previous Members</a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </div>
+
+
+<div class="section-block left-on-mobile de4mers-nav right" id="director" style="padding:0px;">
+  <div class="row no-padding">
+    <div class="column width-4 left">
+      <h1 class="mb-mobile-10" style="font-size:3em;">TEAM</h1>
     </div>
-    <div class="section-block grid-container fade-in-progressively small-margins no-padding-top"
-      data-layout-mode="masonry" data-grid-ratio="1.5" data-animate-filter-duration="700" data-set-dimensions
-      data-animate-resize data-animate-resize-duration="0" data-as-bkg-image>
-      <div id="row">
-        <div class=" member-column " id="pat">
-          <a href="{{ site.data.team.patricia.website }}" target="_blank">
-            <img src="{{ site.data.team.patricia.profile_img }}" id="patricia-header"
-              alt="{{ site.data.team.patricia.name }}'s profile picture" loading="lazy" />
-          </a>
-        </div>
-        <div class=" member-column" id="pat-links">
-          <h1 class="project-description" style="margin-bottom: 0px; font-size: 1.75rem;">{{
-            site.data.team.patricia.name }}</h1>
-          <p class="project-description" style="font-size:1.3rem;">
-            {{ site.data.team.patricia.role }}<br />
-            {{ site.data.team.patricia.title }}<br />
-            {{ site.data.team.patricia.affiliated | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}<br />
-            {{ site.data.team.patricia.advisor | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>' }}<br />
-            <a href="{{ site.data.team.patricia.website }}" target="_blank" style="border-bottom: none;">
-              <i class="fas fa-globe"></i>
-            </a>
-            <a href="{{ site.data.team.patricia.google_scholar }}" target="_blank" style="border-bottom: none;">
-              <i class="fab fa-google-scholar"></i>
-            </a>
-            <a href="{{ site.data.team.patricia.linkedin }}" target="_blank" style="border-bottom: none;">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="{{ site.data.team.patricia.twitter }}" target="_blank" style="border-bottom: none;">
-              <i class="fab fa-x-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:{{ site.data.team.patricia.email }}" target="_blank" style="border-bottom: none;">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </p>
-        </div>
-        <div class=" member-column" id="description">
-          {{ site.data.team.patricia.description }}
-        </div>
-      </div>
-      <!-- Members Section -->
-      <div class="row" id="members">
-        <h2 style="font-size:2.5em;">Active Members</h2>
-      </div>
-      <!-- Member Rows -->
-      <div id="row">
-        {% for student in site.data.team.members %}
-        <div class="column member-column {{ 'member-' | append: forloop.index }}">
-          <img src="team/{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
-          <h3 style="font-size: 1.5rem; margin-top:10px; margin-bottom: 0em;">{{ student.name }}</h3>
-          <p style=" color:black;font-size: 12px; line-height:18px;">
-            {{ student.standing }}, {{ student.major }}<br />
-            {{ student.university }}<br />
-            Joined: {{ student.joined }}<br />
-            {% if student.project %}
-            Project: {{ student.project }}<br />
-            {% endif %}
-            {% if student.role %}
-            Role: {{ student.role }} <br />
-            {% endif %}
-            {% if student.personal_website %}
-            <a href="{{ student.personal_website }}" target="_blank"><i class="fas fa-globe"></i></a>
-            {% endif %}
-            {% if student.website %}
-            <a href="{{ student.website }}" target="_blank"><i class="fas fa-ban"></i></a>
-            {% endif %}
-            {% if student.google_scholar %}
-            <a href="{{ student.google_scholar }}" target="_blank"><i class="fab fa-google-scholar"></i></a>
-            {% endif %}
-            {% if student.linkedin %}
-            <a href="{{ student.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
-            {% endif %}
-            {% if student.github %}
-            <a href="{{ student.github }}" target="_blank"><i class="fab fa-github"></i></a>
-            {% endif %}
-            {% if student.youtube %}
-            <a href="{{ student.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
-            {% endif %}
-            {% if student.twitter %}
-            <a href="{{ student.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
-            {% endif %}
-          </p>
-        </div>
-        {% endfor %}
-        {% assign member_count = site.data.team.members | size %}
-        {% assign member_remainder = member_count | modulo: 5 %}
-        {% assign remaining_columns = 5 | minus: member_remainder %}
-        {% if remaining_columns == 5 %}
-        {% assign remaining_columns = 0 %}
+    <div class="column width-8" id="header-container">
+      <ul id="headers">
+        <li><a href="#members">Active Members</a></li>
+        <li><a href="#collaborators">Collaborators</a></li>
+        {% if site.data.team.alumni %}
+        <li><a href="#alumni">Previous Members</a></li>
         {% endif %}
-        {% if remaining_columns != 0 %}
-        {% for i in (1..remaining_columns) %}
-        <div class="column member-column" style="visibility: hidden; margin:0px !important; height:0px !important;">
-        </div>
-        {% endfor %}
-        {% endif %}
-      </div>
-      <div class="row" id="collaborators">
-        <h2 style="font-size:2.5em;">Collaborators</h2>
-      </div>
-      <!-- Collaborators Section -->
-      <div id="row">
-        {% for collaborator in site.data.team.collab %}
-        <div class="column member-column">
-          <img src="team/{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
-          <h4 class="project-description" style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
-            collaborator.name }}
-          </h4>
-          <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ collaborator.role
-            }} <br />{{ collaborator.department }}<br>{{ collaborator.university }}<br>
-          </p>
-        </div>
-        {% endfor %}
-        {% assign member_count = site.data.team.collab | size %}
-        {% assign member_remainder = member_count | modulo: 6 %}
-        {% assign remaining_columns = 6 | minus: member_remainder %}
-        {% if remaining_columns == 6 %}
-        {% assign remaining_columns = 0 %}
-        {% endif %}
-        {% if remaining_columns != 0 %}
-        {% for i in (1..remaining_columns) %}
-        <div class="column member-column" style="visibility: hidden;"></div>
-        {% endfor %}
-        {% endif %}
-      </div>
-      {% if site.data.team.alumni %}
-      <div class="row" id="alumni">
-        <!-- Previous Members Section -->
-        <div class="column width-12"
-          style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
-          <h2> Previous Members</h2>
-        </div>
-        {% for alumni in site.data.team.alumni %}
-        <div class="column width-6" style="margin-bottom: 0.3em;">
-          <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
-              }}</strong> - {{ alumni.year }} ({{ alumni.role }})
-          </p>
-        </div>
-        {% endfor %}
-      </div>
-      {% endif %}
+      </ul>
     </div>
   </div>
 </div>
-</div>
-<style>
-  /* General styling for columns */
-  #row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    max-width: 114rem;
-  }
+<div class="section-block grid-container fade-in-progressively small-margins no-padding-top" data-layout-mode="masonry"
+  data-grid-ratio="1.5" data-animate-filter-duration="700" data-set-dimensions data-animate-resize
+  data-animate-resize-duration="0" data-as-bkg-image>
+  <div id="row">
+    <div class=" member-column " id="pat">
+      <a href="{{ site.data.team.patricia.website }}" target="_blank">
+        <img src="{{ site.data.team.patricia.profile_img }}" id="patricia-header"
+          alt="{{ site.data.team.patricia.name }}'s profile picture" loading="lazy" />
+      </a>
+    </div>
+    <div class=" member-column" id="pat-links">
+      <h1 class="project-description" style="margin-bottom: 0px; font-size: 1.75rem;">{{
+        site.data.team.patricia.name }}</h1>
+      <p class="project-description" style="font-size:1.3rem;">
+        {{ site.data.team.patricia.role }}<br />
+        {{ site.data.team.patricia.title }}<br />
+        {{ site.data.team.patricia.affiliated | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: ' <p>' |
+          remove: '</p>' }}<br />
+      {{ site.data.team.patricia.advisor | markdownify | replace: '<a ', ' <a target="_blank" ' | remove: ' <p>' |
+        remove: '</p>' }}<br />
+        <a href="{{ site.data.team.patricia.website }}" target="_blank" style="border-bottom: none;">
+          <i class="fas fa-globe"></i>
+        </a>
+        <a href="{{ site.data.team.patricia.google_scholar }}" target="_blank" style="border-bottom: none;">
+          <i class="fab fa-google-scholar"></i>
+        </a>
+        <a href="{{ site.data.team.patricia.linkedin }}" target="_blank" style="border-bottom: none;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="{{ site.data.team.patricia.twitter }}" target="_blank" style="border-bottom: none;">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:{{ site.data.team.patricia.email }}" target="_blank" style="border-bottom: none;">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        </p>
+    </div>
+    <div class=" member-column" id="description">
+      {{ site.data.team.patricia.description }}
+    </div>
+  </div>
+  <!-- Members Section -->
+  <div class="row" id="members">
+    <h2 style="font-size:2.5em;">Active Members</h2>
+  </div>
+  <!-- Member Rows -->
+  <div id="row">
+    {% for student in site.data.team.members %}
+    <div class="column member-column {{ 'member-' | append: forloop.index }}">
+      <img src="team/{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
+      <h3 style="font-size: 1.5rem; margin-top:10px; margin-bottom: 0em;">{{ student.name }}</h3>
+      <p style=" color:black;font-size: 12px; line-height:18px;">
+        {{ student.standing }}, {{ student.major }}<br />
+        {{ student.university }}<br />
+        Joined: {{ student.joined }}<br />
+        {% if student.project %}
+        Project: {{ student.project }}<br />
+        {% endif %}
+        {% if student.role %}
+        Role: {{ student.role }} <br />
+        {% endif %}
+        {% if student.personal_website %}
+        <a href="{{ student.personal_website }}" target="_blank"><i class="fas fa-globe"></i></a>
+        {% endif %}
+        {% if student.website %}
+        <a href="{{ student.website }}" target="_blank"><i class="fas fa-ban"></i></a>
+        {% endif %}
+        {% if student.google_scholar %}
+        <a href="{{ student.google_scholar }}" target="_blank"><i class="fab fa-google-scholar"></i></a>
+        {% endif %}
+        {% if student.linkedin %}
+        <a href="{{ student.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if student.github %}
+        <a href="{{ student.github }}" target="_blank"><i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if student.youtube %}
+        <a href="{{ student.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
+        {% endif %}
+        {% if student.twitter %}
+        <a href="{{ student.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+        {% endif %}
+      </p>
+    </div>
+    {% endfor %}
+    {% assign member_count = site.data.team.members | size %}
+    {% assign member_remainder = member_count | modulo: 5 %}
+    {% assign remaining_columns = 5 | minus: member_remainder %}
+    {% if remaining_columns == 5 %}
+    {% assign remaining_columns = 0 %}
+    {% endif %}
+    {% if remaining_columns != 0 %}
+    {% for i in (1..remaining_columns) %}
+    <div class="column member-column" style="visibility: hidden; margin:0px !important; height:0px !important;">
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <div class="row" id="collaborators">
+    <h2 style="font-size:2.5em;">Collaborators</h2>
+  </div>
+  <!-- Collaborators Section -->
+  <div id="row">
+    {% for collaborator in site.data.team.collab %}
+    <div class="column member-column">
+      <img src="team/{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
+      <h4 class="project-description" style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
+        collaborator.name }}
+      </h4>
+      <p class="project-description" style="margin-top: -1.5em;color:black; line-height: 12pt;">{{ collaborator.role
+        }} <br />{{ collaborator.department }}<br>{{ collaborator.university }}<br>
+      </p>
+    </div>
+    {% endfor %}
+    {% assign member_count = site.data.team.collab | size %}
+    {% assign member_remainder = member_count | modulo: 6 %}
+    {% assign remaining_columns = 6 | minus: member_remainder %}
+    {% if remaining_columns == 6 %}
+    {% assign remaining_columns = 0 %}
+    {% endif %}
+    {% if remaining_columns != 0 %}
+    {% for i in (1..remaining_columns) %}
+    <div class="column member-column" style="visibility: hidden;"></div>
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% if site.data.team.alumni %}
+  <div class="row" id="alumni">
+    <!-- Previous Members Section -->
+    <div class="column width-12"
+      style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
+      <h2> Previous Members</h2>
+    </div>
+    {% for alumni in site.data.team.alumni %}
+    <div class="column width-6" style="margin-bottom: 0.3em;">
+      <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
+          }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}
+        ({{ alumni.year }}) &bull; {% if alumni.linkedin %} <a href="{{ alumni.linkedin }}" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        {% endif %}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
 
-  #description {
-    flex: 1 1 50%;
-    /* Ensure it occupies the same space as the two previous columns (each 50% of the row width) */
-  }
 
-  .column {
-    padding: 5px;
-  }
-
-  #pat {
-    padding-left: 5px;
-  }
-
-  .member-column {
-    flex: 1 1 100%;
-    /* Default to 100% width */
-  }
-
-  @media only screen and (max-width: 1140px) {
+  <style>
+    /* General styling for columns */
     #row {
-      max-width: 96rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 114rem;
     }
-  }
 
-  @media (min-width: 768px) {
+    #description {
+      flex: 1 1 50%;
+      /* Ensure it occupies the same space as the two previous columns (each 50% of the row width) */
+    }
+
+    .column {
+      padding: 5px;
+    }
+
+    #pat {
+      padding-left: 5px;
+    }
 
     .member-column {
-      flex: 1 1 30%;
-      /* 3 columns per row on tablet */
+      flex: 1 1 100%;
+      /* Default to 100% width */
     }
 
-    #pat-links {
-      flex: 1 1 30%;
+    @media only screen and (max-width: 1140px) {
+      #row {
+        max-width: 96rem;
+      }
     }
 
-    #description {
-      flex: 1 1 30%;
-      /* On desktop, adjust to take 33% of the row width */
-    }
-  }
-  @media (max-width: 768px)
-  {
-    #headers {
-			margin: 0px;
-			padding: 0px;
-			margin-bottom: 10px;
-		}
+    @media (min-width: 768px) {
 
-		#header-container {
-			padding: 0px;
-      padding-left:11px;
-		}
-  }
+      .member-column {
+        flex: 1 1 30%;
+        /* 3 columns per row on tablet */
+      }
 
-  @media (min-width: 1280px) {
-    .member-column {
-      flex: 1 1 18%;
-      /* 5 columns per row on desktop */
+      #pat-links {
+        flex: 1 1 30%;
+      }
+
+      #description {
+        flex: 1 1 30%;
+        /* On desktop, adjust to take 33% of the row width */
+      }
     }
 
-    #description {
-      flex: 1 1 40%;
-      /* On desktop, adjust to take 33% of the row width */
+    @media (max-width: 768px) {
+      #headers {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      #header-container {
+        padding: 0px;
+        padding-left: 11px;
+      }
     }
 
-    #pat-links {
-      flex: 1 1 37%;
-    }
-  }
+    @media (min-width: 1280px) {
+      .member-column {
+        flex: 1 1 18%;
+        /* 5 columns per row on desktop */
+      }
 
-  #members {
-    margin-top: 25px;
-  }
+      #description {
+        flex: 1 1 40%;
+        /* On desktop, adjust to take 33% of the row width */
+      }
 
-  #collaborators {
-    margin-top: 20px;
-  }
-
-  .member-column img {
-    width: 100%;
-    /* Ensure images are responsive */
-    height: auto;
-  }
-
-  
-  @media only screen and (max-width: 960px) {
-    #row {
-      max-width: 76rem;
-    }
-  }
-
-  p {
-    margin-bottom: 0px;
-  }
-
-  #director {
-    padding-bottom: 0px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    #row {
-      max-width: 60rem;
+      #pat-links {
+        flex: 1 1 37%;
+      }
     }
 
-    .column,
-    #collaborators,
-    #members,
-    #pat,
-    #pat-links,
-    #description {
-      padding-left: 5%;
-      padding-right: 5%;
+    #members {
+      margin-top: 25px;
     }
-  }
 
-  .member-column:nth-child(4n+1) {
-    border-top-right-radius: 25%;
-    /* Curved top-right corner */
-  }
+    #collaborators {
+      margin-top: 20px;
+    }
 
-  .member-column:nth-child(4n+2) {
-    border-bottom-right-radius: 25%;
-    /* Curved bottom-right corner */
-  }
+    .member-column img {
+      width: 100%;
+      /* Ensure images are responsive */
+      height: auto;
+    }
 
-  .member-column:nth-child(4n+3) {
-    border-bottom-left-radius: 25%;
-    /* Curved bottom-left corner */
-  }
 
-  .member-column:nth-child(4n+4),
-  #patricia-header {
-    border-top-left-radius: 25%;
-    /* Curved top-left corner */
-  }
-</style>
+    @media only screen and (max-width: 960px) {
+      #row {
+        max-width: 76rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    #director {
+      padding-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #row {
+        max-width: 60rem;
+      }
+
+      .column,
+      #collaborators,
+      #members,
+      #pat,
+      #pat-links,
+      #description {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    .member-column:nth-child(4n+1) {
+      border-top-right-radius: 25%;
+      /* Curved top-right corner */
+    }
+
+    .member-column:nth-child(4n+2) {
+      border-bottom-right-radius: 25%;
+      /* Curved bottom-right corner */
+    }
+
+    .member-column:nth-child(4n+3) {
+      border-bottom-left-radius: 25%;
+      /* Curved bottom-left corner */
+    }
+
+    .member-column:nth-child(4n+4),
+    #patricia-header {
+      border-top-left-radius: 25%;
+      /* Curved top-left corner */
+    }
+  </style>

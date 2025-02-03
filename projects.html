@@ -59,29 +59,104 @@ layout: default
 							<div class="project-links-container" style="margin-top:-4px;">
 								<ul style="list-style: none; padding: 0;">
 									<li style="display: inline; margin-right: 10px;">{{ project.data }}</li>
-									{% for link in project.links %}
-									{% if link.doi %}
+									{% assign links = project.links %}
+
+									{% if links.site %}
+									{% if links.site.size == 1 %}
+									{% for link in links.site %}
+									Website:
 									<li style="display: inline; margin-right: 10px;">
-										<a href="{{ link.doi }}" target="_blank" title="DOI">
-											<i class="fas fa-external-link-alt"></i>&nbsp;DOI
+										<a href="{{ link }}" target="_blank" title="Website">
+											</span><i class="fas fa-globe"></i>
 										</a>
 									</li>
-									{% endif %}
-									{% if link.yt %}
-									<li style="display: inline; margin-right: 10px;">
-										<a href="{{ link.yt }}" target="_blank" title="YouTube">
-											<i class="fa-solid fa-play"></i>&nbsp;Video
-										</a>
-									</li>
-									{% endif %}
-									{% if link.code %}
-									<li style="display: inline; margin-right: 10px;">
-										<a href="{{ link.code }}" target="_blank" title="Code">
-											<i class="fas fa-code"></i>&nbsp;Code
-										</a>
-									</li>
-									{% endif %}
 									{% endfor %}
+									{% elsif links.site.size > 1 %}
+									Websites:
+									{% for link in links.site %}
+									<li style="display: inline; margin-right: 10px;">
+										<span>{{ forloop.index }} </span>
+										<a href="{{ link }}" target="_blank" title="Website">
+											<i class="fas fa-globe"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% endif %}
+									{% endif %}
+
+
+									{% if links.doi %}
+									{% if links.doi.size == 1 %}
+									{% for link in links.doi %}
+									DOI: 
+									<li style="display: inline; margin-right: 10px;">
+										<a href="{{ link }}" target="_blank" title="DOI">
+											<i class="fas fa-external-link-alt"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% elsif links.doi.size > 1 %}
+									DOIs:
+									{% for link in links.doi %}
+									<li style="display: inline; margin-right: 10px;">
+										<span>{{ forloop.index }} </span>
+										<a href="{{ link }}" target="_blank" title="DOI">
+											<i class="fas fa-external-link-alt"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% endif %}
+									{% endif %}
+
+									{% if links.yt %}
+									{% if links.yt.size == 1 %}
+									{% for link in links.yt %}
+									Video:
+									<li style="display: inline; margin-right: 10px;">
+										<a href="{{ link }}" target="_blank" title="YouTube">
+											<i class="fa-solid fa-play"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% elsif links.yt.size > 1 %}
+									Videos:
+									{% for link in links.yt %}
+									<span>{{ forloop.index }} </span>
+									<li style="display: inline; margin-right: 10px;">
+
+										<a href="{{ link }}" target="_blank" title="YouTube">
+											<i class="fa-solid fa-play"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% endif %}
+									{% endif %}
+
+									{% if links.code %}
+									{% if links.code.size == 1 %}
+									{% for link in links.code %}
+									Code:
+									<li style="display: inline; margin-right: 10px;">
+										<a href="{{ link }}" target="_blank" title="Code">
+											<i class="fas fa-code"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% elsif links.code.size > 1 %}
+									Code:
+									{% for link in links.code %}
+
+									<li style="display: inline; margin-right: 10px;">
+										<span>{{ forloop.index }} </span>
+										<a href="{{ link }}" target="_blank" title="Code">
+											<i class="fas fa-code"></i>
+										</a>
+									</li>
+									{% endfor %}
+									{% endif %}
+									{% endif %}
+
+
 								</ul>
 							</div>
 							{% if project.description %}
