@@ -13,6 +13,9 @@ research_vision: |
   Robot Studio is a multi-disciplinary research lab that designs current and future relationships between robots and us that are inspiring, refined, and magical. We achieve this by building robots that are intentional in their function and aesthetically beautiful, to uncover the many connections we can have with robots in the contexts of health and the arts. We use theories and methods from Computer Engineering, Psychology, and Design Research to study how we can be build robots that empower us and to search how robots can be a tool to support better understanding of who we are. In Robot Studio, we experience what it is to be a full-stack roboticist.
 
 news: 
+  - date: February 7th, 2025
+    description: "Prof. Patricia gave an interview about her Robotics research journey with [Talking Robotics](https://open.spotify.com/episode/54w5Ocejcqos8dlBJFYCBN?si=05756ed1ebd6455b)."
+  
   - date: January 23rd, 2025
     description: "[Julia Di](https://scholar.google.com/citations?user=LfBnWyMAAAAJ) gave a talk about her research at Robot Studio."
 
