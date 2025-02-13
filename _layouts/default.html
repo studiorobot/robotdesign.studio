@@ -107,11 +107,12 @@
       <div class="content clearfix">
         <div class="section-block replicable-content" style="padding-bottom:0px;">
           {{ content }}
-          <div id="footer">
-            © 2024 Robot Studio. Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M Lab</a>.
+          <div id="footer" style="margin:0px;">
+            © 2024 Robot Studio.
             {% for link in site.data.navigation.external %}
             <i class="{{ link.icon }}"></i> <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
             {% endfor %}
+            <br>Website design adapted from <a href="https://de4m.xyz" target="_blank">DE4M Lab</a>.
           </div>
         </div>
       </div>
