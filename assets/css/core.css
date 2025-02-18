@@ -16292,3 +16292,12 @@ body.boxed .blog-masonry.full-width [class*=content-grid] {
     top: 0
   }
 }
+
+a:focus, button:focus {
+  outline: 2px solid #007bff; /* Adds a blue outline */
+
+ 
+  outline-offset: 1px;
+  border-radius: 5px;
+  
+}

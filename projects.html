@@ -118,7 +118,6 @@ layout: default
 							{% elsif links.yt.size > 1 %}
 							Videos:
 							{% for link in links.yt %}
-							<span>{{ forloop.index }} </span>
 							<li style="display: inline; margin-right: 10px;">
 
 								<a href="{{ link }}" target="_blank" title="YouTube">
@@ -144,7 +143,6 @@ layout: default
 							{% for link in links.code %}
 
 							<li style="display: inline; margin-right: 10px;">
-								<span>{{ forloop.index }} </span>
 								<a href="{{ link }}" target="_blank" title="Code">
 									<i class="fas fa-code"></i>
 								</a>
