@@ -37,10 +37,10 @@ active:
     video_webm: active/future/design.mp4
 
   - id: 13
-    name: "GUARDIAN: Social Robot Mental Health Program for Post-Incarcerated Youth"
+    name: "GUARDIAN: Social Robot Mental Health Program for Youth who have been in Juvenile Detention"
     members: Connor Williams, Leia Stirling
     data: 2024 - ongoing 
-    description: This project aims to build an understanding of post-incarcerated youth interactions with robotic systems to inform the design and preliminary evaluation of a social robot to support mental health.  We will build a new social robot to deliver mental health training and conduct community-based participatory research by including in the research team a community member with a similar experience and demographics as our target population. We expect robot interactions to facilitate youth’s-entry in society.
+    description: This project aims to build an understanding of that interactions that youth who have been in juvenile detention have with robotic systems to inform the design and preliminary evaluation of a social robot to support mental health. We will build a new social robot to deliver mental health training and conduct community-based participatory research by including in the research team a community member with a similar experience and demographics as our target population. We expect robot interactions to facilitate youth’s-entry in society.
     keywords: mental health, decarceration, accesibility
     poster: active/guardian/thumbnail.jpg
 
