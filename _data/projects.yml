@@ -47,7 +47,7 @@ active:
 
   - id: 10
     name: "RELATE: Key-Moments in Long-Term Relationship with Social Robots"
-    members: Jiali Zhen
+    members: Jiali Zheng, Elijah Cantu
     data: 2024 - ongoing
     description: "This project aims to conduct social media ethnography to study how current customers of Astro live with the device. We propose to answer the following questions: what do customers wish Astro could do beyond its current abilities? when living with Astro becomes a routine, how does their relationship shift? what are the special moments in a relationship with Astro? The outcome of this project is a framework with design tenets that promote lifelong robotic agency and companionship between families and Astro."
     keywords: deployment, longitudinal interactions, relationship evolution
