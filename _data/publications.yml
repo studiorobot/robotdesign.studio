@@ -580,3 +580,11 @@ publications:
       pdf: 94.pdf    
       img: 94.png
       project:
+  2025:
+    - title: "We Are the Robots: Tapping Into the Lived Experiences of Wizards of Oz"
+      authors: Mafalda Gamboa, Sofia Thunberg, Patricia Alves-Oliveira, Meagan B. Loerakker
+      event: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems, Pages 1-8, ACM
+      doi: https://doi.org/10.1145/3706599.3720149
+      pdf: 95.pdf    
+      img: 95.png
+      project:

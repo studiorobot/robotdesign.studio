@@ -9,6 +9,8 @@ internal:
     url: "press.html"
   - title: "join us"
     url: "join.html"
+  - title: "robo refelections"
+    url: "https://studiorobot.github.io/robo-reflections/"
 
 external:
   - platform: LinkedIn

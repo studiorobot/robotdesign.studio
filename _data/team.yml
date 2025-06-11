@@ -44,6 +44,29 @@ members:
    linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
    img: phd/Grace_Pan_PhD.jpg
 
+ - name: Francesca Cocchella
+   standing: Visiting Ph.D. Student
+   major: Robotics
+   university: Italian Institute of Technology-University of Genoa
+   project: AURA
+   joined: May 2025
+   personal_website: https://www.iit.it/it/people-details/-/people/francesca-cocchella
+   google_scholar: https://scholar.google.com/citations?user=SGgmmBwAAAAJ&hl=it&oi=ao J
+   linkedin: https://www.linkedin.com/in/francescacocchella/
+   twitter: https://x.com/FCocchella
+   img: phd/Francesca_Cocchella_PhD.jpeg
+
+ - name: Ugnė Aleksandra Morkutė
+   standing: Visiting Ph.D. Student
+   major: Cognitive Psychology
+   university: Leiden University
+   project: Delicious
+   joined: June 2025
+   linkedin: www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
+   github: https://github.com/UgneMo
+   google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=2vl1MasAAAAJ
+   img: phd/Ugne_Morkute_PhD.jpg 
+
  - name: Aleena Qaiser
    standing: Masters
    major: Information
@@ -84,6 +107,15 @@ members:
    linkedin: https://www.linkedin.com/in/erfun-ackley/
    github: https://github.com/funckley
    img: masters/Erfun_Ackley_Masters.JPG
+
+ - name: Eric Chen
+   standing: Masters
+   major: Robotics
+   university: University of Michigan
+   project: AURA
+   joined: June 2025
+   linkedin: https://www.linkedin.com/in/eric-chen-883243257/
+   img: masters/Eric_Chen_Master.jpg
 
  - name: Guan-Ling Chen
    standing: Masters
