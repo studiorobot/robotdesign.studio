@@ -551,6 +551,7 @@ The navigation data file is divided into two main sections: `internal` for inter
 1. **Internal Navigation (`internal`)**:
    - `title`: The text displayed on the navigation bar.
    - `url`: The relative URL for the internal page (e.g., `"projects"` for `/projects/`).
+   - `newtab`: Boolean that, if true, makes the URL open in a new tab.
 
 2. **External Links (`external`)**:
    - `platform`: The name of the external platform (e.g., "LinkedIn").
@@ -574,6 +575,9 @@ internal:
     url: "press"
   - title: "join us"
     url: "join-us"
+  - title: "robo reflections"
+    url: "https://studiorobot.github.io/robo-reflections/"
+    newtab: true
 
 external:
   - platform: LinkedIn

@@ -2,15 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPE64MT2MV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-VPE64MT2MV');
-    </script>
+    
     <meta charset="UTF-8" />
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
     <meta name="twitter:widgets:theme" content="light">
@@ -42,9 +35,15 @@
                 <nav class="side-navigation" style="margin-top:15px;">
                     <ul>
                         {% for link in site.data.navigation.internal %}
+                        {% if link.newtab %}
+                        <li>
+                            <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
+                        </li>
+                        {% else %}
                         <li class="{% if link.url == page.path %}current{% endif %}">
                             <a href="/{{ link.url }}">{{ link.title }}</a>
                         </li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
                 </nav>
@@ -74,10 +73,10 @@
                         <div class="column width-12 nav-bar-inner" style="padding:0px;">
                             <div class="logo">
                                 <div class="logo-inner">
-                                    <a href="index.html"><img
+                                    <a href=""><img
                                             src="branding/Logos/logos/pngs/24-ROBOTSTUDIO-LOGO-Black.png"
                                             alt="Robot Sutdio Logo" /></a>
-                                    <a href="index.html"><img src="branding/Logos/logos/pngs/robotstudiologowhite.png"
+                                    <a href=""><img src="branding/Logos/logos/pngs/robotstudiologowhite.png"
                                             alt="Robot Studio Logo" /></a>
                                 </div>
                             </div>
@@ -85,7 +84,7 @@
                                 <ul>
                                     <li class="aux-navigation hide">
                                         <!-- Aux Navigation -->
-                                        <a href="#" class="navigation-show side-nav-show nav-icon">
+                                        <a href="" class="navigation-show side-nav-show nav-icon">
                                             <i class="fa-solid fa-bars"></i>
                                         </a>
                                     </li>
@@ -94,9 +93,15 @@
                             <nav class="navigation nav-block primary-navigation nav-right no-margin-right">
                                 <ul>
                                     {% for link in site.data.navigation.internal %}
-                                    <li class="{% if link.url == page.path %}current{% endif %}">
-                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                    {% if link.newtab %}
+                                    <li>
+                                        <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
                                     </li>
+                                    {% else %}
+                                    <li class="{% if link.url == page.path %}current{% endif %}">
+                                        <a href="/{{ link.url }}">{{ link.title }}</a>
+                                    </li>
+                                    {% endif %}
                                     {% endfor %}
                                 </ul>
                             </nav>
@@ -115,6 +120,15 @@
         <script src="assets/js/timber.master.min.js"></script>
     </div>
     </div>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPE64MT2MV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VPE64MT2MV');
+  </script>
 </body>
 
 </html>

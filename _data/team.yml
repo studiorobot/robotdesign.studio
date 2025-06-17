@@ -49,7 +49,7 @@ members:
    major: Robotics
    university: Italian Institute of Technology-University of Genoa
    project: AURA
-   joined: May 2025
+   joined: Summer 2025
    personal_website: https://www.iit.it/it/people-details/-/people/francesca-cocchella
    google_scholar: https://scholar.google.com/citations?user=SGgmmBwAAAAJ&hl=it&oi=ao J
    linkedin: https://www.linkedin.com/in/francescacocchella/
@@ -61,8 +61,8 @@ members:
    major: Cognitive Psychology
    university: Leiden University
    project: Delicious
-   joined: June 2025
-   linkedin: www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
+   joined: Summer 2025
+   linkedin: https://www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
    github: https://github.com/UgneMo
    google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=2vl1MasAAAAJ
    img: phd/Ugne_Morkute_PhD.jpg 
@@ -87,6 +87,18 @@ members:
    github: https://github.com/daviddoo02
    img: masters/David_Ho_Masters.jpg
 
+ - name: Elijah Cantu
+   standing: Masters
+   major: Information
+   university: University of Michigan
+   project: Relate
+   role: Web Developer
+   joined: Fall 2024
+   personal_website: https://elijahcantu.com
+   linkedin: https://www.linkedin.com/in/elijahcantu 
+   github: https://github.com/elijahcantu
+   img: masters/elijah_cantu.jpeg
+
  - name: Emily Wu
    standing: Masters
    major: Robotics
@@ -101,7 +113,7 @@ members:
    major: Performing Arts Tech
    university: University of Michigan
    project: Droodles
-   joined: Spring 2024
+   joined: Summer 2024
    personal_website: https://www.erfunackley.com/
    google_scholar: N/A
    linkedin: https://www.linkedin.com/in/erfun-ackley/
@@ -113,7 +125,7 @@ members:
    major: Robotics
    university: University of Michigan
    project: AURA
-   joined: June 2025
+   joined: Summer 2025
    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
    img: masters/Eric_Chen_Master.jpg
 
@@ -199,18 +211,6 @@ members:
    linkedin: https://www.linkedin.com/in/cindy-yang-274662250 
    img: undergrad/Cindy_Yang_Undergraduate.jpg
 
- - name: Elijah Cantu
-   standing: Undergrad
-   major: Computer Science
-   university: University of Michigan
-   project: Relate
-   role: Web Developer
-   joined: Fall 2024
-   personal_website: https://elijahcantu.com
-   linkedin: https://www.linkedin.com/in/elijahcantu 
-   github: https://github.com/elijahcantu
-   img: undergrad/elijah_cantu.jpeg
-
  - name: Hana Ichikawa
    standing: Undergrad
    major: Art & Design
@@ -226,7 +226,7 @@ members:
    major: Computer Science
    university: University of Michigan
    project: Relate
-   joined: Spring 2024
+   joined: Summer 2024
    linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
    img: undergrad/Jiali_Undergrad.jpeg
 
@@ -273,7 +273,7 @@ members:
    major: Robotics
    university: University of Michigan
    project: Droodles
-   joined: Spring 2024
+   joined: Summer 2024
    personal_website: https://www.yellowboltart.com 
    linkedin: https://www.linkedin.com/in/trey-davis-916163221/ 
    github: https://github.com/dtrey-umich 

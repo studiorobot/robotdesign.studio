@@ -21,7 +21,7 @@ layout: default
       <div class="column width-12 paper-stuff" style="margin-bottom: 10px;">
         <div class="column width-2 more-paper-stuff">
           {% if paper.img %}
-          <img class="regular-publication" src="publications/thumbnails/{{paper.img}}" alt="The first page of the paper"
+          <img class="regular-publication" src="/publications/thumbnails/{{paper.img}}" alt="The first page of the paper"
             loading="lazy" />
           {% else %}
           <span style=" width: 100%;">&nbsp;</span>
@@ -47,7 +47,7 @@ layout: default
             {% endif %}
             {% if paper.pdf %}
             <li class="publication-link">
-              <a href="publications/{{ paper.pdf }}" target="_blank" class="link-color">
+              <a href="/publications/{{ paper.pdf }}" target="_blank" class="link-color">
                 <i class="fa-regular fa-file"></i> PDF
               </a>
             </li>

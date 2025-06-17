@@ -1,4 +1,5 @@
 title: Robot Studio
-baseurl: "/robotdesign.studio" 
-url: "https://studiorobot.github.io" 
+baseurl: "" 
+url: "" 
+theme: null
 
