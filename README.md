@@ -180,7 +180,7 @@ completed:
 
 ## Team
 
-The team data file includes three main sections: `members`, `collab`, and `alumni`. You can find member images and content in this [Google Drive](https://drive.google.com/drive/folders/1YFu-pjSUnet0ZTTULpwFI7xi0Mgotswk?usp=sharing).
+The team data file includes three main sections: `members`, `collab`, and `alumni`.
 
 ---
 
