@@ -4,9 +4,6 @@ This README explains how to use Jekyll to update the lab website content.
 
 ---
 
-## Content
-Content can be found on the [Google Drive](https://drive.google.com/drive/folders/1YS7ioFVL623bIPBt7R1lxnIaZr9TWC4w).
-
 ## Local Setup
 Before updating the lab website, you'll need to set up Jekyll locally.
 
