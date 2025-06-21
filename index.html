@@ -48,31 +48,32 @@ layout: index
 			<h2 style="margin-bottom:10px;">News</h2>
 		</div>
 		<!-- Show the first 10 news items -->
-		<div class="news-items">
-			{% assign limited_news = site.data.homepage.news | slice: 0, 10 %}
-			{% for item in limited_news %}
-			<div class="row news-item">
-				<strong>{{ item.date }}:</strong>
-				{{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
-			</div>
-			{% endfor %}
-		</div>
-		<!-- Hidden additional news items (after 10) -->
-		<div class="news-items hidden-news">
-			{% assign remaining_news = site.data.homepage.news | slice: 10, site.data.homepage.news.size %}
-			{% for item in remaining_news %}
-			<div class="row news-item">
-				<strong>{{ item.date }}:</strong>
-				{{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
-			</div>
-			{% endfor %}
-		</div>
-		<!-- Show More button -->
-		<div class="row">
-			<button id="show-more-button" class="show-more-btn" onclick="toggleNews()">
-				<span id="more-less-text">More</span> <!-- Initial "More" text -->
-			</button>
-		</div>
+<div class="news-items">
+  {% assign limited_news = site.data.homepage.news | slice: 0, 10 %}
+  {% for item in limited_news %}
+  <div class="row news-item">
+    <strong>{{ item.date }}:</strong> {{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Hidden additional news items (after 10) -->
+<div class="news-items hidden-news">
+  {% assign remaining_news = site.data.homepage.news | slice: 10, site.data.homepage.news.size %}
+  {% for item in remaining_news %}
+  <div class="row news-item">
+    <strong>{{ item.date }}:</strong> {{ item.description | markdownify | replace: '<a ', '<a target="_blank" tabindex="-1" ' | remove: '<p>' | remove: '</p>'}}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Show More button -->
+<div class="row">
+  <button id="show-more-button" class="show-more-btn" onclick="toggleNews()">
+    <span id="more-less-text">More</span>
+  </button>
+</div>
+
 
 	</div>
 	<div id="footer" style="margin:0px;">
@@ -89,17 +90,61 @@ layout: index
 </div>
 
 <script>
-	function toggleNews() {
-		var hiddenNews = document.querySelector('.hidden-news');
-		var buttonText = document.getElementById('more-less-text');
-		if (hiddenNews.style.maxHeight === "0px" || hiddenNews.style.maxHeight === "") {
-			hiddenNews.style.maxHeight = hiddenNews.scrollHeight + "px";
-			buttonText.textContent = "Less";
-		} else {
-			hiddenNews.style.maxHeight = "0px";
-			buttonText.textContent = "More";
-		}
-	}
+let wasActivatedByKeyboard = false;
+
+function toggleNews() {
+  var hiddenNews = document.querySelector('.hidden-news');
+  var buttonText = document.getElementById('more-less-text');
+  var hiddenLinks = hiddenNews.querySelectorAll('a');
+  
+  if (hiddenNews.style.maxHeight === "0px" || hiddenNews.style.maxHeight === "") {
+    // Show hidden news
+    hiddenNews.style.maxHeight = hiddenNews.scrollHeight + "px";
+    buttonText.textContent = "Less";
+    
+    // Make hidden links tabbable
+    hiddenLinks.forEach(function(link) {
+      link.removeAttribute('tabindex');
+    });
+    
+    // Only focus first link if activated by keyboard
+    if (wasActivatedByKeyboard && hiddenLinks.length > 0) {
+      setTimeout(function() {
+        hiddenLinks[0].focus();
+      }, 100);
+    }
+  } else {
+    // Hide news
+    hiddenNews.style.maxHeight = "0px";
+    buttonText.textContent = "More";
+    
+    // Remove hidden links from tab order
+    hiddenLinks.forEach(function(link) {
+      link.setAttribute('tabindex', '-1');
+    });
+  }
+  
+  // Reset the flag
+  wasActivatedByKeyboard = false;
+}
+
+// Handle keyboard navigation
+document.addEventListener('DOMContentLoaded', function() {
+  var hiddenLinks = document.querySelectorAll('.hidden-news a');
+  var showMoreButton = document.getElementById('show-more-button');
+  
+  // Initialize: ensure hidden links start with tabindex="-1"
+  hiddenLinks.forEach(function(link) {
+    link.setAttribute('tabindex', '-1');
+  });
+  
+  // Track when button is activated by keyboard
+  showMoreButton.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      wasActivatedByKeyboard = true;
+    }
+  });
+});
 </script>
 <style>
 	.show-more-btn {
