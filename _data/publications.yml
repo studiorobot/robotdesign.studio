@@ -588,3 +588,12 @@ publications:
       pdf: 95.pdf    
       img: 95.png
       project:
+    - title: "Robot Characters for Innovative Medical Eye Exams in Kids"
+      authors: Ilkyaz Sarimehmetoglu, Jeffrey Qiu, Pariyamon Thaprawat, Genggeng Zhou, Nita Valikodath, Mark Draelos, Patricia Alves-Oliveira
+      event: Proceedings of the 2025 ACM Designing Interactive Systems Conference Pages 195 - 207
+      doi: https://dl.acm.org/doi/10.1145/3715336.3735445
+      pdf: 96.pdf    
+      img: 96.png
+      project: Vista
+      video: https://lnkd.in/dECsydHY
+      materials: https://osf.io/bm8gs/?view_only=9c4e13929a5b4d48b3ce073fa95071bc
