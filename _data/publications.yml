@@ -597,3 +597,11 @@ publications:
       project: VISTA
       video: https://www.youtube.com/watch?v=pokUG5i38yM
       materials: https://osf.io/bm8gs/?view_only=9c4e13929a5b4d48b3ce073fa95071bc
+    - title: "Painted Heart Beats"
+      authors: Angshu Adhya, Cindy Yang, Emily Wu, Rishad Hasan, Abhishek Narula, Patricia Alves-Oliveira
+      event: Proceedings of the 2025 ACM Designing Interactive Systems Conference Pages 195 - 207
+      pdf: 97.pdf    
+      img: 97.png
+      project: AURA
+      video: 
+      materials: projects/active/aura/aura_icra2025_poster.pdf
