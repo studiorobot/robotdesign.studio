@@ -67,26 +67,6 @@ members:
    google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=2vl1MasAAAAJ
    img: phd/Ugne_Morkute_PhD.jpg 
 
- - name: Aleena Qaiser
-   standing: Masters
-   major: Information
-   university: University of Michigan
-   project: Futures
-   joined: Fall 2024
-   personal_website: https://aleena.framer.website/ 
-   linkedin: https://www.linkedin.com/in/aleenaqaiser/ 
-   img: masters/Aleena_Qaiser_Masters.jpeg
-
- - name: David Ho
-   standing: Masters
-   major: Robotics
-   university: University of Michigan
-   project: AURA
-   joined: Winter 2025
-   linkedin: https://www.linkedin.com/in/david-ho-umich
-   github: https://github.com/daviddoo02
-   img: masters/David_Ho_Masters.jpg
-
  - name: Elijah Cantu
    standing: Masters
    major: Information
@@ -98,15 +78,6 @@ members:
    linkedin: https://www.linkedin.com/in/elijahcantu 
    github: https://github.com/elijahcantu
    img: masters/elijah_cantu.jpeg
-
- - name: Emily Wu
-   standing: Masters
-   major: Robotics
-   university: University of Michigan
-   project: AURA
-   joined: Winter 2024
-   linkedin: https://www.linkedin.com/in/wuemilyy/ 
-   img: masters/Emily_Wu_Masters.jpg
 
  - name: Erfun Ackley
    standing: Masters
@@ -129,15 +100,6 @@ members:
    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
    img: masters/Eric_Chen_Master.jpg
 
- - name: Guan-Ling Chen
-   standing: Masters
-   major: Computer Graphics Tech
-   university: Purdue University
-   project: Futures
-   joined: Fall 2024
-   linkedin: https://www.linkedin.com/in/guanling-chen/
-   img: masters/GuanLing_Chen_Masters.jpeg
-
  - name: Gurnoor Kaur
    standing: Masters
    major: Robotics
@@ -148,16 +110,6 @@ members:
    personal_website: https://gurnoork07.github.io/
    img: masters/Gurnoor_Kaur_MS.jpg
 
- - name: Ilkyaz Sarimehmetoglu
-   standing: Masters
-   major: Digital and Material Tech
-   university: Taubman College
-   project: Vista
-   joined: Fall 2024
-   personal_website: https://ilkyazsarimehmetoglu.com
-   linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
-   img: masters/Ilkyaz_Sarimehmetoglu_Masters.jpeg
-
  - name: Longzhen Yuan
    standing: Masters
    major: Electrical and Computer Engineering
@@ -166,17 +118,6 @@ members:
    joined: Winter 2025
    linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
    img: masters/Longzhen_Yuan_Masters.jpg
-
- - name: Jeffrey Qiu
-   standing: Masters
-   major: Information
-   university: University of Michigan
-   project: Vista
-   joined: Fall 2024
-   personal_website: https://jeffreyq.com/
-   linkedin: https://www.linkedin.com/in/jeffrey-q/
-   github: https://github.com/jeffreyqqiu/
-   img: masters/Jeffrey_Qiu_Masters.jpg
 
  - name: Nilay Roy Choudhury
    standing: Masters
@@ -239,15 +180,6 @@ members:
    linkedin: https://www.linkedin.com/in/mjere/
    github: https://github.com/m-jere
    img: undergrad/Mrunmayee_Jere_Undergraduate.jpg
-
- - name: Myles Avalon
-   standing: Undergrad
-   major: Health Science & Pre-Med
-   university: Northeastern University
-   project: Fashion
-   joined: Fall 2024
-   linkedin: https://www.linkedin.com/in/myles-avalon-67b291292
-   img: undergrad/Myles_Avalon_Undergrad.jpg
 
  - name: Rishad Hasan
    standing: Undergrad
@@ -330,6 +262,48 @@ collab:
     img: collab/Sidd_Srinivasa_External_Collaborator.jpg
 
 alumni:
+ - name: Aleena Qaiser
+   future: 
+   project: Futures
+   year: 2025 
+   linkedin: https://www.linkedin.com/in/aleenaqaiser/ 
+
+ - name: David Ho
+   future: University of Michigan
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/david-ho-umich
+  
+ - name: Emily Wu
+   future:
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/wuemilyy/ 
+
+ - name: Guan-Ling Chen
+   future:
+   project: Futures
+   year: 2025
+   linkedin: https://www.linkedin.com/in/guanling-chen/
+
+ - name: Ilkyaz Sarimehmetoglu
+   future: Massachusetts Institute of Technology
+   project: Vista
+   year: 2025
+   linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
+  
+ - name: Jeffrey Qiu
+   future:
+   project: Vista
+   year: 2025
+   linkedin: https://www.linkedin.com/in/jeffrey-q/
+
+ - name: Myles Avalon
+   future:
+   project: Fashion
+   year: 2025
+   linkedin: https://www.linkedin.com/in/myles-avalon-67b291292
+
  - name: Zhixuan Chen	
    future:
    project: Relate
