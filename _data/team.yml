@@ -224,6 +224,12 @@ collab:
     university: Purdue University
     department: Computer Graphics Tech
     img: collab/Anastasia_Ostrowski_External_Collaborator.jpg
+  
+  - name: Anson Kairys 
+    role: Clinical Assistant Professor 
+    university: University of Michigan
+    department: Psychiatry
+    img: collab/Anson_Kairys_Collaborator.jpeg
 
   - name: Jim Cogswell
     role: Full Professor 
@@ -231,8 +237,14 @@ collab:
     university: University of Michigan
     img: collab/Jim-Cogswell-External-Collaborator.jpg
 
+  - name: Joyce Chai
+    role: Full Professor 
+    department: Computer Science & Engineering
+    university: University of Michigan
+    img: collab/Joyce_Chai_Collaborator.jpg
+
   - name: Leia Stirling
-    role: Associate Professor
+    role: Full Professor
     university: University of Michigan
     department: Industrial and Operations Engineering
     img: collab/Leia_Stirling_External_Collaborator.jpg
