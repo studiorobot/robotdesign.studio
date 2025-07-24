@@ -588,6 +588,12 @@ publications:
       pdf: 95.pdf    
       img: 95.png
       project:
+    - title: "Exploring Expert Knowledge on Journeys, Research Engagement, Distribution Pathways, and Privacy Considerations of a Mental Health Robot for Youth who have been in Juvenile Detention"
+      authors: Connor Williams, Leia Stirling, Patricia Alves-Oliveira
+      event: We Robot
+      pdf: 99.pdf    
+      img: 99.png
+      project: HORIZON
     - title: "Robot Characters for Innovative Medical Eye Exams in Kids"
       authors: Ilkyaz Sarimehmetoglu, Jeffrey Qiu, Pariyamon Thaprawat, Genggeng Zhou, Nita Valikodath, Mark Draelos, Patricia Alves-Oliveira
       event: Proceedings of the 2025 ACM Designing Interactive Systems Conference Pages 195 - 207
@@ -599,9 +605,21 @@ publications:
       materials: https://osf.io/bm8gs/?view_only=9c4e13929a5b4d48b3ce073fa95071bc
     - title: "Painted Heart Beats"
       authors: Angshu Adhya, Cindy Yang, Emily Wu, Rishad Hasan, Abhishek Narula, Patricia Alves-Oliveira
-      event: Proceedings of the 2025 ACM Designing Interactive Systems Conference Pages 195 - 207
+      event: Arts in Robotics Special Session, IEEE International Conference on Robotics and Automation (ICRA)
       pdf: 97.pdf    
       img: 97.png
       project: AURA
       video: 
       materials: projects/active/aura/aura_icra2025_poster.pdf
+    - title: "Framework to Evaluate LLM's ability to Reason about Physical Disabilities from Medical Perspective"
+      authors: Atharva S. Kashyap, Patricia Alves-Oliveira
+      event: Late Breaking Results Poster, IEEE International Conference on Robotics and Automation (ICRA)
+      pdf: 98.pdf    
+      img: 98.png
+      project: DELICIOUS
+    - title: "Don't Touch Me There! Comfortability with Robot Touch Across Different Roles and Settings"
+      authors: Grace Pan, Gurnoor Kaur, Patricia Alves-Oliveira
+      event: "Robotics: Science and Systems (RSS)"
+      pdf: 100.pdf    
+      img: 100.png
+      project: TOUCH
