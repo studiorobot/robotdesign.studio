@@ -619,7 +619,7 @@ publications:
       project: DELICIOUS
     - title: "Don't Touch Me There! Comfortability with Robot Touch Across Different Roles and Settings"
       authors: Grace Pan, Gurnoor Kaur, Patricia Alves-Oliveira
-      event: "Robotics: Science and Systems (RSS)"
+      event: "Robot Evaluations Workshop, Robotics: Science and Systems (RSS)"
       pdf: 100.pdf    
       img: 100.png
       project: TOUCH
