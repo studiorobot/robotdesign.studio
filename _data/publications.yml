@@ -609,7 +609,7 @@ publications:
       pdf: 97.pdf    
       img: 97.png
       project: AURA
-      video: 
+      video: https://www.dropbox.com/scl/fi/2cdaqyzyoam8qv9s2ugpv/aura_icra2025_video.MOV?rlkey=w1fpy7x69ixa0ip96pcp8kcqj&st=74jcg17s&dl=0
       materials: /projects/active/aura/aura_icra2025_poster.pdf
     - title: "Framework to Evaluate LLM's ability to Reason about Physical Disabilities from Medical Perspective"
       authors: Atharva S. Kashyap, Patricia Alves-Oliveira

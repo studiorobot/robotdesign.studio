@@ -83,7 +83,8 @@ active:
      project evaluates how humans respond to LLM-generated hallucinations given the trust they have placed in those 
      systems. Ultimately, we seek to study how compliant humans are when they use LLM systems in their life for 
      tasks such as cooking, or making a waffle.
-    poster: active/waffle/waffle.jpg
+    poster: active/waffle/thumbnail.jpg
+    video_mp4: active/waffle/waffle_video.mp4
 
 completed:
   - id: 8
