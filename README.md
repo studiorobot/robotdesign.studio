@@ -638,3 +638,131 @@ external:
   - External links use absolute URLs (e.g., `https://...`).
 
 By editing this file, you can control the layout and content of the navigation bars and social media links across the website.
+
+
+---
+## Robo Reflections
+
+A Jekyll-based website for the Human-Robot Interaction reading group at the University of Michigan.
+
+### Assets
+- **assets/images/thumbnails/** - Paper thumbnail images
+- **assets/pdfs/** - PDF files of papers
+- **assets/images/people/** - Photos of people
+
+### Data Files (\_data/ folder)
+
+The website content is controlled by YAML files in the `_data/` directory:
+
+- **papers.yml** - Contains all the papers and presentation information
+- **people.yml** - Contains information about organizers and supporting faculty  
+- **site.yml** - Contains the main site content (intro, format, contact info)
+
+### YAML Syntax Basics
+
+YAML is sensitive to specific characters and formatting. Here are the essential rules:
+
+#### URL Formatting
+URLS must start with https://
+
+```yaml
+video: https://www.youtube.com/...
+```
+#### When to Use Quotes
+Values with colons or number signs MUST use quotes 
+
+```yaml
+title: "bumblebee: the ##1 robot"
+```
+
+#### Multi-line Text (for long content)
+Use `>` on the first line to fold lines into one paragraph (treats line breaks as spaces)
+```yaml
+title: >
+  This very long title will be
+  joined into one line when displayed
+  on the website
+```
+Use `|` on the first line to preserve line breaks exactly
+```yaml
+contact: |
+  Email: contact@example.com
+  Phone: (123) 456-7890
+  Office: Building 123
+```
+### Updating papers.yml
+
+Each paper is a list item starting with `-`
+Everything below that `-` must be indented with 2 spaces
+```yaml
+- title: title
+  authors: authors
+  ...
+```
+
+#### Supported Variables for Papers
+- `title` - Paper title
+- `authors` - Author names
+- `event` - Conference/journal information
+- `doi` - DOI URL
+- `pdf` - PDF filename (file must exist in `assets/pdfs/`)
+- `img` - Thumbnail image filename (file must exist in `assets/images/thumbnails/`)
+- `date` - Presentation date
+- `presenter` - Presenter name
+- `drive` - Google Drive URL (displays as "Do Not Share" link)
+- `video` - Video URL
+
+If the paper doesn't have a variable such as `video`, you do not have to include it, or leave the value blank.
+
+#### Adding a New Paper
+1. Generate the pdf thumbnail and (optionally) a trimmed PDF using the tool at:  
+ [studiorobot.github.io/mediate](https://studiorobot.github.io/mediate/)
+2. Upload the pdf to `assets/pdfs/`
+3. Upload the thumbnail to `assets/images/thumbnails`
+4. Go to `_data/paper.yml`
+5. Add the paper to the bottom of the file
+6. Use the structure shown above
+
+#### Adding a New Semester
+
+```yaml
+Spring 2026:  ## New semester goes at the bottom of the file
+- title: First paper of the semester
+  authors: authors
+  ...
+```
+
+### Updating people.yml
+
+#### All Supported Variables for People
+- `name` - Person's name
+- `role` - Their role/title 
+- `inst` - Institution name 
+- `img` - Photo filename (must be in `assets/images/people/`)
+- `web` - Personal website URL 
+- `in` - LinkedIn profile URL 
+- `scholar` - Google Scholar profile URL 
+
+#### Adding a New Person
+1. First, upload their photo to `assets/images/people/`
+2. Go to `_data/people.yml`
+3. Add them to a section
+4. Use the structure shown above
+
+#### Adding a New Section
+```yaml
+New Section Name: 
+- name: person name
+  role: role
+  ...
+```
+
+### Updating site.yml
+You are able to change the introduction, format, and contact information.
+
+### Testing Your Changes
+
+After making changes:
+1. Check the "Actions" tab in GitHub to see if the build succeeded
+2. Visit [studiorobot.github.io/robo-reflections](https://robodesign.studio/robo-reflections/) to verify changes appear correctly
+3. If there are build errors, check the Actions log for YAML syntax errors

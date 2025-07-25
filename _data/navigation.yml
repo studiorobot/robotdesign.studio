@@ -10,8 +10,7 @@ internal:
   - title: "join us"
     url: "join"
   - title: "robo refelections"
-    url: "https://studiorobot.github.io/robo-reflections/"
-    newtab: true
+    url: "robo-reflections"
 
 external:
   - platform: LinkedIn
