@@ -650,9 +650,9 @@ A Jekyll-based website for the Human-Robot Interaction reading group at the Univ
 - **assets/pdfs/** - PDF files of papers
 - **assets/images/people/** - Photos of people
 
-### Data Files (\_data/ folder)
+### Data Files (\_data/robo-reflections/ folder)
 
-The website content is controlled by YAML files in the `_data/` directory:
+The website content is controlled by YAML files in the `_data/robo-reflections/` directory:
 
 - **papers.yml** - Contains all the papers and presentation information
 - **people.yml** - Contains information about organizers and supporting faculty  
@@ -672,7 +672,7 @@ video: https://www.youtube.com/...
 Values with colons or number signs MUST use quotes 
 
 ```yaml
-title: "bumblebee: the ##1 robot"
+title: "bumblebee: the #1 robot"
 ```
 
 #### Multi-line Text (for long content)
@@ -690,6 +690,9 @@ contact: |
   Phone: (123) 456-7890
   Office: Building 123
 ```
+### YAML Validator
+
+Use https://mockoon.com/tools/yaml-validator/ to validate your YAML before you commit your changes.
 ### Updating papers.yml
 
 Each paper is a list item starting with `-`
@@ -705,8 +708,8 @@ Everything below that `-` must be indented with 2 spaces
 - `authors` - Author names
 - `event` - Conference/journal information
 - `doi` - DOI URL
-- `pdf` - PDF filename (file must exist in `assets/pdfs/`)
-- `img` - Thumbnail image filename (file must exist in `assets/images/thumbnails/`)
+- `pdf` - PDF filename (file must exist in `assets/robo-reflections/pdfs/`)
+- `img` - Thumbnail image filename (file must exist in `assets/robo-reflections/images/thumbnails/`)
 - `date` - Presentation date
 - `presenter` - Presenter name
 - `drive` - Google Drive URL (displays as "Do Not Share" link)
@@ -717,16 +720,16 @@ If the paper doesn't have a variable such as `video`, you do not have to include
 #### Adding a New Paper
 1. Generate the pdf thumbnail and (optionally) a trimmed PDF using the tool at:  
  [studiorobot.github.io/mediate](https://studiorobot.github.io/mediate/)
-2. Upload the pdf to `assets/pdfs/`
-3. Upload the thumbnail to `assets/images/thumbnails`
-4. Go to `_data/paper.yml`
+2. Upload the pdf to `assets/robo-reflections/pdfs/`
+3. Upload the thumbnail to `assets/robo-reflections/images/thumbnails`
+4. Go to `_data/robo-reflections/paper.yml`
 5. Add the paper to the bottom of the file
 6. Use the structure shown above
 
 #### Adding a New Semester
 
 ```yaml
-Spring 2026:  ## New semester goes at the bottom of the file
+Spring 2026:  # New semester goes at the bottom of the file
 - title: First paper of the semester
   authors: authors
   ...
@@ -738,14 +741,14 @@ Spring 2026:  ## New semester goes at the bottom of the file
 - `name` - Person's name
 - `role` - Their role/title 
 - `inst` - Institution name 
-- `img` - Photo filename (must be in `assets/images/people/`)
+- `img` - Photo filename (must be in `assets/robo-reflections/images/people/`)
 - `web` - Personal website URL 
 - `in` - LinkedIn profile URL 
 - `scholar` - Google Scholar profile URL 
 
 #### Adding a New Person
-1. First, upload their photo to `assets/images/people/`
-2. Go to `_data/people.yml`
+1. First, upload their photo to `assets/robo-reflections/images/people/`
+2. Go to `_data/robo-reflections/people.yml`
 3. Add them to a section
 4. Use the structure shown above
 
@@ -760,9 +763,8 @@ New Section Name:
 ### Updating site.yml
 You are able to change the introduction, format, and contact information.
 
-### Testing Your Changes
-
-After making changes:
-1. Check the "Actions" tab in GitHub to see if the build succeeded
-2. Visit [studiorobot.github.io/robo-reflections](https://robodesign.studio/robo-reflections/) to verify changes appear correctly
+## Validating Your Changes
+1. Use https://mockoon.com/tools/yaml-validator/ to validate your YAML before you commit your changes.
+2. Check the "Actions" tab in GitHub to see if the build succeeded
 3. If there are build errors, check the Actions log for YAML syntax errors
+4. Visit [studiorobot.github.io/robo-reflections](https://robotdesign.studio/robo-reflections) to verify changes appear correctly
