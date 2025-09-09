@@ -39,5 +39,40 @@ Summer 2025:
   drive: https://drive.google.com/file/d/1IYxUcAQkdGfEbJ0uDmquttup-1TfTK2_/view?uspdrive_link
   date: August 5th
   presenter: Francesca Cocchella
-
-
+Fall 2025:
+- title: > 
+    Memory-Based Personalization for Fostering a Long-Term Child-Robot Relationship
+  authors: Ligthart et al. 
+  event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 80 - 89."
+  doi: https://doi.org/10.1109/HRI53351.2022.9889446
+  pdf: Memory2022HRI.pdf
+  img: Memory2022HRI.jpg
+  date: Oct 2nd
+  presenter: Connor Williams
+- title: > 
+    "More than words:" A Framework for Human-Robot Dialog Designs
+  authors: Berzuk, J. M., & Young, J. E 
+  event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 393 - 401."
+  doi: https://doi.org/10.1109/HRI53351.2022.9889423
+  pdf: More2022HRI.pdf
+  img: More2022HRI.jpg
+  date: Oct 16th
+  presenter: Trey Davis
+- title: > 
+    "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
+  authors: Jenamani1 et al.
+  event: "arXiv, 2025"
+  doi: https://arxiv.org/abs/2506.14968
+  pdf: Feast2025Arxiv.pdf
+  img: Feast2025Arxiv.jpg
+  date: Oct 30th
+  presenter: Atharva Kashyap
+- title: > 
+    Encountering Autonomous Robots on Public Streets
+  authors: Pelikan et al.
+  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
+  doi: https://doi.org/10.1145/3610977.3634936
+  pdf: Street2024HRI.pdf
+  img: Street2024HRI.jpg
+  date: Nov 27th
+  presenter: Long-Jing Hsu
