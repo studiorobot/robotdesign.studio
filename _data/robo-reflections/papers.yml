@@ -41,6 +41,13 @@ Summer 2025:
   presenter: Francesca Cocchella
 Fall 2025:
 - title: > 
+    Goal Representation and Human Attention Shape Legible Robot Navigation in Hallways
+  authors: Pranav Goyal 
+  event: Work-in-Progress - please do not share
+  drive: https://doi.org/10.1109/HRI53351.2022.9889446
+  date: Sep 18
+  presenter: Pranav Goyal
+- title: > 
     Memory-Based Personalization for Fostering a Long-Term Child-Robot Relationship
   authors: Ligthart et al. 
   event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 80 - 89."
@@ -50,14 +57,14 @@ Fall 2025:
   date: Oct 2nd
   presenter: Connor Williams
 - title: > 
-    "More than words:" A Framework for Human-Robot Dialog Designs
-  authors: Berzuk, J. M., & Young, J. E 
-  event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 393 - 401."
-  doi: https://doi.org/10.1109/HRI53351.2022.9889423
-  pdf: More2022HRI.pdf
-  img: More2022HRI.jpg
-  date: Oct 16th
-  presenter: Trey Davis
+    Encountering Autonomous Robots on Public Streets
+  authors: Pelikan et al.
+  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
+  doi: https://doi.org/10.1145/3610977.3634936
+  pdf: Street2024HRI.pdf
+  img: Street2024HRI.jpg
+  date: Nov 27th
+  presenter: Long-Jing Hsu
 - title: > 
     "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
   authors: Jenamani1 et al.
@@ -67,12 +74,13 @@ Fall 2025:
   img: Feast2025Arxiv.jpg
   date: Oct 30th
   presenter: Atharva Kashyap
-- title: > 
-    Encountering Autonomous Robots on Public Streets
-  authors: Pelikan et al.
-  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
-  doi: https://doi.org/10.1145/3610977.3634936
-  pdf: Street2024HRI.pdf
-  img: Street2024HRI.jpg
-  date: Nov 27th
-  presenter: Long-Jing Hsu
+# - title: > 
+#     "More than words:" A Framework for Human-Robot Dialog Designs
+#   authors: Berzuk, J. M., & Young, J. E 
+#   event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 393 - 401."
+#   doi: https://doi.org/10.1109/HRI53351.2022.9889423
+#   pdf: More2022HRI.pdf
+#   img: More2022HRI.jpg
+#   date: Oct 16th
+#   presenter: Trey Davis
+
