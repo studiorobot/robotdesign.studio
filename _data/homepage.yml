@@ -13,6 +13,21 @@ research_vision: |
   Robot Studio is a multi-disciplinary research lab that designs current and future relationships between robots and us that are inspiring, refined, and magical. We achieve this by building robots that are intentional in their function and aesthetically beautiful, to uncover the many connections we can have with robots in the contexts of health and the arts. We use theories and methods from Computer Engineering, Psychology, and Design Research to study how we can be build robots that empower us and to search how robots can be a tool to support better understanding of who we are. In Robot Studio, we experience what it is to be a full-stack roboticist.
 
 news: 
+  - date: September 12th, 2025
+    description: "Prof. Patricia was selected as a Rising Woman Star in Social Robotics at [ICSR](https://icsr2025.eu/)"
+
+  - date: August 25th, 2025
+    description: "Prof. Patricia gave a keynote at the RO-MAN workshop [Designing Inclusive Futures](https://sites.google.com/view/ro-man2025-inclusive-futures)"
+
+  - date: August 25th, 2025
+    description: "Welcome to new PhD student, Tetsu Kurumisawa, to Robot Studio!"
+
+  - date: August 15th, 2025
+    description: "Welcome to new PostDoc, Long-Jing Hsu, to Robot Studio!"
+  
+  - date: August 13th, 2025
+    description: "Interview with Prof. Patricia about Art Authentication using Robots on [MLive](https://www.mlive.com/news/2025/08/authenticating-art-in-the-age-of-ai-with-robots-and-backing-from-the-us-military.html)"
+
   - date: June 10th, 2025
     description: "Prof. Patricia started a new HRI reading group at University of Michigan called [Robo Reflections](https://studiorobot.github.io/robo-reflections/)."
 

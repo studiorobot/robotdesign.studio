@@ -13,6 +13,17 @@ patricia:
   description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
 
 members:
+ - name: Long-Jing Hsu
+   standing: Post-Doc
+   major: The Michigan Institute for Data & AI in Society
+   university: University of Michigan
+   project: Resilience
+   joined: Fall 2025
+   personal_website: https://longjinghsu.wixsite.com/website
+   google_scholar: https://scholar.google.com/citations?hl=en&user=s4Uy3XAAAAAJ
+   linkedin: https://www.linkedin.com/in/longjinghsu
+   img: postdoc/Long-Jing_Hsu_Postdoc.png
+ 
  - name: Atharva S. Kashyap
    standing: Ph.D.
    major: Robotics
@@ -44,28 +55,15 @@ members:
    linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
    img: phd/Grace_Pan_PhD.jpg
 
- - name: Francesca Cocchella
-   standing: Visiting Ph.D. Student
+ - name: Tetsu Kurumisawa
+   standing: Ph.D.
    major: Robotics
-   university: Italian Institute of Technology-University of Genoa
+   university: University of Michigan
    project: AURA
-   joined: Summer 2025
-   personal_website: https://www.iit.it/it/people-details/-/people/francesca-cocchella
-   google_scholar: https://scholar.google.com/citations?user=SGgmmBwAAAAJ&hl=it&oi=ao J
-   linkedin: https://www.linkedin.com/in/francescacocchella/
-   twitter: https://x.com/FCocchella
-   img: phd/Francesca_Cocchella_PhD.jpeg
-
- - name: Ugnė Aleksandra Morkutė
-   standing: Visiting Ph.D. Student
-   major: Cognitive Psychology
-   university: Leiden University
-   project: Delicious
-   joined: Summer 2025
-   linkedin: https://www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
-   github: https://github.com/UgneMo
-   google_scholar: https://scholar.google.com/citations?view_op=list_works&hl=en&user=2vl1MasAAAAJ
-   img: phd/Ugne_Morkute_PhD.jpg 
+   joined: Fall 2025
+   linkedin: https://www.linkedin.com/in/tetsu-kurumisawa/
+   github: https://github.com/tetsu-kurumi
+   img: phd/Tetsu_Kurumisawa_PhD.JPG 
 
  - name: Elijah Cantu
    standing: Masters
@@ -118,19 +116,6 @@ members:
    joined: Winter 2025
    linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
    img: masters/Longzhen_Yuan_Masters.jpg
-
- - name: Nilay Roy Choudhury
-   standing: Masters
-   major: Robotics
-   university: University of Michigan
-   project: Fontana, AURA
-   joined: Summer 2025
-   personal_website: https://www.nilayroy.com/
-   google_scholar: https://scholar.google.com/citations?user=o-zBbgEAAAAJ&hl=en
-   linkedin: https://www.linkedin.com/in/nilayroy
-   twitter: https://x.com/nilayroyc
-   youtube: https://www.youtube.com/channel/UCFW_s-xd1SyxFbeQCJZeXYw
-   img: masters/NilayRoyChoudhury.png
 
  - name: Angshu Adhya
    standing: Undergrad
@@ -291,6 +276,12 @@ alumni:
    project: AURA
    year: 2025
    linkedin: https://www.linkedin.com/in/wuemilyy/ 
+  
+ - name: Francesca Cocchella
+   future:
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/francescacocchella/
 
  - name: Guan-Ling Chen
    future:
@@ -315,6 +306,18 @@ alumni:
    project: Fashion
    year: 2025
    linkedin: https://www.linkedin.com/in/myles-avalon-67b291292
+  
+ - name: Nilay Roy Choudhury
+   future:
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/nilayroy
+
+ - name: Ugnė Aleksandra Morkutė
+   future: New York University
+   project: Delicious
+   year: 2025
+   linkedin: https://www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
 
  - name: Zhixuan Chen	
    future:
