@@ -45,18 +45,17 @@ Fall 2025:
   authors: Pranav Goyal 
   event: Work-in-Progress - please do not share
   drive: https://drive.google.com/file/d/1Pg7lYKP6DD9NkQPNZBQJestSzuiULjd6/view?usp=sharing
-  img: WIP.png
   date: Sep 18
   presenter: Pranav Goyal
-# - title: > 
-#     Memory-Based Personalization for Fostering a Long-Term Child-Robot Relationship
-#   authors: Ligthart, M. E., Neerincx, M. A., & Hindriks, K. V.
-#   event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 80 - 89."
-#   doi: https://doi.org/10.1109/HRI53351.2022.9889446
-#   pdf: Memory2022HRI.pdf
-#   img: Memory2022HRI.jpg
-#   date: Oct 2nd
-#   presenter: Connor Williams
+- title: > 
+    Memory-Based Personalization for Fostering a Long-Term Child-Robot Relationship
+  authors: Ligthart, M. E., Neerincx, M. A., & Hindriks, K. V.
+  event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 80 - 89."
+  doi: https://doi.org/10.1109/HRI53351.2022.9889446
+  pdf: Memory2022HRI.pdf
+  img: Memory2022HRI.jpg
+  date: Oct 2nd
+  presenter: Connor Williams
 # - title: > 
 #     Encountering Autonomous Robots on Public Streets
 #   authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
