@@ -56,15 +56,15 @@ Fall 2025:
   img: Memory2022HRI.jpg
   date: Oct 2nd
   presenter: Connor Williams
-# - title: > 
-#     Encountering Autonomous Robots on Public Streets
-#   authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
-#   event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
-#   doi: https://doi.org/10.1145/3610977.3634936
-#   pdf: Street2024HRI.pdf
-#   img: Street2024HRI.jpg
-#   date: Nov 27th
-#   presenter: Long-Jing Hsu
+- title: > 
+    Encountering Autonomous Robots on Public Streets
+  authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
+  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
+  doi: https://doi.org/10.1145/3610977.3634936
+  pdf: Street2024HRI.pdf
+  img: Street2024HRI.jpg
+  date: Nov 27th
+  presenter: Long-Jing Hsu
 # - title: > 
 #     "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
 #   authors: Jenamani et al.
