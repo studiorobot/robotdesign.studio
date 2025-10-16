@@ -65,15 +65,15 @@ Fall 2025:
   img: Street2024HRI.jpg
   date: Oct 16th
   presenter: Long-Jing Hsu
-# - title: > 
-#     "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
-#   authors: Jenamani et al.
-#   event: "arXiv, 2025"
-#   doi: https://arxiv.org/abs/2506.14968
-#   pdf: Feast2025Arxiv.pdf
-#   img: Feast2025Arxiv.jpg
-#   date: Oct 30th
-#   presenter: Atharva Kashyap
+- title: > 
+    "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
+  authors: Jenamani et al.
+  event: "arXiv, 2025"
+  doi: https://arxiv.org/abs/2506.14968
+  pdf: Feast2025Arxiv.pdf
+  img: Feast2025Arxiv.jpg
+  date: Oct 30th
+  presenter: Atharva Kashyap
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
