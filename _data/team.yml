@@ -65,6 +65,16 @@ members:
    github: https://github.com/tetsu-kurumi
    img: phd/Tetsu_Kurumisawa_PhD.JPG 
 
+ - name: Cheryl Fang
+   standing: Masters
+   major: Computer Graphics Tech
+   university: Purdue University
+   project: Futures
+   joined: Fall 2025
+   personal_website: https://www.cherylfang.com/
+   linkedin: https://www.linkedin.com/in/wanchun-fang/ 
+   img: masters/Cheryl_Fang_Masters.jpeg
+
  - name: Elijah Cantu
    standing: Masters
    major: Information
