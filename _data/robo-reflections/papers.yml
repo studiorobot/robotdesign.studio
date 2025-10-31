@@ -74,6 +74,15 @@ Fall 2025:
   img: Feast2025Arxiv.jpg
   date: Oct 30th
   presenter: Atharva Kashyap
+- title: > 
+    BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation
+  authors: Li et al.
+  event: "CoRL, 2022"
+  doi: https://arxiv.org/pdf/2403.09227
+  pdf: behavior2022.pdf
+  img: behavior2022.jpg
+  date: Nov 13th
+  presenter: Aparajito Saha
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
