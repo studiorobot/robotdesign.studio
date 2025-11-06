@@ -87,18 +87,6 @@ members:
    github: https://github.com/elijahcantu
    img: masters/elijah_cantu.jpeg
 
- - name: Erfun Ackley
-   standing: Masters
-   major: Performing Arts Tech
-   university: University of Michigan
-   project: Droodles
-   joined: Summer 2024
-   personal_website: https://www.erfunackley.com/
-   google_scholar: N/A
-   linkedin: https://www.linkedin.com/in/erfun-ackley/
-   github: https://github.com/funckley
-   img: masters/Erfun_Ackley_Masters.JPG
-
  - name: Eric Chen
    standing: Masters
    major: Robotics
@@ -175,15 +163,6 @@ members:
    personal_website: https://ichikaha.myportfolio.com/
    linkedin: https://www.linkedin.com/in/hana-ichikawa-59661b24a/
    img: undergrad/Hana_Ichikawa_undergrad.jpg
-
- - name: Jiali Zheng
-   standing: Undergrad
-   major: Computer Science
-   university: University of Michigan
-   project: Relate
-   joined: Summer 2024
-   linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
-   img: undergrad/Jiali_Undergrad.jpeg
 
  - name: Mrunmayee “MJ” Jere
    standing: Undergrad
@@ -305,6 +284,12 @@ alumni:
    project: AURA
    year: 2025
    linkedin: https://www.linkedin.com/in/wuemilyy/ 
+
+ - name: Erfun Ackley
+   future:
+   project: Droodles
+   year: 2025
+   linkedin: https://www.linkedin.com/in/erfun-ackley/
   
  - name: Francesca Cocchella
    future:
@@ -329,6 +314,12 @@ alumni:
    project: Vista
    year: 2025
    linkedin: https://www.linkedin.com/in/jeffrey-q/
+
+ - name: Jiali Zheng
+   future: 
+   project: Relate
+   year: 2025
+   linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
 
  - name: Myles Avalon
    future:
