@@ -125,6 +125,27 @@ members:
    linkedin: https://www.linkedin.com/in/qingru-yang/ 
    img: masters/Qingru_Yang.jpg
 
+ - name: Sneha Venkat
+   standing: Masters
+   major: Data Science
+   university: University of Michigan 
+   project: Resilience
+   joined: Winter 2026 
+   linkedin: https://www.linkedin.com/in/sai-sneha-sv/
+   github: https://github.com/saisnehasv
+   img: masters/Sneha_Venkat_Masters.jpg
+
+ - name: Ted Ivanac
+   standing: Masters
+   major: Robotics
+   university: University of Michigan 
+   project: Delicious
+   joined: Winter 2026 
+   personal_website: https://tedivanac.github.io/
+   linkedin: https://www.linkedin.com/in/edward-ted-ivanac/
+   github: https://github.com/TedIvanac
+   img: masters/Ted_Ivanac_Masters.jpg
+
  - name: Angela Y. Zhu
    standing: Undergrad
    major: Cognitive Science
