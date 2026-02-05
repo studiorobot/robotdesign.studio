@@ -96,34 +96,23 @@ members:
    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
    img: masters/Eric_Chen_Master.jpg
 
- - name: Gurnoor Kaur
+ - name: Erin Roberts
    standing: Masters
-   major: Robotics
-   university: University of Michigan
-   project: Touch
-   joined: Winter 2025
-   linkedin: https://www.linkedin.com/in/gkaur07
-   personal_website: https://gurnoork07.github.io/
-   img: masters/Gurnoor_Kaur_MS.jpg
-
- - name: Longzhen Yuan
-   standing: Masters
-   major: Electrical and Computer Engineering
+   major: Architecture
    university: University of Michigan
    project: AURA
-   joined: Winter 2025
-   linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
-   img: masters/Longzhen_Yuan_Masters.jpg
-  
- - name: Qingru Yang 
-   standing: Masters
-   major: Digital and Material Technologies
-   university: University of Michigan
-   project: VISTA
    joined: Fall 2025
-   personal_website: https://qingruya.myportfolio.com/
-   linkedin: https://www.linkedin.com/in/qingru-yang/ 
-   img: masters/Qingru_Yang.jpg
+   linkedin: https://www.linkedin.com/in/erin-roberts-559698155/ 
+   img: masters/Erin_Roberts_MS.JPEG
+
+ - name: Malavika Anand
+   standing: Masters
+   major: Architecture 
+   university: University of Michigan 
+   project: AURA 
+   joined: Fall 2025 
+   linkedin: https://www.linkedin.com/in/malavika-anand-a1a86a199/
+   img: masters/Malavika_Anand_MS.jpg
 
  - name: Sneha Venkat
    standing: Masters
@@ -184,16 +173,6 @@ members:
    personal_website: https://ichikaha.myportfolio.com/
    linkedin: https://www.linkedin.com/in/hana-ichikawa-59661b24a/
    img: undergrad/Hana_Ichikawa_undergrad.jpg
-
- - name: Mrunmayee “MJ” Jere
-   standing: Undergrad
-   major: Computer Science
-   university: University of Michigan
-   project: AURA
-   joined: Winter 2025
-   linkedin: https://www.linkedin.com/in/mjere/
-   github: https://github.com/m-jere
-   img: undergrad/Mrunmayee_Jere_Undergraduate.jpg
 
  - name: Rishad Hasan
    standing: Undergrad
@@ -324,6 +303,12 @@ alumni:
    year: 2025
    linkedin: https://www.linkedin.com/in/guanling-chen/
 
+ - name: Gurnoor Kaur
+   future: Amazon Robotics
+   project: Touch, Delicious
+   year: 2025
+   linkedin: https://www.linkedin.com/in/gkaur07
+
  - name: Ilkyaz Sarimehmetoglu
    future: Massachusetts Institute of Technology
    project: Vista
@@ -342,6 +327,17 @@ alumni:
    year: 2025
    linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
 
+ - name: Longzhen Yuan
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
+
+ - name: Mrunmayee “MJ” Jere
+   future: Walmart Global Tech
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/mjere/
+
  - name: Myles Avalon
    future:
    project: Fashion
@@ -353,6 +349,11 @@ alumni:
    project: AURA
    year: 2025
    linkedin: https://www.linkedin.com/in/nilayroy
+
+ - name: Qingru Yang 
+   project: VISTA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/qingru-yang/ 
 
  - name: Ugnė Aleksandra Morkutė
    future: New York University
