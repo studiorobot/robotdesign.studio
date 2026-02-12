@@ -89,24 +89,17 @@ Winter 2026:
   authors: Long-Jing Hsu
   event: "PhD Dissertation Work"
   drive: https://www.proquest.com/docview/3238813594?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses
+  img: workshop.jpg
   date: Jan 22
   presenter: Long-Jing Hsu
 - title: > 
     Intimacy with chatbots and sex robots
   authors: Annette Masterson
   event: "Work-in-Progress, see Annette's Website for More Info"
-  drive: https://amsmasterson.wordpress.com/
+  pdf: HRI2026LBR_Intimacy_Camera_Ready.pdf
+  img: HRI2026LBR_Intimacy_Camera_Ready.jpg
   date: Feb 5th
   presenter: Annette Masterson
-- title: > 
-    Encountering Autonomous Robots on Public Streets
-  authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
-  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
-  doi: https://doi.org/10.1145/3610977.3634936
-  pdf: Street2024HRI.pdf
-  img: Street2024HRI.jpg
-  date: Oct 16th
-  presenter: Long-Jing Hsu
 - title: > 
     How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces
   authors: Stratton, A., Singamaneni, P. T., Goyal, P., Alami, R., & Mavrogiannis, C.
