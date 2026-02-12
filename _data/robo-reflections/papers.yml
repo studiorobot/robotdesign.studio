@@ -98,6 +98,32 @@ Winter 2026:
   drive: https://amsmasterson.wordpress.com/
   date: Feb 5th
   presenter: Annette Masterson
+- title: > 
+    Encountering Autonomous Robots on Public Streets
+  authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
+  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
+  doi: https://doi.org/10.1145/3610977.3634936
+  pdf: Street2024HRI.pdf
+  img: Street2024HRI.jpg
+  date: Oct 16th
+  presenter: Long-Jing Hsu
+  - title: > 
+    How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces
+  authors: Andrew Stratton, Phani Teja Singamaneni, Pranav Goyal, Rachid Alami, and Christoforos Mavrogiannis
+  event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI ’26)"
+  doi: https://doi.org/10.1145/3757279.3788664
+  pdf: Stratton_MotionPrediction.pdf
+  img: Stratton_MotionPrediction.jpg
+  date: Oct 19th
+  presenter: Andrew Stratton
+   - title: > 
+    The Roles of Fairness and Effectiveness in Promoting Legitimacy and Cooperation with Security Robotic Authority
+  authors: Ye, X. and Robert, L.P. 
+  event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI ’26)"
+  pdf: Ye_SRFairness.pdf
+  img: Ye_SRFairness.jpg
+  date: Oct 19th
+  presenter: Xin Ye
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
