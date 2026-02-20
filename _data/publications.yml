@@ -635,3 +635,9 @@ publications:
       pdf: 102.pdf    
       img: 102.png
       project: DELICIOUS
+    - title: "Patch-Based Spatial Authorship Attribution in Human-Robot Collaborative Paintings"
+      authors: Eric Chen, Patricia Alves-Oliveira
+      event: "arXiv preprint"
+      pdf: 103.pdf    
+      img: 103.png
+      project: AURA
