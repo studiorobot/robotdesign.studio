@@ -629,6 +629,7 @@ publications:
       pdf: 101.pdf    
       img: 101.jpg
       project: AURA
+  2026:
     - title: "Robot-Assisted Social Dining as a White Glove Service"
       authors: Atharva S. Kashyap, Ugne Aleksandra Morkute, Patricia Alves-Oliveira
       event: "ACM CHI Conference on Human Factors in Computing Systems (CHI'26)"
