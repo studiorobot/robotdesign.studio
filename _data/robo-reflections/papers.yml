@@ -128,6 +128,16 @@ Winter 2026:
   img: Kashyap_White.jpg
   date: April 2nd
   presenter: Atharva Kashyap
+
+- title: > 
+    Designing Care-fully: Robots for Acute Cancer Care
+  authors: Sandhya Jayaraman & Pratyusha Ghosh & Soyon Kim & Soham Satyadharma & Angelique Taylor & Christopher Coyne & Laurel D. Riek
+  event: "HRI ’26, Edinburgh, Scotland, UK"
+  doi: https://dl.acm.org/doi/10.1145/3757279.3785632
+  pdf: Grace_Designing.pdf
+  img: Grace_Designing.jpg
+  date: April 1st
+  presenter: Grace Pan
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
