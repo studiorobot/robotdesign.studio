@@ -107,7 +107,7 @@ Winter 2026:
   doi: https://doi.org/10.1145/3757279.3788664
   pdf: Stratton_MotionPrediction.pdf
   img: Stratton_MotionPrediction.jpg
-  date: Oct 19th
+  date: March 19th
   presenter: Andrew Stratton
 
 - title: > 
@@ -116,8 +116,17 @@ Winter 2026:
   event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)."
   pdf: Ye_SRFairness.pdf
   img: Ye_SRFairness.jpg
-  date: Oct 19th
+  date: March 19th
   presenter: Xin Ye
+
+- title: > 
+    Robot-Assisted Social Dining as a White Glove Service
+  authors: Atharva S Kashyap & Ugne Aleksandra Morkute & Patricia Alves-Oliveira
+  event: "CHI ’26, Barcelona, Spain"
+  pdf: Kashyap_White.pdf
+  img: Kashyap_White.jpg
+  date: April 2nd
+  presenter: Atharva Kashyap
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
