@@ -635,6 +635,7 @@ publications:
       event: "ACM CHI Conference on Human Factors in Computing Systems (CHI'26)"
       pdf: 102.pdf    
       img: 102.png
+      video: https://youtu.be/JKJiZffJZ6Q
       project: DELICIOUS
     - title: "Patch-Based Spatial Authorship Attribution in Human-Robot Collaborative Paintings"
       authors: Eric Chen, Patricia Alves-Oliveira
@@ -642,3 +643,10 @@ publications:
       pdf: 103.pdf    
       img: 103.png
       project: AURA
+    - title: "Speak2Scene: Voice-Based Storyboarding"
+      authors: Atharva S. Kashyap, Patricia Alves-Oliveira
+      event: SoftwareX, 34, 102628
+      doi: https://doi.org/10.1016/j.softx.2026.102628
+      pdf: 104.pdf
+      img: 104.png
+      project: DELICIOUS
