@@ -1,0 +1,122 @@
+carousel:
+  - title: human&#8209;robot interaction
+    description: We create robots that enable meaningful<br>and magical connections with humans
+    image: carousel/sketch.jpg
+  - title: multidisciplinarity
+    description: Our work happens at the intersection<br>of robotics, design, and psychology
+    image: carousel/fabrication.jpg
+  - title: health and arts
+    description: We apply robots to empower human<br>health and propel the study of arts
+    image: carousel/emar.png
+
+research_vision: |
+  Robot Studio is a multi-disciplinary research lab that designs current and future relationships between robots and us that are inspiring, refined, and magical. We achieve this by building robots that are intentional in their function and aesthetically beautiful, to uncover the many connections we can have with robots in the contexts of health and the arts. We use theories and methods from Computer Engineering, Psychology, and Design Research to study how we can be build robots that empower us and to search how robots can be a tool to support better understanding of who we are. In Robot Studio, we experience what it is to be a full-stack roboticist.
+
+news: 
+  - date: September 12th, 2025
+    description: "Prof. Patricia was selected as a Rising Woman Star in Social Robotics at [ICSR](https://icsr2025.eu/)"
+
+  - date: August 25th, 2025
+    description: "Prof. Patricia gave a keynote at the RO-MAN workshop [Designing Inclusive Futures](https://sites.google.com/view/ro-man2025-inclusive-futures)"
+
+  - date: August 25th, 2025
+    description: "Welcome to new PhD student, Tetsu Kurumisawa, to Robot Studio!"
+
+  - date: August 15th, 2025
+    description: "Welcome to new PostDoc, Long-Jing Hsu, to Robot Studio!"
+  
+  - date: August 13th, 2025
+    description: "Interview with Prof. Patricia about Art Authentication using Robots on [MLive](https://www.mlive.com/news/2025/08/authenticating-art-in-the-age-of-ai-with-robots-and-backing-from-the-us-military.html)"
+
+  - date: June 10th, 2025
+    description: "Prof. Patricia started a new HRI reading group at University of Michigan called [Robo Reflections](https://studiorobot.github.io/robo-reflections/)."
+
+  - date: June 1st, 2025
+    description: "Welcome to the Visiting Ph.D. students, Francesca Cocchella and Ugne Morkute, who will be working with us for the summer!"
+
+  - date: May 21st, 2025
+    description: "We received the [ICRA 2025](https://www.icra2025.org/) HRI award for Arts & Robotics for our work on the AURA project!"
+
+  - date: April 18th, 2025
+    description: "AURA project had demo accepted in Arts & Robotics track at [ICRA 2025](https://www.icra2025.org/)."
+
+  - date: April 18th, 2025
+    description: "Atharva Kashyap was accepted as a [ICRA 2025](https://www.icra2025.org/) volunteer and was accepted to present a Late Breaking Results Poster."
+  
+  - date: April 7th, 2025
+    description: "Grace Pan was awarded the [Pathways@RSS fellowship](https://sites.google.com/lehigh.edu/pathways-rss2025/home) to attend the [RSS 2025](https://roboticsconference.org/) conference."
+  
+  - date: April 4th, 2025
+    description: "Erfun Ackley defended his Master's Thesis on [Exploring Creative AI Systems](https://www.linkedin.com/posts/robot-studio-design_erfun-ackley-just-defended-his-master-thesis-activity-7314022126104064001-D2k7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtQ5YIBk_EW6P-yju78v5meREsLYCg1dR4)."
+  
+  - date: March 31st, 2025
+    description: "Prof. Patricia was a keynote speaker at the AAAI Spring Symposium on [Child-AI Interaction in the Era of Foundation Models](https://sites.google.com/iu.edu/childai-aaai2025/home?authuser=0) in California."
+  
+  - date: February 23rd, 2025
+    description: "Prof. Patricia gave a talk about \"[Inspiring Robots](https://www.youtube.com/live/Z4Q-wsOOVL4?si=h1RPqLpPXWb393qe&t=1017)\" on Chicago Creative Machines."
+  
+  - date: February 7th, 2025
+    description: "Poster on robots for incarcerated youth accepted at [WeRobot 2025](https://www.werobot2025.ca/)."
+
+  - date: February 7th, 2025
+    description: "Prof. Patricia gave an interview about her Robotics research journey with [Talking Robotics](https://open.spotify.com/episode/54w5Ocejcqos8dlBJFYCBN?si=05756ed1ebd6455b)."
+  
+  - date: January 23rd, 2025
+    description: "[Julia Di](https://scholar.google.com/citations?user=LfBnWyMAAAAJ) gave a talk about her research at Robot Studio."
+
+  - date: January 9th, 2025
+    description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
+
+  - date: December 31st, 2024
+    description: Congratulations Ilkyaz Sarimehmetoglu for your Master's degree in Digital and Material Tech!
+
+  - date: December 17th, 2024
+    description: Congratulations to Connor Williams for qualifying exam and becoming a Ph.D. Candidate!
+
+  - date: November 19th, 2024
+    description: Prof. Patricia gave a keynote and participated in a panel at the [FARI Conference](https://www.conference.fari.brussels/) in Brussels.
+
+  - date: September 1st, 2024
+    description: Welcome to the new Ph.D. students Atharva Kashyap and Grace Pan!
+
+  - date: July 19th, 2024
+    description: Prof. Patricia was awarded an NSF EAGER Award.
+
+  - date: June 24th, 2024
+    description: Prof. Patricia was awarded the DARPA Faculty Award.
+
+  - date: March 22nd, 2024
+    description: Prof. Patricia was a keynote speaker at the Disability Visibility Symposium.
+
+  - date: January 3rd, 2024
+    description: Prof. Patricia launched a new class at the Robotics Department called "[Design for Human-Robot Interaction](https://studiorobot.github.io/designforhri.github.io/)."
+
+  - date: January 1st, 2024
+    description: Robot Studio started at the University of Michigan!
+
+  - date: March 7, 2022
+    description: Organized HRI 2022 workshop on [theory-grounded HRI](https://theoriahri.wixsite.com/theoria).
+
+  - date: March 7, 2022
+    description: Paper accepted to [HRI 2022](https://humanrobotinteraction.org/2022/) on robot-induced emotions and creativity.
+
+  - date: November 9th, 2021
+    description: Paper accepted to [PLATEAU 2021](https://2021.plateau-workshop.org) on robot programs.
+
+  - date: October 26th, 2021
+    description: Paper accepted to Frontiers on [VR as a collaborative robot design tool](https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2021.746521/full).
+
+  - date: October 1st, 2021
+    description: Paper accepted to [CoRL 2021](https://2021.corl.org/) on [robot nodding behavior](https://openreview.net/forum?id=0WDtVJVwBcf).
+
+  - date: June 6th, 2021
+    description: "[Systematic review paper](https://onlinelibrary.wiley.com/doi/10.1002/jocb.514) accepted at the Journal of Creative Behavior"
+
+  - date: April 9th, 2021
+    description: Paper accepted to [DIS 2021](https://dis.acm.org/2021/) on [robot metaphors](https://dl.acm.org/doi/10.1145/3461778.3462060) - [video](https://www.youtube.com/watch?v=JpDV9FF3Sf0).
+
+  - date: April 9th, 2021
+    description: Paper accepted to [C&C 2021](https://dis.acm.org/2021/) on [robotics-based interventions](https://dl.acm.org/doi/fullHtml/10.1145/3450741.3465267) - [video](https://www.youtube.com/watch?v=6T-QjgF1AEo)
+
+  - date: March 9th, 2021
+    description: Best Paper Award to [HRI 2021](https://humanrobotinteraction.org/2021/awards/) on [children as robot designers](https://dl.acm.org/doi/abs/10.1145/3434073.3444650) - [video](https://www.youtube.com/watch?v=E2trLGclTc8)

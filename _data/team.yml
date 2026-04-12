@@ -1,0 +1,369 @@
+patricia:
+  name: Patrícia Alves-Oliveira
+  role: Director of Robot Studio
+  title: Ph.D., Assistant Professor of Robotics
+  affiliated: Affiliated Faculty at [MIDAS](https://midas.umich.edu/) and [ESC](https://esc.umich.edu/)
+  advisor: Research Advisor at [Open Style Lab](https://www.openstylelab.org/)
+  email: robopati@umich.edu
+  website: https://patricialvesoliveira.com/
+  google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate
+  twitter: https://x.com/p_alvesoliveira
+  linkedin: https://www.linkedin.com/in/patricia-alves-oliveira
+  profile_img: team/patricia.jpg
+  description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
+
+members:
+ - name: Long-Jing Hsu
+   standing: Post-Doc
+   major: The Michigan Institute for Data & AI in Society
+   university: University of Michigan
+   project: Resilience
+   joined: Fall 2025
+   personal_website: https://longjinghsu.wixsite.com/website
+   google_scholar: https://scholar.google.com/citations?hl=en&user=s4Uy3XAAAAAJ
+   linkedin: https://www.linkedin.com/in/longjinghsu
+   img: postdoc/Long-Jing_Hsu_Postdoc.png
+ 
+ - name: Atharva S. Kashyap
+   standing: Ph.D.
+   major: Robotics
+   university: University of Michigan
+   project: Delicious
+   joined: Fall 2024
+   personal_website: https://atharva-kashyap.github.io 
+   google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
+   linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
+   github: https://github.com/atharva-kashyap 
+   img: phd/Atharva_S._Kashyap_PhD.jpg
+
+ - name: Connor Williams
+   standing: Ph.D.
+   major: Robotics
+   university: University of Michigan
+   project: Horizon
+   joined: Winter 2024
+   google_scholar: https://scholar.google.com/citations?user=JF5Jl6EAAAAJ&hl=en 
+   img: phd/Connor_Williams_PhD.jpg
+
+ - name: Grace Pan
+   standing: Ph.D.
+   major: Robotics
+   university: University of Michigan
+   project: Touch, Futures, Vista
+   joined: Fall 2024
+   google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ&view_op=list_works&gmla=AL3_zihzNO90Td1GOD_xDrCi45TZlnvj4yPpj0GfWJfW1ETmQEP2p_IqWzJ4eTjlk0CeCcsA5gr4MgxMDzBL_HKK 
+   linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
+   img: phd/Grace_Pan_PhD.jpg
+
+ - name: Tetsu Kurumisawa
+   standing: Ph.D.
+   major: Robotics
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2025
+   linkedin: https://www.linkedin.com/in/tetsu-kurumisawa/
+   github: https://github.com/tetsu-kurumi
+   img: phd/Tetsu_Kurumisawa_PhD.JPG 
+
+ - name: Cheryl Fang
+   standing: Masters
+   major: Computer Graphics Tech
+   university: Purdue University
+   project: Futures
+   joined: Fall 2025
+   personal_website: https://www.cherylfang.com/
+   linkedin: https://www.linkedin.com/in/wanchun-fang/ 
+   img: masters/Cheryl_Fang_Masters.jpeg
+
+ - name: Elijah Cantu
+   standing: Masters
+   major: Information
+   university: University of Michigan
+   project: Relate
+   role: Web Developer
+   joined: Fall 2024
+   personal_website: https://elijahcantu.com
+   linkedin: https://www.linkedin.com/in/elijahcantu 
+   github: https://github.com/elijahcantu
+   img: masters/elijah_cantu.jpeg
+
+ - name: Eric Chen
+   standing: Masters
+   major: Robotics
+   university: University of Michigan
+   project: AURA
+   joined: Summer 2025
+   linkedin: https://www.linkedin.com/in/eric-chen-883243257/
+   img: masters/Eric_Chen_Master.jpg
+
+ - name: Erin Roberts
+   standing: Masters
+   major: Architecture
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2025
+   linkedin: https://www.linkedin.com/in/erin-roberts-559698155/ 
+   img: masters/Erin_Roberts_MS.JPEG
+
+ - name: Malavika Anand
+   standing: Masters
+   major: Architecture 
+   university: University of Michigan 
+   project: AURA 
+   joined: Fall 2025 
+   linkedin: https://www.linkedin.com/in/malavika-anand-a1a86a199/
+   img: masters/Malavika_Anand_MS.jpg
+
+ - name: Sneha Venkat
+   standing: Masters
+   major: Data Science
+   university: University of Michigan 
+   project: Resilience
+   joined: Winter 2026 
+   linkedin: https://www.linkedin.com/in/sai-sneha-sv/
+   github: https://github.com/saisnehasv
+   img: masters/Sneha_Venkat_Masters.jpg
+
+ - name: Ted Ivanac
+   standing: Masters
+   major: Robotics
+   university: University of Michigan 
+   project: Delicious
+   joined: Winter 2026 
+   personal_website: https://tedivanac.github.io/
+   linkedin: https://www.linkedin.com/in/edward-ted-ivanac/
+   github: https://github.com/TedIvanac
+   img: masters/Ted_Ivanac_Masters.jpg
+
+ - name: Angela Y. Zhu
+   standing: Undergrad
+   major: Cognitive Science
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2025
+   linkedin: www.linkedin.com/in/angela-yixuan-zhu
+   img: undergrad/Angela_Zhu_undergrad.jpg
+
+ - name: Angshu Adhya
+   standing: Undergrad
+   major: Computer Science
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2024
+   personal_website: https://www.aadhya.me
+   linkedin: https://www.linkedin.com/in/aadhya22
+   github: https://www.github.com/a-adhya
+   img: undergrad/Angshu_Adhya_Undergraduate.JPG
+
+ - name: Cindy Yang
+   standing: Undergrad
+   major: Electrical Engineering
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2024
+   linkedin: https://www.linkedin.com/in/cindy-yang-274662250 
+   img: undergrad/Cindy_Yang_Undergraduate.jpg
+
+ - name: Hana Ichikawa
+   standing: Undergrad
+   major: Art & Design
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2024
+   personal_website: https://ichikaha.myportfolio.com/
+   linkedin: https://www.linkedin.com/in/hana-ichikawa-59661b24a/
+   img: undergrad/Hana_Ichikawa_undergrad.jpg
+
+ - name: Rishad Hasan
+   standing: Undergrad
+   major: Robotics
+   university: University of Michigan
+   project: AURA
+   joined: Fall 2024
+   personal_website: https://rishadhasan.com/
+   linkedin: https://www.linkedin.com/in/rishadhasan/
+   img: undergrad/Rishad_Hasan_Undergraduate.jpg
+
+ - name: Tianxin (Jessica) Li
+   standing: Undergrad
+   major: Computer Science
+   university: University of Michigan
+   project: AURA
+   joined: Winter 2024
+   linkedin: https://www.linkedin.com/in/jessica-li-a2abb528a
+   github: https://github.com/Jessica-IX
+   img: undergrad/Tianxin(Jessica)_Li_undergrad.jpg
+
+ - name: Trey Davis
+   standing: Undergrad
+   major: Robotics
+   university: University of Michigan
+   project: Droodles
+   joined: Summer 2024
+   personal_website: https://www.yellowboltart.com 
+   linkedin: https://www.linkedin.com/in/trey-davis-916163221/ 
+   github: https://github.com/dtrey-umich 
+   youtube: https://www.youtube.com/@yert16571 
+   img: undergrad/Trey_Davis_Undergraduate.JPG
+
+collab:
+  - name: Abhishek Narula
+    role: Full Stack Engineer
+    university: University of Michigan
+    department: Robotics
+    img: collab/Abhishek_Narula_External_Collaborator.jpg
+
+  - name: Anastasia Kouvaras Ostrowski 
+    role: Assistant Professor 
+    university: Purdue University
+    department: Computer Graphics Tech
+    img: collab/Anastasia_Ostrowski_External_Collaborator.jpg
+  
+  - name: Anson Kairys 
+    role: Clinical Assistant Professor 
+    university: University of Michigan
+    department: Psychiatry
+    img: collab/Anson_Kairys_Collaborator.jpeg
+
+  - name: Jim Cogswell
+    role: Full Professor 
+    department: STAMPS School of Art & Design
+    university: University of Michigan
+    img: collab/Jim-Cogswell-External-Collaborator.jpg
+
+  - name: Joyce Chai
+    role: Full Professor 
+    department: Computer Science & Engineering
+    university: University of Michigan
+    img: collab/Joyce_Chai_Collaborator.jpg
+
+  - name: Leia Stirling
+    role: Full Professor
+    university: University of Michigan
+    department: Industrial and Operations Engineering
+    img: collab/Leia_Stirling_External_Collaborator.jpg
+
+  - name: Mark Draelos
+    role: Assistant Professor
+    university: University of Michigan
+    department: Robotics
+    img: collab/Mak_Draelos-External_Collaborator.jpg
+  
+  - name: Nita Valikodath
+    role: Clinical Assistant Professor
+    university: University of Michigan
+    department: Ophthalmology and Visual Sciences
+    img: collab/Nita_Valikodath-External_Collaborator.jpeg
+
+  - name: Peter Kahn
+    role: Full Professor
+    university: University of Washington
+    department: Psychology
+    img: collab/Peter_Kahn_External_collaborator.jpeg
+
+  - name: Siddhartha Srinivasa
+    role: Full Professor
+    university: University of Washington
+    department: Computer Science and Engineering
+    img: collab/Sidd_Srinivasa_External_Collaborator.jpg
+
+alumni:
+ - name: Aleena Qaiser
+   future: 
+   project: Futures
+   year: 2025 
+   linkedin: https://www.linkedin.com/in/aleenaqaiser/ 
+
+ - name: David Ho
+   future: University of Michigan
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/david-ho-umich
+  
+ - name: Emily Wu
+   future: Forterra
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/wuemilyy/ 
+
+ - name: Erfun Ackley
+   future:
+   project: Droodles
+   year: 2025
+   linkedin: https://www.linkedin.com/in/erfun-ackley/
+  
+ - name: Francesca Cocchella
+   future:
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/francescacocchella/
+
+ - name: Guan-Ling Chen
+   future:
+   project: Futures
+   year: 2025
+   linkedin: https://www.linkedin.com/in/guanling-chen/
+
+ - name: Gurnoor Kaur
+   future: Amazon Robotics
+   project: Touch, Delicious
+   year: 2025
+   linkedin: https://www.linkedin.com/in/gkaur07
+
+ - name: Ilkyaz Sarimehmetoglu
+   future: Massachusetts Institute of Technology
+   project: Vista
+   year: 2025
+   linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
+  
+ - name: Jeffrey Qiu
+   future:
+   project: Vista
+   year: 2025
+   linkedin: https://www.linkedin.com/in/jeffrey-q/
+
+ - name: Jiali Zheng
+   future: 
+   project: Relate
+   year: 2025
+   linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
+
+ - name: Longzhen Yuan
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
+
+ - name: Mrunmayee “MJ” Jere
+   future: Walmart Global Tech
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/mjere/
+
+ - name: Myles Avalon
+   future:
+   project: Fashion
+   year: 2025
+   linkedin: https://www.linkedin.com/in/myles-avalon-67b291292
+  
+ - name: Nilay Roy Choudhury
+   future:
+   project: AURA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/nilayroy
+
+ - name: Qingru Yang 
+   project: VISTA
+   year: 2025
+   linkedin: https://www.linkedin.com/in/qingru-yang/ 
+
+ - name: Ugnė Aleksandra Morkutė
+   future: New York University
+   project: Delicious
+   year: 2025
+   linkedin: https://www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
+
+ - name: Zhixuan Chen	
+   future: Amazon
+   project: Relate
+   year: 2024
+   linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/

@@ -1,0 +1,105 @@
+.project-links-container ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+
+
+.project-links-container {
+  padding-bottom: 0.2em;
+  margin-top: -2em;
+  margin-bottom:0px !important;
+
+}
+
+.project-links-container ul {
+  list-style: none;
+  display: inline;
+  margin-left: 0rem;
+
+}
+
+.project-container {
+  padding: 1rem 0rem;
+}
+
+.project-container div video {
+  max-width: 100%;
+  margin-top: 0.7rem;
+}
+
+.project-description {
+  padding-right: 1em;
+}
+
+.project-description h5 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.project-description p {
+  padding-bottom: 0.2em;
+  margin-bottom: 1.8em;
+}
+video[poster]{
+  width:100% !important;
+}
+.authors_abstract{
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+}
+
+.regular-publication{
+ border: 1px solid #3e3e3e; margin-top:-0.2em;
+}
+.awarded-publication{
+  border: 1px solid #ef3a3a; margin-top:-0.2em;
+}
+
+.authors{
+  padding-bottom:0.2em !important;
+}
+
+.publication-links ul{
+  list-style:none; display: inline; margin-left: 0rem;
+}
+.publication-links{
+  padding-bottom:0.2em; margin-bottom: 1.8em; margin-top:-2em;
+}
+.publication-links ul li{
+  display:inline !important; margin-right: 10px;
+}
+
+
+.publication-link{
+  display:inline; margin-right: 10px;
+}
+
+
+.news-item {
+  display: block;
+  background-color: rgb(255, 255, 255) !important; 
+  transition: background-color 0.7s ease !important; 
+}
+
+.news-item:hover {
+  background-color: #f0f0f0 !important; 
+}
+
+.wrapper-inner {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.content {
+  flex-grow: 1; 
+}
+
+#footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}

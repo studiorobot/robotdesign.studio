@@ -1,0 +1,257 @@
+---
+layout: robo-reflections
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+  <div class="reading-group">
+    <div class="header-container" style="position: relative; height: auto;">
+      <h2 class="header-title" style="margin: 0; position: absolute; left: 0; bottom: 0; z-index: 1;">Robo Reflections
+      </h2>
+      <div class="header-image-container" style="text-align: center;">
+        <img class="header-image" src="assets/robo-reflections/images/header.jpg"
+          style="width: 35%; height: auto; display: block; margin: 0 auto;">
+      </div>
+    </div>
+    <style>
+      @media (max-width: 768px) {
+        .header-container {
+          position: static !important;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .header-title {
+          position: static !important;
+          order: 2;
+          margin-top: 10px !important;
+        }
+
+        .header-image-container {
+          order: 1;
+          text-align: center !important;
+        }
+
+        .header-image {
+          margin: 0 auto !important;
+          width: 90% !important;
+        }
+
+      }
+
+      @media (min-width: 769px) and (max-width: 950px) {
+        .header-image-container {
+          text-align: right !important;
+        }
+
+        .header-image {
+          margin: 0 0 0 auto !important;
+        }
+
+      }
+
+      @media(max-width:600px) {
+        .paper-stuff {
+
+          gap: 0px !important;
+          /* Center align image and text */
+          margin-bottom: 10px !important;
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .semester-toggle:focus-visible {
+        outline: 2px solid #007BFF !important;
+        outline-offset: 2px;
+        border-radius: 10px !important;
+
+      }
+
+      .semester-toggle .dropdown-arrow {
+        display: inline-block;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+        /* smooth rotation */
+      }
+
+      .semester-toggle[aria-expanded="true"] .dropdown-arrow {
+        transform: rotate(90deg);
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(".semester-toggle");
+
+        toggles.forEach(toggle => {
+          toggle.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const targetEl = document.getElementById(targetId);
+
+            if (targetEl) {
+              // Toggle hidden class, returns true if class was added (i.e. element hidden)
+              const isHidden = targetEl.classList.toggle("hidden");
+
+              // Update aria-expanded based on new visibility
+              this.setAttribute("aria-expanded", isHidden ? "false" : "true");
+            }
+          });
+        });
+      });
+    </script>
+
+
+    {{ site.data.robo-reflections.site.intro | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }} <h2>
+      Format</h2>
+      {{ site.data.robo-reflections.site.format | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }}
+        {% assign total_semesters=site.data.robo-reflections.papers | size %} {% for semester in site.data.robo-reflections.papers reversed %} <div
+        class="row">
+        <div>
+          <h2>
+            <button class="semester-toggle" data-target="semester-{{ forloop.index }}"
+              aria-expanded="{% if total_semesters == 1 or forloop.last == false %}true{% else %}false{% endif %}"
+              style="all: unset; cursor: pointer; font-size: inherit; font-weight: inherit;">
+              {{ semester[0] }}
+              <span class="dropdown-arrow" aria-hidden="true">▶</span>
+            </button>
+          </h2>
+          <div id="semester-{{ forloop.index }}"
+            class="{% if total_semesters != 1 and forloop.last == true %}hidden{% endif %}">
+            {% for paper in semester[1] reversed %}
+            <div class="paper-stuff" style="margin-bottom: 0px; display: flex; gap:15px; align-items: flex-start;">
+              <div class="more-paper-stuff" style="flex-shrink: 0;">
+
+                {% if paper.img %}
+                <img class="regular-publication" src="assets/robo-reflections/images/thumbnails/{{paper.img}}"
+                  alt="The first page of the paper" loading="lazy"
+                  style="width: 133px; height: 188px; border: 2px solid #556c80; border-radius: 4px;" />
+                {% else %}
+                <div style="width: 133px; height: 188px; background-color: #f0f0f0; border-radius: 4px;"></div>
+                {% endif %}
+              </div>
+              <div class="publication-details" style="flex: 1;">
+                {% if paper.title %}
+                <h3 style="font-size: 16px;" class="title">{{ paper.title }}</h3>
+                {% endif %}
+                {% if paper.authors %}
+                <p class="authors" style="font-size: 15px; margin-bottom:0px;">
+                  {{ paper.authors }}
+                  {% if paper.event %}
+                  <br><span style="font-size: 14px;">{{ paper.event }}</span>
+                  {% endif %}
+                </p>
+                {% endif %}
+                <div class="publication-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                  {% if paper.pdf %}
+                  <a href="assets/robo-reflections/pdfs/{{ paper.pdf }}" target="_blank" class="link-color publication-link">
+                    <i class="fa-regular fa-file"></i> PDF
+                  </a>
+                  {% endif %}
+                  {% if paper.doi %}
+                  <a href="{{ paper.doi }}" target="_blank" class="link-color publication-link">
+                    <i class="fas fa-external-link-alt"></i> DOI
+                  </a>
+                  {% endif %}
+                  {% if paper.drive %}
+                  <a href="{{ paper.drive }}" target="_blank" class="link-color publication-link">
+                    <i class="fab fa-google-drive"></i> Private
+                  </a>
+                  {% endif %}
+                  {% if paper.video %}
+                  <a href="{{ paper.video }}" target="_blank" class="link-color publication-link">
+                    <i class="fa-solid fa-play"></i> Video
+                  </a>
+                  {% endif %}
+                </div>
+                {% if paper.date %}
+                <i>Date: {{ paper.date }}</i>
+                {% endif %}
+                {% if paper.presenter %}
+                <br><i>Presenter: {{ paper.presenter}}</i>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+  </div>
+  {% endfor %}
+  <div class="participants-section">
+    {% assign sections = site.data.robo-reflections.people %}
+    {% for section in sections %}
+    {% assign section_name = section[0] %}
+    {% assign people = section[1] %}
+
+    <h2>{{ section_name }}</h2>
+    <div class="participants">
+      {% for participant in people %}
+      <div class="participant">
+        <img src="assets/robo-reflections/images/people/{{ participant.img }}" alt="{{ participant.name }}"
+          class="participant-image">
+        <h3 class="participant-name">
+          {{ participant.name }}
+          {% if participant.in %}
+          <a href="{{ participant.in }}" target="_blank" class="icon-link">
+            <i class="fab fa-linkedin" title="LinkedIn"></i>
+          </a>
+          {% elsif participant.web %}
+          <a href="{{ participant.web }}" target="_blank" class="icon-link">
+            <i class="fas fa-globe" title="Website"></i>
+          </a>
+          {% endif %}
+          {% if participant.scholar %}
+          <a href="{{ participant.scholar }}" target="_blank" class="icon-link">
+            <i class="fab fa-google-scholar" title="Google Scholar"></i>
+          </a>
+          {% endif %}
+        </h3>
+        <p class="participant-institution">{{ participant.role }}<br>{{ participant.inst }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    {{ site.data.robo-reflections.site.contact | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }}
+      </div>
+  </div>
+</body>
+<style>
+  i {
+    font-size: 15px;
+  }
+  .icon-link:before {
+    content: "";
+}
+
+#footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.more-paper-stuff{
+    margin-bottom:15px !important;
+}
+.participant-name{
+    margin-bottom:5px;
+    margin-top:5px;
+}
+h2{
+    margin-bottom:10px;
+    margin-top:10px;
+}
+</style>
+
+</html>

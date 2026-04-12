@@ -1,0 +1,150 @@
+Summer 2025:
+- title: > 
+    "Give it Time:" Longitudinal Panels Scaffold Older Adults' Learning and Robot Co-Design
+  authors: Hsu et al. 
+  event: "HRI '24: Proceedings of the 2024 ACM/IEEE International Conference on Human-Robot Interaction. pp. 283 - 292."
+  doi: https://doi.org/10.1145/3610977.3634979
+  pdf: iris2024hri.pdf
+  img: iris2024hri.png
+  date: June 10th
+  presenter: Long-Jing Hsu
+- title: > 
+    Virtually the Same or Realistically Different?: A Meta-analysis of Real vs. 'Not So Real' Robots
+  authors: Connor Esterwood, Ruijia (Hannah) Guan, Xin Ye, and Lionel Robert Jr.
+  event: "HRI '25: Proceedings of the 2025 ACM/IEEE International Conference on Human-Robot Interaction. pp. 559 - 568."
+  doi: https://dl.acm.org/doi/10.5555/3721488.3721558
+  pdf: 3721488.3721558.pdf
+  img: 3721488.3721558.png
+  date: June 24th
+  presenter: Xin Ye
+- title: Effects of Human Motion Prediction Quality on Robot Navigation and Human Impressions in Teamwork Scenarios (Work-in-Progress)
+  authors: Andrew Stratton, Phani Teja Singamaneni, Pranav Goyal, Rachid Alami, and Christoforos Mavrogiannis
+  event: Work-in-Progress - please do not share
+  drive: https://drive.google.com/file/d/1A922Y2IfwlNCIMidJQKk65XoSyAGbbn4/view?usp=drive_link
+  img: UMLAASMotionPrediction.jpg
+  date: July 8th
+  presenter: Andrew Stratton
+- title: "Rebranding Sex Robots: Realbotix’s Corporate Metamorphosis"
+  authors: Annette M. Masterson and Lionel Peter Robert
+  event: "RO-MAN '25: Proceedings of the 34th IEEE International Conference on Robot and Human Interactive Communication."
+  doi: https://dx.doi.org/10.7302/26057
+  pdf: rebranding-sex-robots.pdf
+  img: rebranding-sex-robots.png
+  date: July 22nd
+  presenter: Annette Masterson
+- title: How Dare You, iCub? Robots Face Harsher Judgments Than Humans in Social Exclusion (Under Review)
+  authors: Francesca Cocchella, Sara Mongile, Giulia Pusceddu, Linda Lastrico, Giulia Belgiovine, Ana Tanevska, Luca Andrighetto, Francesco Rea, Alessandra Sciutti
+  event: Under Review - please do not share
+  img: SocialExclusion_SoRo.jpg
+  drive: https://drive.google.com/file/d/1IYxUcAQkdGfEbJ0uDmquttup-1TfTK2_/view?uspdrive_link
+  date: August 5th
+  presenter: Francesca Cocchella
+Fall 2025:
+- title: > 
+    Goal Representation and Human Attention Shape Legible Robot Navigation in Hallways
+  authors: Pranav Goyal 
+  event: Work-in-Progress - please do not share
+  drive: https://drive.google.com/file/d/1Pg7lYKP6DD9NkQPNZBQJestSzuiULjd6/view?usp=sharing
+  date: Sep 18
+  presenter: Pranav Goyal
+- title: > 
+    Memory-Based Personalization for Fostering a Long-Term Child-Robot Relationship
+  authors: Ligthart, M. E., Neerincx, M. A., & Hindriks, K. V.
+  event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 80 - 89."
+  doi: https://doi.org/10.1109/HRI53351.2022.9889446
+  pdf: Memory2022HRI.pdf
+  img: Memory2022HRI.jpg
+  date: Oct 2nd
+  presenter: Connor Williams
+- title: > 
+    Encountering Autonomous Robots on Public Streets
+  authors: Pelikan, H. R., Reeves, S., & Cantarutti, M. N. 
+  event: "2024 ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 561-571."
+  doi: https://doi.org/10.1145/3610977.3634936
+  pdf: Street2024HRI.pdf
+  img: Street2024HRI.jpg
+  date: Oct 16th
+  presenter: Long-Jing Hsu
+- title: > 
+    "FEAST:" A Flexible Mealtime-Assistance System Towards In-the-Wild Personalization
+  authors: Jenamani et al.
+  event: "arXiv, 2025"
+  doi: https://arxiv.org/abs/2506.14968
+  pdf: Feast2025Arxiv.pdf
+  img: Feast2025Arxiv.jpg
+  date: Oct 30th
+  presenter: Atharva Kashyap
+- title: > 
+    BEHAVIOR-1K: A Human-Centered, Embodied AI Benchmark with 1,000 Everyday Activities and Realistic Simulation
+  authors: Li et al.
+  event: "CoRL, 2022"
+  doi: https://arxiv.org/pdf/2403.09227
+  pdf: behavior2022.pdf
+  img: behavior2022.jpg
+  date: Nov 13th
+  presenter: Aparajito Saha
+Winter 2026:
+- title: > 
+    Research as Care, Design with Care: The Making of the IRIS Ikigai Robot
+  authors: Long-Jing Hsu
+  event: "PhD Dissertation Work"
+  drive: https://www.proquest.com/docview/3238813594?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses
+  img: workshop.jpg
+  date: Jan 22
+  presenter: Long-Jing Hsu
+- title: > 
+    Intimacy with chatbots and sex robots
+  authors: Annette Masterson
+  event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)."
+  pdf: HRI2026LBR_Intimacy_Camera_Ready.pdf
+  img: HRI2026LBR_Intimacy_Camera_Ready.jpg
+  date: Feb 5th
+  presenter: Annette Masterson
+- title: > 
+    How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces
+  authors: Stratton, A., Singamaneni, P. T., Goyal, P., Alami, R., & Mavrogiannis, C.
+  event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)."
+  doi: https://doi.org/10.1145/3757279.3788664
+  pdf: Stratton_MotionPrediction.pdf
+  img: Stratton_MotionPrediction.jpg
+  date: March 19th
+  presenter: Andrew Stratton
+
+- title: > 
+    The Roles of Fairness and Effectiveness in Promoting Legitimacy and Cooperation with Security Robotic Authority
+  authors: Ye, X., & Robert, L. P.
+  event: "21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)."
+  pdf: Ye_SRFairness.pdf
+  img: Ye_SRFairness.jpg
+  date: March 19th
+  presenter: Xin Ye
+
+- title: > 
+    Robot-Assisted Social Dining as a White Glove Service
+  authors: Atharva S Kashyap & Ugne Aleksandra Morkute & Patricia Alves-Oliveira
+  event: "CHI ’26, Barcelona, Spain"
+  doi: https://arxiv.org/abs/2602.15767
+  pdf: Kashyap_White.pdf
+  img: Kashyap_White.jpg
+  date: April 2nd
+  presenter: Atharva Kashyap
+
+- title: > 
+    Designing Care-fully: Robots for Acute Cancer Care
+  authors: Sandhya Jayaraman & Pratyusha Ghosh & Soyon Kim & Soham Satyadharma & Angelique Taylor & Christopher Coyne & Laurel D. Riek
+  event: "HRI ’26, Edinburgh, Scotland, UK"
+  doi: https://dl.acm.org/doi/10.1145/3757279.3785632
+  pdf: Grace_Designing.pdf
+  img: Grace_Designing.jpg
+  date: April 2nd
+  presenter: Grace Pan
+# - title: > 
+#     "More than words:" A Framework for Human-Robot Dialog Designs
+#   authors: Berzuk, J. M., & Young, J. E 
+#   event: "2022 17th ACM/IEEE International Conference on Human-Robot Interaction (HRI). pp. 393 - 401."
+#   doi: https://doi.org/10.1109/HRI53351.2022.9889423
+#   pdf: More2022HRI.pdf
+#   img: More2022HRI.jpg
+#   date: Oct 16th
+#   presenter: Trey Davis
+
