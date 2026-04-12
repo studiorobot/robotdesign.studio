@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "scope one", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+}
+
+/* Typography */
+.professor-name {
+  font-family: "scope one", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-family: "viaoda libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #556c80;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Main container */
+.reading-group {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #222;
+}
+
+.reading-group h1,
+.reading-group h2,
+.reading-group h3 {
+  font-weight: bold;
+}
+
+.reading-group p {
+  margin-bottom: 1rem;
+}
+
+.reading-group hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.reading-group a {
+  color: #007acc;
+  text-decoration: underline;
+}
+
+.reading-group strong {
+  font-weight: bold;
+}
+
+.reading-group blockquote {
+  margin: 1.5rem 2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('cover.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.hero-section .title-container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.hero-section .title-container h1 {
+  position: relative;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.hero-section .title-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  z-index: 1;
+  filter: blur(10px);
+}
+
+/* Section images */
+.section-images {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding: 40px 20px;
+  align-items: stretch;
+}
+
+.section-images h2 {
+  font-size: 2.5rem;
+}
+
+.section-images .left,
+.section-images .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.section-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* About section */
+.about-section {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Events section */
+.events-section {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+
+.events-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.event {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.event-image,
+.event-details {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.event-image {
+  align-items: center;
+}
+
+.event-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-details {
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.event-details p {
+  margin-bottom: 10px;
+}
+
+/* Participants/Organizers section */
+.participants-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+}
+
+.participants-section h2 {
+  font-size: 2.5rem;
+}
+
+.participants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.participant-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.participant-name {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  gap: 4px;
+  color: black;
+  font-weight: bold;
+}
+
+.participant-institution {
+  font-size: 14px;
+  color: #555;
+  margin: 0 !important;
+}
+
+/* Icons */
+.icon-link {
+  color: black !important;
+  text-decoration: none;
+}
+
+.icon-link i {
+  font-size: 16px;
+}
+
+.icon-link:hover {
+  color: darkslategray !important;
+}
+
+
+
+/* Date/time styling */
+.date-time {
+  font-weight: bold;
+}
+
+.location {
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1415px) {
+  .reading-group {
+    width: 60%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .reading-group {
+    width: 70%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .reading-group {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .section-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-images .left,
+  .section-images .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .event {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .event-image,
+  .event-details {
+    width: 100%;
+  }
+
+  .event-details {
+    text-align: left;
+  }
+
+  .event-image img {
+    height: auto;
+  }
+
+  .participants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reading-group {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .participants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .reading-group {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .hero-section .title-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .participants-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .participants {
+    grid-template-columns: 1fr;
+  }
+}
+
+.publication-link {
+  text-decoration: none !important;
+}
+
+.publication-link:hover {
+  text-decoration: underline !important;
+}
+
+
+
+@media (max-width: 600px) {
+  .paper-stuff {
+    flex-direction: column;
+    align-items: center;
+    /* Center align image and text */
+  }
+
+  .publication-details {
+    width: 100%;
+    /* Make text container full width on mobile */
+  }
+
+}
