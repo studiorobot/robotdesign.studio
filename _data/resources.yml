@@ -1,0 +1,15 @@
+intro: "Curated resources for students and collaborators. We'll keep adding useful links, papers, and tools here."
+
+categories:
+  - title: "Papers & Reading"
+    items:
+      - title: "Example Paper Title"
+        description: "Short description of the paper and why it's useful for students."
+        url: "https://github.com/studiorobot"
+        icon: "fa-regular fa-file-lines"
+
+  - title: "Tools & Software"
+    items: []
+
+  - title: "Tutorials & Guides"
+    items: []
