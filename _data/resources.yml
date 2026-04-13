@@ -1,15 +1,21 @@
-intro: "Curated resources for students and collaborators. We'll keep adding useful links, papers, and tools here."
+- title: "Ten Simple Rules for Better Figures"
+  description: "A practical guide to creating clear and effective scientific figures"
+  pdf: better-figures.pdf
 
-categories:
-  - title: "Papers & Reading"
-    items:
-      - title: "Example Paper Title"
-        description: "Short description of the paper and why it's useful for students."
-        url: "https://github.com/studiorobot"
-        icon: "fa-regular fa-file-lines"
+- title: "The Awesomest 7-Year Postdoc"
+  description: "How to learn to stop worrying and love the tenure-track faculty life"
+  link: https://www.scientificamerican.com/blog/guest-blog/the-awesomest-7-year-postdoc-or-how-i-learned-to-stop-worrying-and-love-the-tenure-track-faculty-life/
 
-  - title: "Tools & Software"
-    items: []
+- title: 'Choosing the “Perfect” Scale'
+  description: "A primer to evaluate existing scales in HRI"
+  pdf: perfect-scale.pdf
+  link: https://hriscaledatabase.psychology.gmu.edu/
 
-  - title: "Tutorials & Guides"
-    items: []
+- title: "Paper Author Discussion"
+  description: "Why SIGCHI conferences freeze author lists and what that means"
+  link: https://medium.com/sigchi/when-authorship-goes-wrong-why-sigchi-conferences-freeze-author-lists-and-what-that-means-ada403633cc5
+
+- title: "Ten Simple Rules for Postdoctoral Mums to Stay Competitive in Academia"
+  description: "A guide for postdoctoral mothers to navigate the challenges of academia while maintaining a competitive edge"
+  pdf: postdoc-mums.pdf
+
