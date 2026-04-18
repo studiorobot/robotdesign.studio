@@ -134,7 +134,7 @@ layout: default
     </div>
     {% endfor %}
     {% assign member_count = site.data.team.collab | size %}
-    {% assign member_remainder = member_count | modulo: 6 %}
+    {% assign member_remainder = member_count | modulo: 5 %}
     {% assign remaining_columns = 6 | minus: member_remainder %}
     {% if remaining_columns == 6 %}
     {% assign remaining_columns = 0 %}
@@ -309,4 +309,16 @@ layout: default
       border-top-left-radius: 25%;
       /* Curved top-left corner */
     }
+
+     @media (min-width: 1280px) {
+    #row {
+      justify-content: flex-start;
+    }
+
+    .member-column {
+      flex: 0 0 calc(20% - 0.8rem);
+      max-width: calc(20% - 0.8rem);
+    }
+  }
+
   </style>
