@@ -2,17 +2,29 @@ patricia:
   name: Patrícia Alves-Oliveira
   role: Director of Robot Studio
   title: Ph.D., Assistant Professor of Robotics
+  meta_advisory_board: "[Meta](https://www.meta.com/) Advisory Board on Critical Issues for AI"
   affiliated: Affiliated Faculty at [MIDAS](https://midas.umich.edu/) and [ESC](https://esc.umich.edu/)
+  academic_guest: Academic Guest at [ETH Zürich](https://einstein-school.ethz.ch/en/teaching/master.html)
   advisor: Research Advisor at [Open Style Lab](https://www.openstylelab.org/)
   email: robopati@umich.edu
   website: https://patricialvesoliveira.com/
-  google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ&view_op=list_works&alert_preview_top_rm=2&sortby=pubdate
+  google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ
   twitter: https://x.com/p_alvesoliveira
   linkedin: https://www.linkedin.com/in/patricia-alves-oliveira
   profile_img: team/patricia.jpg
   description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
 
 members:
+ - name: Jacqueline Borgstedt
+   standing: Post-Doc
+   major: Social Brain Sciences Group 
+   university: ETH Zürich
+   project: AURA
+   joined: Winter 2026
+   google_scholar: https://scholar.google.com/citations?hl=en&user=7cS4kIcAAAAJ
+   linkedin: https://www.linkedin.com/in/jacqueline-borgstedt/
+   img: postdoc/jacqueline-borgstedt.jpeg
+
  - name: Long-Jing Hsu
    standing: Post-Doc
    major: The Michigan Institute for Data & AI in Society
@@ -23,7 +35,18 @@ members:
    google_scholar: https://scholar.google.com/citations?hl=en&user=s4Uy3XAAAAAJ
    linkedin: https://www.linkedin.com/in/longjinghsu
    img: postdoc/Long-Jing_Hsu_Postdoc.png
- 
+
+ - name: Ryssa Moffat
+   standing: Post-Doc
+   major: Social Brain Sciences Group
+   university: ETH Zürich
+   project: AURA
+   joined: Winter 2026
+   linkedin: https://www.linkedin.com/in/ryssa-moffat-41036328b/
+   google_scholar: https://scholar.google.com/citations?hl=en&user=HWXn8uAAAAAJ
+   personal_website: https://ryssamoffat.github.io/
+   img: postdoc/ryssa-moffat.jpg
+
  - name: Atharva S. Kashyap
    standing: Ph.D.
    major: Robotics
@@ -42,7 +65,7 @@ members:
    university: University of Michigan
    project: Horizon
    joined: Winter 2024
-   google_scholar: https://scholar.google.com/citations?user=JF5Jl6EAAAAJ&hl=en 
+   google_scholar: https://scholar.google.com/citations?user=JF5Jl6EAAAAJ
    img: phd/Connor_Williams_PhD.jpg
 
  - name: Grace Pan
@@ -51,7 +74,7 @@ members:
    university: University of Michigan
    project: Touch, Futures, Vista
    joined: Fall 2024
-   google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ&view_op=list_works&gmla=AL3_zihzNO90Td1GOD_xDrCi45TZlnvj4yPpj0GfWJfW1ETmQEP2p_IqWzJ4eTjlk0CeCcsA5gr4MgxMDzBL_HKK 
+   google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ
    linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
    img: phd/Grace_Pan_PhD.jpg
 
@@ -104,6 +127,14 @@ members:
    joined: Fall 2025
    linkedin: https://www.linkedin.com/in/erin-roberts-559698155/ 
    img: masters/Erin_Roberts_MS.JPEG
+
+ - name: Maël Le Bras 
+   standing: Masters
+   major: Mechanical Engineering
+   university: ETH Zürich
+   project: AURA
+   joined: Winter 2026
+   img: masters/mael-le-bras.png
 
  - name: Malavika Anand
    standing: Masters
@@ -225,6 +256,12 @@ collab:
     department: Psychiatry
     img: collab/Anson_Kairys_Collaborator.jpeg
 
+  - name: Emily Cross
+    role: Full Professor 
+    university: ETH Zürich
+    department: Department of Humanities, Social and Political Sciences
+    img: collab/emily-cross.jpg
+
   - name: Jim Cogswell
     role: Full Professor 
     department: STAMPS School of Art & Design
@@ -260,6 +297,12 @@ collab:
     university: University of Washington
     department: Psychology
     img: collab/Peter_Kahn_External_collaborator.jpeg
+
+  - name: Robert Riener
+    role: Full Professor
+    university: ETH Zürich
+    department: Department of Health Sciences and Technology
+    img: collab/robert-riener.jpg
 
   - name: Siddhartha Srinivasa
     role: Full Professor

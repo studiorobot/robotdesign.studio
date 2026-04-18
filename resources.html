@@ -18,10 +18,10 @@ layout: default
 {% if has_both %}
 <div class="row news-item">
   <div class="column width-12" style="margin-bottom:0px; padding:10px 0px;">
-    <div class="column width-12 text" style="padding:10px;">
-      <h5 style="font-size:16px; margin-bottom: 4px;">{{ item.title }}</h5>
+    <div class="column width-12 text" style="padding:0 10px;">
+      <h5 style="font-size:16px; margin-bottom: 0px;">{{ item.title }}</h5>
       {% if item.description and item.description != "" %}
-      <p style="margin-bottom: 4px;">{{ item.description }}</p>
+      <p style="margin-bottom: 0px;">{{ item.description }}</p>
       {% endif %}
       <ul style="margin:0px;">
         <li class="publication-link">
@@ -42,11 +42,11 @@ layout: default
 {% assign item_href = item.link | default: '/resources/' | append: item.pdf %}
 <a href="{{ item_href }}" target="_blank">
   <div class="row news-item">
-    <div class="column width-12" style="margin-bottom:0px; padding:10px 0px;">
+    <div class="column width-12" style="margin-bottom:0px; padding:0px 0px;">
       <div class="column width-12 text" style="padding:10px;">
-        <h5 style="font-size:16px; margin-bottom: 4px;">{{ item.title }}</h5>
+        <h5 style="font-size:16px; margin-bottom: 0px;">{{ item.title }}</h5>
         {% if item.description and item.description != "" %}
-        <p style="margin-bottom: 4px;">{{ item.description }}</p>
+        <p style="margin-bottom: 0px;">{{ item.description }}</p>
         {% endif %}
       </div>
     </div>
