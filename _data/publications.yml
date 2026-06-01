@@ -650,3 +650,10 @@ publications:
       pdf: 104.pdf
       img: 104.png
       project: DELICIOUS
+    - title: "The Physiology of Creativity: Autonomous Robotic Painting Driven by Synthetic Biometric Generation"
+      authors: Angshu Adhya, Eric Chen, Rishad Hasan, Hana Ichikawa, Mrunmayee Jere, Tetsu Kurumisawa, Tianxin Li, Cindy Yang, Longzhen Yuan, Abhishek Narula, and Patricia Alves-Oliveira
+      event: "Arts in Robotics Special Session, IEEE International Conference on Robotics and Automation (ICRA)"
+      pdf: 105.pdf
+      img: 105.jpg
+      video: https://youtu.be/FuMVorULK6c
+      project: AURA
