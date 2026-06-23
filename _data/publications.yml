@@ -626,6 +626,7 @@ publications:
     - title: "Artists' Views on Robotics Involvement in Painting Productions"
       authors: Francesca Cocchella, Nilay Roy Choudhury, Eric Chen, Patricia Alves-Oliveira
       event: "IEEE Robotics & Automation Magazine (RAM): Special Issue on the Arts and Robotics"
+      doi: https://doi.org/10.1109/MRA.2026.3693128
       pdf: 101.pdf    
       img: 101.jpg
       project: AURA
