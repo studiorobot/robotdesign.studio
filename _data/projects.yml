@@ -86,6 +86,22 @@ active:
     poster: active/waffle/thumbnail.jpg
     video_mp4: active/waffle/waffle_video.mp4
 
+  - id: 18
+    name: "RESILIENT: Conversational Robots for Psychological Resilience in Cognitive Decline"
+    members: Long-Jing Hsu, Josue Torres-Fonseca, Joyce Chai
+    data: 2026 - ongoing
+    description: This project aims to develop and evaluate a conversational robot that supports psychological resilience in people living with cognitive decline. We investigate how context-aware reflective conversations can help individuals recognize their strengths, adapt to cognitive and life changes, and maintain meaningful engagement in everyday life. Through the design and evaluation of a resilience-informed conversational framework, we seek to understand how social robots can foster resilience despite cognitive decline.
+    keywords: cognitive decline, resilience, conversational robots
+    poster: temp.png
+
+  - id: 19
+    name: "SCENT: Scent-Enhanced Conversational Robots for Reminiscence and Friendship"
+    members: Long-Jing Hsu, Nicole Ellison
+    data: 2026 - ongoing
+    description: This project investigates how scent-enhanced conversational robots can facilitate reminiscence and foster friendship among older adults. By integrating olfactory cues into social interactions, we explore how multisensory experiences can enrich conversations and promote social connection.
+    keywords: olfaction, reminiscence, older adults, social connection
+    poster: temp.png
+
 completed:
   - id: 8
     name: "EMAR: Ecological Momentary Assessment Robot"
