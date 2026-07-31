@@ -138,6 +138,20 @@ Winter 2026:
   img: Grace_Designing.jpg
   date: April 2nd
   presenter: Grace Pan
+
+Summer 2026:
+- title: > 
+    Touch Boundaries During Physical Human-Robot Interaction
+  authors: Grace Pan & Gurnoor Kaur & Patricia Alves-Oliveira 
+  event: "2026 Kitakyushu IEEE RO-MAN"
+  date: August 6th
+  presenter: Grace Pan
+- title: > 
+    Directions for Robot Characters in Pediatric Eye Exams
+  authors: Grace Pan & Mark Draelos & Nita Valikodath & Patricia Alves-Oliveira 
+  event: "2026 Kitakyushu IEEE RO-MAN"
+  date: August 6th
+  presenter: Grace Pan
 # - title: > 
 #     "More than words:" A Framework for Human-Robot Dialog Designs
 #   authors: Berzuk, J. M., & Young, J. E 
