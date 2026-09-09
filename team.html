@@ -66,7 +66,10 @@ layout: default
   </div>
   <!-- Member Rows -->
   <div id="row">
-    {% for student in site.data.team.members %}
+    {% assign standings = "Post-Doc,Ph.D.,Masters,Undergrad" | split: "," %}
+    {% assign sorted_members = "" | split: "" %}
+    {% for s in standings %}{% assign standing_group = site.data.team.members | where: "standing", s | sort_natural: "name" %}{% assign sorted_members = sorted_members | concat: standing_group %}{% endfor %}
+    {% for student in sorted_members %}
     <div class="column member-column {{ 'member-' | append: forloop.index }}">
       <img src="{{ student.img }}" alt="{{ student.name }}'s profile picture" loading="lazy" />
       <h3 style="font-size: 1.5rem; margin-top:10px; margin-bottom: 0em;">{{ student.name }}</h3>
@@ -122,7 +125,8 @@ layout: default
   </div>
   <!-- Collaborators Section -->
   <div id="row">
-    {% for collaborator in site.data.team.collab %}
+    {% assign sorted_collab = site.data.team.collab | sort_natural: "name" %}
+    {% for collaborator in sorted_collab %}
     <div class="column member-column">
       <img src="{{ collaborator.img }}" alt="{{ collaborator.name }}'s profile picture" loading="lazy" />
       <h4 class="project-description" style="text-transform: capitalize; font-size: 1.5rem; margin-top: 0.5em;">{{
@@ -152,7 +156,8 @@ layout: default
       style="margin-top: 0.5em; margin-bottom: 0.5em; text-transform: capitalize; font-size: 2.7rem;">
       <h2> Previous Members</h2>
     </div>
-    {% for alumni in site.data.team.alumni %}
+    {% assign sorted_alumni = site.data.team.alumni | sort_natural: "name" %}
+    {% for alumni in sorted_alumni %}
     <div class="column width-6" style="margin-bottom: 0.3em;">
       <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
           }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}

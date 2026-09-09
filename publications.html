@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- Content -->
-{% assign year_groups = site.data.publications.publications | group_by: "year" | sort: "name" %}
+{% assign year_groups = site.data.publications.years %}
 
 <div class="row">
   <div class="column width-12">
@@ -14,10 +14,10 @@ layout: default
 <div class="row">
   <div class="column width-12">
     <div class="column width-1" style="padding-left:0px;">
-      <h2 style="font-size:3em;">{{ year_group.name }}</h2>
+      <h2 style="font-size:3em;">{{ year_group.year }}</h2>
     </div>
     <div class="column width-11" style="padding:0px;">
-      {% for paper in year_group.items reversed %}
+      {% for paper in year_group.papers reversed %}
       <div class="column width-12 paper-stuff" style="margin-bottom: 10px;">
         <div class="column width-2 more-paper-stuff">
           {% if paper.img %}

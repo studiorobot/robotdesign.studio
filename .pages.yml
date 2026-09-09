@@ -1,3 +1,7 @@
+settings:
+  content:
+    merge: true
+
 media:
   - name: team
     label: Team photos
@@ -32,6 +36,27 @@ media:
     output: /assets/robo-reflections
 
 content:
+  - name: news
+    label: News
+    type: file
+    path: _data/news.yml
+    format: yaml
+    description: 'Newest items show first on the website. New items go at the bottom of this list — that is correct, the site reverses the order. Links: [text](https://url)'
+    fields:
+      - name: items
+        label: News items
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date} — {description}"
+        fields:
+          - name: date
+            type: string
+            description: e.g. September 12th, 2025
+          - name: description
+            type: text
+
   - name: homepage
     label: Homepage
     type: file
@@ -41,13 +66,16 @@ content:
       - name: carousel
         label: Carousel slides
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
         fields:
           - name: title
             type: string
           - name: description
             type: string
-            description: Use <br> for a manual line break.
+            description: Use <br> for a manual line break
           - name: image
             type: image
             options:
@@ -56,23 +84,13 @@ content:
       - name: research_vision
         label: Research vision
         type: text
-      - name: news
-        label: News
-        type: object
-        list: true
-        fields:
-          - name: date
-            type: string
-            description: e.g. "September 12th, 2025"
-          - name: description
-            type: text
-            description: "Supports Markdown links: [text](https://url)"
 
   - name: team
     label: Team
     type: file
     path: _data/team.yml
     format: yaml
+    description: Members are sorted automatically on the website (Post-Doc, Ph.D., Masters, Undergrad — alphabetical within each), so new people can be added anywhere. Link fields need full URLs starting with https://
     fields:
       - name: patricia
         label: Patrícia (Director)
@@ -97,12 +115,18 @@ content:
             type: string
           - name: website
             type: string
+            pattern: &url
+              regex: '^https?://.+'
+              message: Must be a full URL starting with https://
           - name: google_scholar
             type: string
+            pattern: *url
           - name: twitter
             type: string
+            pattern: *url
           - name: linkedin
             type: string
+            pattern: *url
           - name: profile_img
             label: Profile photo
             type: image
@@ -113,13 +137,17 @@ content:
       - name: members
         label: Active members
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({standing})"
         fields:
           - name: name
             type: string
             required: true
           - name: standing
             type: select
+            required: true
             options:
               values: [Post-Doc, Ph.D., Masters, Undergrad]
           - name: major
@@ -133,19 +161,22 @@ content:
             type: string
           - name: joined
             type: string
-            description: e.g. "Fall 2025"
-          - name: email
-            type: string
+            description: e.g. Fall 2025
           - name: personal_website
             type: string
+            pattern: *url
           - name: google_scholar
             type: string
+            pattern: *url
           - name: linkedin
             type: string
+            pattern: *url
           - name: github
             type: string
+            pattern: *url
           - name: youtube
             type: string
+            pattern: *url
           - name: img
             label: Photo
             type: image
@@ -154,7 +185,10 @@ content:
       - name: collab
         label: Collaborators
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
         fields:
           - name: name
             type: string
@@ -174,7 +208,10 @@ content:
       - name: alumni
         label: Alumni
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({year})"
         fields:
           - name: name
             type: string
@@ -188,56 +225,73 @@ content:
             type: number
           - name: linkedin
             type: string
+            pattern: *url
 
   - name: publications
     label: Publications
     type: file
     path: _data/publications.yml
     format: yaml
+    description: 'Papers live inside their year. To add a paper, open the year and add an item at the bottom — the site shows newest first automatically. To start a new year, add an item at the bottom of the years list. Make thumbnails / trim PDF pages with the mediate tool: https://studiorobot.github.io/mediate/'
     fields:
       - name: intro
         label: Intro text
         type: text
-      - name: publications
-        label: Papers
+      - name: years
+        label: Years
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year}"
         fields:
-          - name: title
-            type: string
-            required: true
           - name: year
             type: number
             required: true
-          - name: authors
-            type: text
-          - name: event
-            label: Venue / event
-            type: text
-          - name: doi
-            label: DOI link
-            type: string
-          - name: pdf
-            label: PDF
-            type: file
-            options:
-              media: publications
-              path: publications
-              extensions: [pdf]
-          - name: img
-            label: Thumbnail
-            type: image
-            options:
-              media: publications
-              path: publications/thumbnails
-          - name: project
-            type: string
-          - name: video
-            label: Video link
-            type: string
-          - name: materials
-            label: Materials link
-            type: string
+          - name: papers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+                required: true
+              - name: authors
+                type: text
+              - name: event
+                label: Venue / event
+                type: text
+              - name: doi
+                label: DOI link
+                type: string
+                pattern: *url
+              - name: pdf
+                label: PDF
+                type: file
+                description: Trim publisher cover pages with the mediate tool (link above)
+                options:
+                  media: publications
+                  path: publications
+                  extensions: [pdf]
+              - name: img
+                label: Thumbnail
+                type: image
+                description: Generate from the PDF with the mediate tool (link above)
+                options:
+                  media: publications
+                  path: publications/thumbnails
+              - name: project
+                type: string
+              - name: video
+                label: Video link
+                type: string
+                pattern: *url
+              - name: materials
+                label: Materials link
+                type: string
+                pattern: *url
 
   - name: projects
     label: Projects
@@ -251,12 +305,11 @@ content:
       - name: active
         label: Active projects
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
         fields: &project_fields
-          - name: id
-            type: number
-            required: true
-            description: Unique number, used for the hover-to-play video. Use the next unused number.
           - name: name
             type: string
             required: true
@@ -268,7 +321,7 @@ content:
           - name: data
             label: Dates & funding
             type: string
-            description: e.g. "2024 - ongoing | NSF EAGER"
+            description: e.g. 2024 - ongoing | NSF EAGER
           - name: description
             type: text
           - name: keywords
@@ -295,18 +348,22 @@ content:
                 label: Websites
                 type: string
                 list: true
+                pattern: *url
               - name: doi
                 label: DOIs
                 type: string
                 list: true
+                pattern: *url
               - name: yt
                 label: Videos
                 type: string
                 list: true
+                pattern: *url
               - name: code
                 label: Code links
                 type: string
                 list: true
+                pattern: *url
           - name: awards
             type: object
             list: true
@@ -322,7 +379,10 @@ content:
       - name: completed
         label: Completed projects
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
         fields: *project_fields
 
   - name: press
@@ -331,10 +391,11 @@ content:
     path: _data/press.yml
     format: yaml
     list: true
+    description: 'Newest first on the website and in this list. Links: [text](https://url) work in the description field.'
     fields:
       - name: date
         type: string
-        description: e.g. "August 13th, 2025"
+        description: e.g. August 13th, 2025
       - name: title
         type: string
         required: true
@@ -349,6 +410,7 @@ content:
           media: press
       - name: link
         type: string
+        pattern: *url
 
   - name: resources
     label: Resources
@@ -370,17 +432,18 @@ content:
           extensions: [pdf]
       - name: link
         type: string
+        pattern: *url
 
   - name: join
     label: Join us
     type: file
     path: _data/join.yml
     format: yaml
+    description: 'All texts support Markdown links: [text](https://url)'
     fields:
       - name: intro_text
         label: Intro
         type: text
-        description: "Supports Markdown links: [text](https://url)"
       - name: phd_students_text
         label: Ph.D. students
         type: text
@@ -399,44 +462,61 @@ content:
     type: file
     path: _data/robo-reflections/papers.yml
     format: yaml
-    list: true
+    description: Papers live inside their semester. Add papers at the bottom of a semester — the site shows newest first automatically. To start a new semester, add an item at the bottom of the semesters list.
     fields:
-      - name: title
-        type: text
-        required: true
-      - name: semester
-        type: string
-        required: true
-        description: e.g. "Winter 2026" — papers are grouped by this on the page
-      - name: authors
-        type: text
-      - name: event
-        label: Venue / event
-        type: text
-      - name: doi
-        label: DOI link
-        type: string
-      - name: drive
-        label: Private link (Drive)
-        type: string
-      - name: pdf
-        label: PDF
-        type: file
-        options:
-          media: reflections
-          path: assets/robo-reflections/pdfs
-          extensions: [pdf]
-      - name: img
-        label: Thumbnail
-        type: image
-        options:
-          media: reflections
-          path: assets/robo-reflections/images/thumbnails
-      - name: date
-        type: string
-        description: e.g. "Feb 5th"
-      - name: presenter
-        type: string
+      - name: semesters
+        label: Semesters
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{semester}"
+        fields:
+          - name: semester
+            type: string
+            required: true
+            description: e.g. Winter 2026
+          - name: papers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: text
+                required: true
+              - name: authors
+                type: text
+              - name: event
+                label: Venue / event
+                type: text
+              - name: doi
+                label: DOI link
+                type: string
+                pattern: *url
+              - name: drive
+                label: Private link (Drive)
+                type: string
+                pattern: *url
+              - name: pdf
+                label: PDF
+                type: file
+                options:
+                  media: reflections
+                  path: assets/robo-reflections/pdfs
+                  extensions: [pdf]
+              - name: img
+                label: Thumbnail
+                type: image
+                options:
+                  media: reflections
+                  path: assets/robo-reflections/images/thumbnails
+              - name: date
+                type: string
+                description: e.g. Feb 5th
+              - name: presenter
+                type: string
 
   - name: reflections-people
     label: Robo Reflections – People
@@ -467,18 +547,22 @@ content:
       - name: web
         label: Website
         type: string
+        pattern: *url
       - name: in
         label: LinkedIn
         type: string
+        pattern: *url
       - name: scholar
         label: Google Scholar
         type: string
+        pattern: *url
 
   - name: reflections-site
     label: Robo Reflections – Texts
     type: file
     path: _data/robo-reflections/site.yml
     format: yaml
+    description: 'All texts support Markdown links: [text](https://url)'
     fields:
       - name: intro
         type: text
@@ -486,7 +570,6 @@ content:
         type: text
       - name: contact
         type: text
-        description: "Supports Markdown links: [text](https://url)"
 
   - name: navigation
     label: Navigation
@@ -512,8 +595,9 @@ content:
             type: string
           - name: url
             type: string
+            pattern: *url
           - name: name
             type: string
           - name: icon
             type: string
-            description: Font Awesome classes, e.g. "fab fa-linkedin"
+            description: Font Awesome classes, e.g. fab fa-linkedin

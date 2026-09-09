@@ -89,7 +89,7 @@ research_vision: |
 
 ## News
 
-The `news` section contains updates about lab activities. Each entry includes:
+News lives in its own data file, `_data/news.yml`, under an `items` list ordered **oldest first** — the site reverses it, so new items go at the bottom of the file. Each entry includes:
 - `date`: The date of the event.
 - `description`: A description of the event. It supports Markdown links.
 
@@ -98,12 +98,12 @@ To add a link, put the text you want to display in square brackets [], followed 
 
 #### Example:
 ```yaml
-news: 
-  - date: January 9th, 2025
-    description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
-
+items:
   - date: March 7, 2022
     description: Organized HRI 2022 workshop on [theory-grounded HRI](https://theoriahri.wixsite.com/theoria).
+
+  - date: January 9th, 2025
+    description: Prof. Patricia launched a new class at the Robotics Department called "Human Evaluation of Robot Systems."
 ```
 
 When the website is built, the Markdown links in the description will be rendered with the corresponding text and URL.
@@ -295,11 +295,10 @@ By following this structure, you can maintain an up-to-date and organized team p
 
 The data file for publications includes:
 - `intro`: A brief introductory statement about the page.
-- `publications`: A flat list of publications. Each entry has a `year` field, and the page groups them by year automatically.
+- `years`: A list of year groups (oldest year first). Each group has a `year` and a `papers` list (oldest paper first — the site displays newest first automatically, so new papers go at the bottom of their year).
 
-Each publication entry contains:
+Each paper entry contains:
 - `title`: Title of the publication.
-- `year`: Publication year (used for grouping on the page).
 - `authors`: List of authors in the publication.
 - `event`: Conference, journal, or event where the publication was presented or published.
 - `pdf`: Full path to the PDF file of the publication (e.g. `/publications/92.pdf`).
@@ -314,23 +313,25 @@ Each publication entry contains:
 ```yaml
 intro: We publish our research outcomes at conferences and journals in the field of Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.
 
-publications:
-  - title: How do you imagine robots? Children’s expectations about robots
-    authors: Patrícia Alves-Oliveira, Sofia Petisca, Srinivasan Janarthanam, Helen Hastie, Ana Paiva
-    event: 'Interaction Design and Children Workshop on Child-Robot Interaction: Social Bonding, Learning and Ethics'
-    pdf: /publications/6.pdf
-    img: /publications/thumbnails/6.png
-    project: EMOTE
-    year: 2014
+years:
+  - year: 2014
+    papers:
+      - title: How do you imagine robots? Children’s expectations about robots
+        authors: Patrícia Alves-Oliveira, Sofia Petisca, Srinivasan Janarthanam, Helen Hastie, Ana Paiva
+        event: 'Interaction Design and Children Workshop on Child-Robot Interaction: Social Bonding, Learning and Ethics'
+        pdf: /publications/6.pdf
+        img: /publications/thumbnails/6.png
+        project: EMOTE
 
-  - title: Multiple Ways of Working with Users to Develop Physically Assistive Robots
-    authors: Amal Nanavati, Max Pascher, Vinitha Ranganeni, Ethan K Gordon, Taylor Kessler Faulkner, Siddhartha S Srinivasa, Maya Cakmak, Patrícia Alves-Oliveira, Jens Gerken
-    event: arXiv preprint arXiv:2403.00489, arXiv
-    doi: https://doi.org/10.48550/arXiv.2403.00489
-    pdf: /publications/92.pdf
-    img: /publications/thumbnails/92.png
-    project: DELICIOUS
-    year: 2024
+  - year: 2024
+    papers:
+      - title: Multiple Ways of Working with Users to Develop Physically Assistive Robots
+        authors: Amal Nanavati, Max Pascher, Vinitha Ranganeni, Ethan K Gordon, Taylor Kessler Faulkner, Siddhartha S Srinivasa, Maya Cakmak, Patrícia Alves-Oliveira, Jens Gerken
+        event: arXiv preprint arXiv:2403.00489, arXiv
+        doi: https://doi.org/10.48550/arXiv.2403.00489
+        pdf: /publications/92.pdf
+        img: /publications/thumbnails/92.png
+        project: DELICIOUS
 ```
 
 ---
@@ -341,20 +342,21 @@ publications:
    Open the Jekyll data file for publications called `publications.yml` in the '_data' folder.
 
 2. **Add a New Publication Entry**:
-   Append a new entry to the `publications` list with a `year` field (entries are grouped by year on the page automatically; within a year, later entries in the file appear first).
+   Find the year group in the `years` list (or add a new group at the bottom of the list for a new year) and append the paper at the bottom of its `papers` list — the site shows newest first automatically.
 
    ```yaml
-   - title: Example Title
-     authors: Author A, Author B
-     event: Example Event
-     pdf: /publications/example.pdf
-     img: /publications/thumbnails/example.png
-     project: Example Project
-     year: 2025
+   - year: 2025
+     papers:
+       - title: Example Title
+         authors: Author A, Author B
+         event: Example Event
+         pdf: /publications/example.pdf
+         img: /publications/thumbnails/example.png
+         project: Example Project
    ```
 
 3. **Fill Out All Fields**:
-   Ensure all fields (`title`, `year`, `authors`, `event`, etc.) are filled out correctly.
+   Ensure all fields (`title`, `authors`, `event`, etc.) are filled out correctly.
 
 4. **Add the PDF to the `publications` Folder**:
    Place the PDF for the publication in the `publications` folder. This is the folder that will be referenced for all publication PDFs. For example, you would add `example.pdf` to the `publications/` folder.

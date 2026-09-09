@@ -112,7 +112,7 @@ layout: robo-reflections
     {{ site.data.robo-reflections.site.intro | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }} <h2>
       Format</h2>
       {{ site.data.robo-reflections.site.format | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }}
-        {% assign semester_groups = site.data.robo-reflections.papers | group_by: "semester" %}
+        {% assign semester_groups = site.data.robo-reflections.papers.semesters %}
         {% assign total_semesters = semester_groups | size %} {% for semester in semester_groups reversed %} <div
         class="row">
         <div>
@@ -120,13 +120,13 @@ layout: robo-reflections
             <button class="semester-toggle" data-target="semester-{{ forloop.index }}"
               aria-expanded="{% if total_semesters == 1 or forloop.last == false %}true{% else %}false{% endif %}"
               style="all: unset; cursor: pointer; font-size: inherit; font-weight: inherit;">
-              {{ semester.name }}
+              {{ semester.semester }}
               <span class="dropdown-arrow" aria-hidden="true">▶</span>
             </button>
           </h2>
           <div id="semester-{{ forloop.index }}"
             class="{% if total_semesters != 1 and forloop.last == true %}hidden{% endif %}">
-            {% for paper in semester.items reversed %}
+            {% for paper in semester.papers reversed %}
             <div class="paper-stuff" style="margin-bottom: 0px; display: flex; gap:15px; align-items: flex-start;">
               <div class="more-paper-stuff" style="flex-shrink: 0;">
 

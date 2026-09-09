@@ -49,7 +49,8 @@ layout: index
 		</div>
 		<!-- Show the first 10 news items -->
 <div class="news-items">
-  {% assign limited_news = site.data.homepage.news | slice: 0, 10 %}
+  {% assign all_news = site.data.news.items | reverse %}
+  {% assign limited_news = all_news | slice: 0, 10 %}
   {% for item in limited_news %}
   <div class="row news-item">
     <strong>{{ item.date }}:</strong> {{ item.description | markdownify | replace: '<a ', '<a target="_blank" ' | remove: '<p>' | remove: '</p>'}}
@@ -59,7 +60,7 @@ layout: index
 
 <!-- Hidden additional news items (after 10) -->
 <div class="news-items hidden-news">
-  {% assign remaining_news = site.data.homepage.news | slice: 10, site.data.homepage.news.size %}
+  {% assign remaining_news = all_news | slice: 10, all_news.size %}
   {% for item in remaining_news %}
   <div class="row news-item">
     <strong>{{ item.date }}:</strong> {{ item.description | markdownify | replace: '<a ', '<a target="_blank" tabindex="-1" ' | remove: '<p>' | remove: '</p>'}}

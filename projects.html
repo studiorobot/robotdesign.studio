@@ -39,10 +39,11 @@ layout: default
 	<div class="column width-12">
 		<div class="row" id="projects">
 			{% for project in projects %}
-			<div class="row mt-20 aproject" id="project{{ project.id }}" class="project-container">
-				<div class="column width-4" onmouseover="PlayVideo({{ project.id }})"
-					style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay({{ project.id }})">
-					<video loop muted playsinline id="video{{ project.id }}" poster="{{ project.poster }}">
+			{% assign pid = section_title | append: "-" | append: forloop.index %}
+				<div class="row mt-20 aproject" id="project{{ pid }}" class="project-container">
+				<div class="column width-4" onmouseover="PlayVideo('{{ pid }}')"
+					style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay('{{ pid }}')">
+					<video loop muted playsinline id="video{{ pid }}" poster="{{ project.poster }}">
 						<source type="video/webm" src="{{ project.video_webm }}">
 						<source type="video/mp4" src="{{ project.video_mp4 }}">
 					</video>
@@ -202,32 +203,6 @@ layout: default
 		div.style.transition = "background-color 0.7s";
 		v.autoplay = false;
 		v.load();
-	}
-	function PlayVideo_unpublished(num) {
-		var name = "video" + num;
-		var proj_name = "project" + num;
-		var v = document.getElementById(name);
-		var div = document.getElementById(proj_name);
-		div.style.backgroundColor = "#efefef";
-		div.style.transition = "background-color 0.7s";
-		var str = v.poster;
-		var dot_idx = str.lastIndexOf(".");
-		str = str.substring(0, dot_idx);
-		str = str + ".png";
-		v.poster = str;
-	}
-	function StopVideoPlay_unpublished(num) {
-		var name = "video" + num;
-		var proj_name = "project" + num;
-		var v = document.getElementById(name);
-		var div = document.getElementById(proj_name);
-		div.style.backgroundColor = "#fff";
-		div.style.transition = "background-color 0.7s";
-		var str = v.poster;
-		var dot_idx = str.lastIndexOf(".");
-		str = str.substring(0, dot_idx);
-		str = str + ".jpg";
-		v.poster = str;
 	}
 </script>
 
