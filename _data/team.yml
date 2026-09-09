@@ -174,14 +174,6 @@ members:
     linkedin: https://www.linkedin.com/in/aadhya22
     github: https://www.github.com/a-adhya
     img: /team/Angshu_Adhya_Undergraduate.jpg
-  - name: Cindy Yang
-    standing: Undergrad
-    major: Electrical Engineering
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2024
-    linkedin: https://www.linkedin.com/in/cindy-yang-274662250
-    img: /team/Cindy_Yang_Undergraduate.jpg
   - name: Hana Ichikawa
     standing: Undergrad
     major: Art & Design
@@ -200,15 +192,6 @@ members:
     personal_website: https://rishadhasan.com/
     linkedin: https://www.linkedin.com/in/rishadhasan/
     img: /team/Rishad_Hasan_Undergraduate.jpg
-  - name: Tianxin (Jessica) Li
-    standing: Undergrad
-    major: Computer Science
-    university: University of Michigan
-    project: AURA
-    joined: Winter 2024
-    linkedin: https://www.linkedin.com/in/jessica-li-a2abb528a
-    github: https://github.com/Jessica-IX
-    img: /team/Tianxin(Jessica)_Li_undergrad.jpg
   - name: Trey Davis
     standing: Undergrad
     major: Robotics
@@ -291,77 +274,113 @@ collab:
     img: /team/Sidd_Srinivasa_External_Collaborator.jpg
 alumni:
   - name: Aleena Qaiser
-    project: Futures
-    year: 2025
+    project: FUTURES
+    year: 2024-2025
     linkedin: https://www.linkedin.com/in/aleenaqaiser/
   - name: David Ho
     future: University of Michigan
     project: AURA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/david-ho-umich
   - name: Emily Wu
     future: Forterra
     project: AURA
-    year: 2025
+    year: 2024-2025
     linkedin: https://www.linkedin.com/in/wuemilyy/
   - name: Erfun Ackley
-    project: Droodles
-    year: 2025
+    project: DROODLES
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/erfun-ackley/
   - name: Francesca Cocchella
     project: AURA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/francescacocchella/
   - name: Guan-Ling Chen
-    project: Futures
-    year: 2025
+    project: FUTURES
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/guanling-chen/
   - name: Gurnoor Kaur
     future: Amazon Robotics
-    project: Touch, Delicious
-    year: 2025
+    project: TOUCH, DELICIOUS
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/gkaur07
   - name: Ilkyaz Sarimehmetoglu
     future: Massachusetts Institute of Technology
-    project: Vista
-    year: 2025
+    project: VISTA
+    year: 2024-2025
     linkedin: https://www.linkedin.com/in/ilkyaz-sarimehmetoglu-2837a320a/
   - name: Jeffrey Qiu
-    project: Vista
-    year: 2025
+    project: VISTA
+    year: 2024-2025
     linkedin: https://www.linkedin.com/in/jeffrey-q/
   - name: Jiali Zheng
-    project: Relate
-    year: 2025
+    project: RELATE
+    year: 2024-2025
     linkedin: https://www.linkedin.com/in/jiali-zheng-05480a2b5/
   - name: Longzhen Yuan
     project: AURA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/longzhen-yuan-1b1a04268
   - name: Mrunmayee “MJ” Jere
     future: Walmart Global Tech
     project: AURA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/mjere/
   - name: Myles Avalon
-    project: Fashion
-    year: 2025
+    project: FASHION
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/myles-avalon-67b291292
   - name: Nilay Roy Choudhury
     project: AURA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/nilayroy
   - name: Qingru Yang
     project: VISTA
-    year: 2025
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/qingru-yang/
   - name: Ugnė Aleksandra Morkutė
     future: New York University
-    project: Delicious
-    year: 2025
+    project: DELICIOUS
+    year: '"2025"'
     linkedin: https://www.linkedin.com/in/ugnė-aleksandra-morkutė-789u
   - name: Zhixuan Chen
     future: Amazon
-    project: Relate
-    year: 2024
+    project: RELATE
+    year: '"2024"'
     linkedin: https://www.linkedin.com/in/zhixuan-chen-102695215/
+  - name: Tianxin (Jessica) Li
+    future: University of Michigan Transportation Research Institute
+    project: AURA
+    year: 2025-2026
+    linkedin: https://www.linkedin.com/in/jessica-li-a2abb528a/
+  - name: Cindy Yang
+    project: AURA
+    year: 2024-2026
+    linkedin: https://www.linkedin.com/in/cindy-yang-274662250
+  - name: Angshu Adhya
+    future: Google
+    project: AURA
+    year: 2024-2026
+    linkedin: https://www.linkedin.com/in/aadhya22
+  - name: Angela Yixuan Zhu
+    future: Johns Hopkins University School of Medicine
+    project: AURA
+    year: 2025-2026
+    linkedin: https://www.linkedin.com/in/angela-yixuan-zhu
+  - name: Sneha Venkat
+    project: RESILIENCE
+    year: "2026"
+    linkedin: https://www.linkedin.com/in/sai-sneha-sv/
+  - name: Malavika Anand
+    project: AURA
+    year: 2025-2026
+    linkedin: https://www.linkedin.com/in/malavika-anand-assoc-aia-a1a86a199/
+  - name: Erin Roberts
+    future: Barton Malow
+    project: AURA
+    year: 2025-2026
+  - name: Eric Chen
+    future: Saronic Technologies
+    project: AURA
+    year: 2025-2026
+    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
