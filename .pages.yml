@@ -1,0 +1,603 @@
+settings:
+  content:
+    merge: true
+
+media:
+  - name: team
+    label: Team photos
+    input: team
+    output: /team
+    categories: [image]
+  - name: press
+    label: Press images
+    input: press
+    output: /press
+    categories: [image]
+  - name: publications
+    label: Publications (PDFs & thumbnails)
+    input: publications
+    output: /publications
+  - name: projects
+    label: Project media
+    input: projects
+    output: /projects
+  - name: homepage
+    label: Homepage images
+    input: homepage
+    output: /homepage
+    categories: [image]
+  - name: resources
+    label: Resource PDFs
+    input: resources
+    output: /resources
+  - name: reflections
+    label: Robo Reflections media
+    input: assets/robo-reflections
+    output: /assets/robo-reflections
+
+content:
+  - name: news
+    label: News
+    type: file
+    path: _data/news.yml
+    format: yaml
+    description: 'Newest items show first on the website. New items go at the bottom of this list — that is correct, the site reverses the order. Links: [text](https://url)'
+    fields:
+      - name: items
+        label: News items
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date}"
+        fields:
+          - name: date
+            type: string
+            description: e.g. September 12th, 2025
+          - name: description
+            type: text
+
+  - name: homepage
+    label: Homepage
+    type: file
+    path: _data/homepage.yml
+    format: yaml
+    fields:
+      - name: carousel
+        label: Carousel slides
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            type: string
+          - name: description
+            type: string
+            description: Use <br> for a manual line break
+          - name: image
+            type: image
+            options:
+              media: homepage
+              path: homepage/carousel
+      - name: research_vision
+        label: Research vision
+        type: text
+
+  - name: team
+    label: Team
+    type: file
+    path: _data/team.yml
+    format: yaml
+    description: Members are sorted automatically on the website (Post-Doc, Ph.D., Masters, Undergrad — alphabetical within each), so new people can be added anywhere. Link fields need full URLs starting with https://
+    fields:
+      - name: patricia
+        label: Patrícia (Director)
+        type: object
+        fields:
+          - name: name
+            type: string
+          - name: role
+            type: string
+          - name: title
+            type: string
+          - name: meta_advisory_board
+            label: Meta advisory board
+            type: string
+          - name: affiliated
+            type: string
+          - name: academic_guest
+            type: string
+          - name: advisor
+            type: string
+          - name: email
+            type: string
+          - name: website
+            type: string
+            pattern: &url
+              regex: '^https?://.+'
+              message: Must be a full URL starting with https://
+          - name: google_scholar
+            type: string
+            pattern: *url
+          - name: twitter
+            type: string
+            pattern: *url
+          - name: linkedin
+            type: string
+            pattern: *url
+          - name: profile_img
+            label: Profile photo
+            type: image
+            options:
+              media: team
+          - name: description
+            type: text
+      - name: members
+        label: Active members
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({standing})"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: standing
+            type: select
+            required: true
+            options:
+              values: [Post-Doc, Ph.D., Masters, Undergrad]
+          - name: major
+            type: string
+          - name: university
+            type: string
+          - name: project
+            type: string
+            description: Project name(s), comma-separated
+          - name: role
+            type: string
+          - name: joined
+            type: string
+            description: e.g. Fall 2025
+          - name: personal_website
+            type: string
+            pattern: *url
+          - name: google_scholar
+            type: string
+            pattern: *url
+          - name: linkedin
+            type: string
+            pattern: *url
+          - name: github
+            type: string
+            pattern: *url
+          - name: youtube
+            type: string
+            pattern: *url
+          - name: img
+            label: Photo
+            type: image
+            options:
+              media: team
+      - name: collab
+        label: Collaborators
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: role
+            type: string
+          - name: university
+            type: string
+          - name: department
+            type: string
+          - name: img
+            label: Photo
+            type: image
+            options:
+              media: team
+              path: team/collab
+      - name: alumni
+        label: Alumni
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name} ({year})"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: future
+            label: Where they went next
+            type: string
+          - name: project
+            type: string
+          - name: year
+            type: number
+          - name: linkedin
+            type: string
+            pattern: *url
+
+  - name: publications
+    label: Publications
+    type: file
+    path: _data/publications.yml
+    format: yaml
+    description: 'Papers live inside their year. To add a paper, open the year and add an item at the bottom — the site shows newest first automatically. To start a new year, add an item at the bottom of the years list. Make thumbnails / trim PDF pages with the mediate tool: https://studiorobot.github.io/mediate/'
+    fields:
+      - name: intro
+        label: Intro text
+        type: text
+      - name: years
+        label: Years
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{year}"
+        fields:
+          - name: year
+            type: number
+            required: true
+          - name: papers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+                required: true
+              - name: authors
+                type: text
+              - name: event
+                label: Venue / event
+                type: text
+              - name: doi
+                label: DOI link
+                type: string
+                pattern: *url
+              - name: pdf
+                label: PDF
+                type: file
+                description: Trim publisher cover pages with the mediate tool (link above)
+                options:
+                  media: publications
+                  path: publications
+                  extensions: [pdf]
+              - name: img
+                label: Thumbnail
+                type: image
+                description: Generate from the PDF with the mediate tool (link above)
+                options:
+                  media: publications
+                  path: publications/thumbnails
+              - name: project
+                type: string
+              - name: video
+                label: Video link
+                type: string
+                pattern: *url
+              - name: materials
+                label: Materials link
+                type: string
+                pattern: *url
+
+  - name: projects
+    label: Projects
+    type: file
+    path: _data/projects.yml
+    format: yaml
+    fields:
+      - name: intro
+        label: Intro text
+        type: text
+      - name: active
+        label: Active projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields: &project_fields
+          - name: name
+            type: string
+            required: true
+          - name: area
+            type: string
+          - name: members
+            type: string
+            description: Comma-separated names
+          - name: data
+            label: Dates & funding
+            type: string
+            description: e.g. 2024 - ongoing | NSF EAGER
+          - name: description
+            type: text
+          - name: keywords
+            type: string
+          - name: poster
+            label: Thumbnail image
+            type: image
+            options:
+              media: projects
+          - name: video_webm
+            label: Video (webm)
+            type: file
+            options:
+              media: projects
+          - name: video_mp4
+            label: Video (mp4)
+            type: file
+            options:
+              media: projects
+          - name: links
+            type: object
+            fields:
+              - name: site
+                label: Websites
+                type: string
+                list: true
+                pattern: *url
+              - name: doi
+                label: DOIs
+                type: string
+                list: true
+                pattern: *url
+              - name: yt
+                label: Videos
+                type: string
+                list: true
+                pattern: *url
+              - name: code
+                label: Code links
+                type: string
+                list: true
+                pattern: *url
+          - name: awards
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
+          - name: honorable_mentions
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
+      - name: completed
+        label: Completed projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields: *project_fields
+
+  - name: press
+    label: Press
+    type: file
+    path: _data/press.yml
+    format: yaml
+    list: true
+    description: 'Newest first on the website and in this list. Links: [text](https://url) work in the description field.'
+    fields:
+      - name: date
+        type: string
+        description: e.g. August 13th, 2025
+      - name: title
+        type: string
+        required: true
+      - name: content
+        type: text
+      - name: description
+        type: text
+        description: Optional longer text with Markdown links (used instead of a single link)
+      - name: image
+        type: image
+        options:
+          media: press
+      - name: link
+        type: string
+        pattern: *url
+
+  - name: resources
+    label: Resources
+    type: file
+    path: _data/resources.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: description
+        type: text
+      - name: pdf
+        label: PDF
+        type: file
+        options:
+          media: resources
+          extensions: [pdf]
+      - name: link
+        type: string
+        pattern: *url
+
+  - name: join
+    label: Join us
+    type: file
+    path: _data/join.yml
+    format: yaml
+    description: 'All texts support Markdown links: [text](https://url)'
+    fields:
+      - name: intro_text
+        label: Intro
+        type: text
+      - name: phd_students_text
+        label: Ph.D. students
+        type: text
+      - name: undergraduate_master_students_text
+        label: Undergrad & Masters students
+        type: text
+      - name: visiting_students_text
+        label: Visiting students
+        type: text
+      - name: postdocs_text
+        label: Postdocs
+        type: text
+
+  - name: reflections-papers
+    label: Robo Reflections – Papers
+    type: file
+    path: _data/robo-reflections/papers.yml
+    format: yaml
+    description: Papers live inside their semester. Add papers at the bottom of a semester — the site shows newest first automatically. To start a new semester, add an item at the bottom of the semesters list.
+    fields:
+      - name: semesters
+        label: Semesters
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{semester}"
+        fields:
+          - name: semester
+            type: string
+            required: true
+            description: e.g. Winter 2026
+          - name: papers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: text
+                required: true
+              - name: authors
+                type: text
+              - name: event
+                label: Venue / event
+                type: text
+              - name: doi
+                label: DOI link
+                type: string
+                pattern: *url
+              - name: drive
+                label: Private link (Drive)
+                type: string
+                pattern: *url
+              - name: pdf
+                label: PDF
+                type: file
+                options:
+                  media: reflections
+                  path: assets/robo-reflections/pdfs
+                  extensions: [pdf]
+              - name: img
+                label: Thumbnail
+                type: image
+                options:
+                  media: reflections
+                  path: assets/robo-reflections/images/thumbnails
+              - name: date
+                type: string
+                description: e.g. Feb 5th
+              - name: presenter
+                type: string
+
+  - name: reflections-people
+    label: Robo Reflections – People
+    type: file
+    path: _data/robo-reflections/people.yml
+    format: yaml
+    list: true
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: section
+        type: select
+        required: true
+        options:
+          values: [Organizers, Supporting Faculty]
+      - name: role
+        type: string
+      - name: inst
+        label: Institution
+        type: string
+      - name: img
+        label: Photo
+        type: image
+        options:
+          media: reflections
+          path: assets/robo-reflections/images/people
+      - name: web
+        label: Website
+        type: string
+        pattern: *url
+      - name: in
+        label: LinkedIn
+        type: string
+        pattern: *url
+      - name: scholar
+        label: Google Scholar
+        type: string
+        pattern: *url
+
+  - name: reflections-site
+    label: Robo Reflections – Texts
+    type: file
+    path: _data/robo-reflections/site.yml
+    format: yaml
+    description: 'All texts support Markdown links: [text](https://url)'
+    fields:
+      - name: intro
+        type: text
+      - name: format
+        type: text
+      - name: contact
+        type: text
+
+  - name: navigation
+    label: Navigation
+    type: file
+    path: _data/navigation.yml
+    format: yaml
+    fields:
+      - name: internal
+        label: Site pages
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: url
+            type: string
+      - name: external
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - name: platform
+            type: string
+          - name: url
+            type: string
+            pattern: *url
+          - name: name
+            type: string
+          - name: icon
+            type: string
+            description: Font Awesome classes, e.g. fab fa-linkedin

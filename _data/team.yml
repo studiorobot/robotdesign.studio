@@ -11,7 +11,7 @@ patricia:
   google_scholar: https://scholar.google.com/citations?hl=en&user=TbN31LMAAAAJ
   twitter: https://x.com/p_alvesoliveira
   linkedin: https://www.linkedin.com/in/patricia-alves-oliveira
-  profile_img: team/patricia.jpg
+  profile_img: /team/patricia.jpg
   description: I research how humans connect with robots, and how robots influence human relations. I combine artificial intelligence, psychology, and design to understand how to build robots that people love. I collaborate with experts from Fine Arts, Medicine, and Humanities.
 
 members:
@@ -23,7 +23,7 @@ members:
    joined: Winter 2026
    google_scholar: https://scholar.google.com/citations?hl=en&user=7cS4kIcAAAAJ
    linkedin: https://www.linkedin.com/in/jacqueline-borgstedt/
-   img: postdoc/jacqueline-borgstedt.jpeg
+   img: /team/postdoc/jacqueline-borgstedt.jpeg
 
  - name: Long-Jing Hsu
    standing: Post-Doc
@@ -34,7 +34,7 @@ members:
    personal_website: https://longjinghsu.wixsite.com/website
    google_scholar: https://scholar.google.com/citations?hl=en&user=s4Uy3XAAAAAJ
    linkedin: https://www.linkedin.com/in/longjinghsu
-   img: postdoc/Long-Jing_Hsu_Postdoc.png
+   img: /team/postdoc/Long-Jing_Hsu_Postdoc.png
 
  - name: Ryssa Moffat
    standing: Post-Doc
@@ -45,7 +45,7 @@ members:
    linkedin: https://www.linkedin.com/in/ryssa-moffat-41036328b/
    google_scholar: https://scholar.google.com/citations?hl=en&user=HWXn8uAAAAAJ
    personal_website: https://ryssamoffat.github.io/
-   img: postdoc/ryssa-moffat.jpg
+   img: /team/postdoc/ryssa-moffat.jpg
 
  - name: Atharva S. Kashyap
    standing: Ph.D.
@@ -57,7 +57,7 @@ members:
    google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
    linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
    github: https://github.com/atharva-kashyap 
-   img: phd/Atharva_S._Kashyap_PhD.jpg
+   img: /team/phd/Atharva_S._Kashyap_PhD.jpg
 
  - name: Connor Williams
    standing: Ph.D.
@@ -66,7 +66,7 @@ members:
    project: Horizon
    joined: Winter 2024
    google_scholar: https://scholar.google.com/citations?user=JF5Jl6EAAAAJ
-   img: phd/Connor_Williams_PhD.jpg
+   img: /team/phd/Connor_Williams_PhD.jpg
 
  - name: Grace Pan
    standing: Ph.D.
@@ -76,7 +76,7 @@ members:
    joined: Fall 2024
    google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ
    linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
-   img: phd/Grace_Pan_PhD.jpg
+   img: /team/phd/Grace_Pan_PhD.jpg
 
  - name: Tetsu Kurumisawa
    standing: Ph.D.
@@ -86,7 +86,7 @@ members:
    joined: Fall 2025
    linkedin: https://www.linkedin.com/in/tetsu-kurumisawa/
    github: https://github.com/tetsu-kurumi
-   img: phd/Tetsu_Kurumisawa_PhD.JPG 
+   img: /team/phd/Tetsu_Kurumisawa_PhD.JPG 
 
  - name: Cheryl Fang
    standing: Masters
@@ -96,7 +96,7 @@ members:
    joined: Fall 2025
    personal_website: https://www.cherylfang.com/
    linkedin: https://www.linkedin.com/in/wanchun-fang/ 
-   img: masters/Cheryl_Fang_Masters.jpeg
+   img: /team/masters/Cheryl_Fang_Masters.jpeg
 
  - name: Elijah Cantu
    standing: Masters
@@ -108,7 +108,7 @@ members:
    personal_website: https://elijahcantu.com
    linkedin: https://www.linkedin.com/in/elijahcantu 
    github: https://github.com/elijahcantu
-   img: masters/elijah_cantu.jpeg
+   img: /team/masters/elijah_cantu.jpeg
 
  - name: Eric Chen
    standing: Masters
@@ -117,7 +117,7 @@ members:
    project: AURA
    joined: Summer 2025
    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
-   img: masters/Eric_Chen_Master.jpg
+   img: /team/masters/Eric_Chen_Master.jpg
 
  - name: Erin Roberts
    standing: Masters
@@ -126,7 +126,7 @@ members:
    project: AURA
    joined: Fall 2025
    linkedin: https://www.linkedin.com/in/erin-roberts-559698155/ 
-   img: masters/Erin_Roberts_MS.JPEG
+   img: /team/masters/Erin_Roberts_MS.JPEG
 
  - name: Maël Le Bras 
    standing: Masters
@@ -134,7 +134,7 @@ members:
    university: ETH Zürich
    project: AURA
    joined: Winter 2026
-   img: masters/mael.jpeg
+   img: /team/masters/mael.jpeg
    linkedin: https://www.linkedin.com/in/mael-le-bras-63ba27404/
 
  - name: Malavika Anand
@@ -144,7 +144,7 @@ members:
    project: AURA 
    joined: Fall 2025 
    linkedin: https://www.linkedin.com/in/malavika-anand-a1a86a199/
-   img: masters/Malavika_Anand_MS.jpg
+   img: /team/masters/Malavika_Anand_MS.jpg
 
  - name: Sneha Venkat
    standing: Masters
@@ -154,7 +154,7 @@ members:
    joined: Winter 2026 
    linkedin: https://www.linkedin.com/in/sai-sneha-sv/
    github: https://github.com/saisnehasv
-   img: masters/Sneha_Venkat_Masters.jpg
+   img: /team/masters/Sneha_Venkat_Masters.jpg
 
  - name: Ted Ivanac
    standing: Masters
@@ -165,7 +165,7 @@ members:
    personal_website: https://tedivanac.github.io/
    linkedin: https://www.linkedin.com/in/edward-ted-ivanac/
    github: https://github.com/TedIvanac
-   img: masters/Ted_Ivanac_Masters.jpg
+   img: /team/masters/Ted_Ivanac_Masters.jpg
 
  - name: Angela Y. Zhu
    standing: Undergrad
@@ -174,7 +174,7 @@ members:
    project: AURA
    joined: Fall 2025
    linkedin: https://www.linkedin.com/in/angela-yixuan-zhu
-   img: undergrad/Angela_Zhu_undergrad.jpg
+   img: /team/undergrad/Angela_Zhu_undergrad.jpg
 
  - name: Angshu Adhya
    standing: Undergrad
@@ -185,7 +185,7 @@ members:
    personal_website: https://www.aadhya.me
    linkedin: https://www.linkedin.com/in/aadhya22
    github: https://www.github.com/a-adhya
-   img: undergrad/Angshu_Adhya_Undergraduate.JPG
+   img: /team/undergrad/Angshu_Adhya_Undergraduate.JPG
 
  - name: Cindy Yang
    standing: Undergrad
@@ -194,7 +194,7 @@ members:
    project: AURA
    joined: Fall 2024
    linkedin: https://www.linkedin.com/in/cindy-yang-274662250 
-   img: undergrad/Cindy_Yang_Undergraduate.jpg
+   img: /team/undergrad/Cindy_Yang_Undergraduate.jpg
 
  - name: Hana Ichikawa
    standing: Undergrad
@@ -204,7 +204,7 @@ members:
    joined: Fall 2024
    personal_website: https://ichikaha.myportfolio.com/
    linkedin: https://www.linkedin.com/in/hana-ichikawa-59661b24a/
-   img: undergrad/Hana_Ichikawa_undergrad.jpg
+   img: /team/undergrad/Hana_Ichikawa_undergrad.jpg
 
  - name: Rishad Hasan
    standing: Undergrad
@@ -214,7 +214,7 @@ members:
    joined: Fall 2024
    personal_website: https://rishadhasan.com/
    linkedin: https://www.linkedin.com/in/rishadhasan/
-   img: undergrad/Rishad_Hasan_Undergraduate.jpg
+   img: /team/undergrad/Rishad_Hasan_Undergraduate.jpg
 
  - name: Tianxin (Jessica) Li
    standing: Undergrad
@@ -224,7 +224,7 @@ members:
    joined: Winter 2024
    linkedin: https://www.linkedin.com/in/jessica-li-a2abb528a
    github: https://github.com/Jessica-IX
-   img: undergrad/Tianxin(Jessica)_Li_undergrad.jpg
+   img: /team/undergrad/Tianxin(Jessica)_Li_undergrad.jpg
 
  - name: Trey Davis
    standing: Undergrad
@@ -236,80 +236,80 @@ members:
    linkedin: https://www.linkedin.com/in/trey-davis-916163221/ 
    github: https://github.com/dtrey-umich 
    youtube: https://www.youtube.com/@yert16571 
-   img: undergrad/Trey_Davis_Undergraduate.JPG
+   img: /team/undergrad/Trey_Davis_Undergraduate.JPG
 
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
     university: University of Michigan
     department: Robotics
-    img: collab/Abhishek_Narula_External_Collaborator.jpg
+    img: /team/collab/Abhishek_Narula_External_Collaborator.jpg
 
   - name: Anastasia Kouvaras Ostrowski 
     role: Assistant Professor 
     university: Purdue University
     department: Computer Graphics Tech
-    img: collab/Anastasia_Ostrowski_External_Collaborator.jpg
+    img: /team/collab/Anastasia_Ostrowski_External_Collaborator.jpg
   
   - name: Anson Kairys 
     role: Clinical Assistant Professor 
     university: University of Michigan
     department: Psychiatry
-    img: collab/Anson_Kairys_Collaborator.jpeg
+    img: /team/collab/Anson_Kairys_Collaborator.jpeg
 
   - name: Emily Cross
     role: Full Professor 
     university: ETH Zürich
     department: Department of Humanities, Social and Political Sciences
-    img: collab/emily-cross.jpg
+    img: /team/collab/emily-cross.jpg
 
   - name: Jim Cogswell
     role: Full Professor 
     department: STAMPS School of Art & Design
     university: University of Michigan
-    img: collab/Jim-Cogswell-External-Collaborator.jpg
+    img: /team/collab/Jim-Cogswell-External-Collaborator.jpg
 
   - name: Joyce Chai
     role: Full Professor 
     department: Computer Science & Engineering
     university: University of Michigan
-    img: collab/Joyce_Chai_Collaborator.jpg
+    img: /team/collab/Joyce_Chai_Collaborator.jpg
 
   - name: Leia Stirling
     role: Full Professor
     university: University of Michigan
     department: Industrial and Operations Engineering
-    img: collab/Leia_Stirling_External_Collaborator.jpg
+    img: /team/collab/Leia_Stirling_External_Collaborator.jpg
 
   - name: Mark Draelos
     role: Assistant Professor
     university: University of Michigan
     department: Robotics
-    img: collab/Mak_Draelos-External_Collaborator.jpg
+    img: /team/collab/Mak_Draelos-External_Collaborator.jpg
   
   - name: Nita Valikodath
     role: Clinical Assistant Professor
     university: University of Michigan
     department: Ophthalmology and Visual Sciences
-    img: collab/Nita_Valikodath-External_Collaborator.jpeg
+    img: /team/collab/Nita_Valikodath-External_Collaborator.jpeg
 
   - name: Peter Kahn
     role: Full Professor
     university: University of Washington
     department: Psychology
-    img: collab/Peter_Kahn_External_collaborator.jpeg
+    img: /team/collab/Peter_Kahn_External_collaborator.jpeg
 
   - name: Robert Riener
     role: Full Professor
     university: ETH Zürich
     department: Department of Health Sciences and Technology
-    img: collab/robert-riener.jpg
+    img: /team/collab/robert-riener.jpg
 
   - name: Siddhartha Srinivasa
     role: Full Professor
     university: University of Washington
     department: Computer Science and Engineering
-    img: collab/Sidd_Srinivasa_External_Collaborator.jpg
+    img: /team/collab/Sidd_Srinivasa_External_Collaborator.jpg
 
 alumni:
  - name: Aleena Qaiser
