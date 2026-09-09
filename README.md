@@ -255,7 +255,7 @@ The **alumni** section lists former team members. Each entry contains:
 - **name**: name.
 - **future**: Where they went after graduating/left. 
   - **project**: The project they worked on.
-- **year**: Year(s) on the team (e.g., 2024, 2024 - 2025).
+- **year**: Semester(s) on the team as codes (e.g., F24-W25, or S25 for a single term; F=Fall, W=Winter, S=Summer).
 - **linkedin**: A link to their LinkedIn profile.
 
 ---
