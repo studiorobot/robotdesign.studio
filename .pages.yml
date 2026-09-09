@@ -274,7 +274,7 @@ content:
               - name: pdf
                 label: PDF
                 type: file
-                description: Trim publisher cover pages with the mediate tool (link above)
+                description: 'Trim publisher cover pages with: studiorobot.github.io/mediate'
                 options:
                   media: publications
                   path: publications
@@ -282,7 +282,7 @@ content:
               - name: img
                 label: Thumbnail
                 type: image
-                description: Generate from the PDF with the mediate tool (link above)
+                description: 'Generate from the PDF with: studiorobot.github.io/mediate'
                 options:
                   media: publications
                   path: publications/thumbnails
@@ -295,7 +295,10 @@ content:
               - name: materials
                 label: Materials link
                 type: string
-                pattern: *url
+                description: External URL or a site path like /projects/active/aura/poster.pdf
+                pattern:
+                  regex: '^(https?://.+|/.+)?$'
+                  message: Must be a full URL (https://...) or a site path starting with /
 
   - name: projects
     label: Projects
