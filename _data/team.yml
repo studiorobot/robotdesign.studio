@@ -104,22 +104,6 @@ members:
     linkedin: https://www.linkedin.com/in/elijahcantu
     github: https://github.com/elijahcantu
     img: /team/elijah_cantu.jpeg
-  - name: Eric Chen
-    standing: Masters
-    major: Robotics
-    university: University of Michigan
-    project: AURA
-    joined: Summer 2025
-    linkedin: https://www.linkedin.com/in/eric-chen-883243257/
-    img: /team/Eric_Chen_Master.jpg
-  - name: Erin Roberts
-    standing: Masters
-    major: Architecture
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2025
-    linkedin: https://www.linkedin.com/in/erin-roberts-559698155/
-    img: /team/Erin_Roberts_MS.jpeg
   - name: Maël Le Bras
     standing: Masters
     major: Mechanical Engineering
@@ -128,23 +112,6 @@ members:
     joined: Winter 2026
     linkedin: https://www.linkedin.com/in/mael-le-bras-63ba27404/
     img: /team/mael.jpeg
-  - name: Malavika Anand
-    standing: Masters
-    major: Architecture
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2025
-    linkedin: https://www.linkedin.com/in/malavika-anand-a1a86a199/
-    img: /team/Malavika_Anand_MS.jpg
-  - name: Sneha Venkat
-    standing: Masters
-    major: Data Science
-    university: University of Michigan
-    project: Resilience
-    joined: Winter 2026
-    linkedin: https://www.linkedin.com/in/sai-sneha-sv/
-    github: https://github.com/saisnehasv
-    img: /team/Sneha_Venkat_Masters.jpg
   - name: Ted Ivanac
     standing: Masters
     major: Robotics
@@ -155,24 +122,6 @@ members:
     linkedin: https://www.linkedin.com/in/edward-ted-ivanac/
     github: https://github.com/TedIvanac
     img: /team/Ted_Ivanac_Masters.jpg
-  - name: Angela Y. Zhu
-    standing: Undergrad
-    major: Cognitive Science
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2025
-    linkedin: https://www.linkedin.com/in/angela-yixuan-zhu
-    img: /team/Angela_Zhu_undergrad.jpg
-  - name: Angshu Adhya
-    standing: Undergrad
-    major: Computer Science
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2024
-    personal_website: https://www.aadhya.me
-    linkedin: https://www.linkedin.com/in/aadhya22
-    github: https://www.github.com/a-adhya
-    img: /team/Angshu_Adhya_Undergraduate.jpg
   - name: Hana Ichikawa
     standing: Undergrad
     major: Art & Design
