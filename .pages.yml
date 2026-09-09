@@ -204,7 +204,6 @@ content:
             type: image
             options:
               media: team
-              path: team/collab
       - name: alumni
         label: Alumni
         type: object

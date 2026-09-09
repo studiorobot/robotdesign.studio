@@ -223,7 +223,7 @@ members:
    google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
    linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
    github: https://github.com/atharva-kashyap 
-   img: /team/phd/Atharva_S._Kashyap_PhD.jpg
+   img: /team/Atharva_S._Kashyap_PhD.jpg
 ```
 
 ---
@@ -243,7 +243,7 @@ collab:
     role: Full Stack Engineer
     university: University of Michigan
     department: Robotics
-    img: /team/collab/Abhishek_Narula_External_Collaborator.jpg
+    img: /team/Abhishek_Narula_External_Collaborator.jpg
 ```
 
 ---
