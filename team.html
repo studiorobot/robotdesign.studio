@@ -169,7 +169,7 @@ layout: default
     {% assign alumni_start = alumni.year | slice: 0, 3 %}
     {% if alumni_start != start_code %}{% continue %}{% endif %}
     <div style="margin-bottom: 0.3em;">
-      <p class="project-description" style="margin-top: 0;color:black; line-height: 12pt;"><strong>{{ alumni.name
+      <p class="project-description" style="margin: 0;color:black; line-height: 12pt;"><strong>{{ alumni.name
           }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}
         ({{ alumni.year }}) &bull; {% if alumni.linkedin %} <a href="{{ alumni.linkedin }}" target="_blank"><i
             class="fab fa-linkedin"></i></a>
