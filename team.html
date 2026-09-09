@@ -157,7 +157,13 @@ layout: default
       <h2> Previous Members</h2>
     </div>
     {% assign sorted_alumni = site.data.team.alumni | sort_natural: "name" %}
+    {% assign end_year_csv = "" %}
+    {% for alumni in sorted_alumni %}{% assign end_year = alumni.year | slice: -4, 4 %}{% assign end_year_csv = end_year_csv | append: end_year | append: "," %}{% endfor %}
+    {% assign end_years = end_year_csv | split: "," | uniq | sort | reverse %}
+    {% for end_year in end_years %}
     {% for alumni in sorted_alumni %}
+    {% assign alumni_end_year = alumni.year | slice: -4, 4 %}
+    {% if alumni_end_year != end_year %}{% continue %}{% endif %}
     <div class="column width-6" style="margin-bottom: 0.3em;">
       <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
           }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}
@@ -166,6 +172,7 @@ layout: default
         {% endif %}
       </p>
     </div>
+    {% endfor %}
     {% endfor %}
   </div>
   {% endif %}
