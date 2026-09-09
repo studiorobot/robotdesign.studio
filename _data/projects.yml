@@ -112,7 +112,7 @@ completed:
 
   - name: "METAPHORS: Collection of Metaphors for Human-Robot Interaction"
     members: Maria Luce Lupetti, Michal Luria, Diana Löffler
-    data: 2021
+    data: "2021"
     links: 
       doi: 
         - https://dl.acm.org/doi/10.1145/3461778.3462060
