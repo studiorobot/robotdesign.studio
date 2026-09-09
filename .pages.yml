@@ -116,8 +116,8 @@ content:
           - name: website
             type: string
             pattern: &url
-              regex: '^https?://.+'
-              message: Must be a full URL starting with https://
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: google_scholar
             type: string
             pattern: *url
