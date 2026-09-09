@@ -157,23 +157,38 @@ layout: default
       <h2> Previous Members</h2>
     </div>
     {% assign sorted_alumni = site.data.team.alumni | sort_natural: "name" %}
-    {% assign end_year_csv = "" %}
-    {% for alumni in sorted_alumni %}{% assign end_year = alumni.year | slice: -4, 4 %}{% assign end_year_csv = end_year_csv | append: end_year | append: "," %}{% endfor %}
-    {% assign end_years = end_year_csv | split: "," | uniq | sort | reverse %}
-    {% for end_year in end_years %}
+    {% assign start_year_csv = "" %}
+    {% for alumni in sorted_alumni %}{% assign start_year = alumni.year | slice: 1, 2 %}{% assign start_year_csv = start_year_csv | append: start_year | append: "," %}{% endfor %}
+    {% assign start_years = start_year_csv | split: "," | uniq | sort | reverse %}
+    {% assign semesters = "F,S,W" | split: "," %}
+    {% capture alumni_entries %}
+    {% for start_year in start_years %}
+    {% for semester in semesters %}
+    {% assign start_code = semester | append: start_year %}
     {% for alumni in sorted_alumni %}
-    {% assign alumni_end_year = alumni.year | slice: -4, 4 %}
-    {% if alumni_end_year != end_year %}{% continue %}{% endif %}
-    <div class="column width-6" style="margin-bottom: 0.3em;">
+    {% assign alumni_start = alumni.year | slice: 0, 3 %}
+    {% if alumni_start != start_code %}{% continue %}{% endif %}
+    <div style="margin-bottom: 0.3em;">
       <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
           }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}
         ({{ alumni.year }}) &bull; {% if alumni.linkedin %} <a href="{{ alumni.linkedin }}" target="_blank"><i
             class="fab fa-linkedin"></i></a>
         {% endif %}
       </p>
+    </div>@@ENTRY@@
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+    {% endcapture %}
+    {% assign entry_list = alumni_entries | split: "@@ENTRY@@" %}
+    {% assign entry_count = entry_list.size | minus: 1 %}
+    {% assign first_column_count = entry_count | plus: 1 | divided_by: 2 %}
+    <div class="column width-6">
+      {% for entry in entry_list limit: first_column_count %}{{ entry }}{% endfor %}
     </div>
-    {% endfor %}
-    {% endfor %}
+    <div class="column width-6">
+      {% for entry in entry_list offset: first_column_count %}{{ entry }}{% endfor %}
+    </div>
   </div>
   {% endif %}
 

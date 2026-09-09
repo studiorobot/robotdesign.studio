@@ -221,8 +221,12 @@ content:
           - name: project
             type: string
           - name: year
+            label: Semesters
             type: string
-            description: e.g. 2025 or 2024-2026
+            description: e.g. F24-W25, or S25 for a single term (F=Fall, W=Winter, S=Summer)
+            pattern:
+              regex: '^([FWS]\d{2}(-[FWS]\d{2})?)?$'
+              message: Use semester codes like F24-W25 or S25 (F=Fall, W=Winter, S=Summer)
           - name: linkedin
             type: string
             pattern: *url
