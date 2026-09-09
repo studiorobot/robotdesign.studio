@@ -162,7 +162,8 @@ active:
       to activate all five senses during the interaction, the robot leverages
       traditional Cognitive Behavioral Therapy techniques to help its user
       interrupt their anxious thoughts and focus on the present moment.
-    poster: /projects/IMG_4867.jpeg
+    poster: /projects/active/panda/thumbnail.jpeg
+    video_mp4: /projects/active/panda/panda.mp4
 completed:
   - name: "EMAR: Ecological Momentary Assessment Robot"
     members: Elin Björling, Maya Cakmak
@@ -190,7 +191,7 @@ completed:
         - https://github.com/mayacakmak/emarsoftware/wiki
   - name: "METAPHORS: Collection of Metaphors for Human-Robot Interaction"
     members: Maria Luce Lupetti, Michal Luria, Diana Löffler
-    data: '"2021"'
+    data: "2021"
     description: This project explores the use of metaphors for generating novel
       ideas, reframing existing problems, and eliciting new perspectives of
       human-robot interaction. Through metaphors, this project proposes new ways
