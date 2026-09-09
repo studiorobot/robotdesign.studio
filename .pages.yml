@@ -221,7 +221,8 @@ content:
           - name: project
             type: string
           - name: year
-            type: number
+            type: string
+            description: e.g. 2025 or 2024-2026
           - name: linkedin
             type: string
             pattern: *url
