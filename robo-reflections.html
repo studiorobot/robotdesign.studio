@@ -112,25 +112,26 @@ layout: robo-reflections
     {{ site.data.robo-reflections.site.intro | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }} <h2>
       Format</h2>
       {{ site.data.robo-reflections.site.format | markdownify | replace: '<a', '<a target="_blank"' | remove: '<p>' | remove: '</p>' }}
-        {% assign total_semesters=site.data.robo-reflections.papers | size %} {% for semester in site.data.robo-reflections.papers reversed %} <div
+        {% assign semester_groups = site.data.robo-reflections.papers | group_by: "semester" %}
+        {% assign total_semesters = semester_groups | size %} {% for semester in semester_groups reversed %} <div
         class="row">
         <div>
           <h2>
             <button class="semester-toggle" data-target="semester-{{ forloop.index }}"
               aria-expanded="{% if total_semesters == 1 or forloop.last == false %}true{% else %}false{% endif %}"
               style="all: unset; cursor: pointer; font-size: inherit; font-weight: inherit;">
-              {{ semester[0] }}
+              {{ semester.name }}
               <span class="dropdown-arrow" aria-hidden="true">▶</span>
             </button>
           </h2>
           <div id="semester-{{ forloop.index }}"
             class="{% if total_semesters != 1 and forloop.last == true %}hidden{% endif %}">
-            {% for paper in semester[1] reversed %}
+            {% for paper in semester.items reversed %}
             <div class="paper-stuff" style="margin-bottom: 0px; display: flex; gap:15px; align-items: flex-start;">
               <div class="more-paper-stuff" style="flex-shrink: 0;">
 
                 {% if paper.img %}
-                <img class="regular-publication" src="assets/robo-reflections/images/thumbnails/{{paper.img}}"
+                <img class="regular-publication" src="{{paper.img}}"
                   alt="The first page of the paper" loading="lazy"
                   style="width: 133px; height: 188px; border: 2px solid #556c80; border-radius: 4px;" />
                 {% else %}
@@ -151,7 +152,7 @@ layout: robo-reflections
                 {% endif %}
                 <div class="publication-links" style="display: flex; gap: 15px; flex-wrap: wrap;">
                   {% if paper.pdf %}
-                  <a href="assets/robo-reflections/pdfs/{{ paper.pdf }}" target="_blank" class="link-color publication-link">
+                  <a href="{{ paper.pdf }}" target="_blank" class="link-color publication-link">
                     <i class="fa-regular fa-file"></i> PDF
                   </a>
                   {% endif %}
@@ -185,16 +186,16 @@ layout: robo-reflections
   </div>
   {% endfor %}
   <div class="participants-section">
-    {% assign sections = site.data.robo-reflections.people %}
+    {% assign sections = site.data.robo-reflections.people | group_by: "section" %}
     {% for section in sections %}
-    {% assign section_name = section[0] %}
-    {% assign people = section[1] %}
+    {% assign section_name = section.name %}
+    {% assign people = section.items %}
 
     <h2>{{ section_name }}</h2>
     <div class="participants">
       {% for participant in people %}
       <div class="participant">
-        <img src="assets/robo-reflections/images/people/{{ participant.img }}" alt="{{ participant.name }}"
+        <img src="{{ participant.img }}" alt="{{ participant.name }}"
           class="participant-image">
         <h3 class="participant-name">
           {{ participant.name }}

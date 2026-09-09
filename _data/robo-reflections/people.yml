@@ -1,38 +1,42 @@
-Organizers:
-  - name: Patricia Alves-Oliveira
-    role: Assistant Professor of Robotics
-    inst: University of Michigan
-    img: pa.jpeg
-    web: https://patricialvesoliveira.com/
-    
-  - name: Long-Jing Hsu
-    role: Schmidt AI in Science Postdoctoral Fellow
-    inst: University of Michigan
-    img: lj.jpeg
-    web: https://longjinghsu.wixsite.com/website
+- name: Patricia Alves-Oliveira
+  role: Assistant Professor of Robotics
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/pa.jpeg
+  web: https://patricialvesoliveira.com/
+  section: "Organizers"
   
-  - name: Annette Masterson
-    role: Research Fellow in Robotics and Information
-    inst: University of Michigan
-    img: am.jpeg
-    web: https://amsmasterson.wordpress.com/
+- name: Long-Jing Hsu
+  role: Schmidt AI in Science Postdoctoral Fellow
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/lj.jpeg
+  web: https://longjinghsu.wixsite.com/website
+  section: "Organizers"
+  
+- name: Annette Masterson
+  role: Research Fellow in Robotics and Information
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/am.jpeg
+  web: https://amsmasterson.wordpress.com/
+  section: "Organizers"
 
-Supporting Faculty:
-  - name: Chris Mavrogiannis
-    role: Assistant Professor of Robotics
-    inst: University of Michigan
-    img: cm.jpeg
-    web: https://chrismavrogiannis.com/
+- name: Chris Mavrogiannis
+  role: Assistant Professor of Robotics
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/cm.jpeg
+  web: https://chrismavrogiannis.com/
+  section: "Supporting Faculty"
 
-  - name: Lionel Robert
-    role: Full Professor of Robotics and Information
-    inst: University of Michigan
-    img: lr.jpeg
-    web: https://sites.google.com/umich.edu/lionelrobert/
+- name: Lionel Robert
+  role: Full Professor of Robotics and Information
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/lr.jpeg
+  web: https://sites.google.com/umich.edu/lionelrobert/
+  section: "Supporting Faculty"
 
-  - name: Leia Stirling
-    role: Full Professor of Robotics and<br>Industrial and Operational Engineering
-    inst: University of Michigan
-    img: ls.jpeg
-    web: https://stirling.engin.umich.edu/
+- name: Leia Stirling
+  role: Full Professor of Robotics and<br>Industrial and Operational Engineering
+  inst: University of Michigan
+  img: /assets/robo-reflections/images/people/ls.jpeg
+  web: https://stirling.engin.umich.edu/
+  section: "Supporting Faculty"
 

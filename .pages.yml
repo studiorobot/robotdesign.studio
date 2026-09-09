@@ -1,0 +1,519 @@
+media:
+  - name: team
+    label: Team photos
+    input: team
+    output: /team
+    categories: [image]
+  - name: press
+    label: Press images
+    input: press
+    output: /press
+    categories: [image]
+  - name: publications
+    label: Publications (PDFs & thumbnails)
+    input: publications
+    output: /publications
+  - name: projects
+    label: Project media
+    input: projects
+    output: /projects
+  - name: homepage
+    label: Homepage images
+    input: homepage
+    output: /homepage
+    categories: [image]
+  - name: resources
+    label: Resource PDFs
+    input: resources
+    output: /resources
+  - name: reflections
+    label: Robo Reflections media
+    input: assets/robo-reflections
+    output: /assets/robo-reflections
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: _data/homepage.yml
+    format: yaml
+    fields:
+      - name: carousel
+        label: Carousel slides
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: description
+            type: string
+            description: Use <br> for a manual line break.
+          - name: image
+            type: image
+            options:
+              media: homepage
+              path: homepage/carousel
+      - name: research_vision
+        label: Research vision
+        type: text
+      - name: news
+        label: News
+        type: object
+        list: true
+        fields:
+          - name: date
+            type: string
+            description: e.g. "September 12th, 2025"
+          - name: description
+            type: text
+            description: "Supports Markdown links: [text](https://url)"
+
+  - name: team
+    label: Team
+    type: file
+    path: _data/team.yml
+    format: yaml
+    fields:
+      - name: patricia
+        label: Patrícia (Director)
+        type: object
+        fields:
+          - name: name
+            type: string
+          - name: role
+            type: string
+          - name: title
+            type: string
+          - name: meta_advisory_board
+            label: Meta advisory board
+            type: string
+          - name: affiliated
+            type: string
+          - name: academic_guest
+            type: string
+          - name: advisor
+            type: string
+          - name: email
+            type: string
+          - name: website
+            type: string
+          - name: google_scholar
+            type: string
+          - name: twitter
+            type: string
+          - name: linkedin
+            type: string
+          - name: profile_img
+            label: Profile photo
+            type: image
+            options:
+              media: team
+          - name: description
+            type: text
+      - name: members
+        label: Active members
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: standing
+            type: select
+            options:
+              values: [Post-Doc, Ph.D., Masters, Undergrad]
+          - name: major
+            type: string
+          - name: university
+            type: string
+          - name: project
+            type: string
+            description: Project name(s), comma-separated
+          - name: role
+            type: string
+          - name: joined
+            type: string
+            description: e.g. "Fall 2025"
+          - name: email
+            type: string
+          - name: personal_website
+            type: string
+          - name: google_scholar
+            type: string
+          - name: linkedin
+            type: string
+          - name: github
+            type: string
+          - name: youtube
+            type: string
+          - name: img
+            label: Photo
+            type: image
+            options:
+              media: team
+      - name: collab
+        label: Collaborators
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: role
+            type: string
+          - name: university
+            type: string
+          - name: department
+            type: string
+          - name: img
+            label: Photo
+            type: image
+            options:
+              media: team
+              path: team/collab
+      - name: alumni
+        label: Alumni
+        type: object
+        list: true
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: future
+            label: Where they went next
+            type: string
+          - name: project
+            type: string
+          - name: year
+            type: number
+          - name: linkedin
+            type: string
+
+  - name: publications
+    label: Publications
+    type: file
+    path: _data/publications.yml
+    format: yaml
+    fields:
+      - name: intro
+        label: Intro text
+        type: text
+      - name: publications
+        label: Papers
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+            required: true
+          - name: year
+            type: number
+            required: true
+          - name: authors
+            type: text
+          - name: event
+            label: Venue / event
+            type: text
+          - name: doi
+            label: DOI link
+            type: string
+          - name: pdf
+            label: PDF
+            type: file
+            options:
+              media: publications
+              path: publications
+              extensions: [pdf]
+          - name: img
+            label: Thumbnail
+            type: image
+            options:
+              media: publications
+              path: publications/thumbnails
+          - name: project
+            type: string
+          - name: video
+            label: Video link
+            type: string
+          - name: materials
+            label: Materials link
+            type: string
+
+  - name: projects
+    label: Projects
+    type: file
+    path: _data/projects.yml
+    format: yaml
+    fields:
+      - name: intro
+        label: Intro text
+        type: text
+      - name: active
+        label: Active projects
+        type: object
+        list: true
+        fields: &project_fields
+          - name: id
+            type: number
+            required: true
+            description: Unique number, used for the hover-to-play video. Use the next unused number.
+          - name: name
+            type: string
+            required: true
+          - name: area
+            type: string
+          - name: members
+            type: string
+            description: Comma-separated names
+          - name: data
+            label: Dates & funding
+            type: string
+            description: e.g. "2024 - ongoing | NSF EAGER"
+          - name: description
+            type: text
+          - name: keywords
+            type: string
+          - name: poster
+            label: Thumbnail image
+            type: image
+            options:
+              media: projects
+          - name: video_webm
+            label: Video (webm)
+            type: file
+            options:
+              media: projects
+          - name: video_mp4
+            label: Video (mp4)
+            type: file
+            options:
+              media: projects
+          - name: links
+            type: object
+            fields:
+              - name: site
+                label: Websites
+                type: string
+                list: true
+              - name: doi
+                label: DOIs
+                type: string
+                list: true
+              - name: yt
+                label: Videos
+                type: string
+                list: true
+              - name: code
+                label: Code links
+                type: string
+                list: true
+          - name: awards
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
+          - name: honorable_mentions
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
+      - name: completed
+        label: Completed projects
+        type: object
+        list: true
+        fields: *project_fields
+
+  - name: press
+    label: Press
+    type: file
+    path: _data/press.yml
+    format: yaml
+    list: true
+    fields:
+      - name: date
+        type: string
+        description: e.g. "August 13th, 2025"
+      - name: title
+        type: string
+        required: true
+      - name: content
+        type: text
+      - name: description
+        type: text
+        description: Optional longer text with Markdown links (used instead of a single link)
+      - name: image
+        type: image
+        options:
+          media: press
+      - name: link
+        type: string
+
+  - name: resources
+    label: Resources
+    type: file
+    path: _data/resources.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: description
+        type: text
+      - name: pdf
+        label: PDF
+        type: file
+        options:
+          media: resources
+          extensions: [pdf]
+      - name: link
+        type: string
+
+  - name: join
+    label: Join us
+    type: file
+    path: _data/join.yml
+    format: yaml
+    fields:
+      - name: intro_text
+        label: Intro
+        type: text
+        description: "Supports Markdown links: [text](https://url)"
+      - name: phd_students_text
+        label: Ph.D. students
+        type: text
+      - name: undergraduate_master_students_text
+        label: Undergrad & Masters students
+        type: text
+      - name: visiting_students_text
+        label: Visiting students
+        type: text
+      - name: postdocs_text
+        label: Postdocs
+        type: text
+
+  - name: reflections-papers
+    label: Robo Reflections – Papers
+    type: file
+    path: _data/robo-reflections/papers.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: text
+        required: true
+      - name: semester
+        type: string
+        required: true
+        description: e.g. "Winter 2026" — papers are grouped by this on the page
+      - name: authors
+        type: text
+      - name: event
+        label: Venue / event
+        type: text
+      - name: doi
+        label: DOI link
+        type: string
+      - name: drive
+        label: Private link (Drive)
+        type: string
+      - name: pdf
+        label: PDF
+        type: file
+        options:
+          media: reflections
+          path: assets/robo-reflections/pdfs
+          extensions: [pdf]
+      - name: img
+        label: Thumbnail
+        type: image
+        options:
+          media: reflections
+          path: assets/robo-reflections/images/thumbnails
+      - name: date
+        type: string
+        description: e.g. "Feb 5th"
+      - name: presenter
+        type: string
+
+  - name: reflections-people
+    label: Robo Reflections – People
+    type: file
+    path: _data/robo-reflections/people.yml
+    format: yaml
+    list: true
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: section
+        type: select
+        required: true
+        options:
+          values: [Organizers, Supporting Faculty]
+      - name: role
+        type: string
+      - name: inst
+        label: Institution
+        type: string
+      - name: img
+        label: Photo
+        type: image
+        options:
+          media: reflections
+          path: assets/robo-reflections/images/people
+      - name: web
+        label: Website
+        type: string
+      - name: in
+        label: LinkedIn
+        type: string
+      - name: scholar
+        label: Google Scholar
+        type: string
+
+  - name: reflections-site
+    label: Robo Reflections – Texts
+    type: file
+    path: _data/robo-reflections/site.yml
+    format: yaml
+    fields:
+      - name: intro
+        type: text
+      - name: format
+        type: text
+      - name: contact
+        type: text
+        description: "Supports Markdown links: [text](https://url)"
+
+  - name: navigation
+    label: Navigation
+    type: file
+    path: _data/navigation.yml
+    format: yaml
+    fields:
+      - name: internal
+        label: Site pages
+        type: object
+        list: true
+        fields:
+          - name: title
+            type: string
+          - name: url
+            type: string
+      - name: external
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - name: platform
+            type: string
+          - name: url
+            type: string
+          - name: name
+            type: string
+          - name: icon
+            type: string
+            description: Font Awesome classes, e.g. "fab fa-linkedin"

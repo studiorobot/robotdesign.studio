@@ -4,6 +4,18 @@ This README explains how to use Jekyll to update the lab website content.
 
 ---
 
+## Easiest Way: Pages CMS
+
+You can edit all website content (team, publications, projects, press, news, Robo Reflections, etc.) through a web interface — no git or YAML required:
+
+1. Go to [https://app.pagescms.org/](https://app.pagescms.org/) and sign in with your GitHub account.
+2. Open the `studiorobot/robotdesign.studio` repository.
+3. Use the sidebar to edit content and upload images/PDFs. Saving commits directly to the repository, and the site rebuilds automatically.
+
+You need access to the repository (or to be added as a collaborator in Pages CMS settings) to edit. The sections below describe the underlying files for anyone editing by hand.
+
+---
+
 ## Local Setup
 Before updating the lab website, you'll need to set up Jekyll locally.
 
@@ -62,7 +74,7 @@ The `carousel` section displays images and text on the homepage slider. Each ent
 carousel:
   - title: multidisciplinarity
     description: Our work happens at the intersection<br>of robotics, design, and psychology
-    image: carousel/fabrication.jpg
+    image: /homepage/carousel/fabrication.jpg
 ```
 
 ### Research Vision
@@ -147,8 +159,8 @@ completed:
         - https://ieeexplore.ieee.org/abstract/document/7451752
     description: This European FP7 project set the challenge to create empathic robotic tutors by researching how robots can respond to learners. An empathic robot can adapt to the learning pace of children, supporting their process and at the same time challenging new curricula. Can an autonomous robot designed with empathic competencies foster collaborative learning in a group context? Can an empathic robot sustain positive educational outcomes in long-term collaborative learning interactions with groups of students? 
     keywords: educational robotics, sustainable curriculum, school deployment 
-    poster: past/emote/thumbnail.jpg
-    video_webm: past/emote/emote.mp4
+    poster: /projects/past/emote/thumbnail.jpg
+    video_webm: /projects/past/emote/emote.mp4
 ```
 
 ---
@@ -211,7 +223,7 @@ members:
    google_scholar: https://scholar.google.com/citations?user=JCoq_vAAAAAJ
    linkedin: https://www.linkedin.com/in/atharva-kashyap/ 
    github: https://github.com/atharva-kashyap 
-   img: phd/Atharva_S._Kashyap_PhD.jpg
+   img: /team/phd/Atharva_S._Kashyap_PhD.jpg
 ```
 
 ---
@@ -231,7 +243,7 @@ collab:
     role: Full Stack Engineer
     university: University of Michigan
     department: Robotics
-    img: collab/Abhishek_Narula_External_Collaborator.jpg
+    img: /team/collab/Abhishek_Narula_External_Collaborator.jpg
 ```
 
 ---
@@ -283,14 +295,15 @@ By following this structure, you can maintain an up-to-date and organized team p
 
 The data file for publications includes:
 - `intro`: A brief introductory statement about the page.
-- `publications`: A list of publications grouped by year.
+- `publications`: A flat list of publications. Each entry has a `year` field, and the page groups them by year automatically.
 
 Each publication entry contains:
 - `title`: Title of the publication.
+- `year`: Publication year (used for grouping on the page).
 - `authors`: List of authors in the publication.
 - `event`: Conference, journal, or event where the publication was presented or published.
-- `pdf`: Path to the PDF file of the publication.
-- `img`: Path to the thumbnail image for the publication.
+- `pdf`: Full path to the PDF file of the publication (e.g. `/publications/92.pdf`).
+- `img`: Full path to the thumbnail image (e.g. `/publications/thumbnails/92.png`).
 - `project`: The project associated with the publication (if applicable).
 - `doi` (optional): DOI link to the publication (if available).
 - `video` (optional): Video link(if available).
@@ -302,22 +315,22 @@ Each publication entry contains:
 intro: We publish our research outcomes at conferences and journals in the field of Human-Robot Interaction, Design Research, Robotics, and Artificial Intelligence.
 
 publications:
-  2014:
-    - title: How do you imagine robots? Children’s expectations about robots
-      authors: Patrícia Alves-Oliveira, Sofia Petisca, Srinivasan Janarthanam, Helen Hastie, Ana Paiva
-      event: 'Interaction Design and Children Workshop on Child-Robot Interaction: Social Bonding, Learning and Ethics'
-      pdf: 6.pdf
-      img: 6.png  
-      project: EMOTE
+  - title: How do you imagine robots? Children’s expectations about robots
+    authors: Patrícia Alves-Oliveira, Sofia Petisca, Srinivasan Janarthanam, Helen Hastie, Ana Paiva
+    event: 'Interaction Design and Children Workshop on Child-Robot Interaction: Social Bonding, Learning and Ethics'
+    pdf: /publications/6.pdf
+    img: /publications/thumbnails/6.png
+    project: EMOTE
+    year: 2014
 
-  2024:
-    - title: Multiple Ways of Working with Users to Develop Physically Assistive Robots
-      authors: Amal Nanavati, Max Pascher, Vinitha Ranganeni, Ethan K Gordon, Taylor Kessler Faulkner, Siddhartha S Srinivasa, Maya Cakmak, Patrícia Alves-Oliveira, Jens Gerken
-      event: arXiv preprint arXiv:2403.00489, arXiv
-      doi: https://doi.org/10.48550/arXiv.2403.00489
-      pdf: 92.pdf
-      img: 92.png
-      project: DELICIOUS
+  - title: Multiple Ways of Working with Users to Develop Physically Assistive Robots
+    authors: Amal Nanavati, Max Pascher, Vinitha Ranganeni, Ethan K Gordon, Taylor Kessler Faulkner, Siddhartha S Srinivasa, Maya Cakmak, Patrícia Alves-Oliveira, Jens Gerken
+    event: arXiv preprint arXiv:2403.00489, arXiv
+    doi: https://doi.org/10.48550/arXiv.2403.00489
+    pdf: /publications/92.pdf
+    img: /publications/thumbnails/92.png
+    project: DELICIOUS
+    year: 2024
 ```
 
 ---
@@ -327,21 +340,21 @@ publications:
 1. **Locate the Data File**:
    Open the Jekyll data file for publications called `publications.yml` in the '_data' folder.
 
-2. **Add a New Year Section**:
-   If a new year needs to be added, create a new section with the year as the key under `publications`.
+2. **Add a New Publication Entry**:
+   Append a new entry to the `publications` list with a `year` field (entries are grouped by year on the page automatically; within a year, later entries in the file appear first).
 
    ```yaml
-   2025:
-     - title: Example Title
-       authors: Author A, Author B
-       event: Example Event
-       pdf: example.pdf
-       img: example.png
-       project: Example Project
+   - title: Example Title
+     authors: Author A, Author B
+     event: Example Event
+     pdf: /publications/example.pdf
+     img: /publications/thumbnails/example.png
+     project: Example Project
+     year: 2025
    ```
 
-3. **Add a New Publication Entry**:
-   Add the details for the publication under the relevant year. Ensure all fields (`title`, `authors`, `event`, etc.) are filled out correctly.
+3. **Fill Out All Fields**:
+   Ensure all fields (`title`, `year`, `authors`, `event`, etc.) are filled out correctly.
 
 4. **Add the PDF to the `publications` Folder**:
    Place the PDF for the publication in the `publications` folder. This is the folder that will be referenced for all publication PDFs. For example, you would add `example.pdf` to the `publications/` folder.
@@ -433,13 +446,13 @@ press:
 - date: November 29th, 2022 # Multiple Links
   title: PodBean
   content: Featuring Prof. Patricia’s research on human-robot interaction and creativity
-  image: fueling-creativity.png
+  image: /press/fueling-creativity.png
   description: "Fueling Creativity in Education Podcast with two episodes: [Building Robots to Support Childhood Creativity](https://www.podbean.com/media/share/pb-vdwv6-1327784) and on [Evaluating the Impact of Creativity Interventions on Children](https://www.podbean.com/media/share/pb-9ku6h-13276c3)."
 
 - date: January 5th, 2022 # Single Link
   title: For UW, By UW
   content: Interview about how to design robots to help teens recognize mental health needs.
-  image: w.png
+  image: /press/w.png
   link: https://open.spotify.com/episode/5dS6uYedbwNj7Hpe5n8kBL
 ```
 

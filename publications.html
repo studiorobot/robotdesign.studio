@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- Content -->
-{% assign publications = site.data.publications.publications %}
+{% assign year_groups = site.data.publications.publications | group_by: "year" | sort: "name" %}
 
 <div class="row">
   <div class="column width-12">
@@ -10,18 +10,18 @@ layout: default
     <p style="font-size:15.5px;"> {{ site.data.publications.intro }} </p>
   </div>
 </div>
-{% for year in publications reversed %}
+{% for year_group in year_groups reversed %}
 <div class="row">
   <div class="column width-12">
     <div class="column width-1" style="padding-left:0px;">
-      <h2 style="font-size:3em;">{{ year[0] }}</h2>
+      <h2 style="font-size:3em;">{{ year_group.name }}</h2>
     </div>
     <div class="column width-11" style="padding:0px;">
-      {% for paper in year[1] reversed %}
+      {% for paper in year_group.items reversed %}
       <div class="column width-12 paper-stuff" style="margin-bottom: 10px;">
         <div class="column width-2 more-paper-stuff">
           {% if paper.img %}
-          <img class="regular-publication" src="/publications/thumbnails/{{paper.img}}" alt="The first page of the paper"
+          <img class="regular-publication" src="{{paper.img}}" alt="The first page of the paper"
             loading="lazy" />
           {% else %}
           <span style=" width: 100%;">&nbsp;</span>
@@ -47,7 +47,7 @@ layout: default
             {% endif %}
             {% if paper.pdf %}
             <li class="publication-link">
-              <a href="/publications/{{ paper.pdf }}" target="_blank" class="link-color">
+              <a href="{{ paper.pdf }}" target="_blank" class="link-color">
                 <i class="fa-regular fa-file"></i> PDF
               </a>
             </li>

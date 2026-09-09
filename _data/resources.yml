@@ -1,6 +1,6 @@
 - title: "Ten Simple Rules for Better Figures"
   description: "A practical guide to creating clear and effective scientific figures"
-  pdf: better-figures.pdf
+  pdf: /resources/better-figures.pdf
 
 - title: "The Awesomest 7-Year Postdoc"
   description: "How to learn to stop worrying and love the tenure-track faculty life"
@@ -8,7 +8,7 @@
 
 - title: 'Choosing the “Perfect” Scale'
   description: "A primer to evaluate existing scales in HRI"
-  pdf: perfect-scale.pdf
+  pdf: /resources/perfect-scale.pdf
   link: https://hriscaledatabase.psychology.gmu.edu/
 
 - title: "Paper Author Discussion"
@@ -17,7 +17,7 @@
 
 - title: "Ten Simple Rules for Postdoctoral Mums to Stay Competitive in Academia"
   description: "A guide for postdoctoral mothers to navigate the challenges of academia while maintaining a competitive edge"
-  pdf: postdoc-mums.pdf
+  pdf: /resources/postdoc-mums.pdf
 
 - title: "How to Give a Bad Talk" 
   link: https://www.nature.com/articles/s41568-026-00954-8
