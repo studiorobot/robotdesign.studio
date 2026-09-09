@@ -159,8 +159,8 @@ layout: default
     {% assign sorted_alumni = site.data.team.alumni | sort_natural: "name" %}
     {% assign start_year_csv = "" %}
     {% for alumni in sorted_alumni %}{% assign start_year = alumni.year | slice: 1, 2 %}{% assign start_year_csv = start_year_csv | append: start_year | append: "," %}{% endfor %}
-    {% assign start_years = start_year_csv | split: "," | uniq | sort | reverse %}
-    {% assign semesters = "F,S,W" | split: "," %}
+    {% assign start_years = start_year_csv | split: "," | uniq | sort %}
+    {% assign semesters = "W,S,F" | split: "," %}
     {% capture alumni_entries %}
     {% for start_year in start_years %}
     {% for semester in semesters %}
@@ -169,7 +169,7 @@ layout: default
     {% assign alumni_start = alumni.year | slice: 0, 3 %}
     {% if alumni_start != start_code %}{% continue %}{% endif %}
     <div style="margin-bottom: 0.3em;">
-      <p class="project-description" style="margin-top: -1em;color:black; line-height: 12pt;"><strong>{{ alumni.name
+      <p class="project-description" style="margin-top: 0;color:black; line-height: 12pt;"><strong>{{ alumni.name
           }}</strong> {% if alumni.future %}&rarr; {% endif %} {{ alumni.future}} &bull; Project: {{ alumni.project }}
         ({{ alumni.year }}) &bull; {% if alumni.linkedin %} <a href="{{ alumni.linkedin }}" target="_blank"><i
             class="fab fa-linkedin"></i></a>
