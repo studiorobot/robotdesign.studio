@@ -49,7 +49,7 @@ content:
         list:
           collapsible:
             collapsed: true
-            summary: "{date} — {description}"
+            summary: "{date}"
         fields:
           - name: date
             type: string
