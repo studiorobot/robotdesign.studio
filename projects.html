@@ -43,7 +43,8 @@ layout: default
 				<div class="row mt-20 aproject" id="project{{ pid }}" class="project-container">
 				<div class="column width-4" onmouseover="PlayVideo('{{ pid }}')"
 					style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay('{{ pid }}')">
-					<video loop muted playsinline id="video{{ pid }}" poster="{{ project.poster }}">
+					<video loop muted playsinline id="video{{ pid }}" poster="{{ project.poster }}"
+							{% if project.video_webm or project.video_mp4 %}class="has-video"{% endif %}>
 						<source type="video/webm" src="{{ project.video_webm }}">
 						<source type="video/mp4" src="{{ project.video_mp4 }}">
 					</video>
@@ -233,7 +234,7 @@ layout: default
 		filter: grayscale(100%);
 	}
 
-	.aproject:hover video {
+	.aproject:hover video.has-video {
 		-webkit-filter: none;
 		filter: none;
 	}
