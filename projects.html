@@ -192,6 +192,7 @@ layout: default
 		var div = document.getElementById(proj_name);
 		div.style.backgroundColor = "#efefef";
 		div.style.transition = "background-color 0.7s";
+		v.onplaying = function () { v.classList.add("is-playing"); };
 		v.autoplay = true;
 		v.load();
 	}
@@ -202,6 +203,8 @@ layout: default
 		var div = document.getElementById(proj_name);
 		div.style.backgroundColor = "#fff";
 		div.style.transition = "background-color 0.7s";
+		v.onplaying = null;
+		v.classList.remove("is-playing");
 		v.autoplay = false;
 		v.load();
 	}
@@ -228,13 +231,15 @@ layout: default
 		margin-top: 30px;
 	}
 
-	/* Project posters render grayscale; color returns on hover when the video plays */
+	/* Project posters render grayscale; color returns once the hover video is actually playing */
 	.aproject video {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
+		-webkit-transition: -webkit-filter 300ms ease-in-out;
+		transition: filter 300ms ease-in-out;
 	}
 
-	.aproject:hover video.has-video {
+	.aproject video.is-playing {
 		-webkit-filter: none;
 		filter: none;
 	}
