@@ -226,4 +226,15 @@ layout: default
 	#completed {
 		margin-top: 30px;
 	}
+
+	/* Project posters render grayscale; color returns on hover when the video plays */
+	.aproject video {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	.aproject:hover video {
+		-webkit-filter: none;
+		filter: none;
+	}
 </style>
