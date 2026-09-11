@@ -797,7 +797,7 @@ The lab website hosts the course directory at [/courses](https://robotdesign.stu
 - `assets/course/` — css/js shared by every course and semester (frozen pages included), so styling updates apply everywhere, past and present.
 - `<course>/index.html` — a redirect to the current semester, so `/rob340/` always lands on the latest term.
 
-Media conventions: compress before committing (course videos ≤960px, `ffmpeg -crf 28 -an`; images ≤960px wide) — GitHub Pages has a 1 GB site limit. Media paths in `_data/<course>/` files are root-relative (`/rob340/w25/snippets/class_1.mp4`), which is what Pages CMS writes automatically.
+Media conventions: this repo is the canonical archive, so course media is stored at original quality. Keep an eye on total size though — GitHub Pages has a 1 GB published-site limit (a media-heavy semester is ~80 MB), so compress only if the budget gets tight. Media paths in `_data/<course>/` files are root-relative (`/rob340/w25/snippets/class_1.mp4`), which is what Pages CMS writes automatically.
 
 ### End-of-semester rollover (e.g. w25 → f26 for rob340)
 
