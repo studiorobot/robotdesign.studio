@@ -4,38 +4,38 @@ settings:
 
 media:
   - name: team
-    label: Team photos
+    label: Lab · Team photos
     input: team
     output: /team
     categories: [image]
   - name: press
-    label: Press images
+    label: Lab · Press images
     input: press
     output: /press
     categories: [image]
   - name: publications
-    label: Publications (PDFs & thumbnails)
+    label: Lab · Publications (PDFs & thumbnails)
     input: publications
     output: /publications
   - name: projects
-    label: Project media
+    label: Lab · Project media
     input: projects
     output: /projects
   - name: homepage
-    label: Homepage images
+    label: Lab · Homepage images
     input: homepage
     output: /homepage
     categories: [image]
   - name: resources
-    label: Resource PDFs
+    label: Lab · Resource PDFs
     input: resources
     output: /resources
   - name: reflections
-    label: Robo Reflections media
+    label: Robo Reflections · Media
     input: assets/robo-reflections
     output: /assets/robo-reflections
   - name: rob340
-    label: ROB 340 media (current semester)
+    label: Courses · ROB 340 (current semester)
     input: rob340/w25
     output: /rob340/w25
 
