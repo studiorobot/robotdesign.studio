@@ -819,4 +819,10 @@ Media conventions: compress before committing (course videos ≤960px, `ffmpeg -
 
 ### Adding a new course
 
-Repeat the rob340 pattern: create `_data/<course>/` (copy rob340's files as a starting point), a `<course>/<term>/` folder with assets and the stub `index.html`, a `<course>/index.html` redirect, duplicate the `rob340-…` entries in `.pages.yml` for the new course, and add the course to **Courses** in Pages CMS.
+One command scaffolds everything (data files, term folder, redirect, Pages CMS config):
+
+```bash
+scripts/new-course.sh rob204 f26 "Introduction to Human-Robot Systems"
+```
+
+Then: add a logo at `<course>/<term>/img/class-logo.png`, commit and push, and fill in the content via Pages CMS — the sidebar gets a **Courses > ROB 204 (current semester)** folder automatically. Finally add the course under **Courses > Course directory** so it appears on `/courses`.
