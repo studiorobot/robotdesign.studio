@@ -39,6 +39,11 @@ media:
     input: rob340/w25
     output: /rob340/w25
 
+  - name: rob498
+    label: Courses · ROB 498/599 (current semester)
+    input: rob498/w24
+    output: /rob498/w24
+
 content:
   - name: lab-website
     label: Lab Website
@@ -1151,3 +1156,323 @@ content:
                 options:
                   media: rob340
                   path: rob340/w25/img
+
+      - name: rob498-current
+        label: ROB 498/599 (current semester)
+        type: group
+        items:
+          - name: rob498-course
+            label: Course info
+            type: file
+            path: _data/rob498/course.yml
+            format: yaml
+            fields:
+              - name: title
+                type: string
+                required: true
+                description: 'e.g. ROB 498: Human Evaluation of Robots'
+              - name: instructors
+                label: Instructors
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+              - name: GSIs
+                label: GSIs
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+              - name: IAs
+                label: IAs
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+              - name: department
+                type: string
+              - name: university
+                type: string
+              - name: office
+                type: string
+                description: e.g. 2252 FRB
+              - name: yellow_box
+                label: Yellow info box
+                type: object
+                fields:
+                  - name: top-text
+                    label: Top text
+                    type: string
+                    description: e.g. This course is running in Winter 2025
+                  - name: sections
+                    label: Sections
+                    type: object
+                    list:
+                      collapsible:
+                        collapsed: true
+                        summary: "{title}"
+                    fields:
+                      - name: title
+                        type: string
+                        description: e.g. Lectures, Office Hours, Lab
+                      - name: date
+                        type: string
+                        description: e.g. Monday & Wednesday
+                      - name: time
+                        type: string
+                        description: e.g. 1:30 - 3:00 PM
+                      - name: location
+                        type: string
+                        description: e.g. GGBL 1025
+          - name: rob498-schedule
+            label: Schedule
+            type: file
+            path: _data/rob498/schedule.yml
+            format: yaml
+            list: true
+            description: The schedule sidebar on the course page.
+            fields:
+              - name: title
+                type: string
+                description: e.g. Lectures
+              - name: sessions
+                label: Sessions
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{date}"
+                fields:
+                  - name: date
+                    type: string
+                    description: e.g. 01/08
+                  - name: class
+                    type: string
+                    description: 'e.g. Class 1: Introduction'
+          - name: rob498-grading
+            label: Grading
+            type: file
+            path: _data/rob498/grading.yml
+            format: yaml
+            list: true
+            fields:
+              - name: title
+                type: string
+                description: e.g. Exams - 25%
+              - name: text
+                label: Paragraphs
+                type: string
+                list: true
+          - name: rob498-students
+            label: Students
+            type: file
+            path: _data/rob498/students.yml
+            format: yaml
+            fields:
+              - name: undergraduates
+                label: Undergraduates
+                type: string
+                list: true
+              - name: graduates
+                label: Graduates
+                type: string
+                list: true
+          - name: rob498-main
+            label: Main sections
+            type: file
+            path: _data/rob498/main.yml
+            format: yaml
+            list: true
+            description: The main text sections of the course page (description, learning objectives, ...). An item can be a titled text section, an image, or both.
+            fields:
+              - name: name
+                label: Section title
+                type: string
+                description: e.g. Course Description
+              - name: content
+                type: text
+                description: 'Markdown works here: lists with "- item", links with [text](https://url)'
+              - name: image
+                label: Show an image
+                type: boolean
+              - name: image_url
+                label: Image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img
+          - name: rob498-labs
+            label: Labs
+            type: file
+            path: _data/rob498/labs.yml
+            format: yaml
+            list: true
+            description: Labs are numbered automatically in the order of this list.
+            fields:
+              - name: title
+                type: string
+                required: true
+              - name: description
+                type: text
+              - name: link
+                label: Lab document link
+                type: string
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: image_url
+                label: Image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img/labs
+          - name: rob498-lectures
+            label: Lectures
+            type: file
+            path: _data/rob498/lectures.yml
+            format: yaml
+            list: true
+            description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list.
+            fields:
+              - name: title
+                type: string
+                required: true
+                description: 'e.g. Lecture: Introduction for the Course'
+              - name: description
+                type: text
+              - name: video_poster
+                label: Preview image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/snippets
+              - name: video_src
+                label: Hover video (mp4)
+                type: file
+                options:
+                  media: rob498
+                  path: rob498/w24/snippets
+                  extensions: [mp4]
+              - name: slides_link
+                label: Slides link
+                type: string
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: readings
+                label: Readings
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: title
+                    type: string
+                  - name: link
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+          - name: rob498-talks
+            label: Invited talks
+            type: file
+            path: _data/rob498/talks.yml
+            format: yaml
+            list: true
+            fields:
+              - name: name
+                label: Speaker
+                type: string
+                required: true
+              - name: title
+                label: Talk topic
+                type: string
+              - name: institution
+                type: string
+              - name: link
+                label: Speaker link
+                type: string
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img/talk_logos
+          - name: rob498-group-projects
+            label: Group projects
+            type: file
+            path: _data/rob498/group_projects.yml
+            format: yaml
+            list: true
+            fields:
+              - name: name
+                type: string
+                required: true
+              - name: link
+                label: Project link
+                type: string
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img/gps
+          - name: rob498-head
+            label: Page metadata
+            type: file
+            path: _data/rob498/head.yml
+            format: yaml
+            description: Browser tab title, description and icon for the course page.
+            fields:
+              - name: title
+                type: string
+                description: e.g. ROB 498 | UMich
+              - name: description
+                type: text
+              - name: image
+                label: Social preview image
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img
+              - name: icon
+                label: Tab icon
+                type: image
+                options:
+                  media: rob498
+                  path: rob498/w24/img

@@ -1,0 +1,26 @@
+title: 'ROB 498/599: Design for Human-Robot Interaction'
+instructors:
+  - name: Patricia Alves-Oliveira
+    url: https://patricialvesoliveira.com/
+GSIs:
+  - name: Manohar Bhat
+    url: https://manoharbhat.github.io/
+IAs: []
+department: Robotics Department
+university: University of Michigan Ann Arbor
+office: 2252 FRB
+yellow_box:
+  top-text: This course ran in Winter 2024
+  sections:
+    - title: Lectures
+      date: Tuesday & Thursday
+      time: 12:00 - 1:30 PM
+      location: G906 COOL
+    - title: Office Hours
+      date: Tuesday
+      time: 2:00 - 3:00 PM
+      location: 2252 FMCRB
+    - title: Makerspace Hours
+      date: Thursday & Saturday
+      time: 10:30 - 11:30 AM
+      location: 1141 FMCRB

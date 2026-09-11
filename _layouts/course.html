@@ -85,6 +85,7 @@
                       {% endif %}
 
                       {% assign gsis = course.GSIs %}
+                      {% if gsis and gsis.size > 0 %}
                       {% if gsis.size > 1 %}
                       <br>
                       <strong>GSIs:</strong>
@@ -97,8 +98,10 @@
                       <strong>GSI:</strong> <a href="{{ gsis[0].url }}" target="_blank" class="no-underline">{{
                         gsis[0].name }}</a>
                       {% endif %}
+                      {% endif %}
 
                       {% assign ias = course.IAs %}
+                      {% if ias and ias.size > 0 %}
                       <br>
                       {% if ias.size > 1 %}
                       <strong>IAs:</strong>
@@ -109,6 +112,7 @@
                       {% else %}
                       <strong>IA:</strong> <a href="{{ ias[0].url }}" target="_blank" class="no-underline">{{
                         ias[0].name }}</a>
+                      {% endif %}
                       {% endif %}
 
                       <p class="course-credit">This course was designed and developed by <a
@@ -280,7 +284,7 @@
 
                       {% endfor %}
 
-                      {% if d.labs %}
+                      {% if d.labs and d.labs.size > 0 %}
                       <div class="lab-container">
 
                         <div class="mt-30 section-divider">
@@ -318,15 +322,17 @@
                     <div class="column width-5 lecture-video-container">
                       <video loop muted preload="auto" playsinline id="video{{ forloop.index }}" class="lecture-video"
                         poster="{{ lecture.video_poster }}">
-                        <source type="video/mp4" src="{{ lecture.video_src }}">
+                        {% if lecture.video_src %}<source type="video/mp4" src="{{ lecture.video_src }}">{% endif %}
                       </video>
                     </div>
                     <div class="column width-7 lecture-content" id="magdisplay">
                       <h5 class="lecture-title">CLASS {{ forloop.index }}
                         <span class="lecture-title-separator">|</span>
                         <span class="lecture-title-text">{{ lecture.title }}</span>
+                        {% if lecture.slides_link %}
                         <span class="lecture-title-separator">|</span> <a href="{{ lecture.slides_link }}"
                           target="_blank" class="lecture-slides-link">&nbsp;SLIDES</a>
+                        {% endif %}
                       </h5>
                       <div class="lecture-authors">{{ lecture.description }}</div>
                       <div>

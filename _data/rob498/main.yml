@@ -1,0 +1,31 @@
+- name: "Course Description"
+  content: |
+   This advanced course covers fundamentals of Design for Human-Robot Interaction. Topics include frameworks for robot design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design ethics, etc. This course will prepare students to be full-stack interaction robot designers.
+- name:
+  image: true
+  image_url: "/rob498/w24/snippets/class_pic.png"
+
+- name: "Learning Objectives"
+  content: |
+    After this course, students will be able to:
+    - Understand the role of design in the field of Human-Robot Interaction.
+    - Integrate a variety of design methods for creating interactive robots.
+    - Identify user needs and evaluate robot performance with users.
+    - Document robot design, development, and fabrication work.
+    - Acquire critical thinking about robot design practices to shape the future of HRI.
+
+- name: "Structure"
+  content: |
+    This course is structured as an upper-undergrad and graduate level hands-on course on design for human-robot interaction.
+    - Interactive Lectures led by the Professor.
+    - Guest Lectures from Experts in the field of design.
+    - Workshop Classes intended to be a time for working on projects.
+    - Guided Projects and receive feedback from the Professor and peers.
+    - Student Presentations, of research papers and projects related to the course.
+
+- name: "Individual Project Rubric"
+  content: |
+    Students work individually to re-create an existing toy and use the components for a different design goal.
+- name:
+  image: true
+  image_url: "/rob498/w24/snippets/individual_project.png"
