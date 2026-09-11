@@ -30,10 +30,9 @@ number="$prefix $digits"
 
 echo "Scaffolding $number: $title ($term)..."
 
-# --- Term folder: shared css/js, empty asset dirs, page stub, redirect -------
+# --- Term folder: empty asset dirs, page stub, redirect ----------------------
+# (css/js are shared by all courses from /assets/course/)
 mkdir -p "$slug/$term/img/labs" "$slug/$term/img/gps" "$slug/$term/img/talk_logos" "$slug/$term/snippets"
-cp -R rob340/w25/css rob340/w25/js "$slug/$term/"
-cp rob340/w25/lab.png "$slug/$term/lab.png"
 
 cat > "$slug/$term/index.html" <<EOF
 ---

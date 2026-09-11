@@ -793,7 +793,8 @@ The lab website hosts the course directory at [/courses](https://robotdesign.stu
 - `courses.html` + `_data/courses.yml` — the directory page: one card per course, listing all semesters. Editable in Pages CMS under **Courses**.
 - `_layouts/course.html` — the course page template (adapted from the original rob340 site). It renders whatever `_data/<course>/` contains.
 - `_data/<course>/*.yml` (e.g. `_data/rob340/`) — the **current semester's** content: course info, schedule, grading, students, main sections, labs, lectures, invited talks, group projects, page metadata. GSIs edit these in Pages CMS under the **ROB 340 – …** entries. (`social-links.yml` is git-only.)
-- `<course>/<term>/` (e.g. `rob340/w25/`) — one folder per semester holding that semester's images, videos, css and js. The current semester's `index.html` is a 3-line stub rendered from `_data/<course>/`; past semesters are frozen static HTML that never changes.
+- `<course>/<term>/` (e.g. `rob340/w25/`) — one folder per semester holding that semester's images and videos. The current semester's `index.html` is a 3-line stub rendered from `_data/<course>/`; past semesters are frozen static HTML whose *content* never changes.
+- `assets/course/` — css/js shared by every course and semester (frozen pages included), so styling updates apply everywhere, past and present.
 - `<course>/index.html` — a redirect to the current semester, so `/rob340/` always lands on the latest term.
 
 Media conventions: compress before committing (course videos ≤960px, `ffmpeg -crf 28 -an`; images ≤960px wide) — GitHub Pages has a 1 GB site limit. Media paths in `_data/<course>/` files are root-relative (`/rob340/w25/snippets/class_1.mp4`), which is what Pages CMS writes automatically.
@@ -805,7 +806,7 @@ Media conventions: compress before committing (course videos ≤960px, `ffmpeg -
    scripts/freeze-course.sh rob340 w25
    ```
    This replaces `rob340/w25/index.html` with the fully rendered page; it is now permanently static and independent of `_data/rob340/`. (To un-freeze, restore the 3-line stub from git history.)
-2. Create the new term folder `rob340/f26/`: copy `css/` and `js/` from the previous term, start `img/` and `snippets/` fresh (keep `img/class-logo.png`), and add the stub `index.html`:
+2. Create the new term folder `rob340/f26/`: start `img/` and `snippets/` fresh (keep `img/class-logo.png`), and add the stub `index.html`:
    ```yaml
    ---
    layout: course
