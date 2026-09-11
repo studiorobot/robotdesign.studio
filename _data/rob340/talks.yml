@@ -1,0 +1,40 @@
+- name: Sarah Sebo
+  title: Group Dynamics
+  institution: University of Chicago
+  link: https://scholar.google.com/citations?user=6gWYMigAAAAJ&hl=en
+  image: /rob340/w25/img/talk_logos/sebo.png
+- name: Mike Forst
+  title: Character Design
+  institution: Freelancer Sounds and HRI Designer
+  link: https://www.mikeforstmusic.com/
+  image: /rob340/w25/img/talk_logos/forst.jpg
+- name: Sindhu Kutty
+  title: Fairness & Bias in Machine Learning
+  institution: University of Michigan
+  link: https://scholar.google.com/citations?user=8duCIlcAAAAJ&hl=en
+  image: /rob340/w25/img/talk_logos/umich.png
+- name: Michal Luria
+  title: Policies in AI Agents
+  institution: Center for Democracy & Technology
+  link: https://scholar.google.com/citations?hl=en&user=bLShnf0AAAAJ&view_op=list_works&sortby=pubdate
+  image: /rob340/w25/img/talk_logos/michal.png
+- name: Hannah Pelikan
+  title: Conversational Analysis
+  institution: Linköping University
+  link: https://scholar.google.com/citations?user=7ud3OXMAAAAJ&hl=en
+  image: /rob340/w25/img/talk_logos/hannah.png
+- name: Mafalda Gamboa
+  title: Ethnography & autoethnography
+  institution: Chalmers University of Technology
+  link: https://scholar.google.fr/citations?user=KEn_O7kAAAAJ&hl=en
+  image: /rob340/w25/img/talk_logos/mafalda.png
+- name: Filipa Correia
+  title: Multi-agents evaluation 
+  institution: Interactive Technologies Institute
+  link: https://scholar.google.pt/citations?user=lEjl_5MAAAAJ&hl=en
+  image: /rob340/w25/img/talk_logos/fillipa.jpg
+- name: Yasmin Keats
+  title: Inclusive Design
+  institution: Open Style Lab
+  link: https://www.openstylelab.org/
+  image: /rob340/w25/img/talk_logos/osl.png

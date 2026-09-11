@@ -5,14 +5,16 @@ internal:
     url: "team"
   - title: "publications"
     url: "publications"
+  - title: "courses"
+    url: "courses"
   - title: "press"
     url: "press"
   - title: "resources"
     url: "resources"
-  - title: "join us"
-    url: "join"
   - title: "robo refelections"
     url: "robo-reflections"
+  - title: "join us"
+    url: "join"
 
 external:
   - platform: LinkedIn

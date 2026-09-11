@@ -34,6 +34,10 @@ media:
     label: Robo Reflections media
     input: assets/robo-reflections
     output: /assets/robo-reflections
+  - name: rob340
+    label: ROB 340 media (current semester)
+    input: rob340/w25
+    output: /rob340/w25
 
 content:
   - name: news
@@ -115,18 +119,24 @@ content:
             type: string
           - name: website
             type: string
-            pattern: &url
+            pattern:
               regex: '^(https?://.+)?$'
               message: Must be a full URL starting with https:// (or left empty)
           - name: google_scholar
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: twitter
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: linkedin
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: profile_img
             label: Profile photo
             type: image
@@ -164,19 +174,29 @@ content:
             description: e.g. Fall 2025
           - name: personal_website
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: google_scholar
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: linkedin
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: github
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: youtube
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: img
             label: Photo
             type: image
@@ -229,7 +249,9 @@ content:
               message: Use semester codes like F24-W25 or S25 (F=Fall, W=Winter, S=Summer)
           - name: linkedin
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
 
   - name: publications
     label: Publications
@@ -270,7 +292,9 @@ content:
               - name: doi
                 label: DOI link
                 type: string
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: pdf
                 label: PDF
                 type: file
@@ -291,7 +315,9 @@ content:
               - name: video
                 label: Video link
                 type: string
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: materials
                 label: Materials link
                 type: string
@@ -316,7 +342,7 @@ content:
           collapsible:
             collapsed: true
             summary: "{name}"
-        fields: &project_fields
+        fields:
           - name: name
             type: string
             required: true
@@ -355,22 +381,30 @@ content:
                 label: Websites
                 type: string
                 list: true
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: doi
                 label: DOIs
                 type: string
                 list: true
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: yt
                 label: Videos
                 type: string
                 list: true
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: code
                 label: Code links
                 type: string
                 list: true
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
           - name: awards
             type: object
             list: true
@@ -390,7 +424,81 @@ content:
           collapsible:
             collapsed: true
             summary: "{name}"
-        fields: *project_fields
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: area
+            type: string
+          - name: members
+            type: string
+            description: Comma-separated names
+          - name: data
+            label: Dates & funding
+            type: string
+            description: e.g. 2024 - ongoing | NSF EAGER
+          - name: description
+            type: text
+          - name: keywords
+            type: string
+          - name: poster
+            label: Thumbnail image
+            type: image
+            options:
+              media: projects
+          - name: video_webm
+            label: Video (webm)
+            type: file
+            options:
+              media: projects
+          - name: video_mp4
+            label: Video (mp4)
+            type: file
+            options:
+              media: projects
+          - name: links
+            type: object
+            fields:
+              - name: site
+                label: Websites
+                type: string
+                list: true
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: doi
+                label: DOIs
+                type: string
+                list: true
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: yt
+                label: Videos
+                type: string
+                list: true
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+              - name: code
+                label: Code links
+                type: string
+                list: true
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
+          - name: awards
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
+          - name: honorable_mentions
+            type: object
+            list: true
+            fields:
+              - name: title
+                type: string
 
   - name: press
     label: Press
@@ -417,7 +525,9 @@ content:
           media: press
       - name: link
         type: string
-        pattern: *url
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
 
   - name: resources
     label: Resources
@@ -439,7 +549,9 @@ content:
           extensions: [pdf]
       - name: link
         type: string
-        pattern: *url
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
 
   - name: join
     label: Join us
@@ -501,11 +613,15 @@ content:
               - name: doi
                 label: DOI link
                 type: string
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: drive
                 label: Private link (Drive)
                 type: string
-                pattern: *url
+                pattern:
+                  regex: '^(https?://.+)?$'
+                  message: Must be a full URL starting with https:// (or left empty)
               - name: pdf
                 label: PDF
                 type: file
@@ -554,15 +670,21 @@ content:
       - name: web
         label: Website
         type: string
-        pattern: *url
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
       - name: in
         label: LinkedIn
         type: string
-        pattern: *url
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
       - name: scholar
         label: Google Scholar
         type: string
-        pattern: *url
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
 
   - name: reflections-site
     label: Robo Reflections – Texts
@@ -602,9 +724,436 @@ content:
             type: string
           - name: url
             type: string
-            pattern: *url
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
           - name: name
             type: string
           - name: icon
             type: string
             description: Font Awesome classes, e.g. fab fa-linkedin
+
+  - name: courses
+    label: Courses
+    type: file
+    path: _data/courses.yml
+    format: yaml
+    description: 'The course directory shown at /courses. Semesters live inside their course. Add new items at the bottom of a list — that is correct, the site shows newest first automatically. When a semester ends, fill in its instructors, GSIs, IAs and topics — this is what the archive page and Google search results show.'
+    fields:
+      - name: intro
+        label: Intro text
+        type: text
+      - name: courses
+        label: Courses
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{number}"
+        fields:
+          - name: number
+            type: string
+            required: true
+            description: e.g. ROB 340
+          - name: title
+            type: string
+            required: true
+          - name: description
+            type: text
+          - name: topics
+            label: Topics covered
+            type: string
+            list: true
+            description: One topic per item, shown under the course description
+          - name: semesters
+            label: Semesters
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{term}"
+            fields:
+              - name: term
+                type: string
+                required: true
+                description: e.g. Winter 2025
+              - name: url
+                type: string
+                description: Site path like /rob340/w25/
+              - name: current
+                label: Currently running
+                type: boolean
+                description: Shows a "current" badge next to this semester
+              - name: instructors
+                label: Instructors
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+              - name: gsis
+                label: GSIs
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+              - name: ias
+                label: IAs
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                    required: true
+                  - name: url
+                    type: string
+                    pattern:
+                      regex: '^(https?://.+)?$'
+                      message: Must be a full URL starting with https:// (or left empty)
+
+  - name: rob340-course
+    label: ROB 340 – Course info
+    type: file
+    path: _data/rob340/course.yml
+    format: yaml
+    fields:
+      - name: title
+        type: string
+        required: true
+        description: 'e.g. ROB 340: Human Evaluation of Robots'
+      - name: instructors
+        label: Instructors
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: url
+            type: string
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
+      - name: GSIs
+        label: GSIs
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: url
+            type: string
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
+      - name: IAs
+        label: IAs
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+            required: true
+          - name: url
+            type: string
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
+      - name: department
+        type: string
+      - name: university
+        type: string
+      - name: office
+        type: string
+        description: e.g. 2252 FRB
+      - name: yellow_box
+        label: Yellow info box
+        type: object
+        fields:
+          - name: top-text
+            label: Top text
+            type: string
+            description: e.g. This course is running in Winter 2025
+          - name: sections
+            label: Sections
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+            fields:
+              - name: title
+                type: string
+                description: e.g. Lectures, Office Hours, Lab
+              - name: date
+                type: string
+                description: e.g. Monday & Wednesday
+              - name: time
+                type: string
+                description: e.g. 1:30 - 3:00 PM
+              - name: location
+                type: string
+                description: e.g. GGBL 1025
+
+  - name: rob340-schedule
+    label: ROB 340 – Schedule
+    type: file
+    path: _data/rob340/schedule.yml
+    format: yaml
+    list: true
+    description: The schedule sidebar on the course page.
+    fields:
+      - name: title
+        type: string
+        description: e.g. Lectures
+      - name: sessions
+        label: Sessions
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{date}"
+        fields:
+          - name: date
+            type: string
+            description: e.g. 01/08
+          - name: class
+            type: string
+            description: 'e.g. Class 1: Introduction'
+
+  - name: rob340-grading
+    label: ROB 340 – Grading
+    type: file
+    path: _data/rob340/grading.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        type: string
+        description: e.g. Exams - 25%
+      - name: text
+        label: Paragraphs
+        type: string
+        list: true
+
+  - name: rob340-students
+    label: ROB 340 – Students
+    type: file
+    path: _data/rob340/students.yml
+    format: yaml
+    fields:
+      - name: undergraduates
+        label: Undergraduates
+        type: string
+        list: true
+      - name: graduates
+        label: Graduates
+        type: string
+        list: true
+
+  - name: rob340-main
+    label: ROB 340 – Main sections
+    type: file
+    path: _data/rob340/main.yml
+    format: yaml
+    list: true
+    description: The main text sections of the course page (description, learning objectives, ...). An item can be a titled text section, an image, or both.
+    fields:
+      - name: name
+        label: Section title
+        type: string
+        description: e.g. Course Description
+      - name: content
+        type: text
+        description: 'Markdown works here: lists with "- item", links with [text](https://url)'
+      - name: image
+        label: Show an image
+        type: boolean
+      - name: image_url
+        label: Image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img
+
+  - name: rob340-labs
+    label: ROB 340 – Labs
+    type: file
+    path: _data/rob340/labs.yml
+    format: yaml
+    list: true
+    description: Labs are numbered automatically in the order of this list.
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: description
+        type: text
+      - name: link
+        label: Lab document link
+        type: string
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
+      - name: image_url
+        label: Image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img/labs
+
+  - name: rob340-lectures
+    label: ROB 340 – Lectures
+    type: file
+    path: _data/rob340/lectures.yml
+    format: yaml
+    list: true
+    description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list.
+    fields:
+      - name: title
+        type: string
+        required: true
+        description: 'e.g. Lecture: Introduction for the Course'
+      - name: description
+        type: text
+      - name: video_poster
+        label: Preview image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/snippets
+      - name: video_src
+        label: Hover video (mp4)
+        type: file
+        options:
+          media: rob340
+          path: rob340/w25/snippets
+          extensions: [mp4]
+      - name: slides_link
+        label: Slides link
+        type: string
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
+      - name: readings
+        label: Readings
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            type: string
+          - name: link
+            type: string
+            pattern:
+              regex: '^(https?://.+)?$'
+              message: Must be a full URL starting with https:// (or left empty)
+
+  - name: rob340-talks
+    label: ROB 340 – Invited talks
+    type: file
+    path: _data/rob340/talks.yml
+    format: yaml
+    list: true
+    fields:
+      - name: name
+        label: Speaker
+        type: string
+        required: true
+      - name: title
+        label: Talk topic
+        type: string
+      - name: institution
+        type: string
+      - name: link
+        label: Speaker link
+        type: string
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
+      - name: image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img/talk_logos
+
+  - name: rob340-group-projects
+    label: ROB 340 – Group projects
+    type: file
+    path: _data/rob340/group_projects.yml
+    format: yaml
+    list: true
+    fields:
+      - name: name
+        type: string
+        required: true
+      - name: link
+        label: Project link
+        type: string
+        pattern:
+          regex: '^(https?://.+)?$'
+          message: Must be a full URL starting with https:// (or left empty)
+      - name: image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img/gps
+
+  - name: rob340-head
+    label: ROB 340 – Page metadata
+    type: file
+    path: _data/rob340/head.yml
+    format: yaml
+    description: Browser tab title, description and icon for the course page.
+    fields:
+      - name: title
+        type: string
+        description: e.g. ROB 340 | UMich
+      - name: description
+        type: text
+      - name: image
+        label: Social preview image
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img
+      - name: icon
+        label: Tab icon
+        type: image
+        options:
+          media: rob340
+          path: rob340/w25/img

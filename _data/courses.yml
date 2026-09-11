@@ -1,0 +1,29 @@
+intro: >-
+  Archive of University of Michigan courses taught by Patricia Alves-Oliveira.
+courses:
+  - number: ROB 340
+    title: Human Evaluation of Robots
+    description: >-
+      Covers fundamentals of how robots can be evaluated by human users to
+      better understand the success of robotic systems. Provides insight into
+      various types of metrics, studies, and analyses used to understand a
+      robot system's performance through human feedback.
+    topics:
+      - Metrics and analysis for human studies of robots
+      - Measuring human performance in the context of robotic systems
+      - Exploring how robot behaviors are perceived by humans
+    semesters:
+      - term: Winter 2025
+        url: /rob340/w25/
+        current: false
+        instructors:
+          - name: Patricia Alves-Oliveira
+            url: https://patricialvesoliveira.com/
+          - name: Xiaoxiao Du
+            url: https://robotics.umich.edu/people/faculty/xiaoxiao-du/
+        gsis:
+          - name: Miranda Mittleman
+            url: https://www.linkedin.com/in/miranda-mittleman-b049b11b4/
+        ias:
+          - name: Margaret Kempe
+            url: https://www.linkedin.com/in/margaret-kempe/

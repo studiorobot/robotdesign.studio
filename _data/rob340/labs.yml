@@ -1,0 +1,30 @@
+- image_url: /rob340/w25/img/labs/lab1.png
+  link: https://docs.google.com/document/d/1eRqm1ezOGMdZQ4hYAYEOznD8VJ0Z5g-nkUceSflFrlI/edit?tab=t.0
+  title: Basics of Human-Robot Interaction
+  description: The goal of this lab is to create an interaction using the given robotic arm embodiment and explore the role of human integration in robot task execution.
+
+- image_url: /rob340/w25/img/labs/lab2.png
+  link: https://docs.google.com/document/d/1SnXM6povECmJRt8fBcN2rg9pgcxc4VnEf0Hf5fylJQw/edit?tab=t.0
+  title:  Emotive Capabilities using a Robotic Interface
+  description: The  goal of this lab is to communicate an emotion using only an RC car by creating an emotive routine to understand aspects of expressive robotic behavior.
+
+- image_url: /rob340/w25/img/labs/lab3.jpg
+  link: https://docs.google.com/document/d/1imwhP-e3GdauXtMv4UQ7UR2qO5aQFQl_7SzRjUFF9Fg/edit?tab=t.0
+  title: Group dynamics with a Robot
+  description: The goal of this lab is to understand the nuances present in group dynamics and how a robot may influence them through a role-play activity.
+
+- image_url: /rob340/w25/img/labs/lab4.png
+  link: https://docs.google.com/document/d/1bqLTqGWYt7v6_a5eJVZAE6mTa-DXjmh-pz6aVz0uEKU/edit?tab=t.0
+  title: Conversational Robotic Gaze
+  description: The goal of this lab is to evaluate implemented conversational gaze behaviors in a robot and explore how the differences in human perception.
+
+- image_url: /rob340/w25/img/labs/lab5.png
+  link: https://docs.google.com/document/d/1Qy73rSa0RTPDAzfkGmowMCexmVxUDJta0wjqTCAN3CE/edit?tab=t.0
+  title: LLMs in Robotics
+  description: The goal of this lab is to analyze the pros and cons of LLMs when used in robotics and test their limitations.
+
+- image_url: /rob340/w25/img/labs/lab6.png
+  link: https://docs.google.com/document/d/1CrKjOKPZElCv5LVVzzqAgCbLf2MozJaJvw5CP9tzbm8/edit?tab=t.0
+  title:  Algorithm performance versus user experience
+  description: The goal of this lab is to understand the trade-offs between the user perception of robot performance and algorithmic optimal performance.
+  

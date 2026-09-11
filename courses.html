@@ -1,0 +1,211 @@
+---
+layout: default
+title: Courses
+description: >-
+  University of Michigan courses taught by Patricia Alves-Oliveira, including
+  ROB 340 Human Evaluation of Robots. Each semester's website is preserved as
+  it was taught, with instructors, teaching staff, and topics.
+---
+<!-- Content -->
+{% assign course_list = site.data.courses.courses %}
+
+<div class="row">
+  <div class="column width-12">
+    <h1 style="font-size: 3em; margin-bottom: 10px;">Courses</h1>
+    <p style="font-size:15.5px; margin-bottom: 0;"> {{ site.data.courses.intro }} </p>
+  </div>
+</div>
+{% for course in course_list reversed %}
+<div class="row">
+  <div class="column width-12 course-block">
+    <h2 class="course-title-heading">{{ course.number }}: {{ course.title }}</h2>
+    <p class="course-description">{{ course.description }}</p>
+    {% if course.topics and course.topics.size > 0 %}
+    <p class="course-topics">
+      <strong>Topics:</strong>
+      {% for topic in course.topics %}{{ topic }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </p>
+    {% endif %}
+
+    <div class="semester-tabs">
+      <div class="semester-tab-bar" role="tablist">
+        {% for sem in course.semesters reversed %}
+        <button type="button" role="tab" class="semester-tab{% if forloop.first %} active{% endif %}" onclick="showSemester(this)" title="{{ sem.term }}">
+          {{ sem.term | slice: 0, 1 }}{{ sem.term | split: " " | last | slice: 2, 2 }}
+        </button>
+        {% endfor %}
+      </div>
+      {% for sem in course.semesters reversed %}
+      <div class="semester-panel{% if forloop.first %} active{% endif %}">
+        <a href="{{ sem.url }}" target="_blank" class="semester-site-button" title="{{ course.number }} {{ sem.term }} course website">
+          <i class="fas fa-external-link-alt"></i> {% if sem.current %}course website{% else %}archive{% endif %}
+        </a>
+        <p class="semester-people">
+          {% if sem.instructors and sem.instructors.size > 0 %}
+          <strong>Instructor{% if sem.instructors.size > 1 %}s{% endif %}:</strong>
+          {% for p in sem.instructors %}<a href="{{ p.url }}" target="_blank" class="link-color">{{ p.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+          {% endif %}
+          {% if sem.gsis and sem.gsis.size > 0 %}
+          &nbsp;&middot;&nbsp; <strong>GSI{% if sem.gsis.size > 1 %}s{% endif %}:</strong>
+          {% for p in sem.gsis %}<a href="{{ p.url }}" target="_blank" class="link-color">{{ p.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+          {% endif %}
+          {% if sem.ias and sem.ias.size > 0 %}
+          &nbsp;&middot;&nbsp; <strong>IA{% if sem.ias.size > 1 %}s{% endif %}:</strong>
+          {% for p in sem.ias %}<a href="{{ p.url }}" target="_blank" class="link-color">{{ p.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+          {% endif %}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% endfor %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for course in course_list %}
+    {
+      "@type": "Course",
+      "name": {{ course.number | append: ": " | append: course.title | jsonify }},
+      "description": {{ course.description | jsonify }},
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Michigan",
+        "url": "https://umich.edu/"
+      },
+      "url": {{ page.url | absolute_url | jsonify }},
+      "hasCourseInstance": [
+        {% for sem in course.semesters %}
+        {
+          "@type": "CourseInstance",
+          "courseMode": "Onsite",
+          "name": {{ course.number | append: " " | append: sem.term | jsonify }},
+          "url": {{ sem.url | absolute_url | jsonify }},
+          "instructor": [
+            {% for p in sem.instructors %}
+            {
+              "@type": "Person",
+              "name": {{ p.name | jsonify }},
+              "url": {{ p.url | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<style>
+  .course-block {
+    margin-top: 15px;
+  }
+
+  .course-title-heading {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .course-description {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .course-topics {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .semester-tabs {
+    margin-top: 5px;
+  }
+
+  .semester-tab-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .semester-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+
+  .semester-tab:hover {
+    color: #00274c;
+  }
+
+  .semester-tab.active {
+    color: #00274c;
+    border-bottom-color: #00274c;
+  }
+
+  .semester-panel {
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    padding: 10px 0;
+  }
+
+  .semester-panel.active {
+    display: flex;
+  }
+
+  .semester-people {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .semester-site-button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #00274c;
+    color: #fff !important;
+    border-radius: 3px;
+    padding: 2px 10px;
+    vertical-align: middle;
+  }
+
+  .semester-site-button:hover {
+    background-color: #1a3d61;
+    color: #fff;
+  }
+
+</style>
+
+<noscript>
+  <style>
+    /* Without JS, show every semester stacked and hide the tab bar */
+    .semester-panel { display: flex; border-top: 1px solid #eee; }
+    .semester-tab-bar { display: none; }
+  </style>
+</noscript>
+
+<script>
+  function showSemester(btn) {
+    var tabs = btn.closest(".semester-tabs");
+    var buttons = tabs.querySelectorAll(".semester-tab");
+    var panels = tabs.querySelectorAll(".semester-panel");
+    for (var i = 0; i < buttons.length; i++) {
+      var on = buttons[i] === btn;
+      buttons[i].classList.toggle("active", on);
+      panels[i].classList.toggle("active", on);
+    }
+  }
+</script>
