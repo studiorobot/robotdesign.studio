@@ -1,5 +1,5 @@
-- video_poster: /rob498/w24/snippets/class_1.png
-  video_src: /rob498/w24/snippets/class_1.mp4
+- video_poster: /designforhri/w24/snippets/class_1.png
+  video_src: /designforhri/w24/snippets/class_1.mp4
   title: "Lecture: Introduction for the Course"
   description: This class was an introduction to Design for HRI
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34003134
@@ -15,8 +15,8 @@
     - title: The Media Equation
       link: https://www.amazon.com/Media-Equation-Computers-Television-Lecture/dp/1575860538
 
-- video_poster: /rob498/w24/snippets/class_2.png
-  video_src: /rob498/w24/snippets/class_2.mp4
+- video_poster: /designforhri/w24/snippets/class_2.png
+  video_src: /designforhri/w24/snippets/class_2.mp4
   title: "Lecture: UX Design Process"
   description: This class was about UX Design process and meeting Astro!
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34059805
@@ -32,8 +32,8 @@
     - title: Design is Storytelling
       link: https://www.amazon.com/Design-Storytelling-Ellen-Lupton/dp/194230319X
 
-- video_poster: /rob498/w24/snippets/class_3.png
-  video_src: /rob498/w24/snippets/class_3.mp4
+- video_poster: /designforhri/w24/snippets/class_3.png
+  video_src: /designforhri/w24/snippets/class_3.mp4
   title: "Lecture: Design Dimensions of Social Robots"
   description: This class was considering different design requirements for social robots
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34090910
@@ -41,8 +41,8 @@
     - title: An Extended Framework for Characterizing Social Robots
       link: https://link.springer.com/chapter/10.1007/978-3-030-42307-0_2
 
-- video_poster: /rob498/w24/snippets/class_4.png
-  video_src: /rob498/w24/snippets/class_4.mp4
+- video_poster: /designforhri/w24/snippets/class_4.png
+  video_src: /designforhri/w24/snippets/class_4.mp4
   title: "Lecture: Participatory Design"
   description: This class was about understanding different roles in participatory design
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34166086
@@ -54,8 +54,8 @@
     - title: Guide to Build YOLO
       link: https://www.sciencedirect.com/science/article/pii/S2468067218300890
 
-- video_poster: /rob498/w24/snippets/class_5.png
-  video_src: /rob498/w24/snippets/class_5.mp4
+- video_poster: /designforhri/w24/snippets/class_5.png
+  video_src: /designforhri/w24/snippets/class_5.mp4
   title: "Lecture: HRI Community Research"
   description: This class was about how YOLO was evaluated and community research
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34203829
@@ -65,55 +65,55 @@
     - title: Design Principles for Robot Assisted Feeding
       link: https://dl.acm.org/doi/abs/10.1145/3568162.3576988
 
-- video_poster: /rob498/w24/snippets/class_6.png
-  video_src: /rob498/w24/snippets/class_6.mp4
+- video_poster: /designforhri/w24/snippets/class_6.png
+  video_src: /designforhri/w24/snippets/class_6.mp4
   title: "Lab: Individual Project"
   description: Students received feedback regarding their Individual Project
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34288456
 
-- video_poster: /rob498/w24/snippets/class_7.png
-  video_src: /rob498/w24/snippets/class_7.mp4
+- video_poster: /designforhri/w24/snippets/class_7.png
+  video_src: /designforhri/w24/snippets/class_7.mp4
   title: "Presentation: Hack Your Toy!"
   description: Students presented their design hack to each individual Toy
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34415174
 
-- video_poster: /rob498/w24/snippets/class_8.png
-  video_src: /rob498/w24/snippets/class_8.mp4
+- video_poster: /designforhri/w24/snippets/class_8.png
+  video_src: /designforhri/w24/snippets/class_8.mp4
   title: "Guest Lecture: Sheena Erete"
   description: The Lecture was about Community Research
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34415072
 
-- video_poster: /rob498/w24/snippets/class_9.png
-  video_src: /rob498/w24/snippets/class_9.mp4
+- video_poster: /designforhri/w24/snippets/class_9.png
+  video_src: /designforhri/w24/snippets/class_9.mp4
   title: "Presentation: Group Project Proposal"
   description: Students proposed their Group Project as a Team
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34462601
 
-- video_poster: /rob498/w24/snippets/class_10.png
-  video_src: /rob498/w24/snippets/class_10.mp4
+- video_poster: /designforhri/w24/snippets/class_10.png
+  video_src: /designforhri/w24/snippets/class_10.mp4
   title: "Guest Lecture: Elin Bjorling"
   description: The lecture was towards human-centered design
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34555747
 
-- video_poster: /rob498/w24/snippets/class_11.png
-  video_src: /rob498/w24/snippets/class_11.mp4
+- video_poster: /designforhri/w24/snippets/class_11.png
+  video_src: /designforhri/w24/snippets/class_11.mp4
   title: "Lab: Group Project"
   description: Students received feedback regarding their Group Project
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34586397
 
-- video_poster: /rob498/w24/snippets/class_12.png
-  video_src: /rob498/w24/snippets/class_12.mp4
+- video_poster: /designforhri/w24/snippets/class_12.png
+  video_src: /designforhri/w24/snippets/class_12.mp4
   title: "Guest Lecture: Anastasia Ostrowski"
   description: The Lecture was about Design Justice
 
-- video_poster: /rob498/w24/snippets/class_13.png
-  video_src: /rob498/w24/snippets/class_13.mp4
+- video_poster: /designforhri/w24/snippets/class_13.png
+  video_src: /designforhri/w24/snippets/class_13.mp4
   title: "Presentation: Group Project Updates"
   description: Students presented their updates and sought peer review
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34719271
 
-- video_poster: /rob498/w24/snippets/class_14.png
-  video_src: /rob498/w24/snippets/class_14.mp4
+- video_poster: /designforhri/w24/snippets/class_14.png
+  video_src: /designforhri/w24/snippets/class_14.mp4
   title: "Lecture: Design Metaphors in HRI"
   description: Collection of Metaphors for Human-Robot Interaction
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34840678
@@ -127,24 +127,24 @@
     - title: Speculative Everything
       link: https://mitpress.mit.edu/9780262019842/speculative-everything/
 
-- video_poster: /rob498/w24/snippets/class_15.png
-  video_src: /rob498/w24/snippets/class_15.mp4
+- video_poster: /designforhri/w24/snippets/class_15.png
+  video_src: /designforhri/w24/snippets/class_15.mp4
   title: "Guest Lecture: Sophia Brueckner"
   description: The lecture focused on Speculative Design
 
-- video_poster: /rob498/w24/snippets/class_16.png
-  video_src: /rob498/w24/snippets/class_16.mp4
+- video_poster: /designforhri/w24/snippets/class_16.png
+  video_src: /designforhri/w24/snippets/class_16.mp4
   title: "Lecture: Bodystorming"
   description: The Lecture was about developing socially appropriate behavior in robots
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=34959154
 
-- video_poster: /rob498/w24/snippets/class_17.png
+- video_poster: /designforhri/w24/snippets/class_17.png
   title: "Lab: Makerspace"
   description: Defining the behaviors of their robots for the group project
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35003168
 
-- video_poster: /rob498/w24/snippets/class_18.png
-  video_src: /rob498/w24/snippets/class_18.mp4
+- video_poster: /designforhri/w24/snippets/class_18.png
+  video_src: /designforhri/w24/snippets/class_18.mp4
   title: "Guest Lecture: Kim Baraka"
   description: The Lecture was on the intersection of Arts and HRI
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35079069
@@ -154,37 +154,37 @@
     - title: Robotic Improvisers
       link: https://ieeexplore.ieee.org/abstract/document/9889624
 
-- video_poster: /rob498/w24/snippets/class_19.png
+- video_poster: /designforhri/w24/snippets/class_19.png
   title: "Lab: Makerspace"
   description: Improving the group project understandings
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35116506
 
-- video_poster: /rob498/w24/snippets/class_20.png
-  video_src: /rob498/w24/snippets/class_20.mp4
+- video_poster: /designforhri/w24/snippets/class_20.png
+  video_src: /designforhri/w24/snippets/class_20.mp4
   title: "Presentation: Paper Critique"
   description: The students presented the respective papers assigned to them
 
-- video_poster: /rob498/w24/snippets/class_21.png
-  video_src: /rob498/w24/snippets/class_21.mp4
+- video_poster: /designforhri/w24/snippets/class_21.png
+  video_src: /designforhri/w24/snippets/class_21.mp4
   title: "Guest Lecture: Yuhan Hu"
   description: The Lecture was about Soft Robotics in HRI
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35250814
 
-- video_poster: /rob498/w24/snippets/class_22.png
-  video_src: /rob498/w24/snippets/class_22.mp4
+- video_poster: /designforhri/w24/snippets/class_22.png
+  video_src: /designforhri/w24/snippets/class_22.mp4
   title: "Guest Lecture: Kayla Matheus"
   description: The Lecture was on HRI for Health
   readings:
     - title: My Roomba is Rambo
       link: https://link.springer.com/chapter/10.1007/978-3-540-74853-3_9
 
-- video_poster: /rob498/w24/snippets/class_19.png
-  video_src: /rob498/w24/snippets/class_23.mp4
+- video_poster: /designforhri/w24/snippets/class_19.png
+  video_src: /designforhri/w24/snippets/class_23.mp4
   title: "Lab: Prototype Show-off!"
   description: The students presented their project prototypes and received feedback
 
-- video_poster: /rob498/w24/snippets/class_24.png
-  video_src: /rob498/w24/snippets/class_24.mp4
+- video_poster: /designforhri/w24/snippets/class_24.png
+  video_src: /designforhri/w24/snippets/class_24.mp4
   title: "Guest Lecture: Maria Luce Lupetti"
   description: Generative-AI workshop for students
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35372671
@@ -192,22 +192,22 @@
     - title: Connecting the Dots of Social Robot Design
       link: https://www.frontiersin.org/articles/10.3389/frobt.2022.720799/full
 
-- video_poster: /rob498/w24/snippets/class_19.png
+- video_poster: /designforhri/w24/snippets/class_19.png
   title: "Lab: Makerspace"
   description: Students were instructed how to evaluate their projects
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35416479
 
-- video_poster: /rob498/w24/snippets/class_19.png
+- video_poster: /designforhri/w24/snippets/class_19.png
   title: "Lab: Makerspace"
   description: Time to work on their Projects
   slides_link: https://umich.instructure.com/courses/670239/files/folder/Lectures?preview=35560015
 
-- video_poster: /rob498/w24/snippets/group_project.png
-  video_src: /rob498/w24/snippets/class_27.mp4
+- video_poster: /designforhri/w24/snippets/group_project.png
+  video_src: /designforhri/w24/snippets/class_27.mp4
   title: "Final Presentation"
   description: "Groups presented their project and their findings: Mechanical Muses, EMO, and Block Head"
 
-- video_poster: /rob498/w24/snippets/group_project.png
-  video_src: /rob498/w24/snippets/class_28.mp4
+- video_poster: /designforhri/w24/snippets/group_project.png
+  video_src: /designforhri/w24/snippets/class_28.mp4
   title: "Final Presentation"
   description: "Groups presented their project and their findings: Robo Connect, Teamy Team, and Ateliers"

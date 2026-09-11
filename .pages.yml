@@ -39,10 +39,10 @@ media:
     input: rob340/w25
     output: /rob340/w25
 
-  - name: rob498
+  - name: designforhri
     label: Courses · ROB 498/599 (current semester)
-    input: rob498/w24
-    output: /rob498/w24
+    input: designforhri/w24
+    output: /designforhri/w24
 
 content:
   - name: lab-website
@@ -1157,14 +1157,14 @@ content:
                   media: rob340
                   path: rob340/w25/img
 
-      - name: rob498-current
+      - name: designforhri-current
         label: ROB 498/599 (current semester)
         type: group
         items:
-          - name: rob498-course
+          - name: designforhri-course
             label: Course info
             type: file
-            path: _data/rob498/course.yml
+            path: _data/designforhri/course.yml
             format: yaml
             fields:
               - name: title
@@ -1254,10 +1254,10 @@ content:
                       - name: location
                         type: string
                         description: e.g. GGBL 1025
-          - name: rob498-schedule
+          - name: designforhri-schedule
             label: Schedule
             type: file
-            path: _data/rob498/schedule.yml
+            path: _data/designforhri/schedule.yml
             format: yaml
             list: true
             description: The schedule sidebar on the course page.
@@ -1279,10 +1279,10 @@ content:
                   - name: class
                     type: string
                     description: 'e.g. Class 1: Introduction'
-          - name: rob498-grading
+          - name: designforhri-grading
             label: Grading
             type: file
-            path: _data/rob498/grading.yml
+            path: _data/designforhri/grading.yml
             format: yaml
             list: true
             fields:
@@ -1293,10 +1293,10 @@ content:
                 label: Paragraphs
                 type: string
                 list: true
-          - name: rob498-students
+          - name: designforhri-students
             label: Students
             type: file
-            path: _data/rob498/students.yml
+            path: _data/designforhri/students.yml
             format: yaml
             fields:
               - name: undergraduates
@@ -1307,10 +1307,10 @@ content:
                 label: Graduates
                 type: string
                 list: true
-          - name: rob498-main
+          - name: designforhri-main
             label: Main sections
             type: file
-            path: _data/rob498/main.yml
+            path: _data/designforhri/main.yml
             format: yaml
             list: true
             description: The main text sections of the course page (description, learning objectives, ...). An item can be a titled text section, an image, or both.
@@ -1329,12 +1329,12 @@ content:
                 label: Image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img
-          - name: rob498-labs
+                  media: designforhri
+                  path: designforhri/w24/img
+          - name: designforhri-labs
             label: Labs
             type: file
-            path: _data/rob498/labs.yml
+            path: _data/designforhri/labs.yml
             format: yaml
             list: true
             description: Labs are numbered automatically in the order of this list.
@@ -1354,12 +1354,12 @@ content:
                 label: Image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img/labs
-          - name: rob498-lectures
+                  media: designforhri
+                  path: designforhri/w24/img/labs
+          - name: designforhri-lectures
             label: Lectures
             type: file
-            path: _data/rob498/lectures.yml
+            path: _data/designforhri/lectures.yml
             format: yaml
             list: true
             description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list.
@@ -1374,14 +1374,14 @@ content:
                 label: Preview image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/snippets
+                  media: designforhri
+                  path: designforhri/w24/snippets
               - name: video_src
                 label: Hover video (mp4)
                 type: file
                 options:
-                  media: rob498
-                  path: rob498/w24/snippets
+                  media: designforhri
+                  path: designforhri/w24/snippets
                   extensions: [mp4]
               - name: slides_link
                 label: Slides link
@@ -1404,10 +1404,10 @@ content:
                     pattern:
                       regex: '^(https?://.+)?$'
                       message: Must be a full URL starting with https:// (or left empty)
-          - name: rob498-talks
+          - name: designforhri-talks
             label: Invited talks
             type: file
-            path: _data/rob498/talks.yml
+            path: _data/designforhri/talks.yml
             format: yaml
             list: true
             fields:
@@ -1429,12 +1429,12 @@ content:
               - name: image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img/talk_logos
-          - name: rob498-group-projects
+                  media: designforhri
+                  path: designforhri/w24/img/talk_logos
+          - name: designforhri-group-projects
             label: Group projects
             type: file
-            path: _data/rob498/group_projects.yml
+            path: _data/designforhri/group_projects.yml
             format: yaml
             list: true
             fields:
@@ -1450,12 +1450,12 @@ content:
               - name: image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img/gps
-          - name: rob498-head
+                  media: designforhri
+                  path: designforhri/w24/img/gps
+          - name: designforhri-head
             label: Page metadata
             type: file
-            path: _data/rob498/head.yml
+            path: _data/designforhri/head.yml
             format: yaml
             description: Browser tab title, description and icon for the course page.
             fields:
@@ -1468,11 +1468,11 @@ content:
                 label: Social preview image
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img
+                  media: designforhri
+                  path: designforhri/w24/img
               - name: icon
                 label: Tab icon
                 type: image
                 options:
-                  media: rob498
-                  path: rob498/w24/img
+                  media: designforhri
+                  path: designforhri/w24/img

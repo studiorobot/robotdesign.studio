@@ -16,7 +16,7 @@ courses:
       - Design ethics
     semesters:
       - term: Winter 2024
-        url: /rob498/w24/
+        url: /designforhri/w24/
         current: false
         instructors:
           - name: Patricia Alves-Oliveira
