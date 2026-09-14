@@ -7,11 +7,11 @@ courses:
       interaction robot designers. "
     topics:
       - Frameworks for robot design
-      - Ideation strategies for robotics
-      - Participatory design
-      - Mock-up and prototype creation
-      - Qualitative and quantitative key-performance indicators
-      - Design ethics
+      - ideation strategies for robotics
+      - participatory design
+      - mock-up / prototype creation
+      - qualitative / quantitative key-performance indicators
+      - and design ethics.
     semesters:
       - term: Winter 2024
         url: /designforhri/w24/
@@ -28,8 +28,8 @@ courses:
       system's performance through human feedback.
     topics:
       - Metrics and analysis for human studies of robots
-      - Measuring human performance in the context of robotic systems
-      - Exploring how robot behaviors are perceived by humans
+      - measuring human performance in the context of robotic systems
+      - and exploring how robot behaviors are perceived by humans.
     semesters:
       - term: Winter 2025
         url: /rob340/w25/
