@@ -48,8 +48,8 @@ description: >-
 					style="margin-top:15px; margin-bottom:10px;" onmouseleave="StopVideoPlay('{{ pid }}')">
 					<video loop muted playsinline id="video{{ pid }}" poster="{{ project.poster }}"
 							{% if project.video_webm or project.video_mp4 %}class="has-video"{% endif %}>
-						<source type="video/webm" src="{{ project.video_webm }}">
-						<source type="video/mp4" src="{{ project.video_mp4 }}">
+						{% if project.video_webm %}<source type="video/webm" src="{{ project.video_webm }}">{% endif %}
+						{% if project.video_mp4 %}<source type="video/mp4" src="{{ project.video_mp4 }}">{% endif %}
 					</video>
 				</div>
 				<div class="project-description column width-8" style="padding:10px;">
