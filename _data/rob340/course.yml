@@ -1,13 +1,12 @@
-title: 'ROB 340: Human Evaluation of Robots'
+title: "ROB 340: Human Evaluation of Robots"
 instructors:
   - name: Patricia Alves-Oliveira
-    url: https://patricialvesoliveira.com/
   - name: Xiaoxiao Du
     url: https://robotics.umich.edu/people/faculty/xiaoxiao-du/
-GSIs: 
+GSIs:
   - name: Miranda Mittleman
-    url:  https://www.linkedin.com/in/miranda-mittleman-b049b11b4/
-IAs: 
+    url: https://www.linkedin.com/in/miranda-mittleman-b049b11b4/
+IAs:
   - name: Margaret Kempe
     url: https://www.linkedin.com/in/margaret-kempe/
 department: Robotics Department
@@ -28,7 +27,3 @@ yellow_box:
       date: Thursday
       time: 3:30 - 5:30 PM
       location: 4150 FMCRB
-
-
-  
-
