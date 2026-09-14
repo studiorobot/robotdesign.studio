@@ -195,9 +195,15 @@ description: >-
 		var div = document.getElementById(proj_name);
 		div.style.backgroundColor = "#efefef";
 		div.style.transition = "background-color 0.7s";
-		v.onplaying = function () { v.classList.add("is-playing"); };
-		v.autoplay = true;
-		v.load();
+		if (v && (v.paused || v.ended)) {
+			v.onplaying = function () { v.classList.add("is-playing"); };
+			// Safari doesn't always reflect the muted attribute into the property,
+			// and an unmuted play() gets blocked (which makes Safari show controls)
+			v.muted = true;
+			v.play().catch(function (e) {
+				// Ignore play errors (autoplay/security restrictions)
+			});
+		}
 	}
 	function StopVideoPlay(num) {
 		var name = "video" + num;
@@ -208,8 +214,9 @@ description: >-
 		div.style.transition = "background-color 0.7s";
 		v.onplaying = null;
 		v.classList.remove("is-playing");
-		v.autoplay = false;
-		v.load();
+		if (v && !v.paused) {
+			v.pause();
+		}
 	}
 </script>
 
