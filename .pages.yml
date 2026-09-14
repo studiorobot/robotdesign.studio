@@ -743,7 +743,7 @@ content:
         type: file
         path: _data/courses.yml
         format: yaml
-        description: 'The course directory shown at /courses. Semesters live inside their course. Add new items at the bottom of a list — that is correct, the site shows newest first automatically. When a semester ends, fill in its instructors, GSIs, IAs and topics — this is what the archive page and Google search results show.'
+        description: 'The course directory shown at /courses. Semesters live inside their course. Add new items at the bottom of a list — that is correct, the site shows newest first automatically. When a semester ends, fill in its instructors, GSIs, IAs (names only, no links) and topics — this is what the archive page and Google search results show.'
         fields:
           - name: intro
             label: Intro text
@@ -800,11 +800,6 @@ content:
                       - name: name
                         type: string
                         required: true
-                      - name: url
-                        type: string
-                        pattern:
-                          regex: '^(https?://.+)?$'
-                          message: Must be a full URL starting with https:// (or left empty)
                   - name: gsis
                     label: GSIs
                     type: object
@@ -816,11 +811,6 @@ content:
                       - name: name
                         type: string
                         required: true
-                      - name: url
-                        type: string
-                        pattern:
-                          regex: '^(https?://.+)?$'
-                          message: Must be a full URL starting with https:// (or left empty)
                   - name: ias
                     label: IAs
                     type: object
@@ -832,11 +822,6 @@ content:
                       - name: name
                         type: string
                         required: true
-                      - name: url
-                        type: string
-                        pattern:
-                          regex: '^(https?://.+)?$'
-                          message: Must be a full URL starting with https:// (or left empty)
       - name: rob340-current
         label: ROB 340 (current semester)
         type: group
