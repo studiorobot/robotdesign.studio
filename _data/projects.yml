@@ -71,6 +71,16 @@ active:
       interactions to facilitate youth’s-entry in society.
     keywords: mental health, decarceration, accesibility
     poster: /projects/active/horizon/thumbnail.jpg
+  - name: "PANDA: Sensory Grounding in Robots for State Anxiety"
+    members: Grace Pan
+    data: 2026 - ongoing
+    description: This project aims to create a socially assistive robot that
+      utilizes sensory grounding to combat state anxiety in its users. Designed
+      to activate all five senses during the interaction, the robot leverages
+      traditional Cognitive Behavioral Therapy techniques to help its user
+      interrupt their anxious thoughts and focus on the present moment.
+    poster: /projects/active/panda/thumbnail.jpeg
+    video_mp4: /projects/active/panda/panda.mp4
   - name: "RELATE: Key-Moments in Long-Term Relationship with Social Robots"
     members: Elijah Cantu, Long-Jing Hsu
     data: 2024 - ongoing
@@ -85,6 +95,43 @@ active:
     keywords: deployment, longitudinal interactions, relationship evolution
     poster: /projects/active/relate/thumbnail.png
     video_mp4: /projects/active/relate/longitudinal.mp4
+  - name: "RESILIENT: Conversational Robots for Psychological Resilience in
+      Cognitive Decline"
+    members: Long-Jing Hsu, Josue Torres-Fonseca, Minie Xu, Janice Bays, and Joyce Chai
+    data: 2026 - ongoing
+    description: This project aims to develop and evaluate a conversational robot
+      that supports psychological resilience in people living with cognitive
+      decline. We investigate how context-aware reflective conversations can
+      help individuals recognize their strengths, adapt to cognitive and life
+      changes, and maintain meaningful engagement in everyday life. Through the
+      design and evaluation of a resilience-informed conversational framework,
+      we seek to understand how social robots can foster resilience despite
+      cognitive decline.
+    keywords: cognitive decline, resilience, conversational robots
+    poster: /projects/temp.png
+    video_mp4: /projects/active/panda/panda.mp4
+  - name: "SCENT: Scent-Enhanced Conversational Robots for Reminiscence and
+      Friendship"
+    members: Long-Jing Hsu, Minie Xu, Nicole Ellison
+    data: 2026 - ongoing
+    description: This project investigates how scent-enhanced conversational robots
+      can facilitate reminiscence and foster friendship among older adults. By
+      integrating olfactory cues into social interactions, we explore how
+      multisensory experiences can enrich conversations and promote social
+      connection.
+    keywords: olfaction, reminiscence, older adults, social connection
+    poster: /projects/temp.png
+    video_mp4: /projects/active/vista/vista.mp4
+  - name: "SPROUT: Understanding Human-Robot Bonds at Home"
+    members: Grace Pan, Elijah Cantu, Jaein Cha
+    data: 2026 - ongoing
+    description: This project aims to develop a family-friendly AI driven character
+      for the Sprout robot and examine patterns of bonding between Sprout and
+      family members at home. Findings will provide new insights into the
+      emergence of human-robot bonding in a home setting and inform the design
+      of future home robots for companionship.
+    poster: /projects/6977949d0da7312bfcd33c7e_Sprout Standing.jpg
+    video_mp4: /projects/active/panda/panda.mp4
   - name: "TOUCH: Assistive Robot Touch during Medical Emergencies"
     members: Grace Pan
     data: 2024 - ongoing
@@ -96,6 +143,7 @@ active:
       robot that delivers care during medical and assistive needs.
     keywords: assistive, physical health
     poster: /projects/temp.png
+    video_mp4: /projects/active/vista/vista.mp4
   - name: "VISTA: Robot Character for Fun Medical Eye Exams"
     members: Grace Pan, Mark Draelos, Nita Valikodath
     data: 2024 - ongoing
@@ -120,50 +168,6 @@ active:
       waffle.
     poster: /projects/active/waffle/thumbnail.jpg
     video_mp4: /projects/active/waffle/waffle_video.mp4
-  - name: "RESILIENT: Conversational Robots for Psychological Resilience in
-      Cognitive Decline"
-    members: Long-Jing Hsu, Josue Torres-Fonseca, Minie Xu, Janice Bays, and Joyce Chai
-    data: 2026 - ongoing
-    description: This project aims to develop and evaluate a conversational robot
-      that supports psychological resilience in people living with cognitive
-      decline. We investigate how context-aware reflective conversations can
-      help individuals recognize their strengths, adapt to cognitive and life
-      changes, and maintain meaningful engagement in everyday life. Through the
-      design and evaluation of a resilience-informed conversational framework,
-      we seek to understand how social robots can foster resilience despite
-      cognitive decline.
-    keywords: cognitive decline, resilience, conversational robots
-    poster: /projects/temp.png
-  - name: "SCENT: Scent-Enhanced Conversational Robots for Reminiscence and
-      Friendship"
-    members: Long-Jing Hsu, Minie Xu, Nicole Ellison
-    data: 2026 - ongoing
-    description: This project investigates how scent-enhanced conversational robots
-      can facilitate reminiscence and foster friendship among older adults. By
-      integrating olfactory cues into social interactions, we explore how
-      multisensory experiences can enrich conversations and promote social
-      connection.
-    keywords: olfaction, reminiscence, older adults, social connection
-    poster: /projects/temp.png
-  - name: "SPROUT: Understanding Human-Robot Bonds at Home"
-    members: Grace Pan, Elijah Cantu, Jaein Cha
-    data: 2026 - ongoing
-    description: This project aims to develop a family-friendly AI driven character
-      for the Sprout robot and examine patterns of bonding between Sprout and
-      family members at home. Findings will provide new insights into the
-      emergence of human-robot bonding in a home setting and inform the design
-      of future home robots for companionship.
-    poster: /projects/6977949d0da7312bfcd33c7e_Sprout Standing.jpg
-  - name: "PANDA: Sensory Grounding in Robots for State Anxiety"
-    members: Grace Pan
-    data: 2026 - ongoing
-    description: This project aims to create a socially assistive robot that
-      utilizes sensory grounding to combat state anxiety in its users. Designed
-      to activate all five senses during the interaction, the robot leverages
-      traditional Cognitive Behavioral Therapy techniques to help its user
-      interrupt their anxious thoughts and focus on the present moment.
-    poster: /projects/active/panda/thumbnail.jpeg
-    video_mp4: /projects/active/panda/panda.mp4
 completed:
   - name: "EMAR: Ecological Momentary Assessment Robot"
     members: Elin Björling, Maya Cakmak
