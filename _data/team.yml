@@ -159,6 +159,12 @@ members:
     linkedin: https://www.linkedin.com/in/jessica-tingley/
     github: https://github.com/jessicatingley
     img: /team/IMG_0231.jpg
+  - name: Selena Zou
+    standing: Undergrad
+    major: Architecture and Mechanical Engineering
+    university: University of Michigan
+    project: Delicious
+    joined: Fall 2026
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
