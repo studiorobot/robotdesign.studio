@@ -827,7 +827,7 @@ years:
           Anderson, Mark Draelos, Nita Valikodath
         event: Association for Research in Vision and Ophthalmology (ARVO)
         doi: https://iovs.arvojournals.org/article.aspx?articleid=2813627
-        pdf: /publications/2026_RO_MAN_Robot_Characters_Design.pdf
+        img: /publications/thumbnails/Grace.png
         project: Vista
       - title: A Prototype Robotic Character for Pediatric OCT Exams in Clinical
           Settings
@@ -835,7 +835,7 @@ years:
           Lee, Noah Lee Carey, Mark Draelos, Nita Valikodath
         event: Association for Research in Vision and Ophthalmology (ARVO)
         doi: https://iovs.arvojournals.org/article.aspx?articleid=2813626
-        pdf: /publications/2026_RO_MAN_Touch.pdf
+        img: /publications/thumbnails/Qingru.png
         project: Vista
       - title: Design Directions for Robot Characters in Pediatric Eye Exams
         authors: Grace Pan, Mark Draelos, Nita Valikodath, and Patricia Alves-Oliveira
