@@ -821,6 +821,22 @@ years:
         img: /publications/thumbnails/105.jpg
         project: AURA
         video: https://youtu.be/FuMVorULK6c
+      - title: Caregiver Perspectives on Robotic OCT Characters to Improve Pediatric OCT
+          Imaging
+        authors: Grace Pan, Jade Byeon, Ellen Lee, Noah Lee Carey, Pha Thaprawat, Ava
+          Anderson, Mark Draelos, Nita Valikodath
+        event: Association for Research in Vision and Ophthalmology (ARVO)
+        doi: https://iovs.arvojournals.org/article.aspx?articleid=2813627
+        pdf: /publications/2026_RO_MAN_Robot_Characters_Design.pdf
+        project: Vista
+      - title: A Prototype Robotic Character for Pediatric OCT Exams in Clinical
+          Settings
+        authors: Qingru Yang, Ava Anderson, Genggeng Zhou, Grace Pan, Jade Byeon, Ellen
+          Lee, Noah Lee Carey, Mark Draelos, Nita Valikodath
+        event: Association for Research in Vision and Ophthalmology (ARVO)
+        doi: https://iovs.arvojournals.org/article.aspx?articleid=2813626
+        pdf: /publications/2026_RO_MAN_Touch.pdf
+        project: Vista
       - title: Design Directions for Robot Characters in Pediatric Eye Exams
         authors: Grace Pan, Mark Draelos, Nita Valikodath, and Patricia Alves-Oliveira
         event: IEEE International Conference on Robot and Human Interactive
