@@ -76,15 +76,6 @@ members:
     google_scholar: https://scholar.google.com/citations?hl=en&user=ZOWiPq8AAAAJ
     linkedin: https://www.linkedin.com/in/grace-p-5a339610b/
     img: /team/Grace_Pan_PhD.jpg
-  - name: Tetsu Kurumisawa
-    standing: Ph.D.
-    major: Robotics
-    university: University of Michigan
-    project: AURA
-    joined: Fall 2025
-    linkedin: https://www.linkedin.com/in/tetsu-kurumisawa/
-    github: https://github.com/tetsu-kurumi
-    img: /team/Tetsu_Kurumisawa_PhD.jpg
   - name: Cheryl Fang
     standing: Masters
     major: Computer Graphics Tech
