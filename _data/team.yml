@@ -154,6 +154,12 @@ members:
     university: University of Michigan
     project: Sprout
     joined: Fall 2026
+  - name: Minie Xu
+    standing: Undergrad
+    major: Biopsychology, Cognition, and Neuroscience
+    university: University of Michigan
+    project: Resilience
+    joined: Fall 2026
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
