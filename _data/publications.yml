@@ -854,3 +854,11 @@ years:
         img: /publications/thumbnails/2026_RO_MAN_Touch.jpg
         project: TOUCH
         video: https://youtu.be/AGI9Ubx73h0?si=W5ZETQg37oEVf3s1
+      - title: Emotional Entanglements and Emotional Sustainability in HRI
+        authors: "Simão H, Hsu LJ, Cagiltay B, Neto I, Wallbridge CD, Santos L, Rocha F,
+          Levinson L, Sequeira JS, Guerreiro T, Alves-Oliveira P."
+        event: "HRI '26: Proceedings of the 21st ACM/IEEE International Conference on
+          Human-Robot Interaction"
+        doi: https://doi.org/10.1145/3757279.3785587
+        pdf: /publications/emotionalentanglement.pdf
+        img: /publications/thumbnails/emotionalentanglement.jpg
