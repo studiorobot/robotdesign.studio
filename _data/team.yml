@@ -95,14 +95,6 @@ members:
     linkedin: https://www.linkedin.com/in/elijahcantu
     github: https://github.com/elijahcantu
     img: /team/elijah_cantu.jpeg
-  - name: Maël Le Bras
-    standing: Masters
-    major: Mechanical Engineering
-    university: ETH Zürich
-    project: AURA
-    joined: Winter 2026
-    linkedin: https://www.linkedin.com/in/mael-le-bras-63ba27404/
-    img: /team/mael.jpeg
   - name: Ted Ivanac
     standing: Masters
     major: Robotics
