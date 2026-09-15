@@ -148,6 +148,12 @@ members:
     university: University of Michigan
     project: Delicious
     joined: Fall 2026
+  - name: Jaein Cha
+    standing: Masters
+    major: Robotics
+    university: University of Michigan
+    project: Sprout
+    joined: Fall 2026
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
