@@ -1,0 +1,706 @@
+/* ===========================
+   PROFILE SECTION
+   =========================== */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  width: 190px;
+}
+
+.profile-image {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.course-details {
+  flex: 1;
+}
+
+.course-title {
+  margin-top: 0.5rem;
+  color: black;
+  font-family: 'Arial';
+  font-size: 14pt;
+}
+
+.course-instructors {
+  color: #27317E;
+  margin-top: -1.5rem;
+  font-family: 'Arial';
+  font-size: 12pt;
+}
+
+.course-credit {
+  padding-top: 10px;
+  color: darkslategray;
+}
+
+.divdiv-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-right: 0px;
+}
+
+/* ===========================
+   SOCIAL LINKS
+   =========================== */
+.social-links {
+  color: #000000;
+  font-size: 8pt;
+  padding-bottom: 0.2rem;
+  list-style-type: none;
+  padding-left: 0px !important;
+  margin-top: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  text-align: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  border: none;
+}
+
+.social-links img {
+  max-width: 26px;
+  padding-right: 2px;
+}
+
+.social-icon-img {
+  max-width: 26px;
+  margin-right: 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-links i {
+  font-size: 24px;
+  color: #000000;
+  padding-right: 2px;
+  vertical-align: middle;
+} 
+
+/* ===========================
+   INFO BOX (Yellow Box)
+   =========================== */
+.info-box {
+  padding: 0.5em 1em;
+  border: 2px dashed #27317E;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  margin-top: 0em;
+  margin-bottom: 1.5rem;
+}
+
+.info-box-text {
+  color: black;
+  font-family: 'Arial';
+  font-size: 9pt;
+}
+
+.info-box-title {
+  color: #27317E;
+  font-family: 'Arial';
+  font-size: 10pt;
+}
+
+.info-box-details {
+  color: black;
+  font-family: 'Arial';
+  font-size: 9pt;
+  margin-top: -0.7em;
+}
+
+.info-box-details span {
+  margin-right: 20px;
+}
+
+/* ===========================
+   SCHEDULE & GRADING SECTION
+   =========================== */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.5rem;
+  border-top: 1px #636363 dashed;
+  padding-top: -0.5rem;
+}
+
+.section-header h5 {
+  color: #333;
+  text-align: left;
+  padding-top: 1rem;
+  margin-bottom: 0px;
+  font-family: 'Arial';
+  font-size: smaller;
+}
+
+.schedule-section-title {
+  color: #333;
+  font-family: 'Arial';
+  font-size: smaller;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.schedule-session {
+  display: flex;
+  justify-content: left;
+  column-gap: 10px;
+  color: #333;
+  font-size: 10pt;
+}
+
+.schedule-session p {
+  font-family: 'Arial';
+  font-size: 7pt;
+}
+
+.grading-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  border-top: 1px #636363 dashed;
+  padding-top: 0.5rem;
+}
+
+.grading-header h5 {
+  color: #333;
+  text-align: left;
+  padding-top: 1rem;
+  font-family: 'Arial';
+  font-size: smaller;
+}
+
+.grading-item {
+  display: flex;
+  justify-content: left;
+  column-gap: 10px;
+  color: #333;
+}
+
+.grading-item p {
+  font-family: 'Arial';
+  font-size: 7pt;
+}
+
+.grading-divider {
+  display: flex;
+  justify-content: left;
+  column-gap: 10px;
+  color: #333;
+  border-top: 1px #b8b6b6 dashed;
+}
+
+/* ===========================
+   STUDENTS SECTION
+   =========================== */
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  border-top: 1px #636363 dashed;
+  padding-top: -0.5rem;
+}
+
+.students-header h5 {
+  color: #333;
+  text-align: left;
+  padding-top: 1rem;
+  font-family: 'Arial';
+}
+
+.student-list {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: left;
+  column-gap: 10px;
+  color: #333;
+}
+
+.student-list p {
+  font-family: 'Arial';
+  font-size: 8pt;
+}
+
+.student-list-spacing {
+  margin-top: 1rem;
+}
+
+/* ===========================
+   INVITED TALKS SECTION
+   =========================== */
+.talk-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  border-top: 1px #636363 dashed;
+  padding-top: -0.5rem;
+}
+
+.talk-header h5 {
+  color: #333;
+  text-align: left;
+  padding-top: 1rem;
+  font-family: 'Arial';
+}
+
+.talk {
+  margin-top: -1rem;
+  display: flex;
+  justify-content: left;
+  column-gap: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.talk img {
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.talk p {
+  font-family: 'Arial';
+  font-size: 6pt;
+}
+
+/* ===========================
+   GROUP PROJECTS SECTION
+   =========================== */
+.project {
+  display: flex;
+  justify-content: left;
+  column-gap: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-family: 'Arial';
+  font-size: 6pt;
+}
+
+.project img {
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* ===========================
+   MAIN CONTENT SECTION
+   =========================== */
+.main-content {
+  font-family: 'Arial';
+}
+
+.main-section-title {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.main-section-image {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.section-divider {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.section-blue-header {
+  color: #fff;
+  text-align: left;
+  font-family: 'Arial';
+  font-size: 1.5em;
+  background-color: #2c98d3;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+/* ===========================
+   LAB SECTION
+   =========================== */
+.lab-container {
+  margin-top: 20px;
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lab-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.lab-image {
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.lab-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+  text-align: left;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+.lab-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+.lab-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  max-width: 250px;
+  white-space: normal;
+  word-spacing: normal;
+}
+
+/* ===========================
+   LECTURE SECTION
+   =========================== */
+.lecture-row {
+  padding: 1rem 0rem;
+}
+
+.lecture-video-container {
+  padding: 0px;
+  padding-left: 15px;
+}
+
+.lecture-video {
+  width: 320px;
+  height: 180px;
+  margin-top: 0.7rem;
+  object-fit: cover;
+}
+
+.lecture-content {
+  padding: 0px;
+  padding-right: 15px;
+}
+
+.lecture-title {
+  color: #2c98d3;
+  font-weight: bold;
+}
+
+.lecture-title-separator {
+  color: #27317E;
+}
+
+.lecture-title-text {
+  color: black;
+}
+
+.lecture-slides-link {
+  border: none;
+  color: #3b87c1;
+}
+
+.lecture-authors {
+  text-align: left;
+}
+
+.lecture-readings-box {
+  margin-top: 0.5em;
+  background-color: lightskyblue;
+  color: #333;
+  padding: 0.5em;
+  border: 1px #333 dashed;
+  border-radius: 5px;
+}
+
+.lecture-readings-box h5 {
+  margin-bottom: 0.5em;
+}
+
+.lecture-readings-box ul {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.lecture-readings-box a {
+  border: none;
+  color: navy;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer-custom {
+  background-color: #27317E;
+}
+
+.footer-text {
+  color: white;
+}
+
+.footer-link {
+  color: white;
+}
+
+/* ===========================
+   UTILITY CLASSES
+   =========================== */
+.no-underline {
+  text-decoration: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* ===========================
+   RESPONSIVE STYLES
+   =========================== */
+
+/* Mobile styling - vertical social icons */
+@media (max-width: 768px) {
+  .column.width-7 {
+    flex-direction: row !important;
+  }
+
+  .profile-section {
+    width: 40px !important;
+  }
+
+  .social-links li {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px !important;
+  }
+} 
+
+@media (min-width: 769px) {
+  .profile-section {
+    width: 190px !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .column.width-7 {
+    flex-direction: row !important;
+  }
+
+  .profile-section {
+    width: 40px !important;
+  }
+
+  .social-links li {
+    margin-bottom: 12px !important;
+  }
+
+  #divdiv {
+    width: 100% !important;
+  }
+
+  .social-links li a i {
+    padding-right: 18px !important;
+  }
+}
+
+/* Tablet View: 2 Columns */
+@media (max-width: 992px) {
+  .lab-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View: 1 Column */
+@media (max-width: 600px) {
+  .lab-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column.width-2,
+  .column.width-9 {
+    width: 100%;
+  }
+
+  .column.width-9 {
+    order: -1;
+  }
+}
+
+.lab-item {
+  display: flex;
+  align-items: center;
+  /* Ensures text and image align properly */
+  gap: 15px;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+
+.lab-image {
+  width: auto;
+  /* Fixed width */
+  height: 80px;
+  /* Fixed height for consistency */
+  object-fit: contain;
+  align-self: center;
+  /* Prevents distortion */
+  border-radius: 5px;
+
+}
+
+.lab-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+  /* Prevents excessive stretching */
+  text-align: left;
+  /* Ensures text stays aligned naturally */
+  white-space: normal;
+  /* Allows proper word wrapping */
+  word-spacing: normal;
+  /* Prevents extra gaps between words */
+}
+
+.lab-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  display: inline-block;
+  /* Ensures the text behaves naturally */
+  white-space: normal;
+  /* Prevents stretching */
+  word-spacing: normal;
+  /* Resets unnecessary spacing */
+}
+
+.lab-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  max-width: 250px;
+  white-space: normal;
+  /* Allows normal word wrapping */
+  word-spacing: normal;
+  /* Prevents excessive gaps */
+}
+
+
+
+/* Tablet and Mobile Views */
+@media (max-width: 1140px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column.width-4,
+  .column.width-5,
+  .colum.width-6,
+  .column.width-7 {
+    width: 100%;
+  }
+
+  .column.width-7 {
+    margin-top: 1em;
+    /* Add some space between the video and the content */
+  }
+
+  #magdisplay {
+    margin-top: 1rem;
+  }
+}
+
+/* Tablet and smaller screens */
+@media (min-width:769px) and (max-width: 1140px) {
+
+  /* Invited Talks Section */
+  .talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .talk img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .talk p {
+    font-size: 10pt;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  /* Group Projects Section */
+  .talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .talk img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .talk p {
+    font-size: 10pt;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+

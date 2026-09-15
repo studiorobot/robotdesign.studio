@@ -1,0 +1,43 @@
+intro: Archive of University of Michigan courses taught by Patricia Alves-Oliveira.
+courses:
+  - number: ROB 498/599
+    title: Design for Human-Robot Interaction
+    description: "This advanced course covers fundamentals of Design for Human-Robot
+      Interaction. This course will prepare students to be full-stack
+      interaction robot designers. "
+    topics:
+      - Frameworks for robot design
+      - ideation strategies for robotics
+      - participatory design
+      - mock-up / prototype creation
+      - qualitative / quantitative key-performance indicators
+      - and design ethics.
+    semesters:
+      - term: Winter 2024
+        url: /designforhri/w24/
+        current: false
+        instructors:
+          - name: Patricia Alves-Oliveira
+        gsis:
+          - name: Manohar Bhat
+  - number: ROB 340
+    title: Human Evaluation of Robots
+    description: Covers fundamentals of how robots can be evaluated by human users
+      to better understand the success of robotic systems. Provides insight into
+      various types of metrics, studies, and analyses used to understand a robot
+      system's performance through human feedback.
+    topics:
+      - Metrics and analysis for human studies of robots
+      - measuring human performance in the context of robotic systems
+      - and exploring how robot behaviors are perceived by humans.
+    semesters:
+      - term: Winter 2025
+        url: /rob340/w25/
+        current: false
+        instructors:
+          - name: Patricia Alves-Oliveira
+          - name: Xiaoxiao Du
+        gsis:
+          - name: Miranda Mittleman
+        ias:
+          - name: Margaret Kempe

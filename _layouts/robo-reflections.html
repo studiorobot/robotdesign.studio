@@ -7,11 +7,15 @@
   <meta charset="UTF-8" />
   <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
   <meta name="twitter:widgets:theme" content="light">
-  <meta property="og:title" content="Robot Studio" />
+  {% if page.title %}{% assign seo_title = page.title | append: " | Robot Studio" %}{% else %}{% assign seo_title = "Robot Studio" %}{% endif %}
+  {% assign seo_description = page.description | default: "Robot Studio is a multi-disciplinary robotics research lab at the University of Michigan that designs relationships between robots and people." %}
+  <meta name="description" content="{{ seo_description }}">
+  <meta property="og:title" content="{{ seo_title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/branding/Logos/logos/pngs/24-ROBOTSTUDIO-LOGO-Black.png" />
-  <meta property="og:description" content="Robot Studio's website." />
-  <title>Robot Studio</title>
+  <meta property="og:image" content="{{ '/branding/Logos/logos/pngs/24-ROBOTSTUDIO-LOGO-Black.png' | absolute_url }}" />
+  <meta property="og:description" content="{{ seo_description }}" />
+  <title>{{ seo_title }}</title>
+  <link rel="canonical" href="{{ page.url | replace: '.html', '' | absolute_url }}">
   <link rel="icon" href="/favicon.png" type="image/png">
 
 
@@ -21,7 +25,6 @@
   <link rel="stylesheet" href="/assets/css/core.css" />
   <link rel="stylesheet" href="/assets/css/sartre-skin-architecture.css" />
 
-  <title>Robo Reflections</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" href="icon.png" type="image/png">

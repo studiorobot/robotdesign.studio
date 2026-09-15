@@ -783,3 +783,47 @@ You are able to change the introduction, format, and contact information.
 2. Check the "Actions" tab in GitHub to see if the build succeeded
 3. If there are build errors, check the Actions log for YAML syntax errors
 4. Visit [studiorobot.github.io/robo-reflections](https://robotdesign.studio/robo-reflections) to verify changes appear correctly
+
+---
+
+## Courses
+
+The lab website hosts the course directory at [/courses](https://robotdesign.studio/courses) and every course-semester website.
+
+- `courses.html` + `_data/courses.yml` — the directory page: one card per course, listing all semesters. Editable in Pages CMS under **Courses**.
+- `_layouts/course.html` — the course page template (adapted from the original rob340 site). It renders whatever `_data/<course>/` contains.
+- `_data/<course>/*.yml` (e.g. `_data/rob340/`) — the **current semester's** content: course info, schedule, grading, students, main sections, labs, lectures, invited talks, group projects, page metadata. GSIs edit these in Pages CMS under the **ROB 340 – …** entries. (`social-links.yml` is git-only.)
+- `<course>/<term>/` (e.g. `rob340/w25/`) — one folder per semester holding that semester's images and videos. The current semester's `index.html` is a 3-line stub rendered from `_data/<course>/`; past semesters are frozen static HTML whose *content* never changes.
+- `assets/course/` — css/js shared by every course and semester (frozen pages included), so styling updates apply everywhere, past and present.
+- `<course>/index.html` — a redirect to the current semester, so `/rob340/` always lands on the latest term.
+
+Media conventions: this repo is the canonical archive, so course media is stored at original quality. Keep an eye on total size though — GitHub Pages has a 1 GB published-site limit (a media-heavy semester is ~80 MB), so compress only if the budget gets tight. Media paths in `_data/<course>/` files are root-relative (`/rob340/w25/snippets/class_1.mp4`), which is what Pages CMS writes automatically.
+
+### End-of-semester rollover (e.g. w25 → f26 for rob340)
+
+1. Freeze the finished semester and commit:
+   ```bash
+   scripts/freeze-course.sh rob340 w25
+   ```
+   This replaces `rob340/w25/index.html` with the fully rendered page; it is now permanently static and independent of `_data/rob340/`. (To un-freeze, restore the 3-line stub from git history.)
+2. Create the new term folder `rob340/f26/`: start `img/` and `snippets/` fresh (keep `img/class-logo.png`), and add the stub `index.html`:
+   ```yaml
+   ---
+   layout: course
+   course: rob340
+   ---
+   ```
+3. Reset `_data/rob340/*.yml` for the new semester (new schedule, lectures, students, etc.). Media paths now start with `/rob340/f26/`.
+4. Point the redirect in `rob340/index.html` at `./f26/`.
+5. In `.pages.yml`, update the `rob340` media entry's `input`/`output` from `rob340/w25` to `rob340/f26`, and the `path:` options that reference `rob340/w25/...`.
+6. In Pages CMS, add the new semester under the course in **Courses** and update the `current` checkboxes. Fill in the semester's **instructors, GSIs, IAs and topics covered** (copy from the course info and schedule) — this text is what the `/courses` archive page and Google's course search results show for that semester.
+
+### Adding a new course
+
+One command scaffolds everything (data files, term folder, redirect, Pages CMS config):
+
+```bash
+scripts/new-course.sh rob204 f26 "Introduction to Human-Robot Systems"
+```
+
+Then: add a logo at `<course>/<term>/img/class-logo.png`, commit and push, and fill in the content via Pages CMS — the sidebar gets a **Courses > ROB 204 (current semester)** folder automatically. Finally add the course under **Courses > Course directory** so it appears on `/courses`.

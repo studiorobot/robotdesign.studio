@@ -1,0 +1,26 @@
+title: "ROB 340: Human Evaluation of Robots"
+instructors:
+  - name: Patricia Alves-Oliveira
+  - name: Xiaoxiao Du
+GSIs:
+  - name: Miranda Mittleman
+IAs:
+  - name: Margaret Kempe
+department: Robotics Department
+university: University of Michigan Ann Arbor
+office: 2252 FRB
+yellow_box:
+  top-text: This course is running in Winter 2025
+  sections:
+    - title: Lectures
+      date: Monday & Wednesday
+      time: 1:30 - 3:00 PM
+      location: GGBL 1025
+    - title: Office Hours
+      date: Wednesday
+      time: 10:30 - 11:30 AM
+      location: 4150 FMCRB
+    - title: Lab
+      date: Thursday
+      time: 3:30 - 5:30 PM
+      location: 4150 FMCRB

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robotdesign.studio/sitemap.xml

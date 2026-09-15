@@ -1,5 +1,16 @@
 title: Robot Studio
-baseurl: "" 
-url: "" 
+baseurl: ""
+url: "https://robotdesign.studio"
 theme: null
+plugins:
+  - jekyll-sitemap
+exclude:
+  - scripts
+  - 280-archive-example
+  - optimize.sh
+  - thumbnail.py
+  - mise.toml
+  - requirements.txt
+  - Gemfile
+  - Gemfile.lock
 

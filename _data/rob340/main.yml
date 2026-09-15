@@ -1,0 +1,26 @@
+
+- name: "Course Description"
+  content: |
+   This core undergraduate course covers the fundamentals of how robots can be evaluated by human users to better understand the success of robotic systems. Topics include qualitative/quantitative approaches along with objective/subjective metrics to evaluate robots, design of experiments, selection of sample, etc. By the end of this class, students will be knowledgable on the types of metrics, studies, and analyses they can conduct to understand the performance of a robot system informed by human feedback.
+- name: 
+  image: true  # Image for this section
+  image_url: "/rob340/w25/img/group.jpg"  # Specify the image URL here
+
+- name: "Learning Objectives"
+  content: |
+    - Evaluate Human-Robot Interaction Systems.
+    - Learn to work in teams.
+    - Critique studies in user Human-Robot Interaction.
+    - Select the appropriate study method for a human-robot interaction study.
+    - Recognize differences between formative and summative studies.
+    - Reflect on the difference between system metrics and user metrics (when metrics collide).
+    - Create a research plan to evaluate robot systems
+    - Compare and contrast method in user studies
+    - Understand the connection between theory, design, implementation, and evaluation of a robot system
+# add image here
+- name: "Group Project"
+  content: The group project is a hands-on research project whose research topic and protocol are defined by the students and culminates in a written report and an oral group presentation.
+    Students are expected to choose from the below puzzle piece to create a research study. Students submit a 5-6 page report and give an oral presentation
+    covering their project at the end of the term. 
+
+
