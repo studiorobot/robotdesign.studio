@@ -149,7 +149,7 @@ members:
     university: University of Michigan
     project: Delicious
     joined: Fall 2026
-    img: /team/24-ROBOTSTUDIO-Icons-THREE-15-1.png
+    img: /team/24-ROBOTSTUDIO-Icons-THREE-15.png
   - name: Jaein Cha
     standing: Masters
     major: Robotics
@@ -337,3 +337,11 @@ alumni:
     project: AURA
     year: S25-W26
     linkedin: https://www.linkedin.com/in/eric-chen-883243257/
+  - name: Tetsu Kurumisawa
+    project: AURA
+    year: F25-F26
+    linkedin: https://www.linkedin.com/in/tetsu-kurumisawa/
+  - name: Maël Le Bras
+    project: AURA
+    year: W26-F26
+    linkedin: https://www.linkedin.com/in/mael-le-bras-63ba27404/
