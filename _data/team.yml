@@ -159,11 +159,12 @@ members:
     img: /team/24-ROBOTSTUDIO-Icons-THREE-15.png
   - name: Minie Xu
     standing: Undergrad
-    major: Biopsychology, Cognition, and Neuroscience
+    major: BCN & Cognitive Science
     university: University of Michigan
     project: Resilience, Scent
     joined: Fall 2026
-    img: /team/24-ROBOTSTUDIO-Icons-THREE-15.png
+    linkedin: https://www.linkedin.com/in/minieyxu
+    img: /team/DSC03208.jpg
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
