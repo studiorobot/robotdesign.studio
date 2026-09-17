@@ -29,6 +29,14 @@ active:
     keywords: assistive, community, disabilities
     poster: /projects/active/delicious/thumbnail.png
     video_webm: /projects/active/delicious/accessibility.webm
+    links:
+      doi:
+        - https://dl.acm.org/doi/10.1145/3568162.3576988
+        - https://dl.acm.org/doi/10.1145/3772318.3790481
+        - https://doi.org/10.1016/j.softx.2026.102628
+      yt:
+        - https://www.youtube.com/watch?v=JKJiZffJZ6Q
+        - https://youtu.be/tfez8F_uL9E?si=GcZZnsElHc45H3AS
   - name: "DROODLES: Design and Developmental of GenAI to Propel Human Creativity"
     members: Trey Davis, Peter H. Kahn Jr.,
     data: 2024 - ongoing
