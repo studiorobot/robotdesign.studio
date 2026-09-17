@@ -117,7 +117,6 @@ active:
       cognitive decline.
     keywords: cognitive decline, resilience, conversational robots
     poster: /projects/temp.png
-    video_mp4: /projects/active/panda/panda.mp4
   - name: "SCENT: Scent-Enhanced Conversational Robots for Reminiscence and
       Friendship"
     members: Long-Jing Hsu, Minie Xu, Nicole Ellison
@@ -129,7 +128,6 @@ active:
       connection.
     keywords: olfaction, reminiscence, older adults, social connection
     poster: /projects/temp.png
-    video_mp4: /projects/active/vista/vista.mp4
   - name: "SPROUT: Understanding Human-Robot Bonds at Home"
     members: Grace Pan, Elijah Cantu, Jaein Cha
     data: 2026 - ongoing
@@ -139,7 +137,6 @@ active:
       emergence of human-robot bonding in a home setting and inform the design
       of future home robots for companionship.
     poster: /projects/6977949d0da7312bfcd33c7e_Sprout Standing.jpg
-    video_mp4: /projects/active/panda/panda.mp4
   - name: "TOUCH: Assistive Robot Touch during Medical Emergencies"
     members: Grace Pan
     data: 2024 - ongoing
@@ -151,7 +148,6 @@ active:
       robot that delivers care during medical and assistive needs.
     keywords: assistive, physical health
     poster: /projects/temp.png
-    video_mp4: /projects/active/vista/vista.mp4
   - name: "VISTA: Robot Character for Fun Medical Eye Exams"
     members: Grace Pan, Mark Draelos, Nita Valikodath
     data: 2024 - ongoing
