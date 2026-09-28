@@ -166,6 +166,16 @@ members:
     joined: Fall 2026
     linkedin: https://www.linkedin.com/in/minieyxu
     img: /team/MinieXu.jpg
+  - name: "Josue Torres-Fonseca "
+    standing: Ph.D.
+    major: University of Michigan
+    university: Department of Computer Science and Engineering
+    project: Resilience
+    role: Co-researcher, developer
+    joined: Spring 2026
+    personal_website: https://www.josuetorresfonseca.com/
+    google_scholar: https://scholar.google.com/citations?user=otw2Ly8AAAAJ&hl=en
+    linkedin: https://www.linkedin.com/in/josuetorresfonseca/
 collab:
   - name: Abhishek Narula
     role: Full Stack Engineer
