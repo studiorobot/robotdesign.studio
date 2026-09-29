@@ -53,7 +53,14 @@ description: >-
 					</video>
 				</div>
 				<div class="project-description column width-8" style="padding:10px;">
-					<h5 style="margin:0px; margin-bottom:5px; font-size:16px;">{{ project.name }}</h5>
+					{% assign site_link = project.links.site | first %}
+					<h5 style="margin:0px; margin-bottom:5px; font-size:16px;">
+						{% if site_link and site_link != "" %}
+						<a href="{{ site_link }}"{% unless site_link contains "robotdesign.studio" %} target="_blank" rel="noopener"{% endunless %}>{{ project.name }}</a>
+						{% else %}
+						{{ project.name }}
+						{% endif %}
+					</h5>
 					{% if project.area %}
 					{{ project.area }}<br>
 					{% endif %}

@@ -14,6 +14,9 @@ active:
     keywords: art, biometrics, interaction language
     poster: /projects/active/aura/thumbnail.png
     video_mp4: /projects/active/aura/aura_video.mp4
+    links:
+      site:
+        - https://robotdesign.studio/aura/
   - name: "DELICIOUS: Assistive Robotics for People with Disabilities during Social
       Dining"
     members: Atharva Kashyap, Ted Ivanac, Selena Zou
