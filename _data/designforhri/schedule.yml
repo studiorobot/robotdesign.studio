@@ -1,58 +1,126 @@
-- title: "Lectures"
+- title: Lectures
   sessions:
-    - date: "01/11"
-      class: "Class 1: Lecture Introduction"
-    - date: "01/16"
-      class: "Class 2: Lecture UX Design Process"
-    - date: "01/18"
-      class: "Class 3: Lecture Design Dimensions of Social Robots"
-    - date: "01/23"
-      class: "Class 4: Lecture Participatory Design"
-    - date: "01/25"
-      class: "Class 5: Community Research"
-    - date: "01/29"
-      class: "Class 6: Atelier Class"
-    - date: "02/01"
-      class: "Class 7: Student Presentations - Hack Your Toy!"
-    - date: "02/06"
-      class: "Class 8: Guest Lecture"
-    - date: "02/08"
-      class: "Class 9: Student Presentations of Proposals"
-    - date: "02/13"
-      class: "Class 10: Guest Lecture"
-    - date: "02/15"
-      class: "Class 11: Atelier Class"
-    - date: "02/20"
-      class: "Class 12: Guest Lecture"
-    - date: "02/22"
-      class: "Class 13: Lecture"
-    - date: "03/05"
-      class: "Class 14: Lecture Design Metaphor"
-    - date: "03/07"
-      class: "Class 15: Guest Lecture: Sophia"
-    - date: "03/12"
-      class: "Class 16: Atelier Class"
-    - date: "03/14"
-      class: "Class 17: Atelier Class"
-    - date: "03/19"
-      class: "Class 18: Lecture Bodystorming"
-    - date: "03/21"
-      class: "Class 19: Guest Lecture"
-    - date: "03/26"
-      class: "Class 20: Paper Critique Presentation"
-    - date: "03/28"
-      class: "Class 21: Guest Lecture"
-    - date: "04/02"
-      class: "Class 22: Lecture Design Evaluation"
-    - date: "04/04"
-      class: "Class 23: Guest Lecture"
-    - date: "04/09"
-      class: "Class 24: Lecture"
-    - date: "04/11"
-      class: "Class 25: Lecture Intermediate Level Knowledge"
-    - date: "04/16"
-      class: "Class 26: Atelier Class"
-    - date: "04/18"
-      class: "Class 27: Student Presentations of Group Projects"
-    - date: "04/23"
-      class: "Class 28: Student Presentations of Group Projects"
+  - date: 08/31
+    class: 'Class 1: Introuction'
+  - date: 09/02
+    class: 'Class 2: Dimensions of Social Robot Design'
+  - date: 09/07
+    class: 'No class: Labor Day'
+  - date: 09/14
+    class: 'Class 3: Human-Centered Robot Design & qualtrics'
+  - date: 09/16
+    class: 'Class 4: Individual project feedback'
+  - date: 09/21
+    class: 'Class 5: Social Robot UX Design'
+  - date: 09/23
+    class: 'Class 6: Co-Design Robot Canvases'
+  - date: 09/28
+    class: 'Class 7: Individual project presentation'
+  - date: 09/30
+    class: 'Class 8: Guest Lecture (Katerina Kamprani)'
+  - date: 10/05
+    class: 'Class 9: Speculative Robotics'
+  - date: 10/07
+    class: 'Class 10: Guest Lecture (Nihar Sabnis)'
+  - date: 10/12
+    class: 'Class 11: Guest Lecture (Victor Anthony)'
+  - date: 10/14
+    class: 'Class 12: GenAI for robot design'
+  - date: 10/19
+    class: 'No class: Fall Break'
+  - date: 10/21
+    class: 'Class 13: Guest Lecture (Jon Ota)'
+  - date: 10/26
+    class: 'Class 14: Group project feedback team'
+  - date: 10/28
+    class: 'Class 15: Guest Lecture (Carla Diana)'
+  - date: 11/02
+    class: 'Class 16: Emotional Entanglements'
+  - date: 11/04
+    class: 'Class 17: Computational robot design with OTs'
+  - date: 11/09
+    class: 'Class 18: Group project feedback peers'
+  - date: 11/11
+    class: 'Class 19: Guest Lecture (Paulina Yurman)'
+  - date: 11/16
+    class: 'Class 20: Group project presentation'
+  - date: 11/18
+    class: 'Class 21: Guest Lecture (Katrin Beauchaud)'
+  - date: 11/23
+    class: 'Class 22: Connor (potentially)'
+  - date: 11/25
+    class: 'No class: Thanksgiving'
+  - date: 11/30
+    class: 'Class 23: WoZ for robot design'
+  - date: 12/02
+    class: 'Class 24: Guest Lecture (Francesca Cocchella)'
+  - date: 12/07
+    class: 'Class 25: Guest Lecture (Daniela Mitlegerber)'
+  - date: 12/09
+    class: 'Class 26: Last class'
+- title: Discussions
+  sessions:
+  - date: 09/01
+    class: 'Discussion 1: Design it. Break it.'
+  - date: 09/08
+    class: 'Discussion 2: Elevator Pitch for Robotics'
+  - date: 09/15
+    class: 'Discussion 3: Work on individual project & toy distribution'
+  - date: 09/22
+    class: 'Discussion 4: Work on individual project'
+  - date: 09/29
+    class: 'Discussion 5: Social Robot Morphology Wrangle'
+  - date: 10/06
+    class: 'Discussion 6: Carla Diana book & Don Norman'
+  - date: 10/13
+    class: 'Discussion 7: Student-led paper critique'
+  - date: 10/20
+    class: 'No class: Fall Break'
+  - date: 10/27
+    class: 'Discussion 8: Group project prototype demo'
+  - date: 11/03
+    class: 'Discussion 9: TBD'
+  - date: 11/10
+    class: 'Discussion 10: Good Design (EllieQ)'
+  - date: 11/17
+    class: 'Discussion 11: TBD'
+  - date: 11/24
+    class: 'Discussion 12: Work on group project'
+  - date: 12/01
+    class: 'Discussion 13: Prepare for final'
+  - date: 12/08
+    class: 'Discussion 14: Final (accommodations: FRB 3200 from 11:30-12:30)'
+- title: Assignment deadlines
+  sessions:
+  - date: 09/21
+    class: Drop/add deadline
+  - date: 09/25
+    class: Enroll team (Group project)
+  - date: 09/28
+    class: Oral presentation in class & live demo (Individual project)
+  - date: 10/07
+    class: Project Proposal (Group project)
+  - date: 10/07
+    class: BOM (Group project)
+  - date: 10/12
+    class: Project Report 1 (Group project)
+  - date: 10/12
+    class: BOM - update (Group project)
+  - date: 10/12
+    class: Needfinding research complete (Group project)
+  - date: 10/13
+    class: Paper critique - Graduate stduents only (Group project)
+  - date: 10/27
+    class: Prototype "Show Off" (Group project)
+  - date: 10/30
+    class: Project Report 2 (Group project)
+  - date: 10/30
+    class: Formative study complete (Group project)
+  - date: 11/15
+    class: Formative study complete (Group project)
+  - date: 11/16
+    class: Oral Project Presentation & live demo (Group project)
+  - date: 11/24
+    class: Project Written Report & Slides submission & Demo video (Group project)
+  - date: 12/08
+    class: Final (Individual grade)

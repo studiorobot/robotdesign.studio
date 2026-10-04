@@ -41,8 +41,8 @@ media:
 
   - name: designforhri
     label: Courses · ROB 498/599 (current semester)
-    input: designforhri/w24
-    output: /designforhri/w24
+    input: designforhri/f26
+    output: /designforhri/f26
 
 content:
   - name: lab-website
@@ -925,7 +925,7 @@ content:
             path: _data/rob340/schedule.yml
             format: yaml
             list: true
-            description: The schedule sidebar on the course page.
+            description: 'The schedule sidebar. Sections show in list order (e.g. Lectures, Discussions, Assignment deadlines) and sessions show in list order too — the site does not sort by date. At the start of a semester this can be pre-filled from the planning sheet with scripts/import-semester-sheet.py (see README).'
             fields:
               - name: title
                 type: string
@@ -940,10 +940,10 @@ content:
                 fields:
                   - name: date
                     type: string
-                    description: e.g. 01/08
+                    description: MM/DD with leading zeros, e.g. 09/02
                   - name: class
                     type: string
-                    description: 'e.g. Class 1: Introduction'
+                    description: 'e.g. "Class 3: Human-Centered Robot Design" or "No class: Fall Break". Class numbers should match the numbered Lecture Summary.'
           - name: rob340-grading
             label: Grading
             type: file
@@ -1027,7 +1027,7 @@ content:
             path: _data/rob340/lectures.yml
             format: yaml
             list: true
-            description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list.
+            description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list. Entries imported from the planning sheet use the placeholder poster /assets/course/placeholder-lecture.png — replace it with a snippet from the class.
             fields:
               - name: title
                 type: string
@@ -1093,6 +1093,7 @@ content:
                   message: Must be a full URL starting with https:// (or left empty)
               - name: image
                 type: image
+                description: Institution logo or speaker photo. /assets/course/placeholder-talk.png is a placeholder to replace.
                 options:
                   media: rob340
                   path: rob340/w25/img/talk_logos
@@ -1245,7 +1246,7 @@ content:
             path: _data/designforhri/schedule.yml
             format: yaml
             list: true
-            description: The schedule sidebar on the course page.
+            description: 'The schedule sidebar. Sections show in list order (e.g. Lectures, Discussions, Assignment deadlines) and sessions show in list order too — the site does not sort by date. At the start of a semester this can be pre-filled from the planning sheet with scripts/import-semester-sheet.py (see README).'
             fields:
               - name: title
                 type: string
@@ -1260,10 +1261,10 @@ content:
                 fields:
                   - name: date
                     type: string
-                    description: e.g. 01/08
+                    description: MM/DD with leading zeros, e.g. 09/02
                   - name: class
                     type: string
-                    description: 'e.g. Class 1: Introduction'
+                    description: 'e.g. "Class 3: Human-Centered Robot Design" or "No class: Fall Break". Class numbers should match the numbered Lecture Summary.'
           - name: designforhri-grading
             label: Grading
             type: file
@@ -1315,7 +1316,7 @@ content:
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/img
+                  path: designforhri/f26/img
           - name: designforhri-labs
             label: Labs
             type: file
@@ -1340,14 +1341,14 @@ content:
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/img/labs
+                  path: designforhri/f26/img/labs
           - name: designforhri-lectures
             label: Lectures
             type: file
             path: _data/designforhri/lectures.yml
             format: yaml
             list: true
-            description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list.
+            description: The Class Lecture Summary rows. Classes are numbered automatically in the order of this list. Entries imported from the planning sheet use the placeholder poster /assets/course/placeholder-lecture.png — replace it with a snippet from the class.
             fields:
               - name: title
                 type: string
@@ -1360,13 +1361,13 @@ content:
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/snippets
+                  path: designforhri/f26/snippets
               - name: video_src
                 label: Hover video (mp4)
                 type: file
                 options:
                   media: designforhri
-                  path: designforhri/w24/snippets
+                  path: designforhri/f26/snippets
                   extensions: [mp4]
               - name: slides_link
                 label: Slides link
@@ -1413,9 +1414,10 @@ content:
                   message: Must be a full URL starting with https:// (or left empty)
               - name: image
                 type: image
+                description: Institution logo or speaker photo. /assets/course/placeholder-talk.png is a placeholder to replace.
                 options:
                   media: designforhri
-                  path: designforhri/w24/img/talk_logos
+                  path: designforhri/f26/img/talk_logos
           - name: designforhri-group-projects
             label: Group projects
             type: file
@@ -1436,7 +1438,7 @@ content:
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/img/gps
+                  path: designforhri/f26/img/gps
           - name: designforhri-head
             label: Page metadata
             type: file
@@ -1454,10 +1456,10 @@ content:
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/img
+                  path: designforhri/f26/img
               - name: icon
                 label: Tab icon
                 type: image
                 options:
                   media: designforhri
-                  path: designforhri/w24/img
+                  path: designforhri/f26/img

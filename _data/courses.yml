@@ -20,6 +20,15 @@ courses:
           - name: Patricia Alves-Oliveira
         gsis:
           - name: Manohar Bhat
+      - term: Fall 2026
+        url: /designforhri/f26/
+        current: true
+        instructors:
+          - name: Patricia Alves-Oliveira
+          - name: Long-Jing Hsu
+          - name: Atharva S. Kashyap
+        ias:
+          - name: Trey Davis
   - number: ROB 340
     title: Human Evaluation of Robots
     description: Covers fundamentals of how robots can be evaluated by human users

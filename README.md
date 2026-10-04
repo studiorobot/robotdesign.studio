@@ -792,31 +792,42 @@ The lab website hosts the course directory at [/courses](https://robotdesign.stu
 
 - `courses.html` + `_data/courses.yml` — the directory page: one card per course, listing all semesters. Editable in Pages CMS under **Courses**.
 - `_layouts/course.html` — the course page template (adapted from the original rob340 site). It renders whatever `_data/<course>/` contains.
-- `_data/<course>/*.yml` (e.g. `_data/rob340/`) — the **current semester's** content: course info, schedule, grading, students, main sections, labs, lectures, invited talks, group projects, page metadata. GSIs edit these in Pages CMS under the **ROB 340 – …** entries. (`social-links.yml` is git-only.)
+- `_data/<course>/*.yml` (e.g. `_data/rob340/`, `_data/designforhri/`) — the **current semester's** content: course info, schedule, grading, students, main sections, labs, lectures, invited talks, group projects, page metadata. Course staff edit these in Pages CMS under **Courses > ROB 340 (current semester)** / **Courses > ROB 498/599 (current semester)**. (`social-links.yml` is git-only.)
 - `<course>/<term>/` (e.g. `rob340/w25/`) — one folder per semester holding that semester's images and videos. The current semester's `index.html` is a 3-line stub rendered from `_data/<course>/`; past semesters are frozen static HTML whose *content* never changes.
 - `assets/course/` — css/js shared by every course and semester (frozen pages included), so styling updates apply everywhere, past and present.
 - `<course>/index.html` — a redirect to the current semester, so `/rob340/` always lands on the latest term.
 
 Media conventions: this repo is the canonical archive, so course media is stored at original quality. Keep an eye on total size though — GitHub Pages has a 1 GB published-site limit (a media-heavy semester is ~80 MB), so compress only if the budget gets tight. Media paths in `_data/<course>/` files are root-relative (`/rob340/w25/snippets/class_1.mp4`), which is what Pages CMS writes automatically.
 
-### End-of-semester rollover (e.g. w25 → f26 for rob340)
+### Starting a new semester (e.g. w24 → f26 for designforhri)
 
-1. Freeze the finished semester and commit:
+Two scripts do the repetitive part; the rest is a quick pass in Pages CMS. They need Python 3 with PyYAML — once per machine, from the repo root:
+
+```bash
+python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+```
+
+1. **Roll the course over** (set the new semester's instructors / GSIs / IAs in `_data/<course>/course.yml` first, so the course directory entry picks them up):
    ```bash
-   scripts/freeze-course.sh rob340 w25
+   scripts/new-semester.py designforhri f26          # add --dry-run to preview
    ```
-   This replaces `rob340/w25/index.html` with the fully rendered page; it is now permanently static and independent of `_data/rob340/`. (To un-freeze, restore the 3-line stub from git history.)
-2. Create the new term folder `rob340/f26/`: start `img/` and `snippets/` fresh (keep `img/class-logo.png`), and add the stub `index.html`:
-   ```yaml
-   ---
-   layout: course
-   course: rob340
-   ---
+   This freezes the finished semester's page (skipped if it is already static), creates `designforhri/f26/` with the Jekyll stub and empty media folders, carries over course info / page metadata / grading and the text sections of the course description (image-only sections such as the class photo are dropped — add this semester's at the end of term), with media paths rewritten to `/designforhri/f26/`, empties the schedule, lectures, talks, labs, students and group projects, points `designforhri/index.html` at `./f26/`, updates the Pages CMS media folder and upload paths in `.pages.yml`, and adds "Fall 2026" as the current semester in `_data/courses.yml`. It prints a list of things to review (yellow box times/locations, office, grading percentages).
+
+2. **Seed the schedule from the planning sheet.** In the Google Sheet, open each tab and use *File > Download > Comma-separated values (.csv)* for the `schedule`, `timeline & assignments` and `invited speakers` tabs, then:
+   ```bash
+   scripts/import-semester-sheet.py --course designforhri --term f26 \
+       --schedule ~/Downloads/schedule.csv --timeline ~/Downloads/timeline.csv \
+       --speakers ~/Downloads/speakers.csv --check      # add --dry-run to preview
    ```
-3. Reset `_data/rob340/*.yml` for the new semester (new schedule, lectures, students, etc.). Media paths now start with `/rob340/f26/`.
-4. Point the redirect in `rob340/index.html` at `./f26/`.
-5. In `.pages.yml`, update the `rob340` media entry's `input`/`output` from `rob340/w25` to `rob340/f26`, and the `path:` options that reference `rob340/w25/...`.
-6. In Pages CMS, add the new semester under the course in **Courses** and update the `current` checkboxes. Fill in the semester's **instructors, GSIs, IAs and topics covered** (copy from the course info and schedule) — this text is what the `/courses` archive page and Google's course search results show for that semester.
+   This writes `schedule.yml` (Lectures, Discussions and Assignment deadlines, dates as MM/DD), a `lectures.yml` skeleton with one entry per held lecture (placeholder poster, no video — staff add the snippet, summary and slides after each class), `talks.yml` with the confirmed speakers (placeholder logo, no link; the placeholders live in `assets/course/`), and the Lectures/Discussions days and times in the yellow box. Read the printed report: it lists every cell that was skipped or cleaned (staff "OOT" notes and staff initials are dropped, `L4` may become `Class 3` because cancelled classes are not counted, empty discussion titles become `TBD`, spelling differences between the two tabs, speakers without a date, …). Re-running is safe; the script refuses to overwrite files that staff have since edited unless you pass `--force`.
+
+   The importer expects the sheet laid out like the Fall 2026 one: optional header lines `Lectures: M/W 130-3` / `Discussion: Tu 1130-1230`; a header row starting with `Date` whose session columns are named `Lecture - Mon`, `Discuss - Tue`, `Lecture - Wed` (any weekday; `Lab - Thu` works too); one row per week with the date range in the first column (`Aug 31 - Sep 04`); cells like `L4: Topic (P, LG)`, `D3: Topic`, `NO CLASS (LABOR DAY)`, `CANCELLED`, `Guest lecture (2) Speaker Name`; footnotes like `**Sep 21st: drop/add deadline`. In the timeline tab, actions starting with `*` are internal and skipped; in the speakers tab a speaker needs a `Date` and a `Format` to be imported. (`--sheet-url` reads the tabs directly, but only if the sheet is shared as "anyone with the link can view".)
+
+3. `bundle exec jekyll serve`, check `/designforhri/f26/` and `/courses`, then commit and push.
+
+4. **Finish in Pages CMS** under *Courses > ROB 498/599 (current semester)*: students, grading percentages, yellow-box locations and office hours, the course photo and project images in *Main sections*, speaker links and logos, and anything the import report flagged. In *Courses > Course directory*, check the new semester's topics and staff — that text is what `/courses` and Google's course results show.
+
+To un-freeze a past semester, restore its 3-line stub from git history; to freeze one by hand, run `scripts/freeze-course.sh <course> <term>`.
 
 ### Adding a new course
 
