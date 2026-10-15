@@ -190,3 +190,13 @@ semesters:
         img: /assets/robo-reflections/images/thumbnails/DesignFramework_Page_01.jpg
         date: Oct 1st
         presenter: Long-Jing Hsu
+      - title: "Long-Term Integration of a Robot in an Inclusive Daycare: An
+          Ethnographic Study Focused on Children and Caregivers"
+        authors: Jan Ole Rixen, Kathrin Gerling, Barbara Bruno
+        event: 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI
+          ’26)
+        doi: https://doi.org/10.1145/3757279.3785578
+        pdf: /assets/robo-reflections/pdfs/LongTerm.pdf
+        img: /assets/robo-reflections/images/thumbnails/LongTerm.png
+        date: Oct 15th
+        presenter: Aman Nagesh
