@@ -1,45 +1,50 @@
 - name: Katerina Kamprani
   title: Impossible Objects
   institution: ''
-  link: ''
+  link: https://www.theuncomfortable.com/
   image: /assets/course/placeholder-talk.png
 - name: Nihar Sabnis
   title: Design of vibrotactile technologies
   institution: ETH
-  link: ''
+  link: https://scholar.google.com/citations?user=1FU5pTAAAAAJ&hl=en
   image: /assets/course/placeholder-talk.png
-- name: Victor Anthony
+- name: Victor Antony
   title: New Social Robots
   institution: ''
-  link: ''
+  link: https://vantony1.github.io/
   image: /assets/course/placeholder-talk.png
 - name: Jon Ota
   title: Empathy and identity design
   institution: Anthropic
-  link: ''
+  link: https://www.jonathanota.com/
   image: /assets/course/placeholder-talk.png
 - name: Carla Diana
   title: Design of everyday objects
   institution: ''
-  link: ''
+  link: https://www.carladiana.com/
   image: /assets/course/placeholder-talk.png
 - name: Paulina Yurman
-  title: Speculative
+  title: Speculative design
+  institution: ''
+  link: https://yurman.co.uk/
+  image: /assets/course/placeholder-talk.png
+- name: Katrin Bauchaud
+  title: A PM journey in Design
+  institution: GM
+  link: ''
+  image: /assets/course/placeholder-talk.png
+- name: Connor Williams
+  title: ''
   institution: ''
   link: ''
   image: /assets/course/placeholder-talk.png
-- name: Katrin Beauchaud
-  title: A PM journey in Design
-  institution: GM
+- name: Daniela Mitlegerber
+  title: Augmented architecture
+  institution: ''
   link: ''
   image: /assets/course/placeholder-talk.png
 - name: Francesca Cocchella
   title: Design with stakeholders
   institution: IIT
-  link: ''
-  image: /assets/course/placeholder-talk.png
-- name: Daniela Mitlegerber
-  title: Augnmented architecture
-  institution: ''
   link: ''
   image: /assets/course/placeholder-talk.png

@@ -1,67 +1,69 @@
 - title: Lectures
   sessions:
   - date: 08/31
-    class: 'Class 1: Introuction'
+    class: 'Class 1: Introduction'
   - date: 09/02
     class: 'Class 2: Dimensions of Social Robot Design'
   - date: 09/07
     class: 'No class: Labor Day'
+  - date: 09/09
+    class: 'No class: Cancelled'
   - date: 09/14
-    class: 'Class 3: Human-Centered Robot Design & qualtrics'
+    class: 'Class 3: Participatory Design: Beginning to End'
   - date: 09/16
-    class: 'Class 4: Individual project feedback'
+    class: 'Class 4: Individual Project Feedback'
   - date: 09/21
     class: 'Class 5: Social Robot UX Design'
   - date: 09/23
     class: 'Class 6: Co-Design Robot Canvases'
   - date: 09/28
-    class: 'Class 7: Individual project presentation'
+    class: 'Class 7: Individual Project Presentations'
   - date: 09/30
-    class: 'Class 8: Guest Lecture (Katerina Kamprani)'
+    class: 'Class 8: Guest Lecture (Katerina Kamprani, online)'
   - date: 10/05
-    class: 'Class 9: Speculative Robotics'
+    class: 'Class 9: Speculative Robots'
   - date: 10/07
-    class: 'Class 10: Guest Lecture (Nihar Sabnis)'
+    class: 'Class 10: Guest Lecture (Nihar Sabnis, online)'
   - date: 10/12
-    class: 'Class 11: Guest Lecture (Victor Anthony)'
+    class: 'Class 11: Guest Lecture (Victor Antony, online)'
   - date: 10/14
-    class: 'Class 12: GenAI for robot design'
+    class: 'Class 12: Generative AI for Robot Design'
   - date: 10/19
     class: 'No class: Fall Break'
   - date: 10/21
     class: 'Class 13: Guest Lecture (Jon Ota)'
   - date: 10/26
-    class: 'Class 14: Group project feedback team'
+    class: 'Class 14: Group Project Feedback (Team)'
   - date: 10/28
     class: 'Class 15: Guest Lecture (Carla Diana)'
   - date: 11/02
     class: 'Class 16: Emotional Entanglements'
   - date: 11/04
-    class: 'Class 17: Computational robot design with OTs'
+    class: 'Class 17: Designing Robots with SMEs'
   - date: 11/09
-    class: 'Class 18: Group project feedback peers'
+    class: 'Class 18: Group Project Feedback (Peers)'
   - date: 11/11
-    class: 'Class 19: Guest Lecture (Paulina Yurman)'
+    class: 'Class 19: Guest Lecture (Paulina Yurman, online)'
   - date: 11/16
-    class: 'Class 20: Group project presentation'
+    class: 'Class 20: Group Project Presentations'
   - date: 11/18
-    class: 'Class 21: Guest Lecture (Katrin Beauchaud)'
+    class: 'Class 21: Guest Lecture (Katrin Bauchaud)'
   - date: 11/23
-    class: 'Class 22: Connor (potentially)'
+    class: 'Class 22: Guest Lecture (Connor Williams)'
   - date: 11/25
     class: 'No class: Thanksgiving'
   - date: 11/30
-    class: 'Class 23: WoZ for robot design'
+    class: 'Class 23: Guest Lecture (Daniela Mitlegerber, online)'
   - date: 12/02
     class: 'Class 24: Guest Lecture (Francesca Cocchella)'
   - date: 12/07
-    class: 'Class 25: Guest Lecture (Daniela Mitlegerber)'
+    class: 'Class 25: WoZ for Robot Design'
   - date: 12/09
-    class: 'Class 26: Last class'
+    class: 'Class 26: Last Class'
 - title: Discussions
   sessions:
   - date: 09/01
-    class: 'Discussion 1: Design it. Break it.'
+    class: 'Discussion 1: Design It. Break It.'
   - date: 09/08
     class: 'Discussion 2: Elevator Pitch for Robotics'
   - date: 09/15
@@ -71,56 +73,62 @@
   - date: 09/29
     class: 'Discussion 5: Social Robot Morphology Wrangle'
   - date: 10/06
-    class: 'Discussion 6: Carla Diana book & Don Norman'
+    class: 'Discussion 6: Robot Interaction Design & Analysis'
   - date: 10/13
     class: 'Discussion 7: Student-led paper critique'
   - date: 10/20
     class: 'No class: Fall Break'
   - date: 10/27
-    class: 'Discussion 8: Group project prototype demo'
+    class: 'Discussion 8: Group project prototype show-off'
   - date: 11/03
-    class: 'Discussion 9: TBD'
+    class: 'Discussion 9: Group project work time'
   - date: 11/10
-    class: 'Discussion 10: Good Design (EllieQ)'
+    class: 'Discussion 10: Good Design (ElliQ)'
   - date: 11/17
-    class: 'Discussion 11: TBD'
+    class: 'Discussion 11: Group project presentations'
   - date: 11/24
     class: 'Discussion 12: Work on group project'
   - date: 12/01
     class: 'Discussion 13: Prepare for final'
   - date: 12/08
-    class: 'Discussion 14: Final (accommodations: FRB 3200 from 11:30-12:30)'
+    class: 'Discussion 14: Final (accommodations: FRB 3200, 11:30 AM - 12:30 PM)'
 - title: Assignment deadlines
   sessions:
   - date: 09/21
-    class: Drop/add deadline
+    class: 'Drop/add deadline'
   - date: 09/25
-    class: Enroll team (Group project)
+    class: 'Enroll team (Group project)'
   - date: 09/28
-    class: Oral presentation in class & live demo (Individual project)
+    class: 'Oral presentation & live demo (Individual project)'
+  - date: 09/28
+    class: 'Makerspace training completion'
+  - date: 10/06
+    class: 'Pre-lecture activity: Nihar Sabnis'
   - date: 10/07
-    class: Project Proposal (Group project)
+    class: 'Project Proposal (Group project)'
   - date: 10/07
-    class: BOM (Group project)
+    class: 'BOM (Group project)'
   - date: 10/12
-    class: Project Report 1 (Group project)
+    class: 'Project Update Report 1 & BOM v2 (Group project)'
   - date: 10/12
-    class: BOM - update (Group project)
+    class: 'Needfinding research complete (Group project)'
   - date: 10/12
-    class: Needfinding research complete (Group project)
+    class: 'Post-lecture activity: Nihar Sabnis'
   - date: 10/13
-    class: Paper critique - Graduate stduents only (Group project)
+    class: 'Paper critique - ROB 599 students only (Group project)'
+  - date: 10/25
+    class: 'BOM v3 (Group project)'
   - date: 10/27
-    class: Prototype "Show Off" (Group project)
+    class: 'Prototype "Show Off" (Group project)'
   - date: 10/30
-    class: Project Report 2 (Group project)
+    class: 'Project Update Report 2 (Group project)'
   - date: 10/30
-    class: Formative study complete (Group project)
+    class: 'Formative study with 2 of 4 participants complete (Group project)'
   - date: 11/15
-    class: Formative study complete (Group project)
+    class: 'Formative study with all 4 participants complete (Group project)'
   - date: 11/16
-    class: Oral Project Presentation & live demo (Group project)
+    class: 'Oral project presentation & live demo (Group project)'
   - date: 11/24
-    class: Project Written Report & Slides submission & Demo video (Group project)
+    class: 'Final written report, slides & demo video (Group project)'
   - date: 12/08
-    class: Final (Individual grade)
+    class: 'Final (Individual grade)'

@@ -1,6 +1,9 @@
 - name: "Course Description"
   content: |
-   This advanced course covers fundamentals of Design for Human-Robot Interaction. Topics include frameworks for robot design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design ethics, etc. This course will prepare students to be full-stack interaction robot designers.
+   This advanced course covers fundamentals of Design for Human-Robot Interaction, leading to the creation of memorable relationships with robots. Topics include frameworks for robot design; ideation strategies for robotics such as body-storming and speculation; participatory design with end-users and communities; creation of mock-ups and prototypes to test ideas; development of qualitative and quantitative key-performance indicators to measure the success of the robot; design for ethics, equality, and justice in robotics. We will create a vision for relationships between humans and robots that are inspiring, refined, and magical. This course will prepare students to be full-stack interaction robot designers.
+- name: "Pre-requisites"
+  content: |
+    This class is for students that resonate with or are intrigued by the idea of designing robots that can form relationships with humans. There are no formal prerequisites, but knowledge of or strong interest in hands-on design, basic programming, and prototyping is recommended. Besides Robotics, the class welcomes students from other departments, including the School of Art & Design, School of Information, Communication, History, Psychology, Philosophy, Film Television and Media, Computer Science, Mechanical/Electrical Engineering, Medicine, and others.
 - name: "Learning Objectives"
   content: |
     After this course, students will be able to:
@@ -12,13 +15,23 @@
 
 - name: "Structure"
   content: |
-    This course is structured as an upper-undergrad and graduate level hands-on course on design for human-robot interaction.
-    - Interactive Lectures led by the Professor.
-    - Guest Lectures from Experts in the field of design.
-    - Workshop Classes intended to be a time for working on projects.
-    - Guided Projects and receive feedback from the Professor and peers.
-    - Student Presentations, of research papers and projects related to the course.
+    This course is structured as an upper-undergrad and graduate level hands-on course on design for human-robot interaction. Lectures and discussions are held in person only, and attendance is mandatory. The content is delivered as:
+    - Lectures led by the Professor.
+    - Speaker Series, where experts in the field of design give a guest lecture.
+    - Atelier classes, a time to work on projects and receive guidance and feedback from the course team and peers.
+    - Student Presentations of research papers and projects related to the course.
 
-- name: "Individual Project Rubric"
+- name: "Course Resources"
   content: |
-    Students work individually to re-create an existing toy and use the components for a different design goal.
+    - [Canvas](https://umich.instructure.com/courses/865252): course organization, assignments, and grading.
+    - [Piazza](https://piazza.com/umich/fall2026/rob498005fa2026/home): all course questions and discussion. Please do not email the course staff with logistics or technical questions; use Piazza or office hours instead.
+    - [Makerspace](https://teamprojects.engin.umich.edu/makerspace-home/): 3D printers, laser cutters, soldering stations, and more. Training must be completed before access.
+    - Robot Garage (4170 FMCRB, 4th floor): borrow additional tools and materials. Not for course-related questions.
+
+- name: "Individual Project: Hack your Toy!"
+  content: |
+    Students work individually to "destroy", i.e., open up, an existing toy and apply its interior components (e.g., sensors and actuators) to a different design goal. The new design needs to be interactive and usable, and can include elements of humour, creativity, and even controversy. Students document the hacking process and give an elevator-pitch presentation with a live demo to the class.
+
+- name: "Group Project: Robot Design"
+  content: |
+    Students work in groups to engage in all stages of the design process while creating a new social robot that addresses a real need of a specific population. Teams combine needfinding research with real users, a design method from the class (e.g., speculative design, community-based design, genAI design), visual documentation of the design process, and a formative evaluation of their robot with users. The project ends with an oral presentation and live demo in class and a paper-style written report. Expect to spend at least 60-80 hours over the semester.

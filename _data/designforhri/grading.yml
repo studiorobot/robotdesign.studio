@@ -1,14 +1,14 @@
-- title: "Individual Project - 30%"
+- title: "Group Project - 40%"
   text:
-    - "Task: Students will work individually to re-create an existing toy and use the components for a different design goal."
-    - "Evaluation: Students will be graded based on a set of design rubrics."
-- title: "Group Project - 50%"
+    - "Task: Students work in teams to design, prototype, and evaluate a new social robot that addresses a real need of a specific population, using design methods from the class."
+    - "Evaluation: Teams are graded on the project proposal and BOM, two update reports, the prototype show-off, the final oral presentation with live demo, and the final written report, slides, and demo video. Graduate (ROB 599) students also present a paper critique."
+- title: "Individual Project - 20%"
   text:
-    - "Task: Students will engage in group projects aimed at implementing an interactive and creative Robot Design to gain hands-on practical experience."
-    - "Evaluation: Project teams will be graded based on consistent participation throughout the semester, deliverables, demonstrated mastery of literature and technical content. Graduate students are assigned a research paper related to the project."
-- title: "Class Involvement - 20%"
+    - "Task: Hack your Toy! Students work individually to open up an existing toy and re-use its components (e.g., sensors, actuators) for a new interactive design goal."
+    - "Evaluation: Oral presentation and live demo in class."
+- title: "Final - 20%"
   text:
-    - "The class involvement is split into:"
-    - "Quizzes"
-    - "Reflections on Guest Lectures"
-    - "Attentiveness and Interest"
+    - "Individual pen & paper final during the last discussion section."
+- title: "Class Presence - 20%"
+  text:
+    - "Attendance and participation in lectures and discussions, keeping 4150 FMCRB clean, and completing Makerspace training."

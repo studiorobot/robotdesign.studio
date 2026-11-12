@@ -19,16 +19,24 @@ yellow_box:
   - title: Lectures
     date: Monday & Wednesday
     time: 1:30 - 3:00 PM
-    location: G906 COOL
+    location: 4440 EECS
   - title: Discussions
     date: Tuesday
     time: 11:30 AM - 12:30 PM
-    location: TBD
-  - title: Office Hours
+    location: 4150 FMCRB (4th floor)
+  - title: Office Hours (Patricia)
     date: Tuesday
-    time: 2:00 - 3:00 PM
+    time: 10:30 - 11:15 AM
     location: 2252 FMCRB
-  - title: Makerspace Hours
-    date: Thursday & Saturday
-    time: 10:30 - 11:30 AM
-    location: 1141 FMCRB
+  - title: Office Hours (Atharva)
+    date: Thursday
+    time: 3:00 - 4:00 PM
+    location: 2320 FMCRB
+  - title: Office Hours (Trey, hardware & software)
+    date: Friday
+    time: 3:00 - 4:00 PM
+    location: 2320 FMCRB
+  - title: Robot Garage (not led by course staff)
+    date: Monday - Thursday
+    time: 10:30 AM - 1:30 PM (Tue & Wed until 4:00 PM)
+    location: 4170 FMCRB (4th floor)

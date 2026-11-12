@@ -1,78 +1,87 @@
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Introuction'
+  title: 'Lecture: Introduction'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/821093
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Dimensions of Social Robot Design'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/821167
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Human-Centered Robot Design & qualtrics'
+  title: 'Lecture: Participatory Design: Beginning to End'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822003
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Individual project feedback'
+  title: 'Lecture: Individual Project Feedback'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822005
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Social Robot UX Design'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822006
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Co-Design Robot Canvases'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822008
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Individual project presentation'
+  title: 'Lecture: Individual Project Presentations'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Katerina Kamprani'
-  description: ''
+  description: 'Impossible Objects'
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Speculative Robotics'
+  title: 'Lecture: Speculative Robots'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Nihar Sabnis'
-  description: ''
+  description: 'Design of vibrotactile technologies'
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Guest Lecture: Victor Anthony'
-  description: ''
+  title: 'Guest Lecture: Victor Antony'
+  description: 'New social robots'
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: GenAI for robot design'
+  title: 'Lecture: Generative AI for Robot Design'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822017
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Jon Ota'
-  description: ''
+  description: 'Empathy and identity design'
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Group project feedback team'
+  title: 'Lecture: Group Project Feedback (Team)'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Carla Diana'
-  description: ''
+  description: 'Design of everyday objects'
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Emotional Entanglements'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822022
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Computational robot design with OTs'
+  title: 'Lecture: Designing Robots with SMEs'
   description: ''
+  slides_link: https://umich.instructure.com/courses/865252/modules/822024
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Group project feedback peers'
+  title: 'Lecture: Group Project Feedback (Peers)'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Paulina Yurman'
+  description: 'Speculative design'
+- video_poster: /assets/course/placeholder-lecture.png
+  title: 'Lecture: Group Project Presentations'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Group project presentation'
-  description: ''
+  title: 'Guest Lecture: Katrin Bauchaud'
+  description: 'A PM journey in design'
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Guest Lecture: Katrin Beauchaud'
-  description: ''
-- video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Connor (potentially)'
-  description: ''
-- video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: WoZ for robot design'
-  description: ''
-- video_poster: /assets/course/placeholder-lecture.png
-  title: 'Guest Lecture: Francesca Cocchella'
+  title: 'Guest Lecture: Connor Williams'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Daniela Mitlegerber'
+  description: 'Augmented architecture'
+- video_poster: /assets/course/placeholder-lecture.png
+  title: 'Guest Lecture: Francesca Cocchella'
+  description: 'Design with stakeholders'
+- video_poster: /assets/course/placeholder-lecture.png
+  title: 'Lecture: WoZ for Robot Design'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
-  title: 'Lecture: Last class'
+  title: 'Lecture: Last Class'
   description: ''
