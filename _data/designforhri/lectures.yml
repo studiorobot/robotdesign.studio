@@ -1,60 +1,117 @@
-- video_poster: /assets/course/placeholder-lecture.png
+- video_poster: /designforhri/f26/snippets/class_1.jpg
   title: 'Lecture: Introduction'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/821093
-- video_poster: /assets/course/placeholder-lecture.png
+- video_poster: /designforhri/f26/snippets/class_2.jpg
   title: 'Lecture: Dimensions of Social Robot Design'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/821167
-- video_poster: /assets/course/placeholder-lecture.png
+  readings:
+  - title: 'Baraka, K., Alves-Oliveira, P., & Ribeiro, T. (2020). An extended framework for characterizing social robots. In Human-Robot Interaction: Evaluation Methods and Their Standardization (pp. 21-64). Springer.'
+    link: https://scholar.google.com/scholar?q=An+extended+framework+for+characterizing+social+robots
+  - title: 'Reeves, B., & Nass, C. (1996). The media equation: How people treat computers, television, and new media like real people. Cambridge, UK, 10(10), 19-36.'
+    link: https://scholar.google.com/scholar?q=The+media+equation%3A+How+people+treat+computers%2C+television%2C+and+new+media+like+real+people
+- video_poster: /designforhri/f26/snippets/class_3.jpg
   title: 'Lecture: Participatory Design: Beginning to End'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822003
-- video_poster: /assets/course/placeholder-lecture.png
+  readings:
+  - title: 'Baron-Cohen, S. (2011). Zero degrees of empathy: A new theory of human cruelty. Penguin UK.'
+    link: https://scholar.google.com/scholar?q=Zero+degrees+of+empathy%3A+A+new+theory+of+human+cruelty
+  - title: Sears, D. O. (1983). The person-positivity bias. Journal of Personality and Social Psychology, 44(2), 233.
+    link: https://scholar.google.com/scholar?q=The+person-positivity+bias+Sears
+  - title: 'Nordgren, L. F., & McDonnell, M. H. M. (2011). The scope-severity paradox: Why doing more harm is judged to be less harmful. Social Psychological and Personality Science, 2(1), 97-102.'
+    link: https://scholar.google.com/scholar?q=The+scope-severity+paradox%3A+Why+doing+more+harm+is+judged+to+be+less+harmful
+  - title: Bloom, B. S. (1971). Handbook on formative and summative evaluation of student learning.
+    link: https://scholar.google.com/scholar?q=Handbook+on+formative+and+summative+evaluation+of+student+learning
+  - title: Alves-Oliveira, P., Arriaga, P., Paiva, A., & Hoffman, G. (2021). Children as robot designers. In Proceedings of the 2021 ACM/IEEE International Conference on Human-Robot Interaction (pp. 399-408).
+    link: https://scholar.google.com/scholar?q=Children+as+robot+designers+Alves-Oliveira
+  - title: Alves-Oliveira, P., Arriaga, P., Cronin, M. A., & Paiva, A. (2020). Creativity encounters between children and robots. In Proceedings of the 2020 ACM/IEEE International Conference on Human-Robot Interaction (pp. 379-388).
+    link: https://scholar.google.com/scholar?q=Creativity+encounters+between+children+and+robots
+  - title: Interaction Design Foundation (IxDF). Human-Centered Design.
+    link: https://ixdf.org/literature/topics/human-centered-design
+- video_poster: /designforhri/f26/snippets/class_4.jpg
   title: 'Lecture: Individual Project Feedback'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822005
-- video_poster: /assets/course/placeholder-lecture.png
+- video_poster: /designforhri/f26/snippets/class_5.jpg
   title: 'Lecture: Social Robot UX Design'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822006
-- video_poster: /assets/course/placeholder-lecture.png
+  readings:
+  - title: Parrish, P. (2006). Design as storytelling. TechTrends, 50(4), 72-82.
+    link: https://scholar.google.com/scholar?q=Design+as+storytelling+Parrish+TechTrends
+  - title: 'Tonkin, M., Vitale, J., Herse, S., Williams, M. A., Judge, W., & Wang, X. (2018). Design methodology for the UX of HRI: A field study of a commercial social robot at an airport. In Proceedings of the 2018 ACM/IEEE International Conference on Human-Robot Interaction (pp. 407-415).'
+    link: https://scholar.google.com/scholar?q=Design+methodology+for+the+UX+of+HRI%3A+A+field+study+of+a+commercial+social+robot+at+an+airport
+  - title: Fronemann, N., Pollmann, K., & Loh, W. (2022). Should my robot know what's best for me? Human-robot interaction between user experience and ethical design. AI & Society, 37(2), 517-533.
+    link: https://scholar.google.com/scholar?q=Should+my+robot+know+what%27s+best+for+me%3F+Human-robot+interaction+between+user+experience+and+ethical+design
+- video_poster: /designforhri/f26/snippets/class_6.jpg
   title: 'Lecture: Co-Design Robot Canvases'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822008
+  readings:
+  - title: 'Axelsson, M., Oliveira, R., Racca, M., & Kyrki, V. (2021). Social robot co-design canvases: A participatory design framework. ACM Transactions on Human-Robot Interaction (THRI), 11(1), 1-39.'
+    link: https://dl.acm.org/doi/pdf/10.1145/3472225
+  - title: 'Design Thinking: Process Guide (Stanford d.school).'
+    link: https://web.stanford.edu/~mshanks/MichaelShanks/files/509554
+  - title: To Stay in Her Home, She Let In an A.I. Robot (The New York Times, 2026).
+    link: https://www.nytimes.com/2026/02/12/us/elliq-ai-robot-senior-companion.html
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Individual Project Presentations'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Katerina Kamprani'
-  description: 'Impossible Objects'
-- video_poster: /assets/course/placeholder-lecture.png
+  description: Impossible Objects
+- video_poster: /designforhri/f26/snippets/class_9.jpg
   title: 'Lecture: Speculative Robots'
   description: ''
+  readings:
+  - title: 'Blythe, M. (2014). Research through design fiction: Narrative in real and imaginary abstracts. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 703-712).'
+    link: https://scholar.google.com/scholar?q=Research+through+design+fiction%3A+narrative+in+real+and+imaginary+abstracts
+  - title: Alves-Oliveira, P., Lupetti, M. L., Luria, M., Löffler, D., Gamboa, M., Albaugh, L., ... & Lockton, D. (2021). Collection of metaphors for human-robot interaction. In Proceedings of the 2021 ACM Designing Interactive Systems Conference (pp. 1366-1379).
+    link: https://scholar.google.com/scholar?q=Collection+of+metaphors+for+human-robot+interaction
+  - title: 'Dunne, A., & Raby, F. (2024). Speculative Everything, with a new preface by the authors: Design, Fiction, and Social Dreaming. MIT Press.'
+    link: https://scholar.google.com/scholar?q=Speculative+Everything+Design%2C+Fiction%2C+and+Social+Dreaming+Dunne+Raby
+  - title: Luria, M., Sheriff, O., Boo, M., Forlizzi, J., & Zoran, A. (2020). Destruction, catharsis, and emotional release in human-robot interaction. ACM Transactions on Human-Robot Interaction (THRI), 9(4), 1-19.
+    link: https://scholar.google.com/scholar?q=Destruction%2C+catharsis%2C+and+emotional+release+in+human-robot+interaction
+  - title: 'Luria, M., & Candy, S. (2022). Letters from the future: Exploring ethical dilemmas in the design of social agents. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (pp. 1-13).'
+    link: https://scholar.google.com/scholar?q=Letters+from+the+future%3A+Exploring+ethical+dilemmas+in+the+design+of+social+agents
+  - title: 'Lupetti, M. L., Bendor, R., & Giaccardi, E. (2019). Robot citizenship: A design perspective. Design and Semantics of Form and Movement, 87, 81-89.'
+    link: https://scholar.google.com/scholar?q=Robot+citizenship%3A+A+design+perspective+Lupetti
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Nihar Sabnis'
-  description: 'Design of vibrotactile technologies'
+  description: Design of vibrotactile technologies
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Victor Antony'
-  description: 'New social robots'
-- video_poster: /assets/course/placeholder-lecture.png
+  description: New social robots
+- video_poster: /designforhri/f26/snippets/class_12.jpg
   title: 'Lecture: Generative AI for Robot Design'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822017
+  readings:
+  - title: Kashyap, A. S., Morkute, U. A., & Alves-Oliveira, P. (2026). Robot-Assisted Social Dining as a White Glove Service. In Proceedings of CHI '26, Barcelona, Spain.
+    link: https://doi.org/10.1145/3772318.3790481
+  - title: 'Kashyap, A. S., & Alves-Oliveira, P. Speak2Scene: Voice-based Storyboarding. SoftwareX. (Code)'
+    link: https://github.com/studiorobot/Speak2Scene
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Jon Ota'
-  description: 'Empathy and identity design'
+  description: Empathy and identity design
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Group Project Feedback (Team)'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Carla Diana'
-  description: 'Design of everyday objects'
-- video_poster: /assets/course/placeholder-lecture.png
+  description: Design of everyday objects
+- video_poster: /designforhri/f26/snippets/class_16.jpg
   title: 'Lecture: Emotional Entanglements'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822022
-- video_poster: /assets/course/placeholder-lecture.png
+  readings:
+  - title: 'Hsu, L.-J., Swaminathan, M., Khoo, W., Amon, K. J., Sato, H., Dobbala, S., Tsui, K., Crandall, D., & Sabanovic, S. (2025). Bittersweet snapshots of life: Designing to address complex emotions in a reminiscence interaction between older adults and a robot. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (pp. 1-18).'
+    link: https://scholar.google.com/scholar?q=Bittersweet+snapshots+of+life%3A+Designing+to+address+complex+emotions+in+a+reminiscence+interaction+between+older+adults+and+a+robot
+  - title: Simão, H., Hsu, L.-J., Cagiltay, B., Neto, I., Wallbridge, C. D., Santos, L., Rocha, F., et al. (2026). Emotional Entanglements and Emotional Sustainability in HRI. In Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (pp. 1098-1107).
+    link: https://scholar.google.com/scholar?q=Emotional+Entanglements+and+Emotional+Sustainability+in+HRI
+- video_poster: /designforhri/f26/snippets/class_17.jpg
   title: 'Lecture: Designing Robots with SMEs'
   description: ''
   slides_link: https://umich.instructure.com/courses/865252/modules/822024
@@ -63,22 +120,22 @@
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Paulina Yurman'
-  description: 'Speculative design'
+  description: Speculative design
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: Group Project Presentations'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Katrin Bauchaud'
-  description: 'A PM journey in design'
+  description: A PM journey in design
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Connor Williams'
   description: ''
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Daniela Mitlegerber'
-  description: 'Augmented architecture'
+  description: Augmented architecture
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Guest Lecture: Francesca Cocchella'
-  description: 'Design with stakeholders'
+  description: Design with stakeholders
 - video_poster: /assets/course/placeholder-lecture.png
   title: 'Lecture: WoZ for Robot Design'
   description: ''
